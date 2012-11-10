@@ -1,0 +1,34 @@
+OSE 0.0.1 - Oblivion Save Editor
+--------------------------------
+
+TODO list
+---------
+
+TODO for 0.1.0:
+	- Use common dialog to select save to be read
+	- Use common dialog to select where to save updated file to
+TODO for 0.2.0:
+	- Design a better GUI to allow access to
+		o Player information
+			* Attributes
+			* Skills
+TODO for 0.3.0:
+	- Add access to
+		o Player information
+			* Factions
+			* Spells
+			* Items
+
+
+DONE:
+	- Read save file to data structure
+	- Write data structure to save file
+	- Modifying player attributes now updates the data structure (and they get saved correctly too)
+	- Make ProgressBar do stuff while reading from save file
+	- Make ProgressBar do stuff while writing to save file
+
+			
+Not planned at this time:
+	- Read directly from an XBox360 container file
+	- Write back into an XBox360 container file
+	
