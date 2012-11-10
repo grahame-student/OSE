@@ -1,4 +1,21 @@
 Attribute VB_Name = "ReadSave"
+' OSE - Oblivion Save Editor
+' Copyright (C) 2012  Grahame White
+'
+' This program is free software; you can redistribute it and/or modify
+' it under the terms of the GNU General Public License as published by
+' the Free Software Foundation; either version 2 of the License, or
+' (at your option) any later version.
+'
+' This program is distributed in the hope that it will be useful,
+' but WITHOUT ANY WARRANTY; without even the implied warranty of
+' MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+' GNU General Public License for more details.
+'
+' You should have received a copy of the GNU General Public License along
+' with this program; if not, write to the Free Software Foundation, Inc.,
+' 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
 Option Explicit
 DefObj A-Z
 
@@ -19,10 +36,12 @@ Public Sub ReadSaveFile(ByRef Status As StatusBar, ByRef Progress As ProgressBar
         Case FILE_ID_XBOX360
             MsgBox "XBox360 container detected, unable to proceed", vbOKOnly, "XBox360 Container Detected"
             Status.Panels(1).Text = "XBox360 container detected"
+            SaveFileData.OSE.LoadSuccessful = False
             Exit Sub
         Case FILE_ID_UNKNOWN
             MsgBox "Unknown FileID detected, unable to proceed", vbOKOnly, "Unknown FileID Detected"
             Status.Panels(STB_STATUS).Text = "Unknown FileID detected"
+            SaveFileData.OSE.LoadSuccessful = False
             Exit Sub
     End Select
     
@@ -49,6 +68,7 @@ Public Sub ReadSaveFile(ByRef Status As StatusBar, ByRef Progress As ProgressBar
     ReadSaveWorldSpaces
         
     Progress.Value = Progress.Max
+    SaveFileData.OSE.LoadSuccessful = True
         
     Close #FF
         

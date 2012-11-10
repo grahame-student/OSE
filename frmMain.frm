@@ -4,8 +4,8 @@ Begin VB.Form frmMain
    BorderStyle     =   1  'Fixed Single
    Caption         =   "OSE"
    ClientHeight    =   5070
-   ClientLeft      =   45
-   ClientTop       =   375
+   ClientLeft      =   150
+   ClientTop       =   780
    ClientWidth     =   7710
    Icon            =   "frmMain.frx":0000
    LinkTopic       =   "Form1"
@@ -393,12 +393,41 @@ Begin VB.Form frmMain
          Width           =   1230
       End
    End
+   Begin VB.Menu mnuFile 
+      Caption         =   "File"
+      Begin VB.Menu mnuQuit 
+         Caption         =   "Quit"
+      End
+   End
+   Begin VB.Menu mnuHelp 
+      Caption         =   "Help"
+      Begin VB.Menu mnuAbout 
+         Caption         =   "About"
+      End
+   End
 End
 Attribute VB_Name = "frmMain"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+' OSE - Oblivion Save Editor
+' Copyright (C) 2012  Grahame White
+'
+' This program is free software; you can redistribute it and/or modify
+' it under the terms of the GNU General Public License as published by
+' the Free Software Foundation; either version 2 of the License, or
+' (at your option) any later version.
+'
+' This program is distributed in the hope that it will be useful,
+' but WITHOUT ANY WARRANTY; without even the implied warranty of
+' MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+' GNU General Public License for more details.
+'
+' You should have received a copy of the GNU General Public License along
+' with this program; if not, write to the Free Software Foundation, Inc.,
+' 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
 Option Explicit
 DefObj A-Z
 
@@ -448,6 +477,18 @@ End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
 
+    mnuQuit_Click
+
+End Sub
+
+Private Sub mnuAbout_Click()
+
+    frmAbout.Show
+
+End Sub
+
+Private Sub mnuQuit_Click()
+
     tmrLoad.Enabled = False
     End
 
@@ -458,7 +499,11 @@ Private Sub tmrLoad_Timer()
     cmdSave.Enabled = False
     
     ReadSaveFile StatusBar, prgProgress
-
+    
+    If Not SaveFileData.OSE.LoadSuccessful Then
+        tmrLoad.Enabled = False
+        Exit Sub
+    End If
     
     StatusBar.Panels(1).Text = "Scanning for markers"
     ScanForMarkers
