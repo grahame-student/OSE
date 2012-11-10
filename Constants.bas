@@ -79,6 +79,15 @@ Public Const STB_STATUS As Integer = 1
 Public Const STB_PROGRESS As Integer = 2
 
 ' Min / Max values
-Public Const BYTE_MIN As Integer = 0
-Public Const BYTE_MAX As Integer = 255
+Public Const BYTE_MIN As Integer = 0            ' Smallest value to fit in a byte
+Public Const BYTE_MAX As Integer = 255          ' Largest value to fit in a byte
+
+Public Const HEALTH_MIN As Integer = 0          ' Smallest base health value
+Public Const HEALTH_MAX As Integer = 30000      ' Largest base health value (needs testing)
+
+Public Const MAGICKA_MIN As Integer = 0          ' Smallest base health value
+Public Const MAGICKA_MAX As Integer = 10000      ' Largest base health value (needs testing)
+
+Public Const FATIGUE_MIN As Integer = 0          ' Smallest base health value
+Public Const FATIGUE_MAX As Integer = 10000      ' Largest base health value (needs testing)
 

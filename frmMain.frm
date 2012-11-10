@@ -762,14 +762,32 @@ Private Sub txtAttribute_Change(ByRef Index As Integer)
     ' Input is valid, update the data structure
     ModifyPlayerAttribute Index, txtAttribute(Index).Text
 
-    ' Remove once happy things work
-    UpdateDisplay
+End Sub
+
+Private Sub txtBaseHealth_Change()
+
+    ValidateInput txtBaseHealth, HEALTH_MIN, HEALTH_MAX
+
+    ' Input is valid, update the data structure
+    ModifyPlayerBaseHealth txtBaseHealth.Text
 
 End Sub
 
-Private Sub ModifyPlayerAttribute(ByVal PlayerAttribute As Integer, ByVal AttributeValue As Byte)
+Private Sub txtBaseMagicka_Change()
 
-    SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(SaveFileData.OSE.Player.BaseAttributes + PlayerAttribute) = AttributeValue
+    ValidateInput txtBaseMagicka, MAGICKA_MIN, MAGICKA_MAX
+
+    ' Input is valid, update the data structure
+    ModifyPlayerBaseMagicka txtBaseMagicka.Text
+
+End Sub
+
+Private Sub txtBaseFatigue_Change()
+
+    ValidateInput txtBaseFatigue, FATIGUE_MIN, FATIGUE_MAX
+
+    ' Input is valid, update the data structure
+    ModifyPlayerBaseFatigue txtBaseFatigue.Text
 
 End Sub
 

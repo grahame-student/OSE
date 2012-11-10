@@ -11,6 +11,7 @@ Module=API; API.bas
 Module=WriteSave; WriteSave.bas
 Module=HelperFunctions; HelperFunctions.bas
 Form=frmAbout.frm
+Module=ModifyPlayer; ModifyPlayer.bas
 IconForm="frmMain"
 Startup="frmMain"
 Command32=""
