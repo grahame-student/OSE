@@ -15,6 +15,7 @@ Module=ModifyPlayer; ModifyPlayer.bas
 Module=ModifyHeader; ModifyHeader.bas
 Module=AnalyseStructure; AnalyseStructure.bas
 Module=ModifyChangeRecord; ModifyChangeRecord.bas
+Form=frmNewDateStamp.frm
 IconForm="frmMain"
 Startup="frmMain"
 Command32=""

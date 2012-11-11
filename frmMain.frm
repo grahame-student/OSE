@@ -6,13 +6,13 @@ Begin VB.Form frmMain
    ClientHeight    =   6015
    ClientLeft      =   150
    ClientTop       =   780
-   ClientWidth     =   13260
+   ClientWidth     =   7815
    Icon            =   "frmMain.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   6015
-   ScaleWidth      =   13260
+   ScaleWidth      =   7815
    StartUpPosition =   3  'Windows Default
    Begin VB.PictureBox pnlSaveFile 
       Appearance      =   0  'Flat
@@ -20,11 +20,11 @@ Begin VB.Form frmMain
       Height          =   4575
       Left            =   240
       ScaleHeight     =   4545
-      ScaleWidth      =   12705
+      ScaleWidth      =   7305
       TabIndex        =   4
       Top             =   480
       Visible         =   0   'False
-      Width           =   12735
+      Width           =   7335
       Begin VB.PictureBox pnlAll 
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
@@ -43,43 +43,47 @@ Begin VB.Form frmMain
             ForeColor       =   &H80000008&
             Height          =   2250
             Left            =   1935
+            OLEDropMode     =   1  'Manual
             ScaleHeight     =   150
             ScaleMode       =   3  'Pixel
-            ScaleWidth      =   255
+            ScaleWidth      =   256
             TabIndex        =   50
+            ToolTipText     =   $"frmMain.frx":1CCA
             Top             =   1920
-            Width           =   3825
+            Width           =   3840
          End
          Begin VB.ListBox lstPlugIns 
             Height          =   1035
             Left            =   1935
             TabIndex        =   48
+            ToolTipText     =   "The plugins in use when the save was created."
             Top             =   840
-            Width           =   3825
+            Width           =   3840
          End
          Begin VB.TextBox txtSaveFileNumber 
             Height          =   285
             Left            =   1935
             TabIndex        =   40
             Text            =   "0"
+            ToolTipText     =   "The number of saves made since starting the character. (0 to 2147483647)"
             Top             =   315
-            Width           =   3825
+            Width           =   3840
          End
          Begin VB.TextBox txtSaveFileVersionMajor 
             Height          =   285
             Left            =   1935
             TabIndex        =   42
             Text            =   "0"
-            ToolTipText     =   "The major version of the savefile format (0 to 255)"
+            ToolTipText     =   "The major version of the savefile format. (0 to 255)"
             Top             =   75
             Width           =   735
          End
          Begin VB.TextBox txtSaveFileVersionMinor 
             Height          =   285
-            Left            =   5025
+            Left            =   5040
             TabIndex        =   41
             Text            =   "0"
-            ToolTipText     =   "The major version of the savefile format (0 to 255)"
+            ToolTipText     =   "The major version of the savefile format. (0 to 255)"
             Top             =   75
             Width           =   735
          End
@@ -106,8 +110,9 @@ Begin VB.Form frmMain
             Height          =   285
             Left            =   1935
             TabIndex        =   46
+            ToolTipText     =   "The time that the save file was created. Click to enter a new time manually."
             Top             =   600
-            Width           =   3825
+            Width           =   3840
          End
          Begin VB.Label lblSavetimeTag 
             AutoSize        =   -1  'True
@@ -171,7 +176,7 @@ Begin VB.Form frmMain
    Begin VB.CommandButton cmdSave 
       Caption         =   "Save"
       Height          =   375
-      Left            =   11520
+      Left            =   6120
       TabIndex        =   6
       Top             =   5280
       Width           =   1575
@@ -182,11 +187,11 @@ Begin VB.Form frmMain
       Height          =   4575
       Left            =   240
       ScaleHeight     =   4545
-      ScaleWidth      =   12705
+      ScaleWidth      =   7305
       TabIndex        =   0
       Top             =   480
       Visible         =   0   'False
-      Width           =   12735
+      Width           =   7335
       Begin VB.PictureBox pnlBaseStats 
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
@@ -479,8 +484,8 @@ Begin VB.Form frmMain
       Left            =   120
       TabIndex        =   3
       Top             =   120
-      Width           =   12975
-      _ExtentX        =   22886
+      Width           =   7575
+      _ExtentX        =   13361
       _ExtentY        =   8916
       _Version        =   393216
       BeginProperty Tabs {1EFB6598-857C-11D1-B16A-00C0F0283628} 
@@ -514,19 +519,19 @@ Begin VB.Form frmMain
       Left            =   0
       TabIndex        =   1
       Top             =   5760
-      Width           =   13260
-      _ExtentX        =   23389
+      Width           =   7815
+      _ExtentX        =   13785
       _ExtentY        =   450
       _Version        =   393216
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
          NumPanels       =   2
          BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             AutoSize        =   1
-            Object.Width           =   11642
+            Object.Width           =   6853
          EndProperty
          BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
             AutoSize        =   1
-            Object.Width           =   11642
+            Object.Width           =   6853
          EndProperty
       EndProperty
    End
@@ -623,6 +628,16 @@ Private Sub Form_Unload(Cancel As Integer)
 
 End Sub
 
+Private Sub lblSaveTime_Click()
+
+    frmNewDateStamp.Mode = DATE_STAMP_MODE_GAME
+    frmNewDateStamp.Show vbModal
+    Unload frmNewDateStamp
+
+    UpdateDisplay
+    
+End Sub
+
 Private Sub mnuQuit_Click()
 
     End
@@ -670,6 +685,21 @@ Private Sub OpenSaveFile()
     tabCategory_Click
 
     cmdSave.Enabled = True
+
+End Sub
+
+Private Sub picScreenShot_Click()
+
+    SavePicture picScreenShot.Image, App.Path & "\ScreenShot\screenshot.bmp"
+
+End Sub
+
+Private Sub picScreenShot_OLEDragDrop(Data As DataObject, Effect As Long, Button As Integer, Shift As Integer, X As Single, Y As Single)
+
+    ' TODO: Catch invalid file formats
+    ' TODO: Save new bitmap to the data structure
+
+    picScreenShot.Picture = LoadPicture(Data.Files(1))
 
 End Sub
 

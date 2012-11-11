@@ -10,6 +10,7 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 		o major version
 		o minor version
 		o save number
+		o saved date stamp
 		o player name
 		o player level
 		o player location string

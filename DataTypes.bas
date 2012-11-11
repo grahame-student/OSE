@@ -19,14 +19,6 @@ Attribute VB_Name = "DataTypes"
 Option Explicit
 DefObj A-Z
 
-Public Type bByteType
-    Bytes(3) As Byte
-End Type
- 
-Public Type SingleType
-    Result As Single
-End Type
-
 Public Type SystemTime
     Year As Integer
     Month As Integer

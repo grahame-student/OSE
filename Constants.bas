@@ -97,6 +97,30 @@ Public Const MAGICKA_MAX As Integer = 10000     ' Largest base health value (nee
 Public Const FATIGUE_MIN As Integer = 0         ' Smallest base health value
 Public Const FATIGUE_MAX As Integer = 10000     ' Largest base health value (needs testing)
 
+Public Const YEAR_MIN As Integer = 0            ' Smallest month value
+Public Const YEAR_MAX As Integer = 30827        ' Largest month value
+
+Public Const MONTH_MIN As Integer = 1           ' Smallest month value
+Public Const MONTH_MAX As Integer = 12          ' Largest month value
+
+Public Const DAY_OF_WEEK_MIN As Integer = 0     ' Smallest day of week value
+Public Const DAY_OF_WEEK_MAX As Integer = 6     ' Largest day of week value
+
+Public Const DAY_MIN As Integer = 1             ' Smallest day value
+Public Const DAY_MAX As Integer = 31            ' Largest day value
+
+Public Const HOUR_MIN As Integer = 0            ' Smallest hour value
+Public Const HOUR_MAX As Integer = 23           ' Largest hour value
+
+Public Const MINUTE_MIN As Integer = 0          ' Smallest minute value
+Public Const MINUTE_MAX As Integer = 59         ' Largest minute value
+
+Public Const SECOND_MIN As Integer = 0          ' Smallest second value
+Public Const SECOND_MAX As Integer = 59         ' Largest second value
+
+Public Const MILLISECOND_MIN As Integer = 0     ' Smallest millisecond value
+Public Const MILLISECOND_MAX As Integer = 999   ' Largest millisecond value
+
 ' Tabstrip category constants
 Public Const TAB_CAT_SAVE_FILE As String = "Save File"
 Public Const TAB_CAT_PLAYER As String = "Player"
@@ -104,4 +128,9 @@ Public Const TAB_CAT_PLAYER As String = "Player"
 ' Tabstrip sub-category constants
 Public Const TAB_SUB_CAT_SAVE_FILE_ALL As String = "All"
 Public Const TAB_SUB_CAT_PLAYER_ATTRIBUTES As String = "Attributes"
+Public Const TAB_SUB_CAT_PLAYER_SKILLS As String = "Skills"
+
+' Date Stamp Modes
+Public Const DATE_STAMP_MODE_EXE As Integer = 1
+Public Const DATE_STAMP_MODE_GAME As Integer = 2
 
