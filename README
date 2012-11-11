@@ -1,14 +1,12 @@
-OSE
-===
-
 OSE - Oblivion Save Editor
+===
 
 Intro
 -----
 This is a working save editor (very early stages) that can import save files
-from The Elder Scrolls IV: Oblivion game. Currently the only thing that can be
-edited are the player's base attributes, but more is planned for future
-versions.
+from The Elder Scrolls IV: Oblivion game. Currently the only things that can be
+edited are the player's base attributes (including base health, magicka and
+fatigue), but more is planned for future versions.
 
 Platforms supported
 -------------------
@@ -29,3 +27,15 @@ in future versions). Running OSE will cause the save file to be read in, you
 can edit the player's base attributes at this point. Clicking save will create
 a new savefile in the New directory (this too will be user selectable in future
 versions)
+
+Source Code
+-----------
+The source code for this application can be found here:
+<https://github.com/Dasaan/OSE>
+
+Acknowledgements
+----------------
+A massive thank you to the Unofficial Elder Scrolls Pages for their extremely
+detailed information on the various files used by Oblivion. In particular their
+information on the savefile structure which can be found here:
+<http://www.uesp.net/wiki/Tes4Mod:Save_File_Format>

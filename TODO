@@ -10,7 +10,6 @@ TODO for 0.1.0:
 TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
-			* Attributes
 			* Skills
 TODO for 0.3.0:
 	- Add access to
@@ -27,9 +26,14 @@ DONE 0.0.1:
 	- Modifying base health now updates the data structure
 	- Modifying base magicka now updates the data structure
 	- Modifying base fatigue now updates the data structure
-	- Make ProgressBar do stuff while reading from save file
-	- Make ProgressBar do stuff while writing to save file
-
+	- Modifying the save file Major and Minor versions now updates the data structure
+	- Modifying the save file number now updates the data structure
+	- Added a sub to clear the data from a previously loaded save file
+	- Added menubar options to open a save file
+	- Added menubar options to save a save file
+	- Made ProgressBar do stuff while reading from save file
+	- Made ProgressBar do stuff while writing to save file
+	- Fleshed out the GUI a bit more, still lots more work to be done
 			
 Not planned at this time:
 	- Read directly from an XBox360 container file

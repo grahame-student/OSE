@@ -79,15 +79,29 @@ Public Const STB_STATUS As Integer = 1
 Public Const STB_PROGRESS As Integer = 2
 
 ' Min / Max values
-Public Const BYTE_MIN As Integer = 0            ' Smallest value to fit in a byte
-Public Const BYTE_MAX As Integer = 255          ' Largest value to fit in a byte
+Public Const BYTE_MIN As Byte = 0               ' Smallest value to fit in an unsigned byte
+Public Const BYTE_MAX As Byte = 255             ' Largest value to fit in an unsigned byte
+
+Public Const INTEGER_MIN As Integer = 0         ' Smallest value to fit into an unsigned integer
+Public Const INTEGER_MAX As Integer = 32767     ' Largest vaule to fit into a signed integer
+
+Public Const LONG_MIN As Long = 0               ' Smallest value to fit into an unsigned long
+Public Const LONG_MAX As Long = 2147483647      ' Largest value to fit into a signed long
 
 Public Const HEALTH_MIN As Integer = 0          ' Smallest base health value
 Public Const HEALTH_MAX As Integer = 30000      ' Largest base health value (needs testing)
 
-Public Const MAGICKA_MIN As Integer = 0          ' Smallest base health value
-Public Const MAGICKA_MAX As Integer = 10000      ' Largest base health value (needs testing)
+Public Const MAGICKA_MIN As Integer = 0         ' Smallest base health value
+Public Const MAGICKA_MAX As Integer = 10000     ' Largest base health value (needs testing)
 
-Public Const FATIGUE_MIN As Integer = 0          ' Smallest base health value
-Public Const FATIGUE_MAX As Integer = 10000      ' Largest base health value (needs testing)
+Public Const FATIGUE_MIN As Integer = 0         ' Smallest base health value
+Public Const FATIGUE_MAX As Integer = 10000     ' Largest base health value (needs testing)
+
+' Tabstrip category constants
+Public Const TAB_CAT_SAVE_FILE As String = "Save File"
+Public Const TAB_CAT_PLAYER As String = "Player"
+
+' Tabstrip sub-category constants
+Public Const TAB_SUB_CAT_SAVE_FILE_ALL As String = "All"
+Public Const TAB_SUB_CAT_PLAYER_ATTRIBUTES As String = "Attributes"
 

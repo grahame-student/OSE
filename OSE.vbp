@@ -1,6 +1,6 @@
 Type=Exe
 Form=frmMain.frm
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\Windows\SysWow64\stdole2.tlb#OLE Automation
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\Windows\SysWow64\stdole2.tlb#OLE Automation
 Module=OSE_ESS; ESS.bas
 Module=DataTypes; DataTypes.bas
 Object={831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0; MSCOMCTL.OCX
@@ -12,6 +12,7 @@ Module=WriteSave; WriteSave.bas
 Module=HelperFunctions; HelperFunctions.bas
 Form=frmAbout.frm
 Module=ModifyPlayer; ModifyPlayer.bas
+Module=ModifyHeader; ModifyHeader.bas
 IconForm="frmMain"
 Startup="frmMain"
 Command32=""
