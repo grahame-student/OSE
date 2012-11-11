@@ -4,11 +4,32 @@ OSE - Oblivion Save Editor
 Intro
 -----
 This is a working save editor (very early stages) that can import save files
-from The Elder Scrolls IV: Oblivion game. Currently the only things that can be
-edited are the player's base attributes (including base health, magicka and
-fatigue), but more is planned for future versions.
+from The Elder Scrolls IV: Oblivion game. Currently editable are:
 
-Platforms supported
+	- savefile header's
+		o major version
+		o minor version
+		o save number
+		o player name
+		o player level
+		o player location string
+	- player's
+		o base attributes
+		o base health
+		o base magicka
+		o base fatigue
+
+With plenty more planned, I'm working through the file format documents to see
+what I'm able to grant access to.
+
+WARNING WARNING WARNING WARNING WARNING WARNING 
+------------------------------------------------
+Many of the modifications that can be made have not been fully tested. Be sure
+to make a backup of your savefile before you make any changes. If your save
+file gets messed up I may be able to prevent it from happening again in the
+future but I will NOT be able to recover your file, you have been warned!
+		
+Savefiles supported
 -------------------
 In theory this should work on both XBox360 and PC saves, however only XBox360
 saves have been tested so far. The only caveat is that the save file needs to
@@ -23,15 +44,20 @@ Usage
 -----
 The save file to be edited needs to be saved into the same directory as the OSE
 executable and it needs to be named gamedata.dat (this will be user selectable
-in future versions). Running OSE will cause the save file to be read in, you
-can edit the player's base attributes at this point. Clicking save will create
-a new savefile in the New directory (this too will be user selectable in future
-versions)
+in future versions). The save file to be read in by selecting file->open from
+the menu bar, once opened you can start editing. Clicking save, or file->save,
+will create a modified savefile in the New directory (this too will be user
+selectable in future versions).
 
 Source Code
 -----------
 The source code for this application can be found here:
 <https://github.com/Dasaan/OSE>
+
+Packaged Application
+--------------------
+Currently this is source code only but one I've reached what I feel to be a
+logical point I'll build a package and upload it to Github.
 
 Acknowledgements
 ----------------
