@@ -25,36 +25,131 @@ Begin VB.Form frmMain
       Top             =   480
       Visible         =   0   'False
       Width           =   12735
-      Begin VB.TextBox txtSaveFileNumber 
-         Height          =   285
-         Left            =   8760
-         TabIndex        =   13
-         Text            =   "0"
-         Top             =   480
-         Width           =   3825
-      End
-      Begin VB.TextBox txtSaveFileVersionMinor 
-         Height          =   285
-         Left            =   11850
-         TabIndex        =   16
-         Text            =   "0"
-         ToolTipText     =   "The major version of the savefile format (0 to 255)"
-         Top             =   240
-         Width           =   735
-      End
-      Begin VB.TextBox txtSaveFileVersionMajor 
-         Height          =   285
-         Left            =   8760
-         TabIndex        =   14
-         Text            =   "0"
-         ToolTipText     =   "The major version of the savefile format (0 to 255)"
-         Top             =   240
-         Width           =   735
+      Begin VB.PictureBox pnlAll 
+         Appearance      =   0  'Flat
+         ForeColor       =   &H80000008&
+         Height          =   4335
+         Left            =   1320
+         ScaleHeight     =   4305
+         ScaleWidth      =   5865
+         TabIndex        =   39
+         Top             =   120
+         Width           =   5895
+         Begin VB.PictureBox picScreenShot 
+            Appearance      =   0  'Flat
+            AutoRedraw      =   -1  'True
+            BackColor       =   &H80000005&
+            BorderStyle     =   0  'None
+            ForeColor       =   &H80000008&
+            Height          =   2250
+            Left            =   1935
+            ScaleHeight     =   150
+            ScaleMode       =   3  'Pixel
+            ScaleWidth      =   255
+            TabIndex        =   50
+            Top             =   1920
+            Width           =   3825
+         End
+         Begin VB.ListBox lstPlugIns 
+            Height          =   1035
+            Left            =   1935
+            TabIndex        =   48
+            Top             =   840
+            Width           =   3825
+         End
+         Begin VB.TextBox txtSaveFileNumber 
+            Height          =   285
+            Left            =   1935
+            TabIndex        =   40
+            Text            =   "0"
+            Top             =   315
+            Width           =   3825
+         End
+         Begin VB.TextBox txtSaveFileVersionMajor 
+            Height          =   285
+            Left            =   1935
+            TabIndex        =   42
+            Text            =   "0"
+            ToolTipText     =   "The major version of the savefile format (0 to 255)"
+            Top             =   75
+            Width           =   735
+         End
+         Begin VB.TextBox txtSaveFileVersionMinor 
+            Height          =   285
+            Left            =   5025
+            TabIndex        =   41
+            Text            =   "0"
+            ToolTipText     =   "The major version of the savefile format (0 to 255)"
+            Top             =   75
+            Width           =   735
+         End
+         Begin VB.Label lblScreenshot 
+            AutoSize        =   -1  'True
+            Caption         =   "Screenshot"
+            Height          =   195
+            Left            =   960
+            TabIndex        =   51
+            Top             =   1920
+            Width           =   810
+         End
+         Begin VB.Label lblPlugins 
+            AutoSize        =   -1  'True
+            Caption         =   "PlugIns"
+            Height          =   195
+            Left            =   1245
+            TabIndex        =   49
+            Top             =   960
+            Width           =   525
+         End
+         Begin VB.Label lblSaveTime 
+            BorderStyle     =   1  'Fixed Single
+            Height          =   285
+            Left            =   1935
+            TabIndex        =   46
+            Top             =   600
+            Width           =   3825
+         End
+         Begin VB.Label lblSavetimeTag 
+            AutoSize        =   -1  'True
+            Caption         =   "Save Time"
+            Height          =   195
+            Left            =   1005
+            TabIndex        =   47
+            Top             =   630
+            Width           =   765
+         End
+         Begin VB.Label lblSaveFileNumberTag 
+            AutoSize        =   -1  'True
+            Caption         =   "Save File Number"
+            Height          =   195
+            Left            =   510
+            TabIndex        =   45
+            Top             =   360
+            Width           =   1260
+         End
+         Begin VB.Label lblSaveFileVersionMajor 
+            AutoSize        =   -1  'True
+            Caption         =   "Save File Major Version"
+            Height          =   195
+            Left            =   105
+            TabIndex        =   44
+            Top             =   120
+            Width           =   1665
+         End
+         Begin VB.Label lblSaveFileVersionMinor 
+            AutoSize        =   -1  'True
+            Caption         =   "Save File Minor Version"
+            Height          =   195
+            Left            =   3255
+            TabIndex        =   43
+            Top             =   120
+            Width           =   1665
+         End
       End
       Begin MSComctlLib.TabStrip tabSaveSubCategory 
          Height          =   4335
          Left            =   120
-         TabIndex        =   12
+         TabIndex        =   5
          Top             =   120
          Width           =   1030
          _ExtentX        =   1826
@@ -72,96 +167,12 @@ Begin VB.Form frmMain
             EndProperty
          EndProperty
       End
-      Begin VB.PictureBox picScreenShot 
-         Appearance      =   0  'Flat
-         AutoRedraw      =   -1  'True
-         BackColor       =   &H80000005&
-         BorderStyle     =   0  'None
-         ForeColor       =   &H80000008&
-         Height          =   2250
-         Left            =   8760
-         ScaleHeight     =   150
-         ScaleMode       =   3  'Pixel
-         ScaleWidth      =   255
-         TabIndex        =   10
-         Top             =   2160
-         Width           =   3825
-      End
-      Begin VB.ListBox lstPlugIns 
-         Height          =   1035
-         Left            =   8760
-         TabIndex        =   5
-         Top             =   1080
-         Width           =   3825
-      End
-      Begin VB.Label lblSaveTime 
-         BorderStyle     =   1  'Fixed Single
-         Height          =   255
-         Left            =   8760
-         TabIndex        =   17
-         Top             =   840
-         Width           =   3825
-      End
-      Begin VB.Label Label1 
-         AutoSize        =   -1  'True
-         Caption         =   "Save File Minor Version"
-         Height          =   195
-         Left            =   10080
-         TabIndex        =   15
-         Top             =   285
-         Width           =   1665
-      End
-      Begin VB.Label lblScreenshot 
-         AutoSize        =   -1  'True
-         Caption         =   "Screenshot"
-         Height          =   195
-         Left            =   7800
-         TabIndex        =   11
-         Top             =   2160
-         Width           =   810
-      End
-      Begin VB.Label lblVersionTag 
-         AutoSize        =   -1  'True
-         Caption         =   "Save File Major Version"
-         Height          =   195
-         Left            =   6945
-         TabIndex        =   9
-         Top             =   285
-         Width           =   1665
-      End
-      Begin VB.Label lblSaveFileNumberTag 
-         AutoSize        =   -1  'True
-         Caption         =   "Save File Number"
-         Height          =   195
-         Left            =   7350
-         TabIndex        =   8
-         Top             =   525
-         Width           =   1260
-      End
-      Begin VB.Label lblSavetimeTag 
-         AutoSize        =   -1  'True
-         Caption         =   "Save Time"
-         Height          =   195
-         Left            =   7845
-         TabIndex        =   7
-         Top             =   870
-         Width           =   765
-      End
-      Begin VB.Label lblPlugins 
-         AutoSize        =   -1  'True
-         Caption         =   "PlugIns"
-         Height          =   195
-         Left            =   8085
-         TabIndex        =   6
-         Top             =   1080
-         Width           =   525
-      End
    End
    Begin VB.CommandButton cmdSave 
       Caption         =   "Save"
       Height          =   375
       Left            =   11520
-      TabIndex        =   18
+      TabIndex        =   6
       Top             =   5280
       Width           =   1575
    End
@@ -180,16 +191,16 @@ Begin VB.Form frmMain
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
          Height          =   975
-         Left            =   9720
+         Left            =   1320
          ScaleHeight     =   945
          ScaleWidth      =   2865
-         TabIndex        =   43
+         TabIndex        =   31
          Top             =   1320
          Width           =   2895
          Begin VB.TextBox txtBaseHealth 
             Height          =   285
             Left            =   1080
-            TabIndex        =   44
+            TabIndex        =   32
             Text            =   "0"
             Top             =   600
             Width           =   1695
@@ -197,7 +208,7 @@ Begin VB.Form frmMain
          Begin VB.TextBox txtBaseFatigue 
             Height          =   285
             Left            =   1080
-            TabIndex        =   45
+            TabIndex        =   33
             Text            =   "0"
             Top             =   360
             Width           =   1695
@@ -205,7 +216,7 @@ Begin VB.Form frmMain
          Begin VB.TextBox txtBaseMagicka 
             Height          =   285
             Left            =   1080
-            TabIndex        =   46
+            TabIndex        =   34
             Text            =   "0"
             Top             =   120
             Width           =   1695
@@ -214,7 +225,7 @@ Begin VB.Form frmMain
             Caption         =   "B. Magicka"
             Height          =   255
             Left            =   120
-            TabIndex        =   49
+            TabIndex        =   37
             Top             =   135
             Width           =   855
          End
@@ -222,7 +233,7 @@ Begin VB.Form frmMain
             Caption         =   "B. Fatigue"
             Height          =   255
             Left            =   120
-            TabIndex        =   48
+            TabIndex        =   36
             Top             =   375
             Width           =   855
          End
@@ -230,7 +241,7 @@ Begin VB.Form frmMain
             Caption         =   "B. Health"
             Height          =   255
             Left            =   120
-            TabIndex        =   47
+            TabIndex        =   35
             Top             =   615
             Width           =   855
          End
@@ -239,10 +250,10 @@ Begin VB.Form frmMain
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
          Height          =   1215
-         Left            =   9720
+         Left            =   1320
          ScaleHeight     =   1185
          ScaleWidth      =   2865
-         TabIndex        =   36
+         TabIndex        =   24
          Top             =   120
          Width           =   2895
          Begin VB.TextBox txtLocation 
@@ -250,14 +261,14 @@ Begin VB.Form frmMain
             Left            =   1080
             MaxLength       =   254
             MultiLine       =   -1  'True
-            TabIndex        =   37
+            TabIndex        =   25
             Top             =   600
             Width           =   1695
          End
          Begin VB.TextBox txtLevel 
             Height          =   285
             Left            =   1080
-            TabIndex        =   38
+            TabIndex        =   26
             Top             =   360
             Width           =   1695
          End
@@ -265,7 +276,7 @@ Begin VB.Form frmMain
             Height          =   285
             Left            =   1080
             MaxLength       =   254
-            TabIndex        =   39
+            TabIndex        =   27
             Top             =   120
             Width           =   1695
          End
@@ -273,7 +284,7 @@ Begin VB.Form frmMain
             Caption         =   "Name"
             Height          =   255
             Left            =   120
-            TabIndex        =   42
+            TabIndex        =   30
             Top             =   135
             Width           =   855
          End
@@ -281,7 +292,7 @@ Begin VB.Form frmMain
             Caption         =   "Level"
             Height          =   255
             Left            =   120
-            TabIndex        =   41
+            TabIndex        =   29
             Top             =   375
             Width           =   855
          End
@@ -289,7 +300,7 @@ Begin VB.Form frmMain
             Caption         =   "Location"
             Height          =   255
             Left            =   120
-            TabIndex        =   40
+            TabIndex        =   28
             Top             =   615
             Width           =   855
          End
@@ -298,17 +309,17 @@ Begin VB.Form frmMain
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
          Height          =   2175
-         Left            =   9720
+         Left            =   1320
          ScaleHeight     =   2145
          ScaleWidth      =   2865
-         TabIndex        =   19
+         TabIndex        =   7
          Top             =   2280
          Width           =   2895
          Begin VB.TextBox txtAttribute 
             Height          =   285
             Index           =   7
             Left            =   1080
-            TabIndex        =   20
+            TabIndex        =   8
             Text            =   "0"
             Top             =   1800
             Width           =   1695
@@ -317,7 +328,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   6
             Left            =   1080
-            TabIndex        =   21
+            TabIndex        =   9
             Text            =   "0"
             Top             =   1560
             Width           =   1695
@@ -326,7 +337,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   5
             Left            =   1080
-            TabIndex        =   22
+            TabIndex        =   10
             Text            =   "0"
             Top             =   1320
             Width           =   1695
@@ -335,7 +346,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   4
             Left            =   1080
-            TabIndex        =   23
+            TabIndex        =   11
             Text            =   "0"
             Top             =   1080
             Width           =   1695
@@ -344,7 +355,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   3
             Left            =   1080
-            TabIndex        =   24
+            TabIndex        =   12
             Text            =   "0"
             Top             =   840
             Width           =   1695
@@ -353,7 +364,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   2
             Left            =   1080
-            TabIndex        =   25
+            TabIndex        =   13
             Text            =   "0"
             Top             =   600
             Width           =   1695
@@ -362,7 +373,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   1
             Left            =   1080
-            TabIndex        =   26
+            TabIndex        =   14
             Text            =   "0"
             Top             =   360
             Width           =   1695
@@ -371,7 +382,7 @@ Begin VB.Form frmMain
             Height          =   285
             Index           =   0
             Left            =   1080
-            TabIndex        =   27
+            TabIndex        =   15
             Text            =   "0"
             Top             =   120
             Width           =   1695
@@ -380,7 +391,7 @@ Begin VB.Form frmMain
             Caption         =   "Strength"
             Height          =   255
             Left            =   120
-            TabIndex        =   35
+            TabIndex        =   23
             Top             =   135
             Width           =   855
          End
@@ -388,7 +399,7 @@ Begin VB.Form frmMain
             Caption         =   "Intelligence"
             Height          =   255
             Left            =   120
-            TabIndex        =   34
+            TabIndex        =   22
             Top             =   375
             Width           =   855
          End
@@ -396,7 +407,7 @@ Begin VB.Form frmMain
             Caption         =   "Agility"
             Height          =   255
             Left            =   120
-            TabIndex        =   33
+            TabIndex        =   21
             Top             =   855
             Width           =   855
          End
@@ -404,7 +415,7 @@ Begin VB.Form frmMain
             Caption         =   "Willpower"
             Height          =   255
             Left            =   120
-            TabIndex        =   32
+            TabIndex        =   20
             Top             =   615
             Width           =   855
          End
@@ -412,7 +423,7 @@ Begin VB.Form frmMain
             Caption         =   "Endurance"
             Height          =   255
             Left            =   120
-            TabIndex        =   31
+            TabIndex        =   19
             Top             =   1335
             Width           =   855
          End
@@ -420,7 +431,7 @@ Begin VB.Form frmMain
             Caption         =   "Speed"
             Height          =   255
             Left            =   120
-            TabIndex        =   30
+            TabIndex        =   18
             Top             =   1095
             Width           =   855
          End
@@ -428,7 +439,7 @@ Begin VB.Form frmMain
             Caption         =   "Luck"
             Height          =   255
             Left            =   120
-            TabIndex        =   29
+            TabIndex        =   17
             Top             =   1815
             Width           =   855
          End
@@ -436,7 +447,7 @@ Begin VB.Form frmMain
             Caption         =   "Personality"
             Height          =   255
             Left            =   120
-            TabIndex        =   28
+            TabIndex        =   16
             Top             =   1575
             Width           =   855
          End
@@ -444,7 +455,7 @@ Begin VB.Form frmMain
       Begin MSComctlLib.TabStrip tabPlayerSubCategory 
          Height          =   4335
          Left            =   120
-         TabIndex        =   50
+         TabIndex        =   38
          Top             =   120
          Width           =   1035
          _ExtentX        =   1826
@@ -612,6 +623,12 @@ Private Sub Form_Unload(Cancel As Integer)
 
 End Sub
 
+Private Sub mnuQuit_Click()
+
+    End
+
+End Sub
+
 Private Sub mnuAbout_Click()
 
     frmAbout.Show
@@ -634,15 +651,25 @@ Private Sub ClearSaveFileData()
 
 End Sub
 
-Private Sub mnuQuit_Click()
+Private Sub OpenSaveFile()
 
-    End
+    cmdSave.Enabled = False
+    
+    ReadSave.ReadSaveFile StatusBar, prgProgress
+    
+    If Not SaveFileData.OSE.LoadSuccessful Then
+        Exit Sub
+    End If
+    
+    StatusBar.Panels(1).Text = "Scanning for markers"
+    AnalyseStructure.ScanForMarkers
 
-End Sub
+    StatusBar.Panels(1).Text = "Read complete"
 
-Private Sub mnuSave_Click()
+    tabCategory.SelectedItem = TAB_CAT_SAVE_FILE
+    tabCategory_Click
 
-    cmdSave_Click
+    cmdSave.Enabled = True
 
 End Sub
 
@@ -667,160 +694,6 @@ Private Sub HideAllPanels()
 
     pnlSaveFile.Visible = False
     pnlPlayer.Visible = False
-
-End Sub
-
-Private Sub OpenSaveFile()
-
-    cmdSave.Enabled = False
-    
-    ReadSaveFile StatusBar, prgProgress
-    
-    If Not SaveFileData.OSE.LoadSuccessful Then
-        Exit Sub
-    End If
-    
-    StatusBar.Panels(1).Text = "Scanning for markers"
-    ScanForMarkers
-
-    StatusBar.Panels(1).Text = "Read complete"
-
-    tabCategory.SelectedItem = TAB_CAT_SAVE_FILE
-    tabCategory_Click
-
-    cmdSave.Enabled = True
-
-End Sub
-
-Private Sub ScanForMarkers()
-
-    SaveFileData.OSE.Player.PlayerRecord = LocatePlayerRecord
-    If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
-        ScanForPlayerMarkers
-    End If
-
-End Sub
-
-Private Function LocatePlayerRecord() As Long
-
-    Dim i As Long
-
-    For i = 0 To SaveFileData.Globals.NumberOfChangeRecords - 1
-        ' Look for the player's change record
-        If SaveFileData.ChangeRecords(i).Type = 35 And SaveFileData.ChangeRecords(i).FormID = 7 Then
-            LocatePlayerRecord = i
-            Exit Function
-        End If
-    Next i
-
-    LocatePlayerRecord = -1
-
-End Function
-
-Private Sub ScanForPlayerMarkers()
-
-    ' Scan the player record for specific blocks, we need to rescan when the data
-    ' structure changes size but it speeds up finding things.
-
-    Dim Offset As Integer
-    Dim i As Integer
-
-    ' Check for Form Flags
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_0) <> 0) Then
-        SaveFileData.OSE.Player.FormFlags = Offset
-        Offset = Offset + 4
-    Else
-        SaveFileData.OSE.Player.FormFlags = -1
-    End If
-    
-    ' Check for Base Attributes
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_3) <> 0) Then
-        SaveFileData.OSE.Player.BaseAttributes = Offset
-        Offset = Offset + 8
-    Else
-        SaveFileData.OSE.Player.BaseAttributes = -1
-    End If
-    
-    ' Check for Base Data
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_4) <> 0) Then
-        SaveFileData.OSE.Player.BaseData = Offset
-        Offset = Offset + 16
-    Else
-        SaveFileData.OSE.Player.BaseData = -1
-    End If
-    
-    ' Check for Factions
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_6) <> 0) Then
-        SaveFileData.OSE.Player.Factions = Offset
-        Offset = Offset + _
-                 (SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2) * 5
-        Offset = Offset + 2
-    Else
-        SaveFileData.OSE.Player.Factions = -1
-    End If
-    
-    ' Check for spell list
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_5) <> 0) Then
-        SaveFileData.OSE.Player.SpellList = Offset
-        Offset = Offset + _
-                 (SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2) * 4
-        Offset = Offset + 2
-    Else
-        SaveFileData.OSE.Player.SpellList = -1
-    End If
-    
-    ' Check for AI Data
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_8) <> 0) Then
-        SaveFileData.OSE.Player.AI = Offset
-        Offset = Offset + 4
-    Else
-        SaveFileData.OSE.Player.AI = -1
-    End If
-    
-    ' Check for base health
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_2) <> 0) Then
-        SaveFileData.OSE.Player.BaseHealth = Offset
-        Offset = Offset + 4
-    Else
-        SaveFileData.OSE.Player.BaseHealth = -1
-    End If
-    
-    ' Check for base modifiers
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_28) <> 0) Then
-        SaveFileData.OSE.Player.BaseModifiers = Offset
-        Offset = Offset + _
-                 (SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2) * 5
-        Offset = Offset + 2
-    Else
-        SaveFileData.OSE.Player.BaseModifiers = -1
-    End If
-    
-    ' Check for full name
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_7) <> 0) Then
-        ' Not used for player will need to be fixed for records that do require this sub-record
-        SaveFileData.OSE.Player.FullName = Offset
-        Offset = Offset ' + length of name
-    Else
-        SaveFileData.OSE.Player.FullName = -1
-    End If
-    
-    ' Check for skills
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_9) <> 0) Then
-        SaveFileData.OSE.Player.Skills = Offset
-        Offset = Offset + 21
-    Else
-        SaveFileData.OSE.Player.Skills = -1
-    End If
-    
-    ' Check for combat style
-    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_10) <> 0) Then
-        SaveFileData.OSE.Player.CombatStyle = Offset
-    Else
-        SaveFileData.OSE.Player.CombatStyle = -1
-    End If
 
 End Sub
 
@@ -869,7 +742,27 @@ Private Sub UpdateDisplaySaveFileAll()
         lstPlugIns.AddItem SaveFileData.PlugIns.PlugInNames(i)
     Next i
 
-    DisplayScreenShot
+    If Not SaveFileData.OSE.ScreenShotLoaded Then
+        DisplayScreenShot
+    End If
+
+End Sub
+
+Private Sub DisplayScreenShot()
+
+    Dim X As Long
+    Dim Y As Long
+
+    ' Chuck the screenshot into a picturebox
+    For Y = 0 To SaveFileData.SaveHeader.ScreenShot.Height - 1
+        For X = 0 To SaveFileData.SaveHeader.ScreenShot.Width - 1
+            picScreenShot.PSet (X, Y), RGB(SaveFileData.SaveHeader.ScreenShot.Pixel((Y * SaveFileData.SaveHeader.ScreenShot.Width) + X).Red, _
+                                           SaveFileData.SaveHeader.ScreenShot.Pixel((Y * SaveFileData.SaveHeader.ScreenShot.Width) + X).Green, _
+                                           SaveFileData.SaveHeader.ScreenShot.Pixel((Y * SaveFileData.SaveHeader.ScreenShot.Width) + X).Blue)
+        Next X
+    Next Y
+
+    SaveFileData.OSE.ScreenShotLoaded = True
 
 End Sub
 
@@ -937,19 +830,9 @@ Private Sub UpdateDisplayPlayerDataBaseHealth()
 
 End Sub
 
-Private Sub DisplayScreenShot()
+Private Sub mnuSave_Click()
 
-    Dim X As Long
-    Dim Y As Long
-
-    ' Chuck the screenshot into a picturebox
-    For Y = 0 To SaveFileData.SaveHeader.ScreenShot.Height - 1
-        For X = 0 To SaveFileData.SaveHeader.ScreenShot.Width - 1
-            picScreenShot.PSet (X, Y), RGB(SaveFileData.SaveHeader.ScreenShot.Pixel((Y * SaveFileData.SaveHeader.ScreenShot.Width) + X).Red, _
-                                           SaveFileData.SaveHeader.ScreenShot.Pixel((Y * SaveFileData.SaveHeader.ScreenShot.Width) + X).Green, _
-                                           SaveFileData.SaveHeader.ScreenShot.Pixel((Y * SaveFileData.SaveHeader.ScreenShot.Width) + X).Blue)
-        Next X
-    Next Y
+    cmdSave_Click
 
 End Sub
 
@@ -997,6 +880,27 @@ Private Sub txtBaseFatigue_Change()
 
 End Sub
 
+Private Sub txtLevel_Change()
+
+    ValidateInput txtLevel, INTEGER_MIN, INTEGER_MAX
+
+    ' Input is valid, update the data structure
+    ModifySaveFilePlayerLevel txtLevel.Text
+
+End Sub
+
+Private Sub txtLocation_Change()
+
+    ModifySaveFilePlayerLocation txtLocation.Text
+
+End Sub
+
+Private Sub txtName_Change()
+
+    ModifySaveFilePlayerName txtName.Text
+
+End Sub
+
 Private Sub txtSaveFileNumber_Change()
 
     ValidateInput txtSaveFileNumber, LONG_MIN, LONG_MAX
@@ -1020,7 +924,9 @@ Private Sub txtSaveFileVersionMinor_Change()
     ValidateInput txtSaveFileVersionMinor, BYTE_MIN, BYTE_MAX
 
     ' Input is valid, update the data structure
-'    ModifySaveFileVersionMinor txtSaveFileVersionMinor.Text
+    ModifySaveFileVersionMinor txtSaveFileVersionMinor.Text
+    ModifySaveFileHeaderVersion txtSaveFileVersionMinor.Text
+    ModifyChangeRecordVersion txtSaveFileVersionMinor.Text
 
 End Sub
 

@@ -22,12 +22,16 @@ TODO for 0.3.0:
 DONE 0.0.1:
 	- Read save file to data structure
 	- Write data structure to save file
-	- Modifying player attributes now updates the data structure (and they get saved correctly too)
+	- Modifying player name now updates the data structure (untested)
+	- Modifying player location string now updates the data structure (untested)
+	- Modifying player level now updates the data structure (untested)
+	- Modifying player attributes now updates the data structure
 	- Modifying base health now updates the data structure
 	- Modifying base magicka now updates the data structure
 	- Modifying base fatigue now updates the data structure
 	- Modifying the save file Major and Minor versions now updates the data structure
 	- Modifying the save file number now updates the data structure
+	- Only reload the screenshot if it has changed (speeds up tab changes)
 	- Added a sub to clear the data from a previously loaded save file
 	- Added menubar options to open a save file
 	- Added menubar options to save a save file

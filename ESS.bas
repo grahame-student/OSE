@@ -163,6 +163,7 @@ End Type
 
 Private Type OSEExtra
     LoadSuccessful As Boolean
+    ScreenShotLoaded As Boolean
     Player As Player
 End Type
 
