@@ -44,8 +44,8 @@ Usage
 -----
 The save file to be edited needs to be saved into the same directory as the OSE
 executable and it needs to be named gamedata.dat (this will be user selectable
-in future versions). The save file to be read in by selecting file->open from
-the menu bar, once opened you can start editing. Clicking save, or file->save,
+in future versions). Selecting file->open from the menu bar will read the save
+file in, once opened you can start editing it. Clicking save, or file->save,
 will create a modified savefile in the New directory (this too will be user
 selectable in future versions).
 
