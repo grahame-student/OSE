@@ -28,6 +28,12 @@ Public Sub ModifyPlayerAttribute(ByVal PlayerAttribute As Integer, ByVal Attribu
 
 End Sub
 
+Public Sub ModifyPlayerSkill(ByVal PlayerSkill As Integer, ByVal SkillValue As Byte)
+
+    SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(SaveFileData.OSE.Player.Skills + PlayerSkill) = SkillValue
+
+End Sub
+
 Public Sub ModifyPlayerBaseHealth(ByVal BaseHealthValue As Long)
 
     Dim tmpHealth(3) As Byte

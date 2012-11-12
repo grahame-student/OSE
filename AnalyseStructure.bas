@@ -80,8 +80,8 @@ Private Sub ScanForPlayerMarkers()
     If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_6) <> 0) Then
         SaveFileData.OSE.Player.Factions = Offset
         Offset = Offset + _
-                 (SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2) * 5
+                 ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
+                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2)) * 5
         Offset = Offset + 2
     Else
         SaveFileData.OSE.Player.Factions = -1
@@ -91,8 +91,8 @@ Private Sub ScanForPlayerMarkers()
     If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_5) <> 0) Then
         SaveFileData.OSE.Player.SpellList = Offset
         Offset = Offset + _
-                 (SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2) * 4
+                 ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
+                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2)) * 4
         Offset = Offset + 2
     Else
         SaveFileData.OSE.Player.SpellList = -1
@@ -118,8 +118,8 @@ Private Sub ScanForPlayerMarkers()
     If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_28) <> 0) Then
         SaveFileData.OSE.Player.BaseModifiers = Offset
         Offset = Offset + _
-                 (SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2) * 5
+                 ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
+                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2)) * 5
         Offset = Offset + 2
     Else
         SaveFileData.OSE.Player.BaseModifiers = -1

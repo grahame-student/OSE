@@ -19,6 +19,7 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 		o base health
 		o base magicka
 		o base fatigue
+		o skills
 
 With plenty more planned, I'm working through the file format documents to see
 what I'm able to grant access to.

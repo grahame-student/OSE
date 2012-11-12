@@ -10,7 +10,6 @@ TODO for 0.1.0:
 TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
-			* Skills
 			* Factions
 TODO for 0.3.0:
 	- Add access to
@@ -26,6 +25,7 @@ DONE 0.0.1:
 	- Modifying player location string now updates the data structure (untested)
 	- Modifying player level now updates the data structure (untested)
 	- Modifying player attributes now updates the data structure
+	- Modifying player skills now updates the data structure
 	- Modifying base health now updates the data structure
 	- Modifying base magicka now updates the data structure
 	- Modifying base fatigue now updates the data structure
