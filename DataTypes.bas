@@ -43,4 +43,18 @@ Public Type ScreenShot
     Pixel() As Pixel
 End Type
 
+Public Type LongType
+    Result As Long
+End Type
 
+Public Type ByteArray
+    Bytes(3) As Byte
+End Type
+          
+Public Type FactionEntry
+    Reference As Long
+    Name As String
+    PlugIn As String
+    MaxRank As Integer
+    Ranks() As String
+End Type

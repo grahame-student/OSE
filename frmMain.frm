@@ -192,6 +192,49 @@ Begin VB.Form frmMain
       Top             =   480
       Visible         =   0   'False
       Width           =   7575
+      Begin VB.PictureBox pnlFactions 
+         Appearance      =   0  'Flat
+         ForeColor       =   &H80000008&
+         Height          =   4335
+         Left            =   1320
+         ScaleHeight     =   4305
+         ScaleWidth      =   6105
+         TabIndex        =   95
+         Top             =   120
+         Visible         =   0   'False
+         Width           =   6135
+         Begin VB.TextBox txtStatus 
+            Height          =   285
+            Left            =   1320
+            TabIndex        =   98
+            Text            =   "0"
+            Top             =   480
+            Width           =   4695
+         End
+         Begin VB.ComboBox cboFactions 
+            Height          =   315
+            Left            =   1320
+            TabIndex        =   96
+            Top             =   120
+            Width           =   4695
+         End
+         Begin VB.Label lblFactionStatus 
+            Caption         =   "Faction Status"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   99
+            Top             =   495
+            Width           =   1095
+         End
+         Begin VB.Label lblFaction 
+            Caption         =   "Faction"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   97
+            Top             =   150
+            Width           =   1095
+         End
+      End
       Begin VB.PictureBox pnlSkills 
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
@@ -392,7 +435,7 @@ Begin VB.Form frmMain
             Top             =   120
             Width           =   1695
          End
-         Begin VB.Label Label19 
+         Begin VB.Label lblSpeechcraft 
             Caption         =   "Speechcraft"
             Height          =   255
             Left            =   3120
@@ -400,7 +443,7 @@ Begin VB.Form frmMain
             Top             =   855
             Width           =   1095
          End
-         Begin VB.Label Label18 
+         Begin VB.Label lblMercantile 
             Caption         =   "Mercantile"
             Height          =   255
             Left            =   3120
@@ -408,7 +451,7 @@ Begin VB.Form frmMain
             Top             =   135
             Width           =   1095
          End
-         Begin VB.Label Label17 
+         Begin VB.Label lblSneak 
             Caption         =   "Sneak"
             Height          =   255
             Left            =   3120
@@ -416,7 +459,7 @@ Begin VB.Form frmMain
             Top             =   615
             Width           =   1095
          End
-         Begin VB.Label Label16 
+         Begin VB.Label lblSecurity 
             Caption         =   "Security"
             Height          =   255
             Left            =   3120
@@ -424,7 +467,7 @@ Begin VB.Form frmMain
             Top             =   375
             Width           =   1095
          End
-         Begin VB.Label Label15 
+         Begin VB.Label lblMarksman 
             Caption         =   "Marksman"
             Height          =   255
             Left            =   120
@@ -432,7 +475,7 @@ Begin VB.Form frmMain
             Top             =   3975
             Width           =   1095
          End
-         Begin VB.Label Label14 
+         Begin VB.Label lblAlteration 
             Caption         =   "Alteration"
             Height          =   255
             Left            =   120
@@ -440,7 +483,7 @@ Begin VB.Form frmMain
             Top             =   2055
             Width           =   1095
          End
-         Begin VB.Label Label13 
+         Begin VB.Label lblConjuration 
             Caption         =   "Conjuration"
             Height          =   255
             Left            =   120
@@ -448,7 +491,7 @@ Begin VB.Form frmMain
             Top             =   2295
             Width           =   1095
          End
-         Begin VB.Label Label12 
+         Begin VB.Label lblIllusion 
             Caption         =   "Illusion"
             Height          =   255
             Left            =   120
@@ -456,7 +499,7 @@ Begin VB.Form frmMain
             Top             =   2775
             Width           =   1095
          End
-         Begin VB.Label Label11 
+         Begin VB.Label lblDestruction 
             Caption         =   "Destruction"
             Height          =   255
             Left            =   120
@@ -464,7 +507,7 @@ Begin VB.Form frmMain
             Top             =   2535
             Width           =   1095
          End
-         Begin VB.Label Label10 
+         Begin VB.Label lblRestoration 
             Caption         =   "Restoration"
             Height          =   255
             Left            =   120
@@ -472,7 +515,7 @@ Begin VB.Form frmMain
             Top             =   3255
             Width           =   1095
          End
-         Begin VB.Label Label9 
+         Begin VB.Label lblMysticism 
             Caption         =   "Mysticism"
             Height          =   255
             Left            =   120
@@ -480,7 +523,7 @@ Begin VB.Form frmMain
             Top             =   3015
             Width           =   1095
          End
-         Begin VB.Label Label8 
+         Begin VB.Label lblLightArmour 
             Caption         =   "Light Armour"
             Height          =   255
             Left            =   120
@@ -488,7 +531,7 @@ Begin VB.Form frmMain
             Top             =   3735
             Width           =   1095
          End
-         Begin VB.Label Label7 
+         Begin VB.Label lblAcrobatics 
             Caption         =   "Acrobatics"
             Height          =   255
             Left            =   120
@@ -496,7 +539,7 @@ Begin VB.Form frmMain
             Top             =   3495
             Width           =   1095
          End
-         Begin VB.Label Label6 
+         Begin VB.Label lblHeavyArmour 
             Caption         =   "Heavy Armour"
             Height          =   255
             Left            =   120
@@ -504,7 +547,7 @@ Begin VB.Form frmMain
             Top             =   1575
             Width           =   1095
          End
-         Begin VB.Label Label5 
+         Begin VB.Label lblAlchemy 
             Caption         =   "Alchemy"
             Height          =   255
             Left            =   120
@@ -512,7 +555,7 @@ Begin VB.Form frmMain
             Top             =   1815
             Width           =   1095
          End
-         Begin VB.Label Label4 
+         Begin VB.Label lblBlunt 
             Caption         =   "Blunt"
             Height          =   255
             Left            =   120
@@ -520,7 +563,7 @@ Begin VB.Form frmMain
             Top             =   1095
             Width           =   1095
          End
-         Begin VB.Label Label3 
+         Begin VB.Label lblHandToHand 
             Caption         =   "Hand to Hand"
             Height          =   255
             Left            =   120
@@ -528,7 +571,7 @@ Begin VB.Form frmMain
             Top             =   1335
             Width           =   1095
          End
-         Begin VB.Label Label2 
+         Begin VB.Label lblBlade 
             Caption         =   "Blade"
             Height          =   255
             Left            =   120
@@ -536,7 +579,7 @@ Begin VB.Form frmMain
             Top             =   615
             Width           =   1095
          End
-         Begin VB.Label Label1 
+         Begin VB.Label lblBlock 
             Caption         =   "Block"
             Height          =   255
             Left            =   120
@@ -843,13 +886,17 @@ Begin VB.Form frmMain
          TabFixedWidth   =   1764
          _Version        =   393216
          BeginProperty Tabs {1EFB6598-857C-11D1-B16A-00C0F0283628} 
-            NumTabs         =   2
+            NumTabs         =   3
             BeginProperty Tab1 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
                Caption         =   "Attributes"
                ImageVarType    =   2
             EndProperty
             BeginProperty Tab2 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
                Caption         =   "Skills"
+               ImageVarType    =   2
+            EndProperty
+            BeginProperty Tab3 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
+               Caption         =   "Factions"
                ImageVarType    =   2
             EndProperty
          EndProperty
@@ -961,6 +1008,8 @@ Private Sub Form_Load()
 
     SetUpProgressBarInStatusBar
 
+    LoadFactionData
+
 End Sub
 
 Private Sub SetUpProgressBarInStatusBar()
@@ -995,6 +1044,49 @@ Private Sub PositionProgressBarWithInStatusBar()
         
         prgProgress.Move ProgressBarLeft, ProgressBarTop, ProgressBarWidth, ProgressBarHeight
     End With
+
+End Sub
+
+Private Sub LoadFactionData()
+
+    Dim FactionFF As Integer
+    Dim NextLine As String
+        
+    FactionFF = FreeFile
+
+    Open App.Path & "\factions.data" For Input As #FactionFF
+    Do Until EOF(FactionFF)
+        Line Input #FactionFF, NextLine
+        If Mid$(NextLine, 1, 1) <> "#" Then
+            ParseFactionData NextLine
+        End If
+    Loop
+    Close #FactionFF
+
+End Sub
+
+Private Sub ParseFactionData(ByVal DataLine As String)
+
+    Static FactionCount As Long
+    Dim FactionVariables() As String
+    Dim i As Integer
+    
+    ReDim Preserve FactionData(FactionCount)
+
+    FactionVariables() = Split(DataLine, ",")
+
+    FactionData(FactionCount).Reference = Val(FactionVariables(0))
+    FactionData(FactionCount).Name = FactionVariables(1)
+    FactionData(FactionCount).PlugIn = FactionVariables(2)
+    FactionData(FactionCount).MaxRank = Val(FactionVariables(3))
+
+    ReDim FactionData(FactionCount).Ranks(FactionData(FactionCount).MaxRank)
+
+    For i = 4 To UBound(FactionVariables())
+        FactionData(FactionCount).Ranks(i - 4) = FactionVariables(i)
+    Next i
+
+    FactionCount = FactionCount + 1
 
 End Sub
 
@@ -1180,6 +1272,8 @@ Private Sub UpdateDisplayPlayer()
             UpdateDisplayPlayerAttributes
         Case TAB_SUB_CAT_PLAYER_SKILLS
             UpdateDisplayPlayerSkills
+        Case TAB_SUB_CAT_PLAYER_FACTIONS
+            UpdateDisplayPlayerFactions
     End Select
 
 End Sub
@@ -1252,6 +1346,21 @@ Private Sub UpdateDisplayPlayerSkills()
 
 End Sub
 
+Private Sub UpdateDisplayPlayerFactions()
+    
+    Dim i As Integer
+    Dim Offset As Long
+        
+    If cboFactions.ListCount <> SaveFileData.OSE.Player.FactionCount Then
+        For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
+            cboFactions.AddItem SaveFileData.OSE.Player.FactionList(i).Name
+        Next i
+        cboFactions.ListIndex = 0
+    End If
+        
+        
+End Sub
+
 Private Sub mnuSave_Click()
 
     cmdSave_Click
@@ -1277,6 +1386,8 @@ Private Sub tabPlayerSubCategory_Click()
             pnlBaseAttributes.Visible = True
         Case TAB_SUB_CAT_PLAYER_SKILLS
             pnlSkills.Visible = True
+        Case TAB_SUB_CAT_PLAYER_FACTIONS
+            pnlFactions.Visible = True
     End Select
 
     UpdateDisplay
@@ -1289,6 +1400,7 @@ Private Sub HideAllPlayerSubPanels()
     pnlBaseStats.Visible = False
     pnlBaseAttributes.Visible = False
     pnlSkills.Visible = False
+    pnlFactions.Visible = False
 
 End Sub
 

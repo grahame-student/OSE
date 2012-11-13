@@ -146,6 +146,12 @@ End Type
 
 ' These blocks hold additional information to make it easier to navigate
 ' various records. DO NOT WRITE THEM TO THE NEW SAVE FILE
+Private Type Faction
+    Ref As Long
+    Level As Byte
+    Name As String
+End Type
+
 Private Type Player
     PlayerRecord As Long        ' The change record containing the player data (-1 for not present)
     FormFlags As Long           ' Offset of the start of the FormFlags within the data block (-1 for not present)
@@ -159,6 +165,8 @@ Private Type Player
     FullName As Long            ' Offset of the start of the FullName within the data block (-1 for not present)
     Skills As Long              ' Offset of the start of the Skills within the data block (-1 for not present)
     CombatStyle As Long         ' Offset of the start of the CombatStyle within the data block (-1 for not present)
+    FactionCount As Integer     ' Number of factions the player is in
+    FactionList() As Faction    ' The list of factions the player is in
 End Type
 
 Private Type OSEExtra

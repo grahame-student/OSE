@@ -129,6 +129,7 @@ Public Const TAB_CAT_PLAYER As String = "Player"
 Public Const TAB_SUB_CAT_SAVE_FILE_ALL As String = "All"
 Public Const TAB_SUB_CAT_PLAYER_ATTRIBUTES As String = "Attributes"
 Public Const TAB_SUB_CAT_PLAYER_SKILLS As String = "Skills"
+Public Const TAB_SUB_CAT_PLAYER_FACTIONS As String = "Factions"
 
 ' Date Stamp Modes
 Public Const DATE_STAMP_MODE_EXE As Integer = 1

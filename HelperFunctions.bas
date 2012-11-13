@@ -49,3 +49,27 @@ Public Sub ValidateInput(ByRef CheckTextBox As TextBox, ByVal MinVal As Long, By
 
 End Sub
 
+Public Function GetFormID(ByVal Iref As Long) As Long
+
+    If Iref < SaveFileData.FormIDs.NumberOfFormIDs Then
+        GetFormID = SaveFileData.FormIDs.FormIDsList(Iref)
+    End If
+
+End Function
+
+Public Function GetModIndex(ByVal ModName As String) As LongType
+
+    Dim i As Integer
+    Dim Index As ByteArray
+    
+    For i = 0 To SaveFileData.PlugIns.NumberOfPlugins - 1
+        If ModName = SaveFileData.PlugIns.PlugInNames(i) Then
+            Index.Bytes(3) = i
+            Exit For
+        End If
+    Next i
+
+    LSet GetModIndex = Index
+
+End Function
+

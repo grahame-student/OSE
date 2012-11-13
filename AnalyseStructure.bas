@@ -24,6 +24,9 @@ Public Sub ScanForMarkers()
     SaveFileData.OSE.Player.PlayerRecord = LocatePlayerRecord
     If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
         ScanForPlayerMarkers
+        If SaveFileData.OSE.Player.Factions <> -1 Then
+            InitPlayerFactions
+        End If
     End If
 
 End Sub
@@ -79,10 +82,9 @@ Private Sub ScanForPlayerMarkers()
     ' Check for Factions
     If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_6) <> 0) Then
         SaveFileData.OSE.Player.Factions = Offset
-        Offset = Offset + _
-                 ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2)) * 5
-        Offset = Offset + 2
+        SaveFileData.OSE.Player.FactionCount = ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
+                                                 SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2))
+        Offset = Offset + (SaveFileData.OSE.Player.FactionCount * 5) + 2
     Else
         SaveFileData.OSE.Player.Factions = -1
     End If
@@ -151,4 +153,71 @@ Private Sub ScanForPlayerMarkers()
 
 End Sub
 
+Private Sub InitPlayerFactions()
 
+    Dim i As Long
+    Dim Offset As Long
+    Dim RawRef As ByteArray
+    Dim Ref As LongType
+    Dim Level As Byte
+
+    Offset = SaveFileData.OSE.Player.Factions + 2
+
+    ReDim SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount - 1)
+
+    For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
+        RawRef.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
+        RawRef.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1)
+        RawRef.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 2)
+        RawRef.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 3)
+        
+        LSet Ref = RawRef
+        
+        Level = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 4)
+        SaveFileData.OSE.Player.FactionList(i).Ref = GetFormID(Ref.Result)
+        SaveFileData.OSE.Player.FactionList(i).Level = Level
+        GetFaction SaveFileData.OSE.Player.FactionList(i).Ref, i
+        Offset = Offset + 5
+    Next i
+
+End Sub
+
+Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
+
+    Dim i As Integer
+    
+    If Int(Reference / BYTE_4) > 0 Then
+        GetPluginFaction Reference, IndexNumber
+        Exit Sub
+    End If
+    
+    For i = 0 To UBound(FactionData())
+        If Reference = FactionData(i).Reference Then
+            SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
+            Exit Sub
+        End If
+    Next i
+    
+    MsgBox "Reference not recognised (" & Reference & ")", vbOKOnly, "Unknown Reference"
+    
+
+End Sub
+
+Private Sub GetPluginFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
+
+    Dim i As Integer
+    Dim ModReference As Long
+
+    For i = 0 To UBound(FactionData())
+        If FactionData(i).PlugIn <> "None" Then
+            ModReference = (FactionData(i).Reference Or GetModIndex(FactionData(i).PlugIn).Result)
+            If Reference = ModReference Then
+                SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
+                Exit Sub
+            End If
+        End If
+    Next i
+
+    MsgBox "Reference not recognised (" & Reference & ")", vbOKOnly, "Unknown Reference"
+
+End Sub
