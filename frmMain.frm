@@ -1354,6 +1354,7 @@ Private Sub UpdateDisplayPlayerFactions()
     If cboFactions.ListCount <> SaveFileData.OSE.Player.FactionCount Then
         For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
             cboFactions.AddItem SaveFileData.OSE.Player.FactionList(i).Name
+            cboFactions.ItemData(i) = SaveFileData.OSE.Player.FactionList(i).Ref
         Next i
         cboFactions.ListIndex = 0
     End If

@@ -1,12 +1,17 @@
 #Faction FormID, Faction Name, PlugIn Required,Max Rank,Ranks Low-->High
+118316,Agarmir's Faction,None,0,No Kill I
 170425,Arena,None,8,Pit Dog,Brawler,Bloodletter,Myrmidon,Warrior,Gladiator,Hero,Champion,Grand Champion
 196393,Blackwood Company,None,1,Probationary Member,Company Member
 160939,Blades,None,2,Knight Brother,Captain,Grandmaster
 194674,Dark Brotherhood,None,7,Murderer,Slayer,Eliminator,Assassin,Executioner,Silencer,Speaker,Listener
+159208,Dark Brotherhood Player Secret Faction,None,0,Marked For Death
 139919,Fighter's Guild,None,9,Associate,Apprentice,Journeyman,Swordsman,Protector,Defender,Warder,Guardian,Champion,Master
 5950,Frostcrag Spire Atronach,DLCFrostcrag.ESP,0,Atronach Familiar
+240441,Imperial City Waterfront Resident,None,0,Poor
 3310,Knights of the Nine,Knights.esp,2,Knight Errant,Knight Commander,Divine Crusader
 592064,Knights of the White Stallion,None,0,Knight-Errant
 139926,Mages' Guild,None,9,Associate,Apprentice,Journeyman,Evoker,Conjurer,Magician,Warlock,Wizard,Master-Wizard,Arch-Mage
-147812,Thieves' Guild,None,7,Pickpocket,Footpad,Bandit,Prowler,Cat Burglar,Shadowfoot,Master Thief,Gray Fox
+592043,Mazoga Friend,None,0,Mazoga Buddy
 622813,Order of the Virtuous Blood,None,0,Brother
+121805,Player Faction,None,0,Friend
+147812,Thieves' Guild,None,7,Pickpocket,Footpad,Bandit,Prowler,Cat Burglar,Shadowfoot,Master Thief,Gray Fox
