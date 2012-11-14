@@ -57,7 +57,7 @@ Private Type PlayerLocation
 End Type
 
 Private Type GlobalsStructure
-    IRef As Long
+    Iref As Long
     Value As Single
 End Type
 
@@ -150,6 +150,8 @@ Private Type Faction
     Ref As Long
     Level As Byte
     Name As String
+    MaxRank As Integer
+    Ranks() As String
 End Type
 
 Private Type Player

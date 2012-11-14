@@ -176,7 +176,7 @@ Begin VB.Form frmMain
    Begin VB.CommandButton cmdSave 
       Caption         =   "Save"
       Height          =   375
-      Left            =   6120
+      Left            =   6360
       TabIndex        =   6
       Top             =   5280
       Width           =   1575
@@ -203,11 +203,10 @@ Begin VB.Form frmMain
          Top             =   120
          Visible         =   0   'False
          Width           =   6135
-         Begin VB.TextBox txtStatus 
-            Height          =   285
+         Begin VB.ComboBox cboFactionRank 
+            Height          =   315
             Left            =   1320
-            TabIndex        =   98
-            Text            =   "0"
+            TabIndex        =   99
             Top             =   480
             Width           =   4695
          End
@@ -218,12 +217,12 @@ Begin VB.Form frmMain
             Top             =   120
             Width           =   4695
          End
-         Begin VB.Label lblFactionStatus 
-            Caption         =   "Faction Status"
+         Begin VB.Label lblFactionRank 
+            Caption         =   "Rank"
             Height          =   255
             Left            =   120
-            TabIndex        =   99
-            Top             =   495
+            TabIndex        =   98
+            Top             =   510
             Width           =   1095
          End
          Begin VB.Label lblFaction 
@@ -1002,6 +1001,20 @@ Attribute VB_Exposed = False
 Option Explicit
 DefObj A-Z
 
+Private Sub cboFactions_Click()
+
+    Dim i As Integer
+
+    cboFactionRank.Clear
+    
+    For i = 0 To SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).MaxRank
+        cboFactionRank.AddItem SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Ranks(i)
+    Next i
+    
+    UpdateDisplay
+
+End Sub
+
 Private Sub Form_Load()
 
     frmMain.Caption = PROGRAM_TITLE
@@ -1350,6 +1363,7 @@ Private Sub UpdateDisplayPlayerFactions()
     
     Dim i As Integer
     Dim Offset As Long
+    Dim FactionNumber As Integer
         
     If cboFactions.ListCount <> SaveFileData.OSE.Player.FactionCount Then
         For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
@@ -1358,8 +1372,9 @@ Private Sub UpdateDisplayPlayerFactions()
         Next i
         cboFactions.ListIndex = 0
     End If
-        
-        
+    
+    cboFactionRank.ListIndex = SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level
+                
 End Sub
 
 Private Sub mnuSave_Click()

@@ -202,6 +202,8 @@ Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
     For i = 0 To UBound(FactionData())
         If Reference = FactionData(i).Reference Then
             SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
+            SaveFileData.OSE.Player.FactionList(IndexNumber).MaxRank = FactionData(i).MaxRank
+            SaveFileData.OSE.Player.FactionList(IndexNumber).Ranks() = FactionData(i).Ranks()
             Exit Sub
         End If
     Next i
