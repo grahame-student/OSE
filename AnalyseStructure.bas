@@ -25,9 +25,22 @@ Public Sub ScanForMarkers()
     If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
         ScanForPlayerMarkers
         If SaveFileData.OSE.Player.Factions <> -1 Then
+            FixFactionReferences
             InitPlayerFactions
         End If
     End If
+
+End Sub
+
+Private Sub FixFactionReferences()
+
+    Dim FactionNumber As Integer
+
+    For FactionNumber = 0 To UBound(FactionData())
+        If FactionData(FactionNumber).PlugIn <> "None" Then
+            FactionData(FactionNumber).Reference = (FactionData(FactionNumber).Reference Or GetModIndex(FactionData(FactionNumber).PlugIn).Result)
+        End If
+    Next FactionNumber
 
 End Sub
 
@@ -186,11 +199,6 @@ Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
 
     Dim i As Integer
     
-    If Int(Reference / BYTE_4) > 0 Then
-        GetPluginFaction Reference, IndexNumber
-        Exit Sub
-    End If
-    
     For i = 0 To UBound(FactionData())
         If Reference = FactionData(i).Reference Then
             SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
@@ -200,24 +208,5 @@ Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
     
     MsgBox "Reference not recognised (" & Reference & ")", vbOKOnly, "Unknown Reference"
     
-
 End Sub
 
-Private Sub GetPluginFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
-
-    Dim i As Integer
-    Dim ModReference As Long
-
-    For i = 0 To UBound(FactionData())
-        If FactionData(i).PlugIn <> "None" Then
-            ModReference = (FactionData(i).Reference Or GetModIndex(FactionData(i).PlugIn).Result)
-            If Reference = ModReference Then
-                SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
-                Exit Sub
-            End If
-        End If
-    Next i
-
-    MsgBox "Reference not recognised (" & Reference & ")", vbOKOnly, "Unknown Reference"
-
-End Sub
