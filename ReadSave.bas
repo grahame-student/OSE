@@ -192,7 +192,7 @@ Private Sub ReadSaveGlobalsGlobals()
     Dim i As Integer
 
     For i = 0 To SaveFileData.Globals.GlobalsNumber - 1
-        SaveFileData.Globals.Globals(i).IRef = GetNext32BitULong
+        SaveFileData.Globals.Globals(i).Iref = GetNext32BitULong
         SaveFileData.Globals.Globals(i).Value = GetNext32BitSingle
     Next i
 
@@ -450,9 +450,9 @@ Private Function GetNextScreenShot() As ScreenShot
 
     For Y = 0 To GetNextScreenShot.Height - 1
         For X = 0 To GetNextScreenShot.Width - 1
-            GetNextScreenShot.Pixel((Y * 256) + X).Red = GetNextUByte
-            GetNextScreenShot.Pixel((Y * 256) + X).Green = GetNextUByte
-            GetNextScreenShot.Pixel((Y * 256) + X).Blue = GetNextUByte
+            GetNextScreenShot.Pixel((Y * GetNextScreenShot.Width) + X).Red = GetNextUByte
+            GetNextScreenShot.Pixel((Y * GetNextScreenShot.Width) + X).Green = GetNextUByte
+            GetNextScreenShot.Pixel((Y * GetNextScreenShot.Width) + X).Blue = GetNextUByte
         Next X
         DoEvents
     Next Y

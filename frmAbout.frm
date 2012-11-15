@@ -106,12 +106,10 @@ Private Sub Form_Load()
     lblTitle.Caption = PROGRAM_NAME
 
     lblDescription.Caption = PROGRAM_TITLE & ", Copyright (C) 2012 Grahame White" & vbNewLine & vbNewLine
-    lblDescription.Caption = lblDescription.Caption & "Gnomovision comes with ABSOLUTELY NO WARRANTY;" & vbNewLine
+    lblDescription.Caption = lblDescription.Caption & "OSE comes with ABSOLUTELY NO WARRANTY;" & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "for details see the LICENSE file" & vbNewLine & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "This is free software, and you are welcome to redistribute it" & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "under certain conditions; " & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "for details see the LICENSE file"
 
 End Sub
-
-

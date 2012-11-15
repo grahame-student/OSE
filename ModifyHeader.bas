@@ -116,3 +116,29 @@ Public Sub ModifySaveFileEXETime(ByRef CallingForm As Form)
 
 End Sub
 
+Public Sub ModifySavefileScreenShot(ByRef ScreenShot As PictureBox)
+
+    Dim PixelColour As Long
+    Dim PixelAddress As Long
+    Dim X As Long
+    Dim Y As Long
+
+    SaveFileData.SaveHeader.ScreenShot.Height = ScreenShot.ScaleHeight
+    SaveFileData.SaveHeader.ScreenShot.Width = ScreenShot.Width
+    SaveFileData.SaveHeader.ScreenShot.Size = SaveFileData.SaveHeader.ScreenShot.Height * _
+                                              SaveFileData.SaveHeader.ScreenShot.Width + 8
+
+    ReDim SaveFileData.SaveHeader.ScreenShot.Pixel(SaveFileData.SaveHeader.ScreenShot.Size - 8)
+
+    For Y = 0 To SaveFileData.SaveHeader.ScreenShot.Height - 1
+        For X = 0 To SaveFileData.SaveHeader.ScreenShot.Width - 1
+            PixelAddress = Y * SaveFileData.SaveHeader.ScreenShot.Width + X
+            PixelColour = ScreenShot.Point(X, Y)
+            SaveFileData.SaveHeader.ScreenShot.Pixel(PixelAddress).Red = CByte(PixelColour And &HFF&)
+            SaveFileData.SaveHeader.ScreenShot.Pixel(PixelAddress).Green = CByte((PixelColour And &HFF00&) / BYTE_2)
+            SaveFileData.SaveHeader.ScreenShot.Pixel(PixelAddress).Blue = CByte((PixelColour And &HFF0000) / BYTE_3)
+        Next X
+    Next Y
+
+End Sub
+

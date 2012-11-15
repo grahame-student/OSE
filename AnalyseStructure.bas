@@ -189,6 +189,7 @@ Private Sub InitPlayerFactions()
         Level = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 4)
         SaveFileData.OSE.Player.FactionList(i).Ref = GetFormID(Ref.Result)
         SaveFileData.OSE.Player.FactionList(i).Level = Level
+        
         GetFaction SaveFileData.OSE.Player.FactionList(i).Ref, i
         Offset = Offset + 5
     Next i
@@ -203,6 +204,10 @@ Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
         If Reference = FactionData(i).Reference Then
             SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
             SaveFileData.OSE.Player.FactionList(IndexNumber).MaxRank = FactionData(i).MaxRank
+            If SaveFileData.OSE.Player.FactionList(IndexNumber).Level > FactionData(i).MaxRank Then
+                SaveFileData.OSE.Player.FactionList(IndexNumber).SpecialRank = SaveFileData.OSE.Player.FactionList(IndexNumber).Level
+                SaveFileData.OSE.Player.FactionList(IndexNumber).Level = SaveFileData.OSE.Player.FactionList(IndexNumber).MaxRank
+            End If
             SaveFileData.OSE.Player.FactionList(IndexNumber).Ranks() = FactionData(i).Ranks()
             Exit Sub
         End If

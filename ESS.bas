@@ -152,6 +152,7 @@ Private Type Faction
     Name As String
     MaxRank As Integer
     Ranks() As String
+    SpecialRank As Byte
 End Type
 
 Private Type Player

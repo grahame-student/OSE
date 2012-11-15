@@ -1181,6 +1181,8 @@ Private Sub picScreenShot_OLEDragDrop(Data As DataObject, Effect As Long, Button
     ' TODO: Save new bitmap to the data structure
 
     picScreenShot.Picture = LoadPicture(Data.Files(1))
+    
+    ModifySavefileScreenShot picScreenShot
 
 End Sub
 
