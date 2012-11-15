@@ -10,7 +10,7 @@ TODO for 0.1.0:
 TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
-			* Factions
+			* Factions (started, needs more entries added to factions.data)
 TODO for 0.3.0:
 	- Add access to
 		o Player information
@@ -22,14 +22,17 @@ DONE 0.0.1:
 	- Read save file to data structure
 	- Write data structure to save file
 	- Modifying player name now updates the data structure (untested)
-	- Modifying player location string now updates the data structure (untested)
+	- Modifying player location string now updates the data structure
+	 (untested)
 	- Modifying player level now updates the data structure (untested)
 	- Modifying player attributes now updates the data structure
 	- Modifying player skills now updates the data structure
+	- Modifying existing player factions now update the data structure
 	- Modifying base health now updates the data structure
 	- Modifying base magicka now updates the data structure
 	- Modifying base fatigue now updates the data structure
-	- Modifying the save file Major and Minor versions now updates the data structure
+	- Modifying the save file Major and Minor versions now updates the data
+	  structure
 	- Modifying the save file number now updates the data structure
 	- Modifying the save file datestamp now updates the data structure
 	- Only reload the screenshot if it has changed (speeds up tab changes)
@@ -39,10 +42,10 @@ DONE 0.0.1:
 	- Made ProgressBar do stuff while reading from save file
 	- Made ProgressBar do stuff while writing to save file
 	- Fleshed out the GUI a bit more, still LOTS more work to be done
-	- Can click on the screen shot to save it to file
-	- Can drag a bitmap onto the screenshot to replace it (doesn't save to data structure yet)
-			
+	- Click on the screen shot to save it to file
+	- Drag a bitmap onto the screenshot to replace it (modifies data structure)
+	
 Not planned at this time:
 	- Read directly from an XBox360 container file
-	- Write back into an XBox360 container file
+	- Write directly into an XBox360 container file
 	

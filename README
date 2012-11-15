@@ -1,5 +1,13 @@
-OSE - Oblivion Save Editor
+OSE - Oblivion Save Editor 0.0.1
 ===
+
+WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING 
+-------------------------------------------------------------------------------
+Many of the modifications that can be made have not been fully tested. Be sure
+to make a backup of your savefile before you make any changes. If your save
+file gets messed up I may be able to prevent it from happening again in the
+future but I will NOT be able to recover your file, you have been warned!
+-------------------------------------------------------------------------------
 
 Intro
 -----
@@ -11,25 +19,21 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 		o minor version
 		o save number
 		o saved date stamp
+		o screenshot
 		o player name
 		o player level
 		o player location string
 	- player's
-		o base attributes
 		o base health
 		o base magicka
 		o base fatigue
+		o base attributes
 		o skills
+		o factions (only a few supported, fations.data needs updating to allow
+		  support for more)
 
 With plenty more planned, I'm working through the file format documents to see
 what I'm able to grant access to.
-
-WARNING WARNING WARNING WARNING WARNING WARNING 
-------------------------------------------------
-Many of the modifications that can be made have not been fully tested. Be sure
-to make a backup of your savefile before you make any changes. If your save
-file gets messed up I may be able to prevent it from happening again in the
-future but I will NOT be able to recover your file, you have been warned!
 		
 Savefiles supported
 -------------------

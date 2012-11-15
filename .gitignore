@@ -2,3 +2,6 @@
 *.vbw
 gamedata.dat
 /*.dat
+/DLLs
+/Package
+/OSE.exe

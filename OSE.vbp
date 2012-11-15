@@ -18,6 +18,7 @@ Module=ModifyChangeRecord; ModifyChangeRecord.bas
 Form=frmNewDateStamp.frm
 IconForm="frmMain"
 Startup="frmMain"
+ExeName32="OSE.exe"
 Command32=""
 Name="OSE"
 HelpContextID="0"
