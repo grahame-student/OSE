@@ -78,3 +78,20 @@ Public Sub ModifyPlayerBaseFatigue(ByVal BaseFatigueValue As Long)
 
 End Sub
 
+Public Sub ModifyPlayerFaction(ByVal FactionNumber As Byte, ByVal FactionRank As Byte)
+
+    ' Can only modify existing factions, other routines will allow adding and removing factions
+
+    Dim Offset As Integer
+
+    Offset = (FactionNumber * 5) + 6
+
+    ' If a strange rank was detected when the file was loaded then restore it when saving
+    If SaveFileData.OSE.Player.FactionList(FactionNumber).SpecialRank > 0 Then
+        FactionRank = SaveFileData.OSE.Player.FactionList(FactionNumber).SpecialRank
+    End If
+
+    SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(SaveFileData.OSE.Player.Factions + Offset) = FactionRank
+
+End Sub
+

@@ -1001,6 +1001,15 @@ Attribute VB_Exposed = False
 Option Explicit
 DefObj A-Z
 
+Private Sub cboFactionRank_Click()
+
+    If SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level <> cboFactionRank.ListIndex Then
+        SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level = cboFactionRank.ListIndex
+        ModifyPlayerFaction cboFactions.ListIndex, cboFactionRank.ListIndex
+    End If
+
+End Sub
+
 Private Sub cboFactions_Click()
 
     Dim i As Integer
