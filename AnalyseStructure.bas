@@ -204,9 +204,8 @@ Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
         If Reference = FactionData(i).Reference Then
             SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
             SaveFileData.OSE.Player.FactionList(IndexNumber).MaxRank = FactionData(i).MaxRank
-            If SaveFileData.OSE.Player.FactionList(IndexNumber).Level > FactionData(i).MaxRank Then
-                SaveFileData.OSE.Player.FactionList(IndexNumber).SpecialRank = SaveFileData.OSE.Player.FactionList(IndexNumber).Level
-                SaveFileData.OSE.Player.FactionList(IndexNumber).Level = SaveFileData.OSE.Player.FactionList(IndexNumber).MaxRank
+            If SaveFileData.OSE.Player.FactionList(IndexNumber).Level = &HFF& Then
+                SaveFileData.OSE.Player.FactionList(IndexNumber).Suspended = True
             End If
             SaveFileData.OSE.Player.FactionList(IndexNumber).Ranks() = FactionData(i).Ranks()
             Exit Sub

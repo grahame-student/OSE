@@ -203,6 +203,29 @@ Begin VB.Form frmMain
          Top             =   120
          Visible         =   0   'False
          Width           =   6135
+         Begin VB.CommandButton cmdRemoveFaction 
+            Caption         =   "Remove"
+            Height          =   375
+            Left            =   4800
+            TabIndex        =   102
+            Top             =   840
+            Width           =   1215
+         End
+         Begin VB.CommandButton cmdAddFaction 
+            Caption         =   "Add"
+            Height          =   375
+            Left            =   4800
+            TabIndex        =   101
+            Top             =   3840
+            Width           =   1215
+         End
+         Begin VB.ListBox lstFactions 
+            Height          =   2205
+            Left            =   1320
+            TabIndex        =   100
+            Top             =   1440
+            Width           =   4695
+         End
          Begin VB.ComboBox cboFactionRank 
             Height          =   315
             Left            =   1320
@@ -216,6 +239,21 @@ Begin VB.Form frmMain
             TabIndex        =   96
             Top             =   120
             Width           =   4695
+         End
+         Begin VB.Label lblAvailableFactions 
+            Caption         =   "All Factions"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   103
+            Top             =   1440
+            Width           =   1095
+         End
+         Begin VB.Line Line 
+            BorderColor     =   &H00C0C0C0&
+            X1              =   120
+            X2              =   6000
+            Y1              =   1320
+            Y2              =   1320
          End
          Begin VB.Label lblFactionRank 
             Caption         =   "Rank"
@@ -1004,7 +1042,13 @@ DefObj A-Z
 Private Sub cboFactionRank_Click()
 
     If SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level <> cboFactionRank.ListIndex Then
-        SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level = cboFactionRank.ListIndex
+        If cboFactionRank.ListIndex = cboFactionRank.ListCount - 1 Then
+            SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Suspended = True
+            SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level = &HFF&
+        Else
+            SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Suspended = False
+            SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level = cboFactionRank.ListIndex
+        End If
         ModifyPlayerFaction cboFactions.ListIndex, cboFactionRank.ListIndex
     End If
 
@@ -1020,7 +1064,18 @@ Private Sub cboFactions_Click()
         cboFactionRank.AddItem SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Ranks(i)
     Next i
     
+    cboFactionRank.AddItem "Suspended"
+    
     UpdateDisplay
+
+End Sub
+
+Private Sub cmdAddFaction_Click()
+
+    ' Check player's faction list to see if the selected faction is in there
+    ' If it's not there then:
+    '   Add the selected faction to the player's list
+    '   Add the faction at the lowest available level
 
 End Sub
 
@@ -1029,8 +1084,6 @@ Private Sub Form_Load()
     frmMain.Caption = PROGRAM_TITLE
 
     SetUpProgressBarInStatusBar
-
-    LoadFactionData
 
 End Sub
 
@@ -1099,6 +1152,8 @@ Private Sub ParseFactionData(ByVal DataLine As String)
 
     FactionData(FactionCount).Reference = Val(FactionVariables(0))
     FactionData(FactionCount).Name = FactionVariables(1)
+    lstFactions.AddItem FactionData(FactionCount).Name, FactionCount
+    lstFactions.ItemData(FactionCount) = FactionCount
     FactionData(FactionCount).PlugIn = FactionVariables(2)
     FactionData(FactionCount).MaxRank = Val(FactionVariables(3))
 
@@ -1142,6 +1197,10 @@ End Sub
 
 Private Sub mnuOpen_Click()
 
+    lstFactions.Clear
+
+    LoadFactionData
+
     ClearSaveFileData
 
     OpenSaveFile
@@ -1171,7 +1230,6 @@ Private Sub OpenSaveFile()
 
     StatusBar.Panels(1).Text = "Read complete"
 
-    tabCategory.SelectedItem = TAB_CAT_SAVE_FILE
     tabCategory_Click
 
     cmdSave.Enabled = True
@@ -1382,6 +1440,11 @@ Private Sub UpdateDisplayPlayerFactions()
             cboFactions.ItemData(i) = SaveFileData.OSE.Player.FactionList(i).Ref
         Next i
         cboFactions.ListIndex = 0
+    End If
+    
+    If SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Suspended Then
+        cboFactionRank.ListIndex = cboFactionRank.ListCount - 1
+        Exit Sub
     End If
     
     cboFactionRank.ListIndex = SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level

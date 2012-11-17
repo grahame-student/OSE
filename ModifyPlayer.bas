@@ -87,11 +87,11 @@ Public Sub ModifyPlayerFaction(ByVal FactionNumber As Byte, ByVal FactionRank As
     Offset = (FactionNumber * 5) + 6
 
     ' If a strange rank was detected when the file was loaded then restore it when saving
-    If SaveFileData.OSE.Player.FactionList(FactionNumber).SpecialRank > 0 Then
-        FactionRank = SaveFileData.OSE.Player.FactionList(FactionNumber).SpecialRank
+    If SaveFileData.OSE.Player.FactionList(FactionNumber).Suspended Then
+        SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(SaveFileData.OSE.Player.Factions + Offset) = &HFF&
+    Else
+        SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(SaveFileData.OSE.Player.Factions + Offset) = FactionRank
     End If
-
-    SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(SaveFileData.OSE.Player.Factions + Offset) = FactionRank
 
 End Sub
 
