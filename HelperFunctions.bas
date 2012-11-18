@@ -57,6 +57,21 @@ Public Function GetFormID(ByVal Iref As Long) As Long
 
 End Function
 
+Public Function GetIref(ByVal FormID As Long) As Long
+
+    Dim i As Integer
+    
+    For i = 0 To SaveFileData.FormIDs.NumberOfFormIDs - 1
+        If FormID = SaveFileData.FormIDs.FormIDsList(i) Then
+            GetIref = i
+            Exit Function
+        End If
+    Next i
+
+    GetIref = -1
+
+End Function
+
 Public Function GetModIndex(ByVal ModName As String) As LongType
 
     Dim i As Integer

@@ -119,7 +119,7 @@ Private Type GlobalStructure
     Regions() As Region
 End Type
 
-Private Type ChangeRecord
+Public Type ChangeRecord
     FormID As Long
     Type As Byte
     Flags As Long
@@ -155,13 +155,18 @@ Private Type Faction
     Suspended As Boolean
 End Type
 
+Private Type BaseMod
+    Index As Byte
+    ModValue As Single
+End Type
+
 Private Type Player
     PlayerRecord As Long        ' The change record containing the player data (-1 for not present)
     FormFlags As Long           ' Offset of the start of the FormFlags within the data block (-1 for not present)
     BaseAttributes As Long      ' Offset of the start of the BaseAttributes within the data block (-1 for not present)
     BaseData As Long            ' Offset of the start of the BaseData within the data block (-1 for not present)
     Factions As Long            ' Offset of the start of the Factions within the data block (-1 for not present)
-    SpellList As Long           ' Offset of the start of the SpellList within the data block (-1 for not present)
+    Spells As Long              ' Offset of the start of the SpellList within the data block (-1 for not present)
     AI As Long                  ' Offset of the start of the AI within the data block (-1 for not present)
     BaseHealth As Long          ' Offset of the start of the BaseHealth within the data block (-1 for not present)
     BaseModifiers As Long       ' Offset of the start of the BaseModifiers within the data block (-1 for not present)
@@ -170,6 +175,11 @@ Private Type Player
     CombatStyle As Long         ' Offset of the start of the CombatStyle within the data block (-1 for not present)
     FactionCount As Integer     ' Number of factions the player is in
     FactionList() As Faction    ' The list of factions the player is in
+    SpellCount As Integer       ' Number of spells the player has
+    SpellList() As Long         ' The irefs of the spells
+    BaseModCount As Integer     ' Number of BaseMods
+    BaseModList() As BaseMod    ' List of the BaseMods
+    FullNameString As String    ' The FullName
 End Type
 
 Private Type OSEExtra
@@ -191,4 +201,5 @@ Public Type ESS
     WorldSpaces As WorldSpaces
     OSE As OSEExtra
 End Type
+
 

@@ -19,14 +19,21 @@ Attribute VB_Name = "AnalyseStructure"
 Option Explicit
 DefObj A-Z
 
-Public Sub ScanForMarkers()
+Public Sub ScanForMarkers(ByRef MainForm As Form)
 
     SaveFileData.OSE.Player.PlayerRecord = LocatePlayerRecord
     If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
         ScanForPlayerMarkers
         If SaveFileData.OSE.Player.Factions <> -1 Then
             FixFactionReferences
+            PopulateListBox MainForm
             InitPlayerFactions
+        End If
+        If SaveFileData.OSE.Player.Spells <> -1 Then
+            InitPlayerSpells
+        End If
+        If SaveFileData.OSE.Player.BaseModifiers <> -1 Then
+            InitPlayerBaseMods
         End If
     End If
 
@@ -41,6 +48,17 @@ Private Sub FixFactionReferences()
             FactionData(FactionNumber).Reference = (FactionData(FactionNumber).Reference Or GetModIndex(FactionData(FactionNumber).PlugIn).Result)
         End If
     Next FactionNumber
+
+End Sub
+
+Public Sub PopulateListBox(ByRef MainForm As Form)
+
+    Dim i As Integer
+
+    For i = 0 To UBound(FactionData())
+        MainForm.lstFactions.AddItem FactionData(i).Name, i
+        MainForm.lstFactions.ItemData(i) = FactionData(i).Reference
+    Next i
 
 End Sub
 
@@ -104,13 +122,12 @@ Private Sub ScanForPlayerMarkers()
     
     ' Check for spell list
     If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_5) <> 0) Then
-        SaveFileData.OSE.Player.SpellList = Offset
-        Offset = Offset + _
-                 ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2)) * 4
-        Offset = Offset + 2
+        SaveFileData.OSE.Player.Spells = Offset
+        SaveFileData.OSE.Player.SpellCount = ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
+                                               SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2))
+        Offset = Offset + (SaveFileData.OSE.Player.SpellCount * 4) + 2
     Else
-        SaveFileData.OSE.Player.SpellList = -1
+        SaveFileData.OSE.Player.Spells = -1
     End If
     
     ' Check for AI Data
@@ -132,10 +149,9 @@ Private Sub ScanForPlayerMarkers()
     ' Check for base modifiers
     If ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Flags And BIT_28) <> 0) Then
         SaveFileData.OSE.Player.BaseModifiers = Offset
-        Offset = Offset + _
-                 ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
-                  SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2)) * 5
-        Offset = Offset + 2
+        SaveFileData.OSE.Player.BaseModCount = ((SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset) + _
+                                                 SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1) * BYTE_2))
+        Offset = Offset + (SaveFileData.OSE.Player.BaseModCount * 5) + 2
     Else
         SaveFileData.OSE.Player.BaseModifiers = -1
     End If
@@ -196,7 +212,7 @@ Private Sub InitPlayerFactions()
 
 End Sub
 
-Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
+Public Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
 
     Dim i As Integer
     
@@ -214,5 +230,17 @@ Private Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
     
     MsgBox "Reference not recognised (" & Reference & ")", vbOKOnly, "Unknown Reference"
     
+End Sub
+
+Private Sub InitPlayerSpells()
+
+    ReDim SaveFileData.OSE.Player.SpellList(SaveFileData.OSE.Player.SpellCount - 1)
+
+End Sub
+
+Private Sub InitPlayerBaseMods()
+
+    ReDim SaveFileData.OSE.Player.BaseModList(SaveFileData.OSE.Player.BaseModCount - 1)
+
 End Sub
 

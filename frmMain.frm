@@ -213,6 +213,7 @@ Begin VB.Form frmMain
          End
          Begin VB.CommandButton cmdAddFaction 
             Caption         =   "Add"
+            Enabled         =   0   'False
             Height          =   375
             Left            =   4800
             TabIndex        =   101
@@ -1072,10 +1073,46 @@ End Sub
 
 Private Sub cmdAddFaction_Click()
 
+    Dim NewFaction As String
+    Dim i As Integer
+    Dim Iref As Long
+
     ' Check player's faction list to see if the selected faction is in there
     ' If it's not there then:
+    NewFaction = lstFactions.Text
+
+    For i = 0 To cboFactions.ListCount - 1
+        If cboFactions.List(i) = NewFaction Then
+            MsgBox "Player is already a member of this faction", vbOKOnly, "Unable To Add Faction"
+            Exit Sub
+        End If
+    Next i
+
     '   Add the selected faction to the player's list
     '   Add the faction at the lowest available level
+    cboFactions.AddItem lstFactions.Text
+    
+    Iref = GetIref(lstFactions.ItemData(lstFactions.ListIndex))
+    ' The FormID isn't in the array therefore a new Iref needs to ba added to the FormID array
+    If Iref = -1 Then
+        ' Make room for the new Iref
+        ReDim Preserve SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs)
+        ' Put the Faction's FormID into the new position
+        SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs) = lstFactions.ItemData(lstFactions.ListIndex)
+        ' Increase the number of FormIDs by 1
+        Iref = SaveFileData.FormIDs.NumberOfFormIDs
+        SaveFileData.FormIDs.NumberOfFormIDs = SaveFileData.FormIDs.NumberOfFormIDs + 1
+    End If
+    
+    ReDim Preserve SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount)
+    SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount).Ref = lstFactions.ItemData(lstFactions.ListIndex)
+    SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount).Level = 0
+    GetFaction GetFormID(Iref), SaveFileData.OSE.Player.FactionCount
+    SaveFileData.OSE.Player.FactionCount = SaveFileData.OSE.Player.FactionCount + 1
+    
+    cboFactions.ItemData(cboFactions.NewIndex) = Iref
+
+    RebuildPlayerChangeRecord
 
 End Sub
 
@@ -1152,8 +1189,6 @@ Private Sub ParseFactionData(ByVal DataLine As String)
 
     FactionData(FactionCount).Reference = Val(FactionVariables(0))
     FactionData(FactionCount).Name = FactionVariables(1)
-    lstFactions.AddItem FactionData(FactionCount).Name, FactionCount
-    lstFactions.ItemData(FactionCount) = FactionCount
     FactionData(FactionCount).PlugIn = FactionVariables(2)
     FactionData(FactionCount).MaxRank = Val(FactionVariables(3))
 
@@ -1181,6 +1216,12 @@ Private Sub lblSaveTime_Click()
 
     UpdateDisplay
     
+End Sub
+
+Private Sub lstFactions_Click()
+
+    cmdAddFaction.Enabled = True
+
 End Sub
 
 Private Sub mnuQuit_Click()
@@ -1226,7 +1267,7 @@ Private Sub OpenSaveFile()
     End If
     
     StatusBar.Panels(1).Text = "Scanning for markers"
-    AnalyseStructure.ScanForMarkers
+    AnalyseStructure.ScanForMarkers frmMain
 
     StatusBar.Panels(1).Text = "Read complete"
 
@@ -1437,7 +1478,6 @@ Private Sub UpdateDisplayPlayerFactions()
     If cboFactions.ListCount <> SaveFileData.OSE.Player.FactionCount Then
         For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
             cboFactions.AddItem SaveFileData.OSE.Player.FactionList(i).Name
-            cboFactions.ItemData(i) = SaveFileData.OSE.Player.FactionList(i).Ref
         Next i
         cboFactions.ListIndex = 0
     End If
