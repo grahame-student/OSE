@@ -7,7 +7,8 @@
 249105,All Dremora Guards and Torturers,None,0,Member
 461170,Amantius Allectus Door Owners,None,0,Member
 38820,Amantius Allectus House,None,0,Member
-818199,Ancotar's faction,None,0,Member
+814198,Ancotar's Creatures,None,0,Member
+818199,Ancotar's Faction,None,0,Member
 41586,Anvil - Count's Arms,None,0,Member
 41604,Anvil - Enilroth Lovers,None,0,Member
 41588,Anvil - Foc'sle Faction,None,0,Member
@@ -44,6 +45,9 @@
 96227,Bandit Faction,None,1,Grunt,Boss
 130126,Bantien,None,0,Member
 697886,Barren Mine Tribe,None,0,Member
+45214,Battlehorn NPCs,DLCFightersStronghold.esp,0,Member
+54335,Battlehorn Captain,DLCFightersStronghold.esp,0,Member
+53052,Battlehorn Castle Knight,DLCFightersStronghold.esp,0,Member
 220825,Beggars,None,0,Beggar
 452596,Benirus Faction,None,0,Member
 40331,Best Goods and Guarantees Merchants,None,0,Member
@@ -135,13 +139,65 @@
 90671,Dul gro-Shug Faction,0,Member
 16092,Dunbarrow Faction,DLCThievesDen.esp,0,Member
 16091,Dunbarrow Pirate Faction,DLCThievesDen.esp,0,Member
+622753,E3ArcherFaction,None,0,Member
+622773,E3DaedrothFaction,None,0,Member
+622672,E3HateLegion,None,0,Member
+538005,Eight Cities Couriers Customers,None,0,Member
+427090,Elven Gardens Horse,None,0,Member
+86204,Emperor Faction,None,0,Member
+550263,Escaped Prisoner,None,0,Member
+471736,Everscamp Faction,None,0,Scamp Friend
+804274,Evil,None,0,Member
+95751,Fathis Ules Faction,None,0,Member
+454405,FCG01 Mountain Lion Faction,None,0,Member
+693897,Fences,None,0,Member
+210283,FGC02 Thief Faction,None,0,Member
+322962,FGC03 Hrota Thieves,None,0,Member
+305559,FGC06 Goblins,None,0,Member
+39996,FGC08 Thieves,None,0,Member
+292067,FGC09 Lady Faction,None,0,Member
+292066,FGC09 Ogre Faction,None,0,Member
+622961,FGD08 Goblin Faction,None,0,Member
+463001,FGD Drunks,None,0,Member
 139919,Fighter's Guild,None,9,Associate,Apprentice,Journeyman,Swordsman,Protector,Defender,Warder,Guardian,Champion,Master
+40325,First Edition Faction,None,0,Member
+219509,Five Claws Lodge Faction,None,0,Member
+118430,Forgotten Ones Faction,None,0,Member
+364264,Fort Nikel Team A,None,0,Member
+364265,Fort Nikel Team B,None,0,Member
+805025,Fort Ontus Mage Faction,None,0,Member
+172154,Francois Motierre Quest Faction,None,0,Member
 5950,Frostcrag Spire Atronach,DLCFrostcrag.ESP,0,Atronach Familiar
+477828,Ganredhel Faction,None,0,Member
+3305,Garlas Malatar Veterans,Knights.esp,0,Member
+119874,Gilen Norvalo's House Faction,None,0,Member
+169175,Glarthir Faction,None,0,Member
+201493,Goblin Jim's tribe,None,0,Member
+41726,Gogan's Family Faction,None,0,Member
+708204,Gottlesfont Faction,None,0,Member
+119875,Graman gro-Marad's House Faction,None,0,Member
+164021,Hackdirt Brethren,None,0,Member
+655790,Hackdirt Monster Faction,None,0,Member
+332995,Harluns Watch Faction,None,0,Member
+119876,Hastrel Ottus' House Faction,None,0,Member
+420362,Havilstein Hoar-Blood's Secret Faction,None,0,Member
+53082,Henantier's Faction,None,0,Member
+114525,Hermaeus Mora Faction,None,0,Member
+90681,Herminia Cinna Faction,None,0,Member
+114526,Hircine Faction,None,0,Member
+220742,Honmund Faction,None,0,Member
+314962,Horse Whisperer,None,0,Member
 240441,Imperial City Waterfront Resident,None,0,Poor
+779589,Imperial Legion Friend,None,0,Member
+646787,Itius Hayn Friends,None,0,Member
 3310,Knights of the Nine,Knights.esp,2,Knight Errant,Knight Commander,Divine Crusader
 592064,Knights of the White Stallion,None,0,Knight-Errant
 139926,Mages' Guild,None,9,Associate,Apprentice,Journeyman,Evoker,Conjurer,Magician,Warlock,Wizard,Master-Wizard,Arch-Mage
 592043,Mazoga Friend,None,0,Mazoga Buddy
+948451,MQ09 Blades Faction,None,0,Member
+314957,MQ16 Allies Faction,None,0,Member
+621742,Mythic Dawn Assassins,None,0,Member
+141244,Mythic Dawn CG Assassin,None,0,Member
 622813,Order of the Virtuous Blood,None,0,Brother
 121805,Player Faction,None,0,Friend
 147812,Thieves' Guild,None,7,Pickpocket,Footpad,Bandit,Prowler,Cat Burglar,Shadowfoot,Master Thief,Gray Fox
