@@ -40,10 +40,101 @@
 130505,Atius Family,None,0,Relative
 50785,Azani Blackheart Faction,None,0,Member
 114522,Azura,None,0,Member
+315273,Baenlin's Faction,None,0,Member
+96227,Bandit Faction,None,1,Grunt,Boss
+130126,Bantien,None,0,Member
+697886,Barren Mine Tribe,None,0,Member
+220825,Beggars,None,0,Beggar
+452596,Benirus Faction,None,0,Member
+40331,Best Goods and Guarantees Merchants,None,0,Member
+547164,Black Bow Faction,None,0,Member
+449582,Black Horse Courier Vendors,None,0,Member
 196393,Blackwood Company,None,1,Probationary Member,Company Member
+441647,Blackwood Hated,None,0,Member
 160939,Blades,None,2,Knight Brother,Captain,Grandmaster
+726652,Blankenmarch Faction,None,0,Member
+645936,Bleakers Way Faction,None,0,Member
+43580,Block Detection Dialogue,None,0,Member
+114523,Boethia Faction,None,0,Member
+158444,Border Watch Resident,None,0,Member
+41069,Bravil - Lonely Suitor Lodge,None,0,Member
+41070,Bravil - Silverhome,None,0,Member
+220826,Bravil Beggars,None,0,Beggar
+41071,Bravil Castle Faction,None,0,Member
+182834,Bravil Faction,None,0,Member
+41072,Bravil Guards,None,0,Member
+41074,Bravil Loche Family,None,0,Member
+41073,Bravil Skooma Den,None,0,Member
+317473,Bravil Stables,None,0,Member
+159637,Brindle Home Faction,None,0,Member
+220748,Brolus Family In Bruma,None,0,Member
+172163,Bruiant Family Faction,None,0,Member
+220829,Bruma Beggars,None,0,Beggar
+220841,Bruma Citizens,None,0,Member
+220858,Bruma Castle Faction,None,0,Member
+220861,Bruma Guard Faction,None,0,Member
+317488,Bruma Stables,None,0,Member
+206777,BWC Waters Edge Faction,None,0,Member
+321645,CG Creature Faction,None,0,Member
+324245,CG Goblins,None,0,Member
+126494,CG Blades Faction,None,0,Member
+427094,Chestnut Handy Stables,None,1,Stable Hand,Owner
+13496,Cheydinhal Bridge Inn,None,0,Member
+13499,Cheydinhal Castle,None,0,Member
+13498,Cheydinhal Citizens,None,0,Member
+593457,Cheydinhal Guards (Corrupt),None,0,Member
+13497,Cheydinhal Guards,None,0,Member
+13495,Cheydinhal Newslands Lodge,None,0,Member
+13502,Cheydinhal Orum's Gang,None,0,Member
+220828,Cheydinhal Peasants and Serfs,None,0,Member
+13503,Cheydinhal Riverview Faction,None,0,Member
+317489,Cheydinhal Stables,None,0,Member
+13500,Cheydinhal Willow Bank,None,0,Member
+220827,Chorrol Beggars,None,0,Beggar
+167320,Chorrol Citizen,None,0,Member
+171904,Chorrol Guard Faction,None,0,Member
+317490,Chorrol Stables,None,0,Member
+178840,Chorrol Castle Faction,None,0,Member
+670284,Claude Maric's Personal Faction,None,0,Member
+175866,Claude Maric's Thugs,None,0,Member
+466254,Claudius Arcadia's Faction,None,0,Member
+114524,Clavicus Vile Faction,None,0,Member
+309515,Conjurers,None,0,Member
+185749,Cracked Wood Hollow Tribe,None,0,Member
+19,Creature Faction,None,0,Member
+203205,Cropsford Faction,None,0,Member
+249106,Daedra Monsters in the Caves,None,0,Member
+377074,DA Generic Faction,None,0,Member
+126151,Dalvilu Faction (Peace),None,0,Member
+645928,Dalvilu Faction (War),None,0,Member
+580961,DA Peryite Souls,None,0,Member
+570895,DA Sanguine Naked Faction,None,0,Member
 194674,Dark Brotherhood,None,7,Murderer,Slayer,Eliminator,Assassin,Executioner,Silencer,Speaker,Listener
+413519,Dark Brotherhood - Won't Call Guards,None,0,Member
+333704,Dark Brotherhood Elite,None,0,Member
+827003,Dark Brotherhood Generic Evil Faction,None,0,Member
+591075,Dark Brotherhood No Guards,None,0,Member
+805021,Dark Brotherhood Player Hate Faction,None,0,Member
 159208,Dark Brotherhood Player Secret Faction,None,0,Marked For Death
+591659,Dark Brotherhood Ritual Faction,None,0,Member
+448119,Dark Brotherhood Sanctuary Dwellers,None,0,Member
+948785,Dark Brotherhood Underlings,None,0,Member
+43785,Dark06 Hotel Faction,None,0,Member
+48965,Dark07 Mercenaries,None,0,Member
+508843,Deadite,None,0,Deadite
+29832,Deepscorn Hollow Prisoner,DLCVileLair.esp,0,Prisoner
+697888,Derelict Mine Tribe,None,0,Member
+9520,DL9 Commander Special Faction,MRazor.plugin,0,Member
+419131,Donton Faction,None,0,Member
+172155,Doran Family Faction,None,0,Member
+90676,Dovyn Aren Faction,None,0,Member
+443499,Draconis Family Faction,None,0,Member
+623240,Drad Faction,None,0,Member
+41544,Dro'fahr Faction,None,0,Member
+5353,Drothmeri Army,MRazor.plugin,0,Member
+90671,Dul gro-Shug Faction,0,Member
+16092,Dunbarrow Faction,DLCThievesDen.esp,0,Member
+16091,Dunbarrow Pirate Faction,DLCThievesDen.esp,0,Member
 139919,Fighter's Guild,None,9,Associate,Apprentice,Journeyman,Swordsman,Protector,Defender,Warder,Guardian,Champion,Master
 5950,Frostcrag Spire Atronach,DLCFrostcrag.ESP,0,Atronach Familiar
 240441,Imperial City Waterfront Resident,None,0,Poor
