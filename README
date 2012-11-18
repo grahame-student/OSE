@@ -30,7 +30,9 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 		o base attributes
 		o skills
 		o factions (only a few supported, fations.data needs updating to allow
-		  support for more)
+		  support for more. This can be done without recompiling OSE)
+			* Amend factions the player is already a member of
+			* Add player to new factions
 
 With plenty more planned, I'm working through the file format documents to see
 what I'm able to grant access to.

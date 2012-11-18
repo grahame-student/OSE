@@ -7,27 +7,27 @@ TODO list
 TODO for 0.1.0:
 	- Use common dialog to select save to be read
 	- Use common dialog to select where to save updated file to
-TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
-			* Factions (started, needs more entries added to factions.data)
-TODO for 0.3.0:
+			* Factions (started, needs more entries added to factions.data.
+			  Also needs a way to remove factions)
+TODO for 0.2.0:
 	- Add access to
 		o Player information
 			* Spells
 			* Items
-
 
 DONE 0.0.1:
 	- Read save file to data structure
 	- Write data structure to save file
 	- Modifying player name now updates the data structure (untested)
 	- Modifying player location string now updates the data structure
-	 (untested)
+	  (untested)
 	- Modifying player level now updates the data structure (untested)
 	- Modifying player attributes now updates the data structure
 	- Modifying player skills now updates the data structure
-	- Modifying existing player factions now update the data structure
+	- Modifying existing player factions now updates the data structure
+	- Adding player to factions now updates the data structure
 	- Modifying base health now updates the data structure
 	- Modifying base magicka now updates the data structure
 	- Modifying base fatigue now updates the data structure

@@ -1,5 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form frmMain 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "OSE"
@@ -14,6 +15,13 @@ Begin VB.Form frmMain
    ScaleHeight     =   6015
    ScaleWidth      =   8055
    StartUpPosition =   3  'Windows Default
+   Begin MSComDlg.CommonDialog CommonDialog 
+      Left            =   120
+      Top             =   5280
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
+   End
    Begin VB.PictureBox pnlSaveFile 
       Appearance      =   0  'Flat
       ForeColor       =   &H80000008&

@@ -1,6 +1,45 @@
 #Faction FormID, Faction Name, PlugIn Required,Max Rank,Ranks Low-->High
+90672,Adrian Decanius Faction,None,0,Member
+127398,Adventurer Faction,None,0,Member
 118316,Agarmir's Faction,None,0,No Kill I
+1594366,Aleswell - People Serethi Sisters Dislike,None,0,Member
+194656,Aleswell Faction,None,0,Member
+249105,All Dremora Guards and Torturers,None,0,Member
+461170,Amantius Allectus Door Owners,None,0,Member
+38820,Amantius Allectus House,None,0,Member
+818199,Ancotar's faction,None,0,Member
+41586,Anvil - Count's Arms,None,0,Member
+41604,Anvil - Enilroth Lovers,None,0,Member
+41588,Anvil - Foc'sle Faction,None,0,Member
+41589,Anvil - Heinrich Oaken-Hull's House,None,0,Member
+41590,Anvil - Inventius Family,None,0,Member
+41592,Anvil - Jesan Sextius Faction,None,0,Member
+41587,Anvil - Morvayn's Store Faction,None,0,Member
+41593,Anvil - Newheim faction,None,0,Member
+41594,Anvil - The Serpent's Wake,None,0,Member
+220824,Anvil Beggars,None,0,Beggar
+41583,Anvil Castle Residents,None,0,Member
+37492,Anvil Citizen,None,0,Member
+41585,Anvil Flowing Bowl,None,0,Member
+41584,Anvil Guard Faction,None,0,Member
+48231,Anvil Harborside Warehouse,None,0,Member
+249104,Anyone Wearing Bands of the Chosen,None,0,Member
+332735,Arano Family,None,0,Member
+315759,Arcane University,None,0,Member
 170425,Arena,None,8,Pit Dog,Brawler,Bloodletter,Myrmidon,Warrior,Gladiator,Hero,Champion,Grand Champion
+1337403,Arena Bloodworks Dwellers,None,0,Member
+294016,Arena Champions,None,0,Member
+684343,Arena Hopefuls,None,0,Member
+142490,Arena Player,None,0,In Faction
+124507,Arena Spectator Combatants,None,0,Member
+166533,Arena Yellow Team,None,0,Member
+166532,Arena01,None,0,Member
+716107,Arena Fan Faction,None,0,Member
+142274,Arenim Family,None,0,Member
+142264,Athram Family,None,0,Member
+130505,Atius Family,None,0,Relative
+50785,Azani Blackheart Faction,None,0,Member
+114522,Azura,None,0,Member
 196393,Blackwood Company,None,1,Probationary Member,Company Member
 160939,Blades,None,2,Knight Brother,Captain,Grandmaster
 194674,Dark Brotherhood,None,7,Murderer,Slayer,Eliminator,Assassin,Executioner,Silencer,Speaker,Listener
