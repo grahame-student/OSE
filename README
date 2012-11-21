@@ -1,4 +1,4 @@
-OSE - Oblivion Save Editor 0.0.1
+OSE - Oblivion Save Editor 0.1.0
 ===
 
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING 
@@ -36,7 +36,7 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 
 With plenty more planned, I'm working through the file format documents to see
 what I'm able to grant access to.
-		
+
 Savefiles supported
 -------------------
 In theory this should work on both XBox360 and PC saves, however only XBox360
@@ -50,12 +50,9 @@ this.
 
 Usage
 -----
-The save file to be edited needs to be saved into the same directory as the OSE
-executable and it needs to be named gamedata.dat (this will be user selectable
-in future versions). Selecting file->open from the menu bar will read the save
-file in, once opened you can start editing it. Clicking save, or file->save,
-will create a modified savefile in the New directory (this too will be user
-selectable in future versions).
+Click File->Open and point at the save file to be loaded. Once opened you can
+start editing it. Clicking save, or file->save, will create a modified savefile
+where ever the user would like.
 
 Source Code
 -----------
@@ -64,8 +61,8 @@ The source code for this application can be found here:
 
 Packaged Application
 --------------------
-Currently this is source code only but one I've reached what I feel to be a
-logical point I'll build a package and upload it to Github.
+The latest released version (0.1.0 at the time of writing) can be found here:
+<https://github.com/Dasaan/OSE/downloads>
 
 Acknowledgements
 ----------------

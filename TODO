@@ -1,25 +1,24 @@
-OSE 0.0.1 - Oblivion Save Editor
+OSE 0.1.0 - Oblivion Save Editor
 --------------------------------
 
 TODO list
 ---------
 
-TODO for 0.1.0:
-	- Use common dialog to select save to be read
-	- Use common dialog to select where to save updated file to
+TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
 			* Factions (started, needs more entries added to factions.data.
 			  Also needs a way to remove factions)
-TODO for 0.2.0:
+TODO for 0.3.0:
 	- Add access to
 		o Player information
 			* Factions - plugin names need to be verified
 				: Vile Lair
 			* Spells
 			* Items
-
-DONE 0.0.1:
+DONE 0.2.0:
+	- 
+DONE 0.1.0:
 	- Read save file to data structure
 	- Write data structure to save file
 	- Modifying player name now updates the data structure (untested)
@@ -46,6 +45,8 @@ DONE 0.0.1:
 	- Fleshed out the GUI a bit more, still LOTS more work to be done
 	- Click on the screen shot to save it to file
 	- Drag a bitmap onto the screenshot to replace it (modifies data structure)
+	- User can now select where to load their savefile from
+	- User can now select where to save their file to
 	
 Not planned at this time:
 	- Read directly from an XBox360 container file
