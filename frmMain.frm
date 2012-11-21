@@ -1011,6 +1011,7 @@ Begin VB.Form frmMain
       End
       Begin VB.Menu mnuSave 
          Caption         =   "Save"
+         Enabled         =   0   'False
       End
       Begin VB.Menu mnuQuit 
          Caption         =   "Quit"
@@ -1128,7 +1129,15 @@ Private Sub Form_Load()
 
     frmMain.Caption = PROGRAM_TITLE
 
+    GetHomePath
+
     SetUpProgressBarInStatusBar
+
+End Sub
+
+Private Sub GetHomePath()
+
+    HomePath = GetSpecialFolder(CSIDL_DOCUMENTS, frmMain)
 
 End Sub
 
@@ -1252,7 +1261,7 @@ Private Sub mnuOpen_Click()
 
     ClearSaveFileData
 
-    OpenSaveFile
+    OpenSaveFile GetFilename
 
 End Sub
 
@@ -1264,13 +1273,39 @@ Private Sub ClearSaveFileData()
 
 End Sub
 
-Private Sub OpenSaveFile()
+Private Function GetFilename() As String
+
+    On Error GoTo CancelError
+    
+    CommonDialog.Filter = "Oblivion save file (*.dat)|*.dat"
+        
+    CommonDialog.InitDir = HomePath
+    CommonDialog.ShowOpen
+    GetFilename = CommonDialog.FileName
+
+    Exit Function
+
+CancelError:
+    
+    Select Case Err.Number
+        Case 91
+            MsgBox Err.Number & "  - in GetFilename", vbOKOnly, "Error"
+    End Select
+
+End Function
+
+Private Sub OpenSaveFile(ByVal SaveFilePath As String)
+
+    If SaveFilePath = "" Then
+        Exit Sub
+    End If
 
     cmdSave.Enabled = False
     
-    ReadSave.ReadSaveFile StatusBar, prgProgress
+    ReadSave.ReadSaveFile SaveFilePath, StatusBar, prgProgress
     
     If Not SaveFileData.OSE.LoadSuccessful Then
+        mnuSave.Enabled = False
         Exit Sub
     End If
     
@@ -1280,6 +1315,8 @@ Private Sub OpenSaveFile()
     StatusBar.Panels(1).Text = "Read complete"
 
     tabCategory_Click
+        
+    mnuSave.Enabled = True
 
     cmdSave.Enabled = True
 
@@ -1508,10 +1545,33 @@ End Sub
 Private Sub cmdSave_Click()
 
     cmdSave.Enabled = False
-    WriteSaveFile StatusBar, prgProgress
+    
+    WriteSaveFile GetSaveFilename, StatusBar, prgProgress
+    
     cmdSave.Enabled = True
 
 End Sub
+
+Private Function GetSaveFilename() As String
+
+    On Error GoTo CancelError
+    
+    CommonDialog.Filter = "Oblivion save file (*.dat)|*.dat"
+        
+    CommonDialog.InitDir = HomePath
+    CommonDialog.ShowSave
+    GetSaveFilename = CommonDialog.FileName
+
+    Exit Function
+
+CancelError:
+    
+    Select Case Err.Number
+        Case 91
+            MsgBox Err.Number & "  - in GetSaveFilename", vbOKOnly, "Error"
+    End Select
+
+End Function
 
 Private Sub tabPlayerSubCategory_Click()
 

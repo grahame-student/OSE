@@ -19,6 +19,7 @@ Attribute VB_Name = "API"
 Option Explicit
 DefObj A-Z
 
+''' API Constants
 ' Constants used in the SendMessage API
 Public Const EM_CANUNDO = &HC6
 Public Const EM_UNDO = &HC7
@@ -28,6 +29,22 @@ Public Const EM_EMPTYUNDOBUFFER = &HCD
 Public Const SM_CXBORDER = 5     ' Width of non-sizable borders
 Public Const SM_CYBORDER = 6     ' Height of non-sizable borders
 
+' Constant for 'My Documents' special directory
+Public Const CSIDL_DOCUMENTS = 5
+
+Public Const MAX_PATH As Integer = 260
+
+''' API Data Types '''
+Public Type SHITEMID
+    cb As Long
+    abID As Byte
+End Type
+
+Public Type ITEMIDLIST
+    mkid As SHITEMID
+End Type
+
+''' APIs
 ' API to re-parent a control
 Public Declare Function SetParent Lib "user32" (ByVal hWndChild As Long, ByVal hWndNewParent As Long) As Long
 
@@ -40,4 +57,12 @@ Public Declare Function SendMessage Lib "user32" Alias "SendMessageA" ( _
     ByVal wMsg As Long, _
     ByVal wParam As Long, _
     lParam As Any) As Long
+
+' Find 'Special Folders' such as the MyDocuments directory
+Public Declare Function SHGetSpecialFolderLocation Lib "Shell32.dll" _
+(ByVal hwndOwner As Long, ByVal nFolder As Long, pidl As ITEMIDLIST) As Long
+
+' Return the path for a given ID (ie folder type) ANSI entry point
+Public Declare Function SHGetPathFromIDList Lib "Shell32.dll" Alias "SHGetPathFromIDListA" _
+(ByVal pidl As Long, ByVal pszPath As String) As Long
 

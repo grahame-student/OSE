@@ -20,13 +20,13 @@ Option Explicit
 DefObj A-Z
 
 ' All the code to read an oblivion save file
-Public Sub ReadSaveFile(ByRef Status As StatusBar, ByRef Progress As ProgressBar)
+Public Sub ReadSaveFile(ByVal SaveFilePath As String, ByRef Status As StatusBar, ByRef Progress As ProgressBar)
 
     Progress.Value = Progress.Min
     
     FF = FreeFile
 
-    Open App.Path & "\gamedata.dat" For Binary Access Read Write Lock Write As FF
+    Open SaveFilePath For Binary Access Read Write Lock Write As FF
 
     Status.Panels(STB_STATUS).Text = "Loading FileHeader..."
     ReadSaveFileHeader

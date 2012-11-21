@@ -19,13 +19,15 @@ Attribute VB_Name = "WriteSave"
 Option Explicit
 DefObj A-Z
 
-Public Sub WriteSaveFile(ByRef Status As StatusBar, ByRef Progress As ProgressBar)
+Public Sub WriteSaveFile(ByVal SaveFilePath As String, ByRef Status As StatusBar, ByRef Progress As ProgressBar)
+
+    If SaveFilePath = "" Then Exit Sub
 
     Progress.Value = Progress.Min
     
     FF = FreeFile
 
-    Open App.Path & "\New\gamedata.dat" For Binary Access Read Write Lock Write As FF
+    Open SaveFilePath For Binary Access Read Write Lock Write As FF
 
     Status.Panels(STB_STATUS).Text = "Saving FileHeader..."
     WriteSaveFileHeader
@@ -157,7 +159,7 @@ Private Sub WriteSaveGlobalsGlobals()
     Dim i As Integer
 
     For i = 0 To SaveFileData.Globals.GlobalsNumber - 1
-        PutNext32BitULong SaveFileData.Globals.Globals(i).IRef
+        PutNext32BitULong SaveFileData.Globals.Globals(i).Iref
         PutNext32BitSingle SaveFileData.Globals.Globals(i).Value
     Next i
 

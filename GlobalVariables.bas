@@ -23,3 +23,4 @@ DefObj A-Z
 Global FF As Integer ' File handle to use for reads and writes of save files
 Global SaveFileData As ESS ' The data structure instance that holds the loaded data
 Global FactionData() As FactionEntry ' The various faction data points (loaded from an external file)
+Global HomePath As String

@@ -88,3 +88,24 @@ Public Function GetModIndex(ByVal ModName As String) As LongType
 
 End Function
 
+Public Function GetSpecialFolder(ByVal CSIDL As Long, ByRef Owner As Form) As String
+        
+    Dim Path As String
+    Dim IDL As ITEMIDLIST
+    '
+    ' Retrieve info about system folders such as the "Recent Documents" folder.
+    ' Info is stored in the IDL structure.
+    '
+    GetSpecialFolder = ""
+    If SHGetSpecialFolderLocation(Owner.hwnd, CSIDL, IDL) = 0 Then
+        '
+        ' Get the path from the ID list, and return the folder.
+        '
+        Path = Space(MAX_PATH)
+        If SHGetPathFromIDList(ByVal IDL.mkid.cb, ByVal Path) Then
+            GetSpecialFolder = VBA.Left(Path, InStr(Path, vbNullChar) - 1) & ""
+        End If
+    End If
+        
+End Function
+

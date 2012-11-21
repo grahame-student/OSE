@@ -1,4 +1,21 @@
-#Faction FormID, Faction Name, PlugIn Required,Max Rank,Ranks Low-->High
+# OSE - Oblivion Save Editor
+# Copyright (C) 2012  Grahame White
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#
+# Faction FormID, Faction Name, PlugIn Required, Max Rank, Ranks Low-->High
 90672,Adrian Decanius Faction,None,0,Member
 127398,Adventurer Faction,None,0,Member
 118316,Agarmir's Faction,None,0,No Kill I
@@ -194,6 +211,7 @@
 592064,Knights of the White Stallion,None,0,Knight-Errant
 139926,Mages' Guild,None,9,Associate,Apprentice,Journeyman,Evoker,Conjurer,Magician,Warlock,Wizard,Master-Wizard,Arch-Mage
 592043,Mazoga Friend,None,0,Mazoga Buddy
+256709,MQ06 Mythic Dawn Shrine Faction,None,0,Member
 948451,MQ09 Blades Faction,None,0,Member
 314957,MQ16 Allies Faction,None,0,Member
 621742,Mythic Dawn Assassins,None,0,Member
@@ -201,3 +219,19 @@
 622813,Order of the Virtuous Blood,None,0,Brother
 121805,Player Faction,None,0,Friend
 147812,Thieves' Guild,None,7,Pickpocket,Footpad,Bandit,Prowler,Cat Burglar,Shadowfoot,Master Thief,Gray Fox
+126157,Ulfgar Faction (Peace),None,0,Member
+645929,Ulfgar Faction (War),None,0,Member
+174925,Umbacano Faction,None,0,Member
+645919,Undead,None,0,Member
+623239,Unicorn Faction,None,0,Member
+114535,Vaermina Faction,None,0,Member
+3994,Valen Dreth's EEEVIL Faction,None,0,Member
+212819,Vampire Faction,None,0,Vampire
+442992,Vampire Hunters,None,0,Member
+21855,Veyond Bandits,None,0,Member
+206777,Waters Edge Faction,None,0,Member
+219512,Weebam Na Faction,None,0,Member
+196150,Wenderbek Cave tribe,None,0,Member
+172191,West Weald Inn,None,0,Member
+321667,Weynon Priory Citizen,None,0,Member
+43345,Worm Anchorite Faction,None,0,Member
