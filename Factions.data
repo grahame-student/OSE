@@ -22,25 +22,27 @@
 1594366,Aleswell - People Serethi Sisters Dislike,None,0,Member
 194656,Aleswell Faction,None,0,Member
 249105,All Dremora Guards and Torturers,None,0,Member
+119873,All Saints Inn,None,0,Member
 461170,Amantius Allectus Door Owners,None,0,Member
 38820,Amantius Allectus House,None,0,Member
 814198,Ancotar's Creatures,None,0,Member
 818199,Ancotar's Faction,None,0,Member
-41586,Anvil - Count's Arms,None,0,Member
-41604,Anvil - Enilroth Lovers,None,0,Member
-41588,Anvil - Foc'sle Faction,None,0,Member
-41589,Anvil - Heinrich Oaken-Hull's House,None,0,Member
-41590,Anvil - Inventius Family,None,0,Member
-41592,Anvil - Jesan Sextius Faction,None,0,Member
-41587,Anvil - Morvayn's Store Faction,None,0,Member
-41593,Anvil - Newheim faction,None,0,Member
-41594,Anvil - The Serpent's Wake,None,0,Member
 220824,Anvil Beggars,None,0,Beggar
 41583,Anvil Castle Residents,None,0,Member
 37492,Anvil Citizen,None,0,Member
+41586,Anvil Count's Arms,None,0,Member
+41604,Anvil Enilroth Lovers,None,0,Member
 41585,Anvil Flowing Bowl,None,0,Member
+41588,Anvil Foc'sle Faction,None,0,Member
 41584,Anvil Guard Faction,None,0,Member
 48231,Anvil Harborside Warehouse,None,0,Member
+41589,Anvil Heinrich Oaken-Hull's House,None,0,Member
+41590,Anvil Inventius Family,None,0,Member
+41592,Anvil Jesan Sextius Faction,None,0,Member
+41587,Anvil Morvayn's Store Faction,None,0,Member
+41593,Anvil Newheim faction,None,0,Member
+41594,Anvil Serpent's Wake,None,0,Member
+458943,Anvil Sirens,None,0,Member
 249104,Anyone Wearing Bands of the Chosen,None,0,Member
 332735,Arano Family,None,0,Member
 315759,Arcane University,None,0,Member
@@ -145,8 +147,10 @@
 508843,Deadite,None,0,Deadite
 29832,Deepscorn Hollow Prisoner,DLCVileLair.esp,0,Prisoner
 697888,Derelict Mine Tribe,None,0,Member
+418297,Dislike Player,None,0,Member
 9520,DL9 Commander Special Faction,MRazor.plugin,0,Member
 419131,Donton Faction,None,0,Member
+167481,Doomed House Guests,None,0,Member
 172155,Doran Family Faction,None,0,Member
 90676,Dovyn Aren Faction,None,0,Member
 443499,Draconis Family Faction,None,0,Member
@@ -160,6 +164,7 @@
 622773,E3DaedrothFaction,None,0,Member
 622672,E3HateLegion,None,0,Member
 538005,Eight Cities Couriers Customers,None,0,Member
+3304,Eight Original Knights,Knights.esp,0,Member
 427090,Elven Gardens Horse,None,0,Member
 86204,Emperor Faction,None,0,Member
 550263,Escaped Prisoner,None,0,Member
@@ -204,11 +209,61 @@
 114526,Hircine Faction,None,0,Member
 220742,Honmund Faction,None,0,Member
 314962,Horse Whisperer,None,0,Member
+90677,Ida Vlinorman Faction,None,0,Member
+605400,Imperial City Arena Monster Faction,None,0,Member
+89752,Imperial City Best Defense,None,0,Member
+220830,Imperial City Beggars,None,0,Beggar
+37493,Imperial City Citizens,None,0,Member
+317494,Imperial City Northeast Stables,None,0,Member 
+301070,Imperial City Palace Faction,None,0,Member
+90921,Imperial City Red Diamond Jewellery,None,0,Member
+317495,Imperial City SouthEast Stables,None,0,Member
+89753,Imperial City Three Brothers,None,0,Member
 240441,Imperial City Waterfront Resident,None,0,Poor
+317493,Imperial City West Stables,None,0,Member
+1618199,Imperial Legion,None,0,Member
+436268,Imperial Legion Battlemage,None,0,Member
 779589,Imperial Legion Friend,None,0,Member
+805376,Imperial Legion Outside,None,0,Member
+341233,Imperial Trading Company,None,1,Worker,Boss
+215151,Imperial Watch,None,3,Watchman,Captain,Centurion,Commander
+90670,Iniel Sintav Faction,None,0,Member
+311387,Inn of Ill Omen,None,0,Member
+90673,Irene Metric Faction,None,0,Member
 646787,Itius Hayn Friends,None,0,Member
+115794,Jailors,None,0,Member
+292834,Jair Family,None,0,Member
+130506,Jakben Family,None,0,Member
+41130,Janus Hassildor Faction,None,0,Member
+95748,Jastia Sintav Faction,None,0,Member
+219510,J'Bari Faction,None,0,Member
+172162,Jemane Family,None,0,Member
+220737,Jerall View Faction,None,0,Member
+9846,Kalthar Pet Faction,None,0,Member
+95746,Kastus Sintav Faction,None,0,Member
+553678,Kathutet's Personal Faction,None,0,Member
 3310,Knights of the Nine,Knights.esp,2,Knight Errant,Knight Commander,Divine Crusader
+210352,Knights of the Thorn,None,1,Honourary Knight,Knight-Errant
 592064,Knights of the White Stallion,None,0,Knight-Errant
+840489,Kurdan gro-Dragol's Faction,None,0,Class A Jerk
+242678,Kvatch Citizens,None,0,Member
+592576,Kvatch Creatures,None,0,Member
+140503,Kvatch Guards,None,0,Member
+292833,Kvinchal Family,None,0,Member
+256422,Kyn,None,5,Churl,Caitiff,Kynval,Kynreeve,Kynmarcher,Markynaz
+437054,Lachance Dungeon Faction,None,0,Member
+220831,Leyawiin Beggars,None,0,Beggar
+211181,Leyawiin Castle Faction,None,0,Member
+211180,Leyawiin Faction,None,0,Member
+216688,Leyawiin Guards,None,0,Member
+317491,Leyawiin Stables,None,0,Member
+382295,Lich Faction,None,0,Member
+220746,Lirrian Family,None,0,Member
+171905,Litte Family,None,0,Member
+653703,Lord Drad Faction,None,0,Member
+43521,Luronk gro-Glurzog,None,0,Member
+90675,Luther Broad Boarding House,None,0,Member
+810055,Lythandas Family,None,0,Family Member
 139926,Mages' Guild,None,9,Associate,Apprentice,Journeyman,Evoker,Conjurer,Magician,Warlock,Wizard,Master-Wizard,Arch-Mage
 592043,Mazoga Friend,None,0,Mazoga Buddy
 256709,MQ06 Mythic Dawn Shrine Faction,None,0,Member
@@ -218,7 +273,20 @@
 141244,Mythic Dawn CG Assassin,None,0,Member
 622813,Order of the Virtuous Blood,None,0,Brother
 121805,Player Faction,None,0,Friend
+427092,Talos Plaza Horse,None,0,Member
+246361,Tamika Winery Faction,None,0,Member
+427091,Temple District Horse,None,0,Member
+90680,Tertius Favonius Faction,None,0,Member
+130503,Thamriel's House,None,0,Member
+85905,Thaurron Pet Faction,None,0,Member
+37235,The Black Hand,None,0,Member
 147812,Thieves' Guild,None,7,Pickpocket,Footpad,Bandit,Prowler,Cat Burglar,Shadowfoot,Master Thief,Gray Fox
+217743,Three Sisters Faction,None,0,Member
+50837,Tiber Septim Hotel Faction,None,0,Member
+185750,Timberscar Cave Tribe,None,0,Member
+546621,Tired of Being in the Eternal Garden,None,0,Member
+172190,Two Sisters Faction,None,0,Member
+341906,Tyrellius Evil Faction,None,0,Evil Jerk
 126157,Ulfgar Faction (Peace),None,0,Member
 645929,Ulfgar Faction (War),None,0,Member
 174925,Umbacano Faction,None,0,Member
@@ -235,3 +303,4 @@
 172191,West Weald Inn,None,0,Member
 321667,Weynon Priory Citizen,None,0,Member
 43345,Worm Anchorite Faction,None,0,Member
+159209,Wrath of Sithis Secret Faction,None,0,Member
