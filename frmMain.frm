@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
 Begin VB.Form frmMain 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "OSE"
@@ -56,7 +56,7 @@ Begin VB.Form frmMain
             ScaleMode       =   3  'Pixel
             ScaleWidth      =   256
             TabIndex        =   50
-            ToolTipText     =   $"frmMain.frx":1CCA
+            ToolTipText     =   "Screenshot created at time of save. Click to save to a file. Dropping a bitmap here will replace the image"
             Top             =   1920
             Width           =   3840
          End
@@ -232,6 +232,7 @@ Begin VB.Form frmMain
             Height          =   2205
             Left            =   1320
             TabIndex        =   100
+            ToolTipText     =   "The list of all available factions"
             Top             =   1440
             Width           =   4695
          End
@@ -239,6 +240,7 @@ Begin VB.Form frmMain
             Height          =   315
             Left            =   1320
             TabIndex        =   99
+            ToolTipText     =   "The character's rank within the faction"
             Top             =   480
             Width           =   4695
          End
@@ -246,6 +248,7 @@ Begin VB.Form frmMain
             Height          =   315
             Left            =   1320
             TabIndex        =   96
+            ToolTipText     =   "The factions the character is a member of"
             Top             =   120
             Width           =   4695
          End
@@ -298,6 +301,7 @@ Begin VB.Form frmMain
             Left            =   4320
             TabIndex        =   93
             Text            =   "0"
+            ToolTipText     =   "The character's skill at talking to others"
             Top             =   840
             Width           =   1695
          End
@@ -307,6 +311,7 @@ Begin VB.Form frmMain
             Left            =   4320
             TabIndex        =   87
             Text            =   "0"
+            ToolTipText     =   "The character's skill at sneaking (0-255)"
             Top             =   600
             Width           =   1695
          End
@@ -316,6 +321,7 @@ Begin VB.Form frmMain
             Left            =   4320
             TabIndex        =   88
             Text            =   "0"
+            ToolTipText     =   "The character's skill at picking locks (0-255)"
             Top             =   360
             Width           =   1695
          End
@@ -325,6 +331,7 @@ Begin VB.Form frmMain
             Left            =   4320
             TabIndex        =   89
             Text            =   "0"
+            ToolTipText     =   "The character's skill as a merchant (0-255)"
             Top             =   120
             Width           =   1695
          End
@@ -334,6 +341,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   85
             Text            =   "0"
+            ToolTipText     =   "The character's skill as a marksman (0-255)"
             Top             =   3960
             Width           =   1695
          End
@@ -343,6 +351,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   69
             Text            =   "0"
+            ToolTipText     =   "The character's skill at using light armour (0-255)"
             Top             =   3720
             Width           =   1695
          End
@@ -352,6 +361,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   70
             Text            =   "0"
+            ToolTipText     =   "The character's skill at acrobatics (0-255)"
             Top             =   3480
             Width           =   1695
          End
@@ -361,6 +371,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   71
             Text            =   "0"
+            ToolTipText     =   "The character's skill at restoration magic (0-255)"
             Top             =   3240
             Width           =   1695
          End
@@ -370,6 +381,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   72
             Text            =   "0"
+            ToolTipText     =   "The character's skill at mysticism magic (0-255)"
             Top             =   3000
             Width           =   1695
          End
@@ -379,6 +391,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   73
             Text            =   "0"
+            ToolTipText     =   "The character's skill at illusion magic (0-255)"
             Top             =   2760
             Width           =   1695
          End
@@ -388,6 +401,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   74
             Text            =   "0"
+            ToolTipText     =   "The character's skill at destruction magic (0-255)"
             Top             =   2520
             Width           =   1695
          End
@@ -397,6 +411,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   75
             Text            =   "0"
+            ToolTipText     =   "The character's skill at conjuration magic (0-255)"
             Top             =   2280
             Width           =   1695
          End
@@ -406,6 +421,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   76
             Text            =   "0"
+            ToolTipText     =   "The character's skill at alteration magic (0-255)"
             Top             =   2040
             Width           =   1695
          End
@@ -415,6 +431,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   65
             Text            =   "0"
+            ToolTipText     =   "The character's skill at alchemy (0-255)"
             Top             =   1800
             Width           =   1695
          End
@@ -424,6 +441,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   66
             Text            =   "0"
+            ToolTipText     =   "The character's skill at using heavy armour (0-255)"
             Top             =   1560
             Width           =   1695
          End
@@ -433,6 +451,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   61
             Text            =   "0"
+            ToolTipText     =   "The character's skill at hand to hand combat (0-255)"
             Top             =   1320
             Width           =   1695
          End
@@ -442,6 +461,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   62
             Text            =   "0"
+            ToolTipText     =   "The character's skill with a blunt weapon (0-255)"
             Top             =   1080
             Width           =   1695
          End
@@ -451,6 +471,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   57
             Text            =   "0"
+            ToolTipText     =   "The character's skill at blocking (0-255)"
             Top             =   840
             Width           =   1695
          End
@@ -460,6 +481,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   58
             Text            =   "0"
+            ToolTipText     =   "The character's skill with a bladed weapon (0-255)"
             Top             =   600
             Width           =   1695
          End
@@ -469,6 +491,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   55
             Text            =   "0"
+            ToolTipText     =   "The character's skill at athletics (0-255)"
             Top             =   360
             Width           =   1695
          End
@@ -478,6 +501,7 @@ Begin VB.Form frmMain
             Left            =   1320
             TabIndex        =   54
             Text            =   "0"
+            ToolTipText     =   "The character's skill as an armourer (0-255)"
             Top             =   120
             Width           =   1695
          End
@@ -666,6 +690,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   32
             Text            =   "0"
+            ToolTipText     =   "The character's base health (0-30000)"
             Top             =   600
             Width           =   1695
          End
@@ -674,6 +699,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   33
             Text            =   "0"
+            ToolTipText     =   "The character's base fatigue (0-10000)"
             Top             =   360
             Width           =   1695
          End
@@ -682,6 +708,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   34
             Text            =   "0"
+            ToolTipText     =   "The player's base magicka (0-10000)"
             Top             =   120
             Width           =   1695
          End
@@ -727,6 +754,7 @@ Begin VB.Form frmMain
             MaxLength       =   254
             MultiLine       =   -1  'True
             TabIndex        =   25
+            ToolTipText     =   "The character's location at the time the save was made (0-254 characters)"
             Top             =   600
             Width           =   1695
          End
@@ -734,6 +762,7 @@ Begin VB.Form frmMain
             Height          =   285
             Left            =   1080
             TabIndex        =   26
+            ToolTipText     =   "The character's level (0-32767)"
             Top             =   360
             Width           =   1695
          End
@@ -742,6 +771,7 @@ Begin VB.Form frmMain
             Left            =   1080
             MaxLength       =   254
             TabIndex        =   27
+            ToolTipText     =   "The character's name (0-254 characters)"
             Top             =   120
             Width           =   1695
          End
@@ -787,6 +817,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   8
             Text            =   "0"
+            ToolTipText     =   "The character's base luck (0-255)"
             Top             =   1800
             Width           =   1695
          End
@@ -796,6 +827,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   9
             Text            =   "0"
+            ToolTipText     =   "The character's base personality (0-255)"
             Top             =   1560
             Width           =   1695
          End
@@ -805,6 +837,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   10
             Text            =   "0"
+            ToolTipText     =   "The character's base endurance (0-255)"
             Top             =   1320
             Width           =   1695
          End
@@ -814,6 +847,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   11
             Text            =   "0"
+            ToolTipText     =   "The character's base speed (0-255)"
             Top             =   1080
             Width           =   1695
          End
@@ -823,6 +857,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   12
             Text            =   "0"
+            ToolTipText     =   "The character's base agility (0-255)"
             Top             =   840
             Width           =   1695
          End
@@ -832,6 +867,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   13
             Text            =   "0"
+            ToolTipText     =   "The character's base willpower (0-255)"
             Top             =   600
             Width           =   1695
          End
@@ -841,6 +877,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   14
             Text            =   "0"
+            ToolTipText     =   "The character's base intelligence (0-255)"
             Top             =   360
             Width           =   1695
          End
@@ -850,6 +887,7 @@ Begin VB.Form frmMain
             Left            =   1080
             TabIndex        =   15
             Text            =   "0"
+            ToolTipText     =   "The character's base strength (0-255)"
             Top             =   120
             Width           =   1695
          End
@@ -1338,6 +1376,7 @@ Private Sub picScreenShot_OLEDragDrop(Data As DataObject, Effect As Long, Button
     ModifySavefileScreenShot picScreenShot
 
 End Sub
+
 
 Private Sub tabCategory_Click()
 

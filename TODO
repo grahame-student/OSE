@@ -7,13 +7,15 @@ TODO list
 TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
-			* Factions (started, needs more entries added to factions.data.
-			  Also needs a way to remove factions)
+			* Factions
+				: Needs more entries added to factions.data.
+				: Needs a way to remove factions from the list a player is a
+				  member of
+	- Allow user to select where to save screenshot
 TODO for 0.3.0:
 	- Add access to
 		o Player information
 			* Factions - plugin names need to be verified
-				: Vile Lair
 			* Spells
 			* Items
 DONE 0.2.0:
