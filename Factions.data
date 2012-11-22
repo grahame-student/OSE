@@ -99,6 +99,7 @@
 317488,Bruma Stables,None,0,Member
 206777,BWC Waters Edge Faction,None,0,Member
 321645,CG Creature Faction,None,0,Member
+324244,CG Domestic Rat Faction,None,0,Member
 324245,CG Goblins,None,0,Member
 126494,CG Blades Faction,None,0,Member
 427094,Chestnut Handy Stables,None,1,Stable Hand,Owner
@@ -194,6 +195,7 @@
 3305,Garlas Malatar Veterans,Knights.esp,0,Member
 119874,Gilen Norvalo's House Faction,None,0,Member
 169175,Glarthir Faction,None,0,Member
+169174,Glarthir Hates Us,None,0,Member
 201493,Goblin Jim's tribe,None,0,Member
 41726,Gogan's Family Faction,None,0,Member
 708204,Gottlesfont Faction,None,0,Member
@@ -246,6 +248,7 @@
 210352,Knights of the Thorn,None,1,Honourary Knight,Knight-Errant
 592064,Knights of the White Stallion,None,0,Knight-Errant
 840489,Kurdan gro-Dragol's Faction,None,0,Class A Jerk
+432632,Kvatch Chapel Refugees,None,0,Member
 242678,Kvatch Citizens,None,0,Member
 592576,Kvatch Creatures,None,0,Member
 140503,Kvatch Guards,None,0,Member
@@ -254,8 +257,10 @@
 437054,Lachance Dungeon Faction,None,0,Member
 220831,Leyawiin Beggars,None,0,Beggar
 211181,Leyawiin Castle Faction,None,0,Member
+50164,Leyawiin Dividing Line,None,0,Member
 211180,Leyawiin Faction,None,0,Member
 216688,Leyawiin Guards,None,0,Member
+219600,Leyawiin Noble Faction,None,0,Member
 317491,Leyawiin Stables,None,0,Member
 382295,Lich Faction,None,0,Member
 220746,Lirrian Family,None,0,Member
@@ -264,15 +269,117 @@
 43521,Luronk gro-Glurzog,None,0,Member
 90675,Luther Broad Boarding House,None,0,Member
 810055,Lythandas Family,None,0,Family Member
+431222,Mage Conversation Guild,None,0,Member
 139926,Mages' Guild,None,9,Associate,Apprentice,Journeyman,Evoker,Conjurer,Magician,Warlock,Wizard,Master-Wizard,Arch-Mage
+219508,Mahei Family,None,0,Member
+114527,Malacath Faction,None,0,Member
+653702,Malacath Ogre Faction,None,0,Member
+21900,Manheim and Rufio Faction,None,0,Member
+621741,Mankar Camoran Faction,None,0,Member
+546622,Mankar Camoran Haters,None,0,Member
+546597,Mankar Camoran Lovers,None,0,Member
+221137,Marauder Faction,None,1,Grunt,Boss
+219511,Margarte Faction,None,0,Member
+142191,Marillin Family,None,0,Father
+90678,Marinus Catiotus,None,0,Him
+591063,Martin's Faction,None,0,Member
+142268,Matthias Draconis Faction,None,0,Member
 592043,Mazoga Friend,None,0,Mazoga Buddy
+86763,Mehrunes Dagon Faction,None,0,Member
+114528,Mephala Faction,None,0,Member
+114529,Meridia Faction,None,0,Member
+335918,Methredhel's House,None,0,Member
+547158,Mogens Wind-Shifter Faction,None,0,Member
+114530,Molag Bal Faction,None,0,Member
+9519,Morag Tong,MRazor.plugin,0,Member
+50524,Moth Caretakers,None,0,Member
+605383,Moth Priests,None,0,Priest
 256709,MQ06 Mythic Dawn Shrine Faction,None,0,Member
 948451,MQ09 Blades Faction,None,0,Member
+623037,MQ10 Allies Faction,None,0,Member
+207764,MQ12 Goblin Faction,None,0,Member
+207763,MQ12 Undead Faction,None,0,Member
+160447,MQ13 Allies Faction,None,0,Member
+240520,MQ13 Daedra Faction,None,0,Member
+249127,MQ15 Enemy Faction,None,0,Member
+292807,MQ15 Wildlife Faction,None,0,Member
 314957,MQ16 Allies Faction,None,0,Member
+182053,MS22 Player Friend Faction,None,0,Member
+693317,MS27 Allies Faction,None,0,Member
+83651,MS31 Blackwater Brigands,None,0,Member
+610353,Mucianus Zombie Faction,None,0,Member
+4688,Mystic Emporium Faction,DLCFrostcrag.ESP,0,Member
+171906,Mythic Dawn,None,1,Initiate,Acolyte
 621742,Mythic Dawn Assassins,None,0,Member
+84512,Mythic Dawn CG,None,0,Member
 141244,Mythic Dawn CG Assassin,None,0,Member
+291361,Mythic Dawn Immortals in the Garden,None,0,Member
+160446,Mythic Dawn Prisoner,None,0,Member
+125922,Namira Faction,None,0,Member
+3307,ND Ghost Knight Faction,Knights.esp,0,Member
+3308,ND10 Minion Faction,Knights.esp,0,Member
+309516,Necromancer,None,0,Member
+49394,Necromancer's Cult,None,0,Member
+693049,Nenalata Undead Faction,None,0,Member
+140220,Nine Divines,None,9,Layman,Novice,Initiate,Acolyte,Adept,Disciple,Oracle,Invozer,Theurgist,Primate
+140220,Nine Divines (KoTN Version),Knights.esp,9,Layman,Novice,Initiate,Acolyte,Adept,Disciple,Oracle,Invozer,Theurgist,Primate
+140337,Nobility,None,4,Knight,Baron,Lord,Count,Duke
+114531,Nocturnal Faction,None,0,Member
+220738,Nord winds in Bruma,None,0,Member
+53080,No Wabba Faction,None,0,Member
+296749,Oblivion Creatures,None,0,Member
+344045,Oblivion Gate Daedra,None,0,Member
+589056,Oblivion Pals,None,0,Pal
+161073,Odiil Family,None,0,Member
+220843,Olav's Tap,None,0,Member
+142263,Ontus Vanin,None,0,Member
+712011,Order of the Dragon,None,0,Champion of Cyrodiil
 622813,Order of the Virtuous Blood,None,0,Brother
+90679,Othrelos Faction,None,0,Member
+158482,Pell's Gate Faction,None,0,Member
+114532,Peryite Faction,None,0,Member
+299861,Pirates,None,0,Member
+473301,Pirates of the Sea Tub Clarabella,None,0,Member
 121805,Player Faction,None,0,Friend
+41753,Player Vampire Faction,None,0,Member
+817451,Player's Horse,None,0,Member
+219513,Plotius Family Faction,None,0,Member
+3306,Predator,Knights.esp,0,One With Nature
+382294,Prey Creature,None,0,Member
+649872,Prisoner of Hackdirt Brethren,None,0,Member
+596699,Prisoners,None,0,Member
+697887,Pundered Mine Tribe,None,0,Member
+461163,Purification Faction,None,0,Member
+130504,Ra'jiradh's Pride,None,1,Son,Father
+232372,Raynil Dralas Faction,None,0,Raynil
+220754,Regner's House,None,0,Member
+182294,Renrijra Krin Faction,None,0,Member
+95742,Roderic Pierrane Faction,None,0,Member
+305548,Rohssan's Family,None,0,Member
+196631,Roxey Inn Faction,None,0,Member
+119878,Salomon Geonette's House,None,0,Member
+114533,Sanguine Faction,None,0,Member
+171907,Seed-Neeus Family,None,0,Member
+197100,Serethi Sisters,None,0,Member
+608185,Seridur House,None,0,House Mate
+20909,Seridur Is Evil,None,0,Evil
+473710,Shadowmere's Faction,None,0,Member
+114534,Sheogorath Faction,None,0,Member
+473300,Shuravi and Caelia's Faction,None,0,Member
+90674,Sintav Family,None,0,Member
+3309,Sir Roderic's Faction,Knights.esp,None,0,Member
+220832,Skingrad Beggars,None,0,Beggar
+172188,Skingrad Castle Faction,None,0,Member
+167543,Skingrad Citizen,None,0,Member
+174105,Skingrad Guards,None,0,Member
+317492,Skingrad Stables,None,0,Member
+21083,Sleeping Mare Faction,None,0,Member
+344044,Soldiers At Oblivion Gates,None,0,Member
+85080,Sparring Faction,None,0,Member
+47905,Sparring Faction Battlehorn,DLCFightersStronghold.esp,0,Member
+212701,Stealth Test Guards,None,0,Member
+172189,Surilie Brothers Faction,None,0,Member
+119879,Surius Afranius' House Faction,None,0,Member
 427092,Talos Plaza Horse,None,0,Member
 246361,Tamika Winery Faction,None,0,Member
 427091,Temple District Horse,None,0,Member
