@@ -213,6 +213,7 @@ Begin VB.Form frmMain
          Width           =   6135
          Begin VB.CommandButton cmdRemoveFaction 
             Caption         =   "Remove"
+            Enabled         =   0   'False
             Height          =   375
             Left            =   4800
             TabIndex        =   102
@@ -1116,6 +1117,12 @@ Private Sub cboFactions_Click()
     
     UpdateDisplay
 
+    If cboFactions.ListCount > 0 Then
+        cmdRemoveFaction.Enabled = True
+    Else
+        cmdRemoveFaction.Enabled = False
+    End If
+
 End Sub
 
 Private Sub cmdAddFaction_Click()
@@ -1159,6 +1166,51 @@ Private Sub cmdAddFaction_Click()
     
     cboFactions.ItemData(cboFactions.NewIndex) = Iref
 
+    RebuildPlayerChangeRecord
+
+End Sub
+
+Private Sub cmdRemoveFaction_Click()
+
+    Dim NewFactionList() As Faction
+    Dim ListIndex As Integer
+    Dim i As Integer
+    Dim FactionNumber As Integer
+
+    ' Remove Faction from the SaveFileData.OSE.Player.FactionList array
+    ' Remove Faction from combobox
+    ' Rebuild Player's ChangeRecord
+
+    ReDim NewFactionList(SaveFileData.OSE.Player.FactionCount - 2)
+
+    FactionNumber = 0
+
+    ListIndex = cboFactions.ListIndex
+
+    For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
+        If i <> cboFactions.ListIndex Then
+            NewFactionList(FactionNumber) = SaveFileData.OSE.Player.FactionList(i)
+            FactionNumber = FactionNumber + 1
+        End If
+    Next i
+
+    SaveFileData.OSE.Player.FactionCount = FactionNumber
+    SaveFileData.OSE.Player.FactionList = NewFactionList
+
+    cboFactions.RemoveItem cboFactions.ListIndex
+        
+    If cboFactions.ListCount > ListIndex Then
+        cboFactions.ListIndex = ListIndex
+    ElseIf cboFactions.ListCount > 0 Then
+        ListIndex = ListIndex - 1
+        If ListIndex < 0 Then
+            ListIndex = 0
+        End If
+        cboFactions.ListIndex = ListIndex
+    End If
+    
+    ' cboFactions_Click
+    
     RebuildPlayerChangeRecord
 
 End Sub

@@ -167,6 +167,8 @@ Public Sub RebuildPlayerChangeRecord()
 
     SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord) = tmpPlayerChangeRecord
 
+    ScanForPlayerMarkers
+
 End Sub
 
 Private Function GetNewPlayerRecordSize() As Integer

@@ -78,7 +78,7 @@ Private Function LocatePlayerRecord() As Long
 
 End Function
 
-Private Sub ScanForPlayerMarkers()
+Public Sub ScanForPlayerMarkers()
 
     ' Scan the player record for specific blocks, we need to rescan when the data
     ' structure changes size but it speeds up finding things.

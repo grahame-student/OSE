@@ -29,8 +29,7 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 		o base fatigue
 		o base attributes
 		o skills
-		o factions (only a few supported, fations.data needs updating to allow
-		  support for more. This can be done without recompiling OSE)
+		o factions (all factions added, but plugin names need to be verified)
 			* Amend factions the player is already a member of
 			* Add player to new factions
 

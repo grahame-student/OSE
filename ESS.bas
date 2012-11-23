@@ -146,7 +146,7 @@ End Type
 
 ' These blocks hold additional information to make it easier to navigate
 ' various records. DO NOT WRITE THEM TO THE NEW SAVE FILE
-Private Type Faction
+Public Type Faction
     Ref As Long
     Level As Byte
     Name As String
