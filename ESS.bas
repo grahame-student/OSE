@@ -145,7 +145,7 @@ End Type
 
 
 ' These blocks hold additional information to make it easier to navigate
-' various records. DO NOT WRITE THEM TO THE NEW SAVE FILE
+' various records. DO NOT WRITE THEM DIRECTLY TO THE NEW SAVE FILE
 Public Type Faction
     FormID As Long
     Level As Byte
@@ -214,7 +214,7 @@ End Type
 
 Private Type CreatedItems
     SpellRecords() As Long      ' The change records containing spells (-1 in element 0 for not present)
-    Items() As CreatedItem
+    Spells() As CreatedItem
 End Type
 
 Private Type Player

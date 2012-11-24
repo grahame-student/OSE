@@ -78,7 +78,24 @@ End Function
 
 Private Sub ProcessCustomSpells()
 
-    '
+    Dim MaxSpellIndex As Integer
+    Dim CurrentRecord As Integer
+    Dim i As Integer
+    
+    MaxSpellIndex = UBound(SaveFileData.OSE.CustomItems.SpellRecords)
+    
+    ReDim SaveFileData.OSE.CustomItems.Spells(MaxSpellIndex)
+    
+    For i = 0 To MaxSpellIndex
+        CurrentRecord = SaveFileData.OSE.CustomItems.SpellRecords(i)
+        
+        If ((SaveFileData.Globals.CreatedData(CurrentRecord).FormID And BIT_18) = 0) Then
+            ''' HERE '''
+            SaveFileData.OSE.CustomItems.Spells(i).Name = ""
+        Else
+            MsgBox "Created data compressed, cannot process in this version", vbOKOnly, "Not Supported in this version"
+        End If
+    Next i
 
 End Sub
 
