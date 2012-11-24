@@ -1,0 +1,376 @@
+# OSE - Oblivion Save Editor
+# Copyright (C) 2012  Grahame White
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#
+#Spell FormID,Spell Name,PlugIn
+693101,Absorb Attribute: Agility,None
+693102,Absorb Attribute: Endurance,None
+694152,Absorb Attribute: Intelligence,None
+694153,Absorb Attribute: Luck,None
+694155,Absorb Attribute: Speed,None
+694156,Absorb Attribute: Strength,None
+694157,Absorb Attribute: Willpower,None
+693099,Absorb Fatigue,None
+827594,Absorb Fatigue (25pts for 20 secs on Touch),None
+827595,Absorb Fatigue (35pts for 30 secs on Touch),None
+827596,Absorb Fatigue (50pts for 45 secs on Touch),None
+693095,Absorb Health,None
+693100,Absorb Magicka,None
+694158,Absorb Skill: Acrobatics,None
+694160,Absorb Skill: Alteration,None
+694162,Absorb Skill: Athletics,None
+694163,Absorb Skill: Blade,None
+694164,Absorb Skill: Block,None
+694165,Absorb Skill: Blunt,None
+694166,Absorb Skill: Conjuration,None
+694167,Absorb Skill: Destruction,None
+694168,Absorb Skill: Hand to Hand,None
+694169,Absorb Skill: Heavy Armour,None
+694170,Absorb Skill: Illusion,None
+694171,Absorb Skill: Light Armour,None
+694172,Absorb Skill: Marksman,None
+694173,Absorb Skill: Mercantile,None
+694174,Absorb Skill: Mysticism,None
+694175,Absorb Skill: Restoration,None
+694176,Absorb Skill: Security,None
+696177,Absorb Skill: Sneak,None
+694187,Aegis,None
+694188,Alluring Gaze,None
+694258,Artic Blow,None
+4677,Arctic Touch,DLCSpellTomes.esp
+4580,Aundae's Aura,DLCSpellTomes.esp
+4590,Baltham's Insight,DLCSpellTomes.esp
+448124,Baronoff's Bloody Icicle,None
+694275,Beast of Burden,None
+694190,Beguiling Touch,None
+4578,Berne's Aura,DLCSpellTomes.esp
+448125,Black Winter,None
+694241,Blazing Spear,None
+4626,Blink,DLCSpellTomes.esp
+246744,Blizzard,None
+448128,Bloodhunt,None
+694196,Bound Boots,None
+694197,Bound Bow,None
+694198,Bound Cuirass,None
+694199,Bound Dagger,None
+694200,Bound Gauntlets,None
+694201,Bound Greaves,None
+694202,Bound Helmet,None
+694203,Bound Mace,None
+694204,Bound Shield,None
+694205,Bound Sword,None
+694195,Bound War Axe,None
+129972,Bouyancy,None
+694209,Burdening Touch,None
+313630,Burning Touch,None
+694218,Calming Touch,None
+694311,Candlelight,None
+115885,Captivate,None
+694219,Chameleon,None
+4671,Chilling Touch,DLCSpellTomes.esp
+4644,Choking Grasp,DLCSpellTomes.esp
+694221,Cloak,None
+694255,Cold Touch,None
+694222,Command Creature,None
+246776,Command Humanoid,None
+694224,Commonding Touch,None
+693097,Consume Health,None
+448431,Convalescence,None
+694179,Corrode Armour,None
+694181,Corrode Weapon,None
+246778,Cure Disease,None
+246779,Cure Paralysis,None
+246780,Cure Poison,None
+694226,Curse of Weakness,None
+694313,Daylight,None
+448129,Deathly Visage,None
+694328,Debilitate,None
+4612,Decaying Blast,DLCSpellTomes.esp
+4620,Decaying Bolt,DLCSpellTomes.esp
+4621,Decaying Burst,DLCSpellTomes.esp
+4619,Decaying Taint,DLCSpellTomes.esp
+694184,Defend,None
+4632,Defensive Boost,DLCSpellTomes.esp
+448127,Detect Pulse,None
+693098,Devour Health,None
+246769,Dire Enervation,None
+313620,Dire Wound,None
+7561,Disease Resistance,DLCSpellTomes.esp
+694182,Disintegrate Weapon,None
+696427,Dismiss Undead,None
+246773,Dispel Other,None
+694223,Dominate Creature,None
+246777,Dominate Humanoid,None
+694225,Dominating Touch,None
+246761,Drain Skill: Alteration,None
+246764,Drain Skill: Blade,None
+246765,Drain Skill: Conjuration,None
+246760,Drain Skill: Destruction,None
+246762,Drain Skill: Hand to Hand,None
+246763,Drain Skill: Heavy Armour,None
+246759,Drain Skill: Illusion,None
+246758,Drain Skill: Marksman,None
+246766,Drain Skill: Restoration,None
+694272,Ease Burden,None
+694314,Electric Shell,None
+694267,Electric Touch,None
+4601,Electrifying Blast,DLCSpellTomes.esp
+4600,Electrifying Bolt,DLCSpellTomes.esp
+4602,Electrifying Burst,DLCSpellTomes.esp
+4604,Electrifying Spark,DLCSpellTomes.esp
+4665,Electrifying Touch,DLCSpellTomes.esp
+4669,Electrocuting Touch,DLCSpellTomes.esp
+694265,Electrocution,None
+4640,Elemental Blast,DLCSpellTomes.esp
+4636,Elemental Bolt,DLCSpellTomes.esp
+4638,Elemental Burst,DLCSpellTomes.esp
+4634,Elemental Flare,DLCSpellTomes.esp
+694211,Encumbering Touch,None
+83744,Enemies Explode,None
+4618,Enhanced Visibility,DLCSpellTomes.esp
+694271,Enthralling Presence,None
+694193,Entropic Bolt,None
+694227,Entropic Touch,None
+694319,Eyes of Eventide,None
+694320,Eyes of Midnight,None
+694230,Fearful Gaze,None
+4653,Fenrik's Welcome,DLCSpellTomes.esp
+694247,Fire Ball,None
+694280,Fire Shield,None
+694248,Fire Storm,None
+694279,Flame Shield,None
+694249,Flame Tempest,None
+694244,Flame Touch,None
+4659,Flammable Touch,DLCSpellTomes.esp
+694239,Flare,None
+694240,Flash Bolt,None
+694289,Fortify Agility,None
+694290,Fortify Endurance,None
+246789,Fortify Fatigue,None
+694304,Fortify Health,None
+694291,Fortify Intelligence,None
+694292,Fortify Luck,None
+246791,Fortify Magicka,None
+694293,Fortify Personality,None
+694294,Fortify Speed,None
+694295,Fortify Strength,None
+694296,Fortify Willpower,None
+4611,Freezing Blast,DLCSpellTomes.esp
+4605,Freezing Bolt,DLCSpellTomes.esp
+4606,Freezing Burst,DLCSpellTomes.esp
+4613,Freezing Shard,DLCSpellTomes.esp
+4673,Freezing Touch,DLCSpellTomes.esp
+694297,Frenzy,None
+4675,Frostbite,DLCSpellTomes.esp
+694252,Frost Bolt,None
+694301,Frost Shell,None
+694207,Ghostwalk,None
+694303,Glacial Wall,None
+694232,Grasp of Terror,None
+816737,Greater Convalescence,None
+694322,Greater Dispel,None
+694325,Greater Dispel Other,None
+694281,Greater Fortify Agility,None
+694282,Greater Fortify Endurance,None
+246790,Greater Fortify Fatigue,None
+694305,Greater Fortify Health,None
+694283,Greater Fortify Intelligence,None
+694284,Greater Fortify Luck,None
+246793,Greater Fortify Magicka,None
+694285,Greater Fortify Personality,None
+694286,Greater Fortify Speed,None
+694287,Greater Fortify Strength,None
+694288,Greater Fortify Willpower,None
+694234,Greater Life Detection,None
+246772,Greater Magicka Drain,None
+694185,Guard,None
+694251,Hailstone,None
+246742,Hail Storm,None
+4646,Hangman's Noose,DLCSpellTomes.esp
+696378,Heal Greater Wounds,None
+538388,Heal Legendary Wounds,None
+694306,Heal Major Wounds,None
+310,Heal Minor Wounds,None
+696379,Heal Superior Wounds,None
+694242,Heat Blast,None
+694278,Heat Shell,None
+696373,Heroic Touch,None
+696372,Heroism,None
+694210,Hindering Touch,None
+160833,Hush,None
+694254,Ice Blast,None
+694302,Ice Shield,None
+246743,Ice Storm,None
+668061,Illuminate,None
+694329,Immobilise,None
+694243,Immolating Blast,None
+4598,Immolating Touch,DLCSpellTomes.esp
+696370,Inspiration,None
+696371,Inspiring Touch,None
+4584,Karstaag's Breath,DLCSpellTomes.esp
+4592,Kindling Touch,DLCSpellTomes.esp
+693096,Leech Health,None
+3305,Leech Vitality,DLCSpellTomes.esp
+694324,Legendary Dispel,None
+694238,Legendary Life Detection,None
+246772,Legendary Magicka Drain,None
+696402,Legendary Soul Trap,None
+696406,Legendary Spell Absorption,None
+696403,Legendary Spell Reflection,None
+694273,Lighten Load,None
+246746,Lightning Ball,None
+694269,Lightning Blast,None
+694264,Lightning Bolt,None
+694268,Lightning Grasp,None
+694315,Lightning Shield,None
+246747,Lightning Storm,None
+694262,Lightning Surge,None
+4667,Lightning Touch,DLCSpellTomes.esp
+694316,Lightning Wall,None
+4652,Llivam's Reversal,DLCSpellTomes.esp
+313615,Magicka Drain,None
+4792,Magicka Vortex,DLCSpellTomes.esp
+694321,Major Dispel,None
+246768,Major Enervation,None
+694235,Major Life Detection,None
+694307,Major Respite,None
+313619,Major Wound,None
+4588,Mara's Grace,DLCSpellTomes.esp
+10305,Mara's Wrath,DLCSpellTomes.esp
+3306,Mark of Fire,DLCSpellTomes.esp
+694191,Mesmerising Grasp,None
+578025,Minor Dispel,None
+246767,Minor Enervation,None
+118509,Minor Latch Crack,None
+694236,Minor Life Detection,None
+578026,Minor Magic Resistance,None
+160835,Minor Respite,None
+313618,Minor Wound,None
+694310,Moonlight,None
+696423,Movement Mastery,None
+696396,Mute,None
+4576,Night Form,DLCSpellTomes.esp
+448122,Night Mother's Caress,None
+694326,Open Average Lock,None
+694308,Open Easy Lock,None
+694327,Open Hard Lock,None
+694270,Open Very Easy Lock,None
+694212,Oppressing Grasp,None
+4575,Orum's Aquatic Escape,DLCSpellTomes.esp
+694215,Pacification,None
+694274,Pack Mule,None
+694330,Paralyze,None
+4586,Pride of Hirstaang,DLCSpellTomes.esp
+694183,Protect,None
+462992,Protect Other,None
+696421,Psychic Motion,None
+4582,Quarra's Aura,DLCSpellTomes.esp
+694298,Rage,None
+696426,Rebuke Undead,None
+696420,Remote Manipulation,None
+696425,Repulse Undead,None
+7570,Resist Paralysis,DLCSpellTomes.esp
+7572,Resist Poison,DLCSpellTomes.esp
+696380,Restore Agility,None
+696383,Restore Endurance,None
+696386,Restore Intelligence,None
+696384,Restore Luck,None
+696388,Restore Personality,None
+696393,Restore Speed,None
+696391,Restore Strength,None
+696394,Restore Willpower,None
+694246,Scorching Blow,None
+4661,Scorching Touch,DLCSpellTomes.esp
+696433,Sea Stride,None
+4657,Searing Blast,DLCSpellTomes.esp
+4655,Searing Bolt,DLCSpellTomes.esp
+4594,Searing Burst,DLCSpellTomes.esp
+4596,Searing Flare,DLCSpellTomes.esp
+694245,Searing Grasp,None
+694189,Seductive Charm,None
+694214,Serenity,None
+246748,Sever Magicka,None
+694206,Shadow Shape,None
+694186,Shield,None
+4630,Shieldwall,DLCSpellTomes.esp
+694260,Shock,None
+246745,Shocking Burst,None
+694266,Shocking Touch,None
+448120,Shroudwalk,None
+696397,Silence,None
+694250,Snowball,None
+694217,Soothing Touch,None
+4628,Soul Grasp,DLCSpellTomes.esp
+696399,Soul Trap,None
+694259,Spark,None
+4663,Spark Touch,DLCSpellTomes.esp
+114988,Stark Reality,None
+694309,Starlight,None
+4642,Strangulation,DLCSpellTomes.esp
+694208,Spectral Form,None
+696407,Summon Clannfear,None
+696408,Summon Daedroth,None
+696409,Summon Dremora,None
+246803,Summon Dremora Lord,None
+696418,Summon Faded Wraith,None
+696410,Summon Flame Atronach,None
+696411,Summon Frost Atronach,None
+696412,Summon Ghost,None
+246809,Summon Gloom Wraith,None
+246804,Summon Headless Zombie,None
+696413,Summon Lich,None
+696414,Summon Scamp,None
+696415,Summon Skeleton,None
+246807,Summon Skeleton Champion,None
+246805,Summon Skeleton Guardian,None
+246806,Summon Skeleton Hero,None
+246808,Summon Spider Daedra,None
+696416,Summon Storm Atronach,None
+696417,Summon Xivilai,None
+696419,Summon Zombie,None
+816738,Superior Convalescence,None
+694323,Superior Dispel,None
+694237,Superior Life Detection,None
+246771,Superior Magicka Drain,None
+696401,Superior Soul Trap,None
+696405,Superior Spell Absorption,None
+696377,Superior Spell Reflection,None
+313621,Superior Wound,None
+696422,Telekinesis,None
+694233,Terrifying Presence,None
+448126,The Unwelcome Guest,None
+4786,Thunderclap,DLCSpellTomes.esp
+694220,Torchlight,None
+4648,Touch of Death,DLCSpellTomes.esp
+694231,Touch of Fear,None
+694299,Touch of Frenzy,None
+694300,Touch of Rage,None
+696424,Turn Undead,None
+694229,Voice of Dread,None
+694192,Voice of Rapture,None
+448123,Void Gazer,None
+696428,Water Breathing,None
+126847,Weak Fireball,None
+246797,Weakness to Fire,None
+246798,Weakness to Frost,None
+246799,Weakness to Magicka,None
+246801,Weakness to Poison,None
+246802,Weakness to Shock,None
+462986,Weight of the World,None
+448121,Will of Sithis,None
+694257,Winter's Grasp,None
+694194,Withering Bolt,None
+694228,Withering Touch,None

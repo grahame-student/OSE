@@ -57,7 +57,7 @@ Private Type PlayerLocation
 End Type
 
 Private Type GlobalsStructure
-    Iref As Long
+    iRef As Long
     Value As Single
 End Type
 
@@ -147,12 +147,18 @@ End Type
 ' These blocks hold additional information to make it easier to navigate
 ' various records. DO NOT WRITE THEM TO THE NEW SAVE FILE
 Public Type Faction
-    Ref As Long
+    FormID As Long
     Level As Byte
     Name As String
     MaxRank As Integer
     Ranks() As String
     Suspended As Boolean
+End Type
+
+Public Type Spell
+    iRef As Long
+    FormID As Long
+    Name As String
 End Type
 
 Private Type BaseMod
@@ -176,7 +182,7 @@ Private Type Player
     FactionCount As Integer     ' Number of factions the player is in
     FactionList() As Faction    ' The list of factions the player is in
     SpellCount As Integer       ' Number of spells the player has
-    SpellList() As Long         ' The irefs of the spells
+    SpellList() As Spell         ' The irefs of the spells
     BaseModCount As Integer     ' Number of BaseMods
     BaseModList() As BaseMod    ' List of the BaseMods
     FullNameString As String    ' The FullName

@@ -200,6 +200,74 @@ Begin VB.Form frmMain
       Top             =   480
       Visible         =   0   'False
       Width           =   7575
+      Begin VB.PictureBox pnlSpells 
+         Appearance      =   0  'Flat
+         ForeColor       =   &H80000008&
+         Height          =   4335
+         Left            =   1320
+         ScaleHeight     =   4305
+         ScaleWidth      =   6105
+         TabIndex        =   104
+         Top             =   120
+         Width           =   6135
+         Begin VB.CommandButton cmdAddSpell 
+            Caption         =   "Add"
+            Enabled         =   0   'False
+            Height          =   375
+            Left            =   4800
+            TabIndex        =   110
+            Top             =   3840
+            Width           =   1215
+         End
+         Begin VB.CommandButton cmdRemoveSpell 
+            Caption         =   "Remove"
+            Enabled         =   0   'False
+            Height          =   375
+            Left            =   4800
+            TabIndex        =   109
+            Top             =   840
+            Width           =   1215
+         End
+         Begin VB.ListBox lstAllSpells 
+            Height          =   2205
+            Left            =   1320
+            TabIndex        =   107
+            ToolTipText     =   "The list of all available factions"
+            Top             =   1440
+            Width           =   4695
+         End
+         Begin VB.ComboBox cboPlayerSpells 
+            Height          =   315
+            Left            =   1320
+            TabIndex        =   105
+            ToolTipText     =   "The factions the character is a member of"
+            Top             =   120
+            Width           =   4695
+         End
+         Begin VB.Label lblAllSpells 
+            Caption         =   "All Spells"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   108
+            Top             =   1440
+            Width           =   1095
+         End
+         Begin VB.Line linDividor2 
+            BorderColor     =   &H00C0C0C0&
+            X1              =   120
+            X2              =   6000
+            Y1              =   1320
+            Y2              =   1320
+         End
+         Begin VB.Label lblSpells 
+            Caption         =   "Spells"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   106
+            Top             =   120
+            Width           =   1095
+         End
+      End
       Begin VB.PictureBox pnlFactions 
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
@@ -229,7 +297,7 @@ Begin VB.Form frmMain
             Top             =   3840
             Width           =   1215
          End
-         Begin VB.ListBox lstFactions 
+         Begin VB.ListBox lstAllFactions 
             Height          =   2205
             Left            =   1320
             TabIndex        =   100
@@ -261,7 +329,7 @@ Begin VB.Form frmMain
             Top             =   1440
             Width           =   1095
          End
-         Begin VB.Line Line 
+         Begin VB.Line linDivider1 
             BorderColor     =   &H00C0C0C0&
             X1              =   120
             X2              =   6000
@@ -971,7 +1039,7 @@ Begin VB.Form frmMain
          TabFixedWidth   =   1764
          _Version        =   393216
          BeginProperty Tabs {1EFB6598-857C-11D1-B16A-00C0F0283628} 
-            NumTabs         =   3
+            NumTabs         =   4
             BeginProperty Tab1 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
                Caption         =   "Attributes"
                ImageVarType    =   2
@@ -982,6 +1050,10 @@ Begin VB.Form frmMain
             EndProperty
             BeginProperty Tab3 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
                Caption         =   "Factions"
+               ImageVarType    =   2
+            EndProperty
+            BeginProperty Tab4 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
+               Caption         =   "Spells"
                ImageVarType    =   2
             EndProperty
          EndProperty
@@ -1129,11 +1201,11 @@ Private Sub cmdAddFaction_Click()
 
     Dim NewFaction As String
     Dim i As Integer
-    Dim Iref As Long
+    Dim iRef As Long
 
     ' Check player's faction list to see if the selected faction is in there
     ' If it's not there then:
-    NewFaction = lstFactions.Text
+    NewFaction = lstAllFactions.Text
 
     For i = 0 To cboFactions.ListCount - 1
         If cboFactions.List(i) = NewFaction Then
@@ -1144,27 +1216,27 @@ Private Sub cmdAddFaction_Click()
 
     '   Add the selected faction to the player's list
     '   Add the faction at the lowest available level
-    cboFactions.AddItem lstFactions.Text
+    cboFactions.AddItem lstAllFactions.Text
     
-    Iref = GetIref(lstFactions.ItemData(lstFactions.ListIndex))
+    iRef = GetIref(lstAllFactions.ItemData(lstAllFactions.ListIndex))
     ' The FormID isn't in the array therefore a new Iref needs to ba added to the FormID array
-    If Iref = -1 Then
+    If iRef = -1 Then
         ' Make room for the new Iref
         ReDim Preserve SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs)
         ' Put the Faction's FormID into the new position
-        SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs) = lstFactions.ItemData(lstFactions.ListIndex)
+        SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs) = lstAllFactions.ItemData(lstAllFactions.ListIndex)
         ' Increase the number of FormIDs by 1
-        Iref = SaveFileData.FormIDs.NumberOfFormIDs
+        iRef = SaveFileData.FormIDs.NumberOfFormIDs
         SaveFileData.FormIDs.NumberOfFormIDs = SaveFileData.FormIDs.NumberOfFormIDs + 1
     End If
     
     ReDim Preserve SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount)
-    SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount).Ref = lstFactions.ItemData(lstFactions.ListIndex)
+    SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount).FormID = lstAllFactions.ItemData(lstAllFactions.ListIndex)
     SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount).Level = 0
-    GetFaction GetFormID(Iref), SaveFileData.OSE.Player.FactionCount
+    GetFaction GetFormID(iRef), SaveFileData.OSE.Player.FactionCount
     SaveFileData.OSE.Player.FactionCount = SaveFileData.OSE.Player.FactionCount + 1
     
-    cboFactions.ItemData(cboFactions.NewIndex) = Iref
+    cboFactions.ItemData(cboFactions.NewIndex) = iRef
 
     RebuildPlayerChangeRecord
 
@@ -1294,7 +1366,7 @@ Private Sub ParseFactionData(ByVal DataLine As String)
 
     FactionVariables() = Split(DataLine, ",")
 
-    FactionData(FactionCount).Reference = Val(FactionVariables(0))
+    FactionData(FactionCount).FormID = Val(FactionVariables(0))
     FactionData(FactionCount).Name = FactionVariables(1)
     FactionData(FactionCount).PlugIn = FactionVariables(2)
     FactionData(FactionCount).MaxRank = Val(FactionVariables(3))
@@ -1306,6 +1378,42 @@ Private Sub ParseFactionData(ByVal DataLine As String)
     Next i
 
     FactionCount = FactionCount + 1
+
+End Sub
+
+Private Sub LoadSpellData()
+
+    Dim SpellFF As Integer
+    Dim NextLine As String
+        
+    SpellFF = FreeFile
+
+    Open App.Path & "\Spells.data" For Input As #SpellFF
+    Do Until EOF(SpellFF)
+        Line Input #SpellFF, NextLine
+        If Mid$(NextLine, 1, 1) <> "#" Then
+            ParseSpellData NextLine
+        End If
+    Loop
+    Close #SpellFF
+
+End Sub
+
+Private Sub ParseSpellData(ByVal DataLine As String)
+
+    Static SpellCount As Long
+    Dim SpellVariables() As String
+    Dim i As Integer
+    
+    ReDim Preserve SpellData(SpellCount)
+
+    SpellVariables() = Split(DataLine, ",")
+
+    SpellData(SpellCount).FormID = Val(SpellVariables(0))
+    SpellData(SpellCount).Name = SpellVariables(1)
+    SpellData(SpellCount).PlugIn = SpellVariables(2)
+
+    SpellCount = SpellCount + 1
 
 End Sub
 
@@ -1325,7 +1433,7 @@ Private Sub lblSaveTime_Click()
     
 End Sub
 
-Private Sub lstFactions_Click()
+Private Sub lstAllFactions_Click()
 
     cmdAddFaction.Enabled = True
 
@@ -1345,12 +1453,13 @@ End Sub
 
 Private Sub mnuOpen_Click()
 
-    lstFactions.Clear
-
+    lstAllFactions.Clear
     LoadFactionData
 
-    ClearSaveFileData
+    lstAllSpells.Clear
+    LoadSpellData
 
+    ClearSaveFileData
     OpenSaveFile GetFilename
 
 End Sub
@@ -1533,6 +1642,8 @@ Private Sub UpdateDisplayPlayer()
             UpdateDisplayPlayerSkills
         Case TAB_SUB_CAT_PLAYER_FACTIONS
             UpdateDisplayPlayerFactions
+        Case TAB_SUB_CAT_PLAYER_SPELLS
+            UpdateDisplayPlayerSpells
     End Select
 
 End Sub
@@ -1608,8 +1719,6 @@ End Sub
 Private Sub UpdateDisplayPlayerFactions()
     
     Dim i As Integer
-    Dim Offset As Long
-    Dim FactionNumber As Integer
         
     If cboFactions.ListCount <> SaveFileData.OSE.Player.FactionCount Then
         For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
@@ -1625,6 +1734,19 @@ Private Sub UpdateDisplayPlayerFactions()
     
     cboFactionRank.ListIndex = SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level
                 
+End Sub
+
+Private Sub UpdateDisplayPlayerSpells()
+
+    Dim i As Integer
+
+    If cboPlayerSpells.ListCount <> SaveFileData.OSE.Player.SpellCount Then
+        For i = 0 To SaveFileData.OSE.Player.SpellCount - 1
+            cboPlayerSpells.AddItem SaveFileData.OSE.Player.SpellList(i).Name
+        Next i
+        cboPlayerSpells.ListIndex = 0
+    End If
+
 End Sub
 
 Private Sub mnuSave_Click()
@@ -1677,6 +1799,8 @@ Private Sub tabPlayerSubCategory_Click()
             pnlSkills.Visible = True
         Case TAB_SUB_CAT_PLAYER_FACTIONS
             pnlFactions.Visible = True
+        Case TAB_SUB_CAT_PLAYER_SPELLS
+            pnlSpells.Visible = True
     End Select
 
     UpdateDisplay
@@ -1690,6 +1814,7 @@ Private Sub HideAllPlayerSubPanels()
     pnlBaseAttributes.Visible = False
     pnlSkills.Visible = False
     pnlFactions.Visible = False
+    pnlSpells.Visible = False
 
 End Sub
 

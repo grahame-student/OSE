@@ -26,10 +26,12 @@ Public Sub ScanForMarkers(ByRef MainForm As Form)
         ScanForPlayerMarkers
         If SaveFileData.OSE.Player.Factions <> -1 Then
             FixFactionReferences
-            PopulateListBox MainForm
+            PopulateFactionListBox MainForm
             InitPlayerFactions
         End If
         If SaveFileData.OSE.Player.Spells <> -1 Then
+            FixSpellReferences
+            PopulateSpellListBox MainForm
             InitPlayerSpells
         End If
         If SaveFileData.OSE.Player.BaseModifiers <> -1 Then
@@ -45,19 +47,42 @@ Private Sub FixFactionReferences()
 
     For FactionNumber = 0 To UBound(FactionData())
         If FactionData(FactionNumber).PlugIn <> "None" Then
-            FactionData(FactionNumber).Reference = (FactionData(FactionNumber).Reference Or GetModIndex(FactionData(FactionNumber).PlugIn).Result)
+            FactionData(FactionNumber).FormID = (FactionData(FactionNumber).FormID Or GetModIndex(FactionData(FactionNumber).PlugIn).Result)
         End If
     Next FactionNumber
 
 End Sub
 
-Public Sub PopulateListBox(ByRef MainForm As Form)
+Private Sub FixSpellReferences()
+
+    Dim SpellNumber As Integer
+
+    For SpellNumber = 0 To UBound(SpellData())
+        If SpellData(SpellNumber).PlugIn <> "None" Then
+            SpellData(SpellNumber).FormID = (SpellData(SpellNumber).FormID Or GetModIndex(SpellData(SpellNumber).PlugIn).Result)
+        End If
+    Next SpellNumber
+
+End Sub
+
+Public Sub PopulateFactionListBox(ByRef MainForm As Form)
 
     Dim i As Integer
 
     For i = 0 To UBound(FactionData())
-        MainForm.lstFactions.AddItem FactionData(i).Name, i
-        MainForm.lstFactions.ItemData(i) = FactionData(i).Reference
+        MainForm.lstAllFactions.AddItem FactionData(i).Name, i
+        MainForm.lstAllFactions.ItemData(i) = FactionData(i).FormID
+    Next i
+
+End Sub
+
+Public Sub PopulateSpellListBox(ByRef MainForm As Form)
+
+    Dim i As Integer
+
+    For i = 0 To UBound(SpellData())
+        MainForm.lstAllSpells.AddItem SpellData(i).Name, i
+        MainForm.lstAllSpells.ItemData(i) = SpellData(i).FormID
     Next i
 
 End Sub
@@ -186,8 +211,8 @@ Private Sub InitPlayerFactions()
 
     Dim i As Long
     Dim Offset As Long
-    Dim RawRef As ByteArray
-    Dim Ref As LongType
+    Dim RawiRef As ByteArray
+    Dim iRef As LongType
     Dim Level As Byte
 
     Offset = SaveFileData.OSE.Player.Factions + 2
@@ -195,29 +220,29 @@ Private Sub InitPlayerFactions()
     ReDim SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount - 1)
 
     For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
-        RawRef.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
-        RawRef.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1)
-        RawRef.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 2)
-        RawRef.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 3)
+        RawiRef.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
+        RawiRef.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1)
+        RawiRef.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 2)
+        RawiRef.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 3)
         
-        LSet Ref = RawRef
+        LSet iRef = RawiRef
         
         Level = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 4)
-        SaveFileData.OSE.Player.FactionList(i).Ref = GetFormID(Ref.Result)
+        SaveFileData.OSE.Player.FactionList(i).FormID = GetFormID(iRef.Result)
         SaveFileData.OSE.Player.FactionList(i).Level = Level
         
-        GetFaction SaveFileData.OSE.Player.FactionList(i).Ref, i
+        GetFaction SaveFileData.OSE.Player.FactionList(i).FormID, i
         Offset = Offset + 5
     Next i
 
 End Sub
 
-Public Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
+Public Sub GetFaction(ByVal FormID As Long, ByVal IndexNumber As Integer)
 
     Dim i As Integer
     
     For i = 0 To UBound(FactionData())
-        If Reference = FactionData(i).Reference Then
+        If FormID = FactionData(i).FormID Then
             SaveFileData.OSE.Player.FactionList(IndexNumber).Name = FactionData(i).Name
             SaveFileData.OSE.Player.FactionList(IndexNumber).MaxRank = FactionData(i).MaxRank
             If SaveFileData.OSE.Player.FactionList(IndexNumber).Level = &HFF& Then
@@ -228,13 +253,61 @@ Public Sub GetFaction(ByVal Reference As Long, ByVal IndexNumber As Integer)
         End If
     Next i
     
-    MsgBox "Reference not recognised (" & Reference & ")", vbOKOnly, "Unknown Reference"
+    MsgBox "FormID not recognised (" & FormID & ")", vbOKOnly, "Unknown FormID"
     
 End Sub
 
 Private Sub InitPlayerSpells()
 
+    Dim i As Long
+    Dim Offset As Long
+    Dim RawiRef As ByteArray
+    Dim iRef As LongType
+    
+    Offset = SaveFileData.OSE.Player.Spells + 2
+    
     ReDim SaveFileData.OSE.Player.SpellList(SaveFileData.OSE.Player.SpellCount - 1)
+
+    For i = 0 To SaveFileData.OSE.Player.SpellCount - 1
+        RawiRef.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
+        RawiRef.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1)
+        RawiRef.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 2)
+        RawiRef.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 3)
+        
+        LSet iRef = RawiRef
+                
+        ' Add extra code to handle custom spells here
+        SaveFileData.OSE.Player.SpellList(i).iRef = iRef.Result
+        SaveFileData.OSE.Player.SpellList(i).FormID = GetFormID(iRef.Result)
+        SaveFileData.OSE.Player.SpellList(i).Name = GetSpell(SaveFileData.OSE.Player.SpellList(i).FormID)
+        
+        Offset = Offset + 4
+    Next i
+
+End Sub
+
+Public Function GetSpell(ByVal FormID As Long) As String
+
+    Dim i As Integer
+    
+    If FormID < 0 Then
+        GetCustomSpell FormID
+    End If
+    
+    For i = 0 To UBound(SpellData())
+        If FormID = SpellData(i).FormID Then
+            GetSpell = SpellData(i).Name
+            Exit Function
+        End If
+    Next i
+    
+    MsgBox "FormID not recognised (" & FormID & ")", vbOKOnly, "Unknown FormID"
+    
+End Function
+
+Private Sub GetCustomSpell(ByVal FormID As Long)
+
+    ' Stub
 
 End Sub
 

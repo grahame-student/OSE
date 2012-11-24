@@ -49,10 +49,15 @@ Public Sub ValidateInput(ByRef CheckTextBox As TextBox, ByVal MinVal As Long, By
 
 End Sub
 
-Public Function GetFormID(ByVal Iref As Long) As Long
+Public Function GetFormID(ByVal iRef As Long) As Long
 
-    If Iref < SaveFileData.FormIDs.NumberOfFormIDs Then
-        GetFormID = SaveFileData.FormIDs.FormIDsList(Iref)
+    If iRef < 0 Then
+        GetFormID = -1
+        Exit Function
+    End If
+
+    If iRef < SaveFileData.FormIDs.NumberOfFormIDs Then
+        GetFormID = SaveFileData.FormIDs.FormIDsList(iRef)
     End If
 
 End Function

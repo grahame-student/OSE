@@ -24,7 +24,7 @@ Public Const PROGRAM_NAME As String = "OSE"
 
 Public Const VERSION_MAJOR As Integer = 0
 Public Const VERSION_MINOR As Integer = 1
-Public Const VERSION_REVISION As Integer = 0
+Public Const VERSION_REVISION As Integer = 1
 
 Public Const PROGRAM_TITLE As String = PROGRAM_NAME & " - " & _
                                        VERSION_MAJOR & "." & _
@@ -130,6 +130,7 @@ Public Const TAB_SUB_CAT_SAVE_FILE_ALL As String = "All"
 Public Const TAB_SUB_CAT_PLAYER_ATTRIBUTES As String = "Attributes"
 Public Const TAB_SUB_CAT_PLAYER_SKILLS As String = "Skills"
 Public Const TAB_SUB_CAT_PLAYER_FACTIONS As String = "Factions"
+Public Const TAB_SUB_CAT_PLAYER_SPELLS As String = "Spells"
 
 ' Date Stamp Modes
 Public Const DATE_STAMP_MODE_EXE As Integer = 1

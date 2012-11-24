@@ -265,7 +265,7 @@ Private Sub SetPlayerChangeRecordFactions(ByRef tmpPlayerChangeRecord As ChangeR
 
     Dim NewOffset As Integer
     Dim RecordNumber As Integer
-    Dim Iref As Long
+    Dim iRef As Long
 
     NewOffset = Start
     tmpPlayerChangeRecord.Data(NewOffset) = CByte(SaveFileData.OSE.Player.FactionCount And &HFF&)
@@ -273,11 +273,11 @@ Private Sub SetPlayerChangeRecordFactions(ByRef tmpPlayerChangeRecord As ChangeR
     NewOffset = NewOffset + 2
     
     For RecordNumber = 0 To SaveFileData.OSE.Player.FactionCount - 1
-        Iref = GetIref(SaveFileData.OSE.Player.FactionList(RecordNumber).Ref)
-        tmpPlayerChangeRecord.Data(NewOffset) = CByte(Iref And &HFF&)
-        tmpPlayerChangeRecord.Data(NewOffset + 1) = CByte((Iref And &HFF00&) / BYTE_2)
-        tmpPlayerChangeRecord.Data(NewOffset + 2) = CByte((Iref And &HFF0000) / BYTE_3)
-        tmpPlayerChangeRecord.Data(NewOffset + 3) = CByte((Iref And &HFF000000) / BYTE_4)
+        iRef = GetIref(SaveFileData.OSE.Player.FactionList(RecordNumber).FormID)
+        tmpPlayerChangeRecord.Data(NewOffset) = CByte(iRef And &HFF&)
+        tmpPlayerChangeRecord.Data(NewOffset + 1) = CByte((iRef And &HFF00&) / BYTE_2)
+        tmpPlayerChangeRecord.Data(NewOffset + 2) = CByte((iRef And &HFF0000) / BYTE_3)
+        tmpPlayerChangeRecord.Data(NewOffset + 3) = CByte((iRef And &HFF000000) / BYTE_4)
         tmpPlayerChangeRecord.Data(NewOffset + 4) = CByte(SaveFileData.OSE.Player.FactionList(RecordNumber).Level)
         NewOffset = NewOffset + 5
     Next RecordNumber
@@ -295,10 +295,10 @@ Private Sub SetPlayerChangeRecordSpellList(ByRef tmpPlayerChangeRecord As Change
     NewOffset = NewOffset + 2
     
     For RecordNumber = 0 To SaveFileData.OSE.Player.SpellCount - 1
-        tmpPlayerChangeRecord.Data(NewOffset) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber) And &HFF&)
-        tmpPlayerChangeRecord.Data(NewOffset + 1) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber) And &HFF00&) / BYTE_2
-        tmpPlayerChangeRecord.Data(NewOffset + 2) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber) And &HFF0000) / BYTE_3
-        tmpPlayerChangeRecord.Data(NewOffset + 3) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber) And &HFF000000) / BYTE_4
+        tmpPlayerChangeRecord.Data(NewOffset) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF&)
+        tmpPlayerChangeRecord.Data(NewOffset + 1) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF00&) / BYTE_2
+        tmpPlayerChangeRecord.Data(NewOffset + 2) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF0000) / BYTE_3
+        tmpPlayerChangeRecord.Data(NewOffset + 3) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF000000) / BYTE_4
         NewOffset = NewOffset + 4
     Next RecordNumber
 

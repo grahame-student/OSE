@@ -52,9 +52,15 @@ Public Type ByteArray
 End Type
           
 Public Type FactionEntry
-    Reference As Long
+    FormID As Long
     Name As String
     PlugIn As String
     MaxRank As Integer
     Ranks() As String
+End Type
+
+Public Type SpellEntry
+    FormID As Long
+    Name As String
+    PlugIn As String
 End Type
