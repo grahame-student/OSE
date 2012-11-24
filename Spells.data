@@ -57,6 +57,22 @@
 694275,Beast of Burden,None
 694190,Beguiling Touch,None
 4578,Berne's Aura,DLCSpellTomes.esp
+141886,Birthsign: Apprentice,None
+141885,Birthsign: Atronach,None
+141888,Birthsign: Lady - Lady's Blessing,None
+141889,Birthsign: Lord - Blood of the North,None
+141890,Birthsign: Lord - Trollkin,None
+141891,Birthsign: Lover - Lover's Kiss,None
+141873,Birthsign: Mage,None
+141884,Birthsign: Ritual - Blessed Word,None
+141882,Birthsign: Ritual - Mara's Gift,None
+141923,Birthsign: Serpent - Serpent Spell,None
+141926,Birthsign: Shadow - Moonshadow,None
+141930,Birthsign: Steed,None
+141931,Birthsign: Thief,None
+141932,Birthsign: Tower - Tower Key,None
+833059,Birthsign: Tower - Tower Warden,None
+141934,Birthsign: Warrior,None
 448125,Black Winter,None
 694241,Blazing Spear,None
 4626,Blink,DLCSpellTomes.esp
@@ -95,6 +111,8 @@
 246779,Cure Paralysis,None
 246780,Cure Poison,None
 694226,Curse of Weakness,None
+293588,Dark Elf Resistance,None
+809352,Dark Scales Ability,None
 694313,Daylight,None
 448129,Deathly Visage,None
 694328,Debilitate,None
@@ -144,10 +162,22 @@
 694271,Enthralling Presence,None
 694193,Entropic Bolt,None
 694227,Entropic Touch,None
+507438,Essence Drain I,None
+507439,Essence Drain II,None
+507440,Essence Drain III,None
+507441,Essence Drain IV,None
+507442,Essence Drain V,None
+507443,Essence Drain VI,None
 694319,Eyes of Eventide,None
 694320,Eyes of Midnight,None
 694230,Fearful Gaze,None
 4653,Fenrik's Welcome,DLCSpellTomes.esp
+805026,Finger of the Mountain I,None
+805027,Finger of the Mountain II,None
+805028,Finger of the Mountain III,None
+805029,Finger of the Mountain IV,None
+805030,Finger of the Mountain V,None
+805031,Finger of the Mountain VI,None
 694247,Fire Ball,None
 694280,Fire Shield,None
 694248,Fire Storm,None
@@ -177,9 +207,11 @@
 4675,Frostbite,DLCSpellTomes.esp
 694252,Frost Bolt,None
 694301,Frost Shell,None
+694256,Frost Touch,None
 694207,Ghostwalk,None
 694303,Glacial Wall,None
 694232,Grasp of Terror,None
+835353,Gray Prince's Training Ability,None
 816737,Greater Convalescence,None
 694322,Greater Dispel,None
 694325,Greater Dispel Other,None
@@ -321,6 +353,7 @@
 694309,Starlight,None
 4642,Strangulation,DLCSpellTomes.esp
 694208,Spectral Form,None
+293589,Summon Ancestor Guardian,None
 696407,Summon Clannfear,None
 696408,Summon Daedroth,None
 696409,Summon Dremora,None
@@ -374,3 +407,10 @@
 694257,Winter's Grasp,None
 694194,Withering Bolt,None
 694228,Withering Touch,None
+804888,Wizard's Fury I,None
+804889,Wizard's Fury II,None
+804890,Wizard's Fury III,None
+804891,Wizard's Fury IV,None
+804892,Wizard's Fury V,None
+804893,Wizard's Fury VI,None
+804894,Wizard's Fury VII,None

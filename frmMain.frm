@@ -1439,6 +1439,12 @@ Private Sub lstAllFactions_Click()
 
 End Sub
 
+Private Sub lstAllSpells_Click()
+
+    cmdAddSpell.Enabled = True
+
+End Sub
+
 Private Sub mnuQuit_Click()
 
     End

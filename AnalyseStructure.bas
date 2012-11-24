@@ -22,68 +22,15 @@ DefObj A-Z
 Public Sub ScanForMarkers(ByRef MainForm As Form)
 
     SaveFileData.OSE.Player.PlayerRecord = LocatePlayerRecord
-    If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
-        ScanForPlayerMarkers
-        If SaveFileData.OSE.Player.Factions <> -1 Then
-            FixFactionReferences
-            PopulateFactionListBox MainForm
-            InitPlayerFactions
-        End If
-        If SaveFileData.OSE.Player.Spells <> -1 Then
-            FixSpellReferences
-            PopulateSpellListBox MainForm
-            InitPlayerSpells
-        End If
-        If SaveFileData.OSE.Player.BaseModifiers <> -1 Then
-            InitPlayerBaseMods
-        End If
+    SaveFileData.OSE.CustomItems.SpellRecords = LocateCustomSpells
+    
+    If SaveFileData.OSE.CustomItems.SpellRecords(0) <> -1 Then
+        ProcessCustomSpells
     End If
-
-End Sub
-
-Private Sub FixFactionReferences()
-
-    Dim FactionNumber As Integer
-
-    For FactionNumber = 0 To UBound(FactionData())
-        If FactionData(FactionNumber).PlugIn <> "None" Then
-            FactionData(FactionNumber).FormID = (FactionData(FactionNumber).FormID Or GetModIndex(FactionData(FactionNumber).PlugIn).Result)
-        End If
-    Next FactionNumber
-
-End Sub
-
-Private Sub FixSpellReferences()
-
-    Dim SpellNumber As Integer
-
-    For SpellNumber = 0 To UBound(SpellData())
-        If SpellData(SpellNumber).PlugIn <> "None" Then
-            SpellData(SpellNumber).FormID = (SpellData(SpellNumber).FormID Or GetModIndex(SpellData(SpellNumber).PlugIn).Result)
-        End If
-    Next SpellNumber
-
-End Sub
-
-Public Sub PopulateFactionListBox(ByRef MainForm As Form)
-
-    Dim i As Integer
-
-    For i = 0 To UBound(FactionData())
-        MainForm.lstAllFactions.AddItem FactionData(i).Name, i
-        MainForm.lstAllFactions.ItemData(i) = FactionData(i).FormID
-    Next i
-
-End Sub
-
-Public Sub PopulateSpellListBox(ByRef MainForm As Form)
-
-    Dim i As Integer
-
-    For i = 0 To UBound(SpellData())
-        MainForm.lstAllSpells.AddItem SpellData(i).Name, i
-        MainForm.lstAllSpells.ItemData(i) = SpellData(i).FormID
-    Next i
+    
+    If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
+        ProcessPlayerRecord MainForm
+    End If
 
 End Sub
 
@@ -93,7 +40,8 @@ Private Function LocatePlayerRecord() As Long
 
     For i = 0 To SaveFileData.Globals.NumberOfChangeRecords - 1
         ' Look for the player's change record
-        If SaveFileData.ChangeRecords(i).Type = 35 And SaveFileData.ChangeRecords(i).FormID = 7 Then
+        If SaveFileData.ChangeRecords(i).Type = CHANGE_RECORD_NPC_ And _
+           SaveFileData.ChangeRecords(i).FormID = PLAYER_FORMID Then
             LocatePlayerRecord = i
             Exit Function
         End If
@@ -102,6 +50,56 @@ Private Function LocatePlayerRecord() As Long
     LocatePlayerRecord = -1
 
 End Function
+
+Private Function LocateCustomSpells() As Long()
+
+    Dim i As Long
+    Dim tmpSpellRecords() As Long
+    Dim SpellRecordCount As Long
+    
+    ReDim tmpSpellRecords(0)
+
+    For i = 0 To SaveFileData.Globals.CreatedNumber - 1
+        ' Look for spell change records
+        If SaveFileData.Globals.CreatedData(i).Type = CREATED_DATA_SPELL Then
+            ReDim Preserve tmpSpellRecords(SpellRecordCount)
+            tmpSpellRecords(SpellRecordCount) = i
+            SpellRecordCount = SpellRecordCount + 1
+        End If
+    Next i
+
+    If SpellRecordCount = 0 Then
+        tmpSpellRecords(0) = -1
+    End If
+
+    LocateCustomSpells = tmpSpellRecords
+
+End Function
+
+Private Sub ProcessCustomSpells()
+
+    '
+
+End Sub
+
+Private Sub ProcessPlayerRecord(ByRef MainForm As Form)
+
+    ScanForPlayerMarkers
+    If SaveFileData.OSE.Player.Factions <> -1 Then
+        FixFactionReferences
+        PopulateFactionListBox MainForm
+        InitPlayerFactions
+    End If
+    If SaveFileData.OSE.Player.Spells <> -1 Then
+        FixSpellReferences
+        PopulateSpellListBox MainForm
+        InitPlayerSpells
+    End If
+    If SaveFileData.OSE.Player.BaseModifiers <> -1 Then
+        InitPlayerBaseMods
+    End If
+
+End Sub
 
 Public Sub ScanForPlayerMarkers()
 
@@ -207,6 +205,52 @@ Public Sub ScanForPlayerMarkers()
 
 End Sub
 
+Private Sub FixFactionReferences()
+
+    Dim FactionNumber As Integer
+
+    For FactionNumber = 0 To UBound(FactionData())
+        If FactionData(FactionNumber).PlugIn <> "None" Then
+            FactionData(FactionNumber).FormID = (FactionData(FactionNumber).FormID Or GetModIndex(FactionData(FactionNumber).PlugIn).Result)
+        End If
+    Next FactionNumber
+
+End Sub
+
+Private Sub FixSpellReferences()
+
+    Dim SpellNumber As Integer
+
+    For SpellNumber = 0 To UBound(SpellData())
+        If SpellData(SpellNumber).PlugIn <> "None" Then
+            SpellData(SpellNumber).FormID = (SpellData(SpellNumber).FormID Or GetModIndex(SpellData(SpellNumber).PlugIn).Result)
+        End If
+    Next SpellNumber
+
+End Sub
+
+Public Sub PopulateFactionListBox(ByRef MainForm As Form)
+
+    Dim i As Integer
+
+    For i = 0 To UBound(FactionData())
+        MainForm.lstAllFactions.AddItem FactionData(i).Name, i
+        MainForm.lstAllFactions.ItemData(i) = FactionData(i).FormID
+    Next i
+
+End Sub
+
+Public Sub PopulateSpellListBox(ByRef MainForm As Form)
+
+    Dim i As Integer
+
+    For i = 0 To UBound(SpellData())
+        MainForm.lstAllSpells.AddItem SpellData(i).Name, i
+        MainForm.lstAllSpells.ItemData(i) = SpellData(i).FormID
+    Next i
+
+End Sub
+
 Private Sub InitPlayerFactions()
 
     Dim i As Long
@@ -292,6 +336,7 @@ Public Function GetSpell(ByVal FormID As Long) As String
     
     If FormID < 0 Then
         GetCustomSpell FormID
+        Exit Function
     End If
     
     For i = 0 To UBound(SpellData())
@@ -301,15 +346,21 @@ Public Function GetSpell(ByVal FormID As Long) As String
         End If
     Next i
     
-    MsgBox "FormID not recognised (" & FormID & ")", vbOKOnly, "Unknown FormID"
+    MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & "Please report this FormID to mrloquax@googlemail.com so that it can be added in future versions", vbOKOnly, "Unknown FormID"
     
 End Function
 
-Private Sub GetCustomSpell(ByVal FormID As Long)
+Private Function GetCustomSpell(ByVal FormID As Long) As String
 
-    ' Stub
+    Dim i As Integer
 
-End Sub
+    For i = 0 To UBound(SaveFileData.OSE.CustomItems.SpellRecords())
+        If FormID = SaveFileData.Globals.CreatedData(SaveFileData.OSE.CustomItems.SpellRecords(i)).FormID Then
+            ' Return custom spell name
+        End If
+    Next i
+
+End Function
 
 Private Sub InitPlayerBaseMods()
 

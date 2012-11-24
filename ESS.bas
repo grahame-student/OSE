@@ -166,6 +166,57 @@ Private Type BaseMod
     ModValue As Single
 End Type
 
+' SPIT
+Private Type BasicSpellData
+    Type As Long
+    Cost As Long
+    Level As Long
+    Flags As Long
+End Type
+
+' EFIT
+Private Type EffectData
+    EffectID As String
+    Magnitude As Long
+    Area As Long
+    Duration As Long
+    Type As Long
+    ActorValue As Long
+End Type
+
+' SCIT
+Private Type ScriptEffectData
+    FormID As Long
+    School As Long
+    VisualEffect As String
+    Flags As Long
+End Type
+
+Private Type RegularEffect
+    EffectID As String          ' EFID
+    EffectData As EffectData    ' EFIT
+End Type
+
+Private Type ScriptEffect
+    EffectID As String
+    EffectData As EffectData
+    ScriptEffectData As ScriptEffectData
+    Name As String
+End Type
+
+Private Type CreatedItem
+    EditorID As String
+    Name As String
+    BasicSpellData As BasicSpellData
+    RegularEffects() As RegularEffect
+    ScriptEffects() As ScriptEffect
+End Type
+
+Private Type CreatedItems
+    SpellRecords() As Long      ' The change records containing spells (-1 in element 0 for not present)
+    Items() As CreatedItem
+End Type
+
 Private Type Player
     PlayerRecord As Long        ' The change record containing the player data (-1 for not present)
     FormFlags As Long           ' Offset of the start of the FormFlags within the data block (-1 for not present)
@@ -192,6 +243,7 @@ Private Type OSEExtra
     LoadSuccessful As Boolean
     ScreenShotLoaded As Boolean
     Player As Player
+    CustomItems As CreatedItems
 End Type
 
 

@@ -136,3 +136,11 @@ Public Const TAB_SUB_CAT_PLAYER_SPELLS As String = "Spells"
 Public Const DATE_STAMP_MODE_EXE As Integer = 1
 Public Const DATE_STAMP_MODE_GAME As Integer = 2
 
+' Special Change Records
+Public Const PLAYER_FORMID As Long = 7
+
+' Change Record Types
+Public Const CHANGE_RECORD_NPC_ As Byte = 35
+
+' Created Data Types
+Public Const CREATED_DATA_SPELL As String = "SPEL"
