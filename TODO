@@ -1,4 +1,4 @@
-OSE 0.1.0 - Oblivion Save Editor
+OSE 0.1.5 - Oblivion Save Editor
 --------------------------------
 
 TODO list
@@ -7,12 +7,8 @@ TODO list
 TODO for 0.2.0:
 	- Design a better GUI to allow access to
 		o Player information
-			* Factions
-				: Needs a way to remove factions from the list a player is a
-				  member of
 			* Spells
-				: In game
-				: Custom
+				: Remove spells from the player's list
 	- Allow user to select where to save screenshot
 TODO for 0.3.0:
 	- Add access to
@@ -25,8 +21,10 @@ TODO Ongoing:
 DONE
 ----
 	
-DONE 0.2.0:
+DONE 0.1.5:
 	- Added the remaining faction data to the datafile
+	- Adding spells to the player's list now updates the data structure
+	- Removing player from factions now updates the data structure
 DONE 0.1.0:
 	- Read save file to data structure
 	- Write data structure to save file

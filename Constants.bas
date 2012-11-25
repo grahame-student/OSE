@@ -24,7 +24,7 @@ Public Const PROGRAM_NAME As String = "OSE"
 
 Public Const VERSION_MAJOR As Integer = 0
 Public Const VERSION_MINOR As Integer = 1
-Public Const VERSION_REVISION As Integer = 1
+Public Const VERSION_REVISION As Integer = 5
 
 Public Const PROGRAM_TITLE As String = PROGRAM_NAME & " - " & _
                                        VERSION_MAJOR & "." & _

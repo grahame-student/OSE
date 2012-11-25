@@ -1,15 +1,15 @@
 [Setup]
-AppName=OSE v0.1.0
-AppVerName=OSE v0.1.0
+AppName=OSE v0.1.5
+AppVerName=OSE v0.1.5
 DefaultDirName={pf32}\OSE\
 DefaultGroupName=Oblivion Save Editor
 OutputDir=C:\Users\Grahame\Documents\VB6\OSE\Package\
 AppID={{6EDB5158-B63E-466C-8976-47E75B99F350}
-VersionInfoVersion=0.1.0
+VersionInfoVersion=0.1.5
 VersionInfoProductName=OSE
-VersionInfoProductVersion=0.1.0
-AppVersion=OSE v0.1.0
-OutputBaseFilename=Install OSE 0.1.0
+VersionInfoProductVersion=0.1.5
+AppVersion=OSE v0.1.5
+OutputBaseFilename=Install OSE 0.1.5
 UsePreviousAppDir=true
 UninstallDisplayIcon={app}\OSE.exe
 UsePreviousGroup=false
@@ -34,12 +34,12 @@ Source: ..\..\..\..\..\Windows\System32\MSCOMCTL.OCX; DestDir: {sys}; Flags: pro
 Source: OSE.exe; DestDir: {app}; Flags: promptifolder 32bit
 Source: Factions.data; DestDir: {app}
 Source: ..\..\..\..\..\Windows\System32\comdlg32.ocx; DestDir: {sys}; Flags: restartreplace uninsneveruninstall sharedfile regserver
+Source: Spells.data; DestDir: {app}
 
 [Icons]
 Name: {group}\OSE; Filename: {app}\OSE.exe; WorkingDir: {app}; IconFilename: {app}\OSE.exe; IconIndex: 0
 
 [Dirs]
-Name: {app}\New\
 Name: {app}\Screenshots\
 
 [Code]

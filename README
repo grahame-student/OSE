@@ -1,4 +1,4 @@
-OSE - Oblivion Save Editor 0.1.0
+OSE - Oblivion Save Editor 0.1.5
 ===
 
 WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING 
@@ -32,6 +32,9 @@ from The Elder Scrolls IV: Oblivion game. Currently editable are:
 		o factions (all factions added, but plugin names need to be verified)
 			* Amend factions the player is already a member of
 			* Add player to new factions
+			* remove the player from factions
+		o spells
+			* Add spells to the player's list
 
 With plenty more planned, I'm working through the file format documents to see
 what I'm able to grant access to.
@@ -60,7 +63,7 @@ The source code for this application can be found here:
 
 Packaged Application
 --------------------
-The latest released version (0.1.0 at the time of writing) can be found here:
+The latest released version (0.1.5 at the time of writing) can be found here:
 <https://github.com/Dasaan/OSE/downloads>
 
 Acknowledgements
