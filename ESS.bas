@@ -205,7 +205,7 @@ Private Type ScriptEffect
 End Type
 
 Private Type CreatedItem
-    EditorID As String
+    NameLength As Integer
     Name As String
     BasicSpellData As BasicSpellData
     RegularEffects() As RegularEffect

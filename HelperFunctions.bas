@@ -52,7 +52,7 @@ End Sub
 Public Function GetFormID(ByVal iRef As Long) As Long
 
     If iRef < 0 Then
-        GetFormID = -1
+        GetFormID = iRef
         Exit Function
     End If
 
@@ -114,3 +114,32 @@ Public Function GetSpecialFolder(ByVal CSIDL As Long, ByRef Owner As Form) As St
         
 End Function
 
+Public Function GetType(ByRef DataBlock() As Byte, ByRef Offset As Integer) As String
+
+    Dim i As Integer
+
+    For i = 0 To 3
+        GetType = GetType & Chr$(DataBlock(Offset + i))
+    Next i
+
+    Offset = Offset + 4
+
+End Function
+
+Public Function GetZString(ByRef DataBlock() As Byte, ByRef Offset As Integer) As String
+
+    Do Until DataBlock(Offset) = &H0
+        GetZString = GetZString & Chr$(DataBlock(Offset))
+        Offset = Offset + 1
+    Loop
+
+End Function
+
+Public Function GetInteger(ByRef DataBlock() As Byte, ByRef Offset As Integer) As Integer
+
+    GetInteger = DataBlock(Offset)
+    GetInteger = GetInteger + (DataBlock(Offset + 1) * BYTE_2)
+
+    Offset = Offset + 2
+
+End Function

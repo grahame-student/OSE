@@ -90,8 +90,7 @@ Private Sub ProcessCustomSpells()
         CurrentRecord = SaveFileData.OSE.CustomItems.SpellRecords(i)
         
         If ((SaveFileData.Globals.CreatedData(CurrentRecord).FormID And BIT_18) = 0) Then
-            ''' HERE '''
-            SaveFileData.OSE.CustomItems.Spells(i).Name = ""
+            ExtractCustomSpellData CurrentRecord, i
         Else
             MsgBox "Created data compressed, cannot process in this version", vbOKOnly, "Not Supported in this version"
         End If
@@ -341,7 +340,7 @@ Private Sub InitPlayerSpells()
         SaveFileData.OSE.Player.SpellList(i).iRef = iRef.Result
         SaveFileData.OSE.Player.SpellList(i).FormID = GetFormID(iRef.Result)
         SaveFileData.OSE.Player.SpellList(i).Name = GetSpell(SaveFileData.OSE.Player.SpellList(i).FormID)
-        
+            
         Offset = Offset + 4
     Next i
 
@@ -352,7 +351,7 @@ Public Function GetSpell(ByVal FormID As Long) As String
     Dim i As Integer
     
     If FormID < 0 Then
-        GetCustomSpell FormID
+        GetSpell = GetCustomSpell(FormID)
         Exit Function
     End If
     
@@ -363,7 +362,9 @@ Public Function GetSpell(ByVal FormID As Long) As String
         End If
     Next i
     
-    MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & "Please report this FormID to mrloquax@googlemail.com so that it can be added in future versions", vbOKOnly, "Unknown FormID"
+    MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & _
+           "Please report this FormID to mrloquax@googlemail.com" & vbNewLine & _
+           "so that it can be added in future versions", vbOKOnly, "Unknown FormID"
     
 End Function
 
@@ -374,6 +375,8 @@ Private Function GetCustomSpell(ByVal FormID As Long) As String
     For i = 0 To UBound(SaveFileData.OSE.CustomItems.SpellRecords())
         If FormID = SaveFileData.Globals.CreatedData(SaveFileData.OSE.CustomItems.SpellRecords(i)).FormID Then
             ' Return custom spell name
+            GetCustomSpell = SaveFileData.OSE.CustomItems.Spells(i).Name
+            Exit Function
         End If
     Next i
 
@@ -382,6 +385,25 @@ End Function
 Private Sub InitPlayerBaseMods()
 
     ReDim SaveFileData.OSE.Player.BaseModList(SaveFileData.OSE.Player.BaseModCount - 1)
+
+End Sub
+
+Private Sub ExtractCustomSpellData(ByVal CreatedItemRecordIndex As Long, ByVal CustomSpellIndex As Integer)
+
+    Dim SubRecord As Integer
+    Dim Offset As Integer
+            
+    Do Until Offset >= SaveFileData.Globals.CreatedData(CreatedItemRecordIndex).Size
+        Select Case GetType(SaveFileData.Globals.CreatedData(CreatedItemRecordIndex).Data, Offset)
+            Case SUB_RECORD_FULL_NAME
+                SaveFileData.OSE.CustomItems.Spells(CustomSpellIndex).NameLength = GetInteger(SaveFileData.Globals.CreatedData(CreatedItemRecordIndex).Data, Offset)
+                SaveFileData.OSE.CustomItems.Spells(CustomSpellIndex).Name = GetZString(SaveFileData.Globals.CreatedData(CreatedItemRecordIndex).Data, Offset)
+            Case SUB_RECORD_EDITOR_ID
+            Case SUB_RECORD_SPELL_DATA
+            Case Else
+                Exit Do
+        End Select
+    Loop
 
 End Sub
 

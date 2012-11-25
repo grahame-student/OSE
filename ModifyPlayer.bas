@@ -288,17 +288,24 @@ Private Sub SetPlayerChangeRecordSpellList(ByRef tmpPlayerChangeRecord As Change
 
     Dim NewOffset As Integer
     Dim RecordNumber As Integer
+    Dim RawiRef As ByteArray
+    Dim iRef As LongType
 
     NewOffset = Start
+    Debug.Print UBound(tmpPlayerChangeRecord.Data())
     tmpPlayerChangeRecord.Data(NewOffset) = CByte(SaveFileData.OSE.Player.SpellCount And &HFF&)
     tmpPlayerChangeRecord.Data(NewOffset + 1) = CByte((SaveFileData.OSE.Player.SpellCount And &HFF00&) / BYTE_2)
     NewOffset = NewOffset + 2
-    
+        
     For RecordNumber = 0 To SaveFileData.OSE.Player.SpellCount - 1
-        tmpPlayerChangeRecord.Data(NewOffset) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF&)
-        tmpPlayerChangeRecord.Data(NewOffset + 1) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF00&) / BYTE_2
-        tmpPlayerChangeRecord.Data(NewOffset + 2) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF0000) / BYTE_3
-        tmpPlayerChangeRecord.Data(NewOffset + 3) = CByte(SaveFileData.OSE.Player.SpellList(RecordNumber).iRef And &HFF000000) / BYTE_4
+        iRef.Result = SaveFileData.OSE.Player.SpellList(RecordNumber).iRef
+        
+        LSet RawiRef = iRef
+        
+        tmpPlayerChangeRecord.Data(NewOffset) = RawiRef.Bytes(0)
+        tmpPlayerChangeRecord.Data(NewOffset + 1) = RawiRef.Bytes(1)
+        tmpPlayerChangeRecord.Data(NewOffset + 2) = RawiRef.Bytes(2)
+        tmpPlayerChangeRecord.Data(NewOffset + 3) = RawiRef.Bytes(3)
         NewOffset = NewOffset + 4
     Next RecordNumber
 

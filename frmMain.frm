@@ -30,7 +30,7 @@ Begin VB.Form frmMain
       ScaleHeight     =   4545
       ScaleWidth      =   7545
       TabIndex        =   4
-      Top             =   480
+      Top             =   5040
       Visible         =   0   'False
       Width           =   7575
       Begin VB.PictureBox pnlAll 
@@ -1237,6 +1237,50 @@ Private Sub cmdAddFaction_Click()
     SaveFileData.OSE.Player.FactionCount = SaveFileData.OSE.Player.FactionCount + 1
     
     cboFactions.ItemData(cboFactions.NewIndex) = iRef
+
+    RebuildPlayerChangeRecord
+
+End Sub
+
+Private Sub cmdAddSpell_Click()
+
+    Dim NewSpell As String
+    Dim i As Integer
+    Dim iRef As Long
+
+    ' Check player's faction list to see if the selected faction is in there
+    ' If it's not there then:
+    NewSpell = lstAllSpells.Text
+
+    For i = 0 To cboPlayerSpells.ListCount - 1
+        If cboPlayerSpells.List(i) = NewSpell Then
+            MsgBox "Player already knows this spell", vbOKOnly, "Unable To Add Spell"
+            Exit Sub
+        End If
+    Next i
+    
+    '   Add the selected faction to the player's list
+    cboPlayerSpells.AddItem lstAllSpells.Text
+
+    iRef = GetIref(lstAllSpells.ItemData(lstAllSpells.ListIndex))
+    
+    ' The FormID isn't in the array therefore a new Iref needs to ba added to the FormID array
+    If iRef = -1 Then
+        ' Make room for the new Iref
+        ReDim Preserve SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs)
+        ' Put the Spells's FormID into the new position
+        SaveFileData.FormIDs.FormIDsList(SaveFileData.FormIDs.NumberOfFormIDs) = lstAllSpells.ItemData(lstAllSpells.ListIndex)
+        ' Increase the number of FormIDs by 1
+        iRef = SaveFileData.FormIDs.NumberOfFormIDs
+        SaveFileData.FormIDs.NumberOfFormIDs = SaveFileData.FormIDs.NumberOfFormIDs + 1
+    End If
+
+    ReDim Preserve SaveFileData.OSE.Player.SpellList(SaveFileData.OSE.Player.SpellCount)
+    SaveFileData.OSE.Player.SpellList(SaveFileData.OSE.Player.SpellCount).iRef = iRef
+    SaveFileData.OSE.Player.SpellList(SaveFileData.OSE.Player.SpellCount).FormID = lstAllSpells.ItemData(lstAllSpells.ListIndex)
+    SaveFileData.OSE.Player.SpellCount = SaveFileData.OSE.Player.SpellCount + 1
+    
+    cboPlayerSpells.ItemData(cboPlayerSpells.NewIndex) = iRef
 
     RebuildPlayerChangeRecord
 

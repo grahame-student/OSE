@@ -53,8 +53,8 @@ Public Sub ReadSaveFile(ByVal SaveFilePath As String, ByRef Status As StatusBar,
     
     Status.Panels(STB_STATUS).Text = "Loading Globals..."
     ReadSaveGlobals
-    ReDim SaveFileData.ChangeRecords(SaveFileData.Globals.NumberOfChangeRecords - 1)
     
+    ReDim SaveFileData.ChangeRecords(SaveFileData.Globals.NumberOfChangeRecords - 1)
     Status.Panels(STB_STATUS).Text = "Loading Change Records..."
     ReadSaveChangeRecords Progress
     
@@ -192,7 +192,7 @@ Private Sub ReadSaveGlobalsGlobals()
     Dim i As Integer
 
     For i = 0 To SaveFileData.Globals.GlobalsNumber - 1
-        SaveFileData.Globals.Globals(i).Iref = GetNext32BitULong
+        SaveFileData.Globals.Globals(i).iRef = GetNext32BitULong
         SaveFileData.Globals.Globals(i).Value = GetNext32BitSingle
     Next i
 

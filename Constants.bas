@@ -144,3 +144,8 @@ Public Const CHANGE_RECORD_NPC_ As Byte = 35
 
 ' Created Data Types
 Public Const CREATED_DATA_SPELL As String = "SPEL"
+
+' Created Data Sub Records
+Public Const SUB_RECORD_EDITOR_ID As String = "EDID"        ' EditorID
+Public Const SUB_RECORD_FULL_NAME As String = "FULL"        ' Name
+Public Const SUB_RECORD_SPELL_DATA As String = "SPIT"       ' Basic Spell Data
