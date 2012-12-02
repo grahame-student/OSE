@@ -1,15 +1,15 @@
 [Setup]
-AppName=OSE v0.1.5
-AppVerName=OSE v0.1.5
+AppName=OSE v0.1.6
+AppVerName=OSE v0.1.6
 DefaultDirName={pf32}\OSE\
 DefaultGroupName=Oblivion Save Editor
 OutputDir=C:\Users\Grahame\Documents\VB6\OSE\Package\
 AppID={{6EDB5158-B63E-466C-8976-47E75B99F350}
-VersionInfoVersion=0.1.5
+VersionInfoVersion=0.1.6
 VersionInfoProductName=OSE
-VersionInfoProductVersion=0.1.5
-AppVersion=OSE v0.1.5
-OutputBaseFilename=Install OSE 0.1.5
+VersionInfoProductVersion=0.1.6
+AppVersion=OSE v0.1.6
+OutputBaseFilename=Install OSE 0.1.6
 UsePreviousAppDir=true
 UninstallDisplayIcon={app}\OSE.exe
 UsePreviousGroup=false

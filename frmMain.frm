@@ -30,7 +30,7 @@ Begin VB.Form frmMain
       ScaleHeight     =   4545
       ScaleWidth      =   7545
       TabIndex        =   4
-      Top             =   5040
+      Top             =   480
       Visible         =   0   'False
       Width           =   7575
       Begin VB.PictureBox pnlAll 
@@ -266,6 +266,84 @@ Begin VB.Form frmMain
             TabIndex        =   106
             Top             =   120
             Width           =   1095
+         End
+      End
+      Begin VB.PictureBox pnlPosition 
+         Appearance      =   0  'Flat
+         ForeColor       =   &H80000008&
+         Height          =   1335
+         Left            =   4320
+         ScaleHeight     =   1305
+         ScaleWidth      =   3105
+         TabIndex        =   111
+         Top             =   120
+         Width           =   3135
+         Begin VB.TextBox txtLocationZ 
+            Height          =   285
+            Left            =   840
+            TabIndex        =   118
+            Text            =   "0"
+            ToolTipText     =   "The character's level (0-32767)"
+            Top             =   960
+            Width           =   2295
+         End
+         Begin VB.TextBox txtLocationY 
+            Height          =   285
+            Left            =   840
+            TabIndex        =   116
+            Text            =   "0"
+            ToolTipText     =   "The character's level (0-32767)"
+            Top             =   720
+            Width           =   2295
+         End
+         Begin VB.TextBox txtLocationX 
+            Height          =   285
+            Left            =   840
+            TabIndex        =   114
+            Text            =   "0"
+            ToolTipText     =   "The character's level (0-32767)"
+            Top             =   480
+            Width           =   2295
+         End
+         Begin VB.ComboBox cboLocationCell 
+            Height          =   315
+            Left            =   840
+            TabIndex        =   113
+            Text            =   "cboLocationCell"
+            Top             =   120
+            Width           =   2295
+         End
+         Begin VB.Label lblLocationZ 
+            Caption         =   "Z"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   119
+            Top             =   975
+            Width           =   735
+         End
+         Begin VB.Label lblLocationY 
+            Caption         =   "Y"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   117
+            Top             =   735
+            Width           =   735
+         End
+         Begin VB.Label lblLocationX 
+            Caption         =   "X"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   115
+            Top             =   495
+            Width           =   735
+         End
+         Begin VB.Label lblCell 
+            Caption         =   "Cell"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   112
+            Top             =   150
+            Width           =   735
          End
       End
       Begin VB.PictureBox pnlFactions 
@@ -1160,6 +1238,28 @@ Attribute VB_Exposed = False
 Option Explicit
 DefObj A-Z
 
+Private Sub PositionPanels()
+
+    pnlPlayer.Top = TAB_CAT_TOP
+    pnlPlayer.Left = TAB_CAT_LEFT
+    
+    pnlSaveFile.Top = TAB_CAT_TOP
+    pnlSaveFile.Left = TAB_CAT_LEFT
+
+    pnlAll.Top = TAB_SUB_CAT_TOP
+    pnlAll.Left = TAB_SUB_CAT_LEFT
+
+    pnlSpells.Top = TAB_SUB_CAT_TOP
+    pnlSpells.Left = TAB_SUB_CAT_LEFT
+
+    pnlFactions.Top = TAB_SUB_CAT_TOP
+    pnlFactions.Left = TAB_SUB_CAT_LEFT
+
+    pnlSkills.Top = TAB_SUB_CAT_TOP
+    pnlSkills.Left = TAB_SUB_CAT_LEFT
+
+End Sub
+
 Private Sub cboFactionRank_Click()
 
     If SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Level <> cboFactionRank.ListIndex Then
@@ -1339,6 +1439,8 @@ Private Sub Form_Load()
 
     SetUpProgressBarInStatusBar
 
+    PositionPanels
+    
 End Sub
 
 Private Sub GetHomePath()
@@ -1580,7 +1682,6 @@ End Sub
 Private Sub picScreenShot_OLEDragDrop(Data As DataObject, Effect As Long, Button As Integer, Shift As Integer, X As Single, Y As Single)
 
     ' TODO: Catch invalid file formats
-    ' TODO: Save new bitmap to the data structure
 
     picScreenShot.Picture = LoadPicture(Data.Files(1))
     
@@ -1845,6 +1946,7 @@ Private Sub tabPlayerSubCategory_Click()
             pnlBasicInformation.Visible = True
             pnlBaseStats.Visible = True
             pnlBaseAttributes.Visible = True
+            pnlPosition.Visible = False             ' Make true once coded in
         Case TAB_SUB_CAT_PLAYER_SKILLS
             pnlSkills.Visible = True
         Case TAB_SUB_CAT_PLAYER_FACTIONS
@@ -1862,6 +1964,7 @@ Private Sub HideAllPlayerSubPanels()
     pnlBasicInformation.Visible = False
     pnlBaseStats.Visible = False
     pnlBaseAttributes.Visible = False
+    pnlPosition.Visible = False
     pnlSkills.Visible = False
     pnlFactions.Visible = False
     pnlSpells.Visible = False
@@ -1910,6 +2013,8 @@ Private Sub txtLevel_Change()
 
     ' Input is valid, update the data structure
     ModifySaveFilePlayerLevel txtLevel.Text
+
+    ' Also modify level in player change record?
 
 End Sub
 

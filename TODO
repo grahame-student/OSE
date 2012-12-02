@@ -6,21 +6,41 @@ TODO list
 
 TODO for 0.2.0:
 	- Design a better GUI to allow access to
+		o Save information
+			* Game Days
+			* Game Ticks
+			* Exe Time
+			* Game Time
+			* Allow user to select where to save screenshot
+		o Globals
+			* Player Location
+				: Cell
+				: X
+				: Y
+				: Z
+			* Death Counts
+				: Actor
+				: Number of Deaths
+			* Player Combat Count
+			* Quick Keys
 		o Player information
+			* Barter Gold
+			* Level ?
 			* Spells
 				: Remove spells from the player's list
-	- Allow user to select where to save screenshot
 TODO for 0.3.0:
 	- Add access to
 		o Player information
-			* Items
-
+			* Inventory
+			* Created items (Spells,Potions,Etc)
 TODO Ongoing:
 	- Verify plugin names
 
 DONE
 ----
-	
+
+DONE 0.1.6:
+	- Fixed GUI error
 DONE 0.1.5:
 	- Added the remaining faction data to the datafile
 	- Adding spells to the player's list now updates the data structure

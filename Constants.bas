@@ -24,12 +24,14 @@ Public Const PROGRAM_NAME As String = "OSE"
 
 Public Const VERSION_MAJOR As Integer = 0
 Public Const VERSION_MINOR As Integer = 1
-Public Const VERSION_REVISION As Integer = 5
+Public Const VERSION_REVISION As Integer = 6
+Public Const VERSION_EXTRA As String = ""
 
 Public Const PROGRAM_TITLE As String = PROGRAM_NAME & " - " & _
                                        VERSION_MAJOR & "." & _
                                        VERSION_MINOR & "." & _
-                                       VERSION_REVISION
+                                       VERSION_REVISION & _
+                                       VERSION_EXTRA
 
 ' Bit values to help work out which flags are set
 Public Const BIT_0 As Long = &H1&
@@ -131,6 +133,12 @@ Public Const TAB_SUB_CAT_PLAYER_ATTRIBUTES As String = "Attributes"
 Public Const TAB_SUB_CAT_PLAYER_SKILLS As String = "Skills"
 Public Const TAB_SUB_CAT_PLAYER_FACTIONS As String = "Factions"
 Public Const TAB_SUB_CAT_PLAYER_SPELLS As String = "Spells"
+
+' Panel Positions
+Public Const TAB_CAT_TOP As Integer = 480
+Public Const TAB_CAT_LEFT As Integer = 240
+Public Const TAB_SUB_CAT_TOP As Integer = 120
+Public Const TAB_SUB_CAT_LEFT As Integer = 1320
 
 ' Date Stamp Modes
 Public Const DATE_STAMP_MODE_EXE As Integer = 1
