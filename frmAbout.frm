@@ -74,7 +74,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 ' OSE - Oblivion Save Editor
-' Copyright (C) 2012  Grahame White
+' Copyright (C) 2012, 2013 Grahame White
 '
 ' This program is free software; you can redistribute it and/or modify
 ' it under the terms of the GNU General Public License as published by
@@ -105,7 +105,7 @@ Private Sub Form_Load()
     lblVersion.Caption = "Version - " & VERSION_MAJOR & "." & VERSION_MINOR & "." & VERSION_REVISION
     lblTitle.Caption = PROGRAM_NAME
 
-    lblDescription.Caption = PROGRAM_TITLE & ", Copyright (C) 2012 Grahame White" & vbNewLine & vbNewLine
+    lblDescription.Caption = PROGRAM_TITLE & ", Copyright (C) 2012, 2013 Grahame White" & vbNewLine & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "OSE comes with ABSOLUTELY NO WARRANTY;" & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "for details see the LICENSE file" & vbNewLine & vbNewLine
     lblDescription.Caption = lblDescription.Caption & "This is free software, and you are welcome to redistribute it" & vbNewLine

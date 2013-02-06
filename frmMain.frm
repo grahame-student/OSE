@@ -1219,7 +1219,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 ' OSE - Oblivion Save Editor
-' Copyright (C) 2012  Grahame White
+' Copyright (C) 2012, 2013 Grahame White
 '
 ' This program is free software; you can redistribute it and/or modify
 ' it under the terms of the GNU General Public License as published by

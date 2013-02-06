@@ -1,6 +1,6 @@
 Attribute VB_Name = "WriteSave"
 ' OSE - Oblivion Save Editor
-' Copyright (C) 2012  Grahame White
+' Copyright (C) 2012, 2013 Grahame White
 '
 ' This program is free software; you can redistribute it and/or modify
 ' it under the terms of the GNU General Public License as published by
@@ -159,7 +159,7 @@ Private Sub WriteSaveGlobalsGlobals()
     Dim i As Integer
 
     For i = 0 To SaveFileData.Globals.GlobalsNumber - 1
-        PutNext32BitULong SaveFileData.Globals.Globals(i).Iref
+        PutNext32BitULong SaveFileData.Globals.Globals(i).iRef
         PutNext32BitSingle SaveFileData.Globals.Globals(i).Value
     Next i
 

@@ -1,6 +1,6 @@
 Attribute VB_Name = "OSE_ESS"
 ' OSE - Oblivion Save Editor
-' Copyright (C) 2012  Grahame White
+' Copyright (C) 2012, 2013 Grahame White
 '
 ' This program is free software; you can redistribute it and/or modify
 ' it under the terms of the GNU General Public License as published by
@@ -232,17 +232,32 @@ Private Type Player
     CombatStyle As Long         ' Offset of the start of the CombatStyle within the data block (-1 for not present)
     FactionCount As Integer     ' Number of factions the player is in
     FactionList() As Faction    ' The list of factions the player is in
-    SpellCount As Integer       ' Number of spells the player has
-    SpellList() As Spell         ' The irefs of the spells
-    BaseModCount As Integer     ' Number of BaseMods
-    BaseModList() As BaseMod    ' List of the BaseMods
-    FullNameString As String    ' The FullName
+    SpellCount As Integer           ' Number of spells the player has
+    SpellList() As Spell            ' The irefs of the spells
+    BaseModCount As Integer         ' Number of BaseMods
+    BaseModList() As BaseMod        ' List of the BaseMods
+    FullNameString As String        ' The FullName
+End Type
+
+Private Type PlayerChange
+    PlayerChangeRecord As Long      ' The change record containing the player change record (-1 for not present)
+    CellChanged As Long             ' Offset of the start of the CellChanged within the data block (-1 for not present)
+    Created As Long                 ' Offset of the start of the Created within the data block (-1 for not present)
+    Moved As Long                   ' Offset of the start of the Moved within the data block (-1 for not present)
+    HavokMoved As Long              ' Offset of the start of the HavokMoved within the data block (-1 for not present)
+    OblivionFlag As Long            ' Offset of the start of the OblivionFlag within the data block (-1 for not present)
+    TempAttributeChanges As Long    ' Offset of the start of the TempAttributeChanges within the data block (-1 for not present)
+    ActorFlag As Long               ' Offset of the start of the ActorFlag within the data block (-1 for not present)
+    FormFlags As Long               ' Offset of the start of the FormFlags within the data block (-1 for not present)
+    Inventory As Long               ' Offset of the start of the Inventory within the data block (-1 for not present)
+    InventoryCount As Integer       ' Number of things in the inventory sub record
 End Type
 
 Private Type OSEExtra
     LoadSuccessful As Boolean
     ScreenShotLoaded As Boolean
     Player As Player
+    PlayerChange As PlayerChange
     CustomItems As CreatedItems
 End Type
 

@@ -1,6 +1,6 @@
 Attribute VB_Name = "AnalyseStructure"
 ' OSE - Oblivion Save Editor
-' Copyright (C) 2012  Grahame White
+' Copyright (C) 2012, 2013 Grahame White
 '
 ' This program is free software; you can redistribute it and/or modify
 ' it under the terms of the GNU General Public License as published by
@@ -22,6 +22,7 @@ DefObj A-Z
 Public Sub ScanForMarkers(ByRef MainForm As Form)
 
     SaveFileData.OSE.Player.PlayerRecord = LocatePlayerRecord
+    SaveFileData.OSE.PlayerChange.PlayerChangeRecord = LocatePlayerChangeRecord
     SaveFileData.OSE.CustomItems.SpellRecords = LocateCustomSpells
     
     If SaveFileData.OSE.CustomItems.SpellRecords(0) <> -1 Then
@@ -30,6 +31,10 @@ Public Sub ScanForMarkers(ByRef MainForm As Form)
     
     If SaveFileData.OSE.Player.PlayerRecord <> -1 Then
         ProcessPlayerRecord MainForm
+    End If
+
+    If SaveFileData.OSE.PlayerChange.PlayerChangeRecord <> -1 Then
+        ProcessPlayerChangeRecord MainForm
     End If
 
 End Sub
@@ -48,6 +53,23 @@ Private Function LocatePlayerRecord() As Long
     Next i
 
     LocatePlayerRecord = -1
+
+End Function
+
+Private Function LocatePlayerChangeRecord() As Long
+
+    Dim i As Long
+
+    For i = 0 To SaveFileData.Globals.NumberOfChangeRecords - 1
+        ' Look for the player's change record
+        If SaveFileData.ChangeRecords(i).Type = CHANGE_RECORD_ACHR And _
+           SaveFileData.ChangeRecords(i).FormID = PLAYER_CHANGE_FORMID Then
+            LocatePlayerChangeRecord = i
+            Exit Function
+        End If
+    Next i
+
+    LocatePlayerChangeRecord = -1
 
 End Function
 
@@ -220,6 +242,110 @@ Public Sub ScanForPlayerMarkers()
     End If
 
 End Sub
+
+Private Sub ProcessPlayerChangeRecord(ByRef MainForm As Form)
+
+    ScanForPlayerChangeMarkers
+    
+End Sub
+
+Public Sub ScanForPlayerChangeMarkers()
+    
+    ' Scan the player change record for specific blocks, we need to rescan when the data
+    ' structure changes size but it speeds up finding things.
+
+    Dim Offset As Integer
+    Dim i As Integer
+
+    ' Check for Cell Changed
+    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_31) <> 0) Then
+        SaveFileData.OSE.PlayerChange.CellChanged = Offset
+        Offset = Offset + 16
+    Else
+        SaveFileData.OSE.PlayerChange.CellChanged = -1
+    End If
+
+    ' Check for Created
+    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_1) <> 0) Then
+        SaveFileData.OSE.PlayerChange.Created = Offset
+        Offset = Offset + 36
+    Else
+        SaveFileData.OSE.PlayerChange.Created = -1
+    End If
+
+    ' Check for Moved
+    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_2) <> 0) Then
+        SaveFileData.OSE.PlayerChange.Moved = Offset
+        Offset = Offset + 28
+    Else
+        SaveFileData.OSE.PlayerChange.Moved = -1
+    End If
+
+    ' Check for HavokMoved
+    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_3) <> 0) Then
+        SaveFileData.OSE.PlayerChange.HavokMoved = Offset
+        Offset = Offset + 28
+    Else
+        SaveFileData.OSE.PlayerChange.HavokMoved = -1
+    End If
+
+    If Not CreatedOrMoved Then
+        ' Check for OblivionFlag
+        If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_23) <> 0) Then
+            SaveFileData.OSE.PlayerChange.OblivionFlag = Offset
+            Offset = Offset + 4
+        Else
+            SaveFileData.OSE.PlayerChange.OblivionFlag = -1
+        End If
+    Else
+        SaveFileData.OSE.PlayerChange.OblivionFlag = -1
+    End If
+    
+    ' Temporary Attribute Changes
+    SaveFileData.OSE.PlayerChange.TempAttributeChanges = Offset
+    Offset = Offset + 876
+    
+    ' Actor Flag
+    SaveFileData.OSE.PlayerChange.ActorFlag = Offset
+    Offset = Offset + 1
+
+    ' Check for FormFlags
+    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_0) <> 0) Then
+        SaveFileData.OSE.PlayerChange.FormFlags = Offset
+        Offset = Offset + 4
+    Else
+        SaveFileData.OSE.PlayerChange.FormFlags = -1
+    End If
+
+    ' Check for Inventory
+    If ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Flags And BIT_27) <> 0) Then
+        SaveFileData.OSE.PlayerChange.Inventory = Offset
+        SaveFileData.OSE.PlayerChange.InventoryCount = ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset) + _
+                                                         SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1) * BYTE_2))
+        Offset = Offset + InventorySize
+    Else
+        SaveFileData.OSE.PlayerChange.Inventory = -1
+    End If
+
+End Sub
+
+Private Function CreatedOrMoved() As Boolean
+
+    CreatedOrMoved = False
+    
+    If SaveFileData.OSE.PlayerChange.Created <> -1 Then CreatedOrMoved = True
+    If SaveFileData.OSE.PlayerChange.Moved <> -1 Then CreatedOrMoved = True
+    If SaveFileData.OSE.PlayerChange.HavokMoved <> -1 Then CreatedOrMoved = True
+
+End Function
+
+Private Function InventorySize()
+
+    ' TODO calculate the size of the inventory changes
+
+    InventorySize = SaveFileData.OSE.PlayerChange.InventoryCount * 12
+
+End Function
 
 Private Sub FixFactionReferences()
 

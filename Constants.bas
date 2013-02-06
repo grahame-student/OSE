@@ -1,6 +1,6 @@
 Attribute VB_Name = "Constants"
 ' OSE - Oblivion Save Editor
-' Copyright (C) 2012  Grahame White
+' Copyright (C) 2012, 2013 Grahame White
 '
 ' This program is free software; you can redistribute it and/or modify
 ' it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ Public Const PROGRAM_NAME As String = "OSE"
 
 Public Const VERSION_MAJOR As Integer = 0
 Public Const VERSION_MINOR As Integer = 1
-Public Const VERSION_REVISION As Integer = 6
+Public Const VERSION_REVISION As Integer = 7
 Public Const VERSION_EXTRA As String = ""
 
 Public Const PROGRAM_TITLE As String = PROGRAM_NAME & " - " & _
@@ -146,9 +146,11 @@ Public Const DATE_STAMP_MODE_GAME As Integer = 2
 
 ' Special Change Records
 Public Const PLAYER_FORMID As Long = 7
+Public Const PLAYER_CHANGE_FORMID As Long = 20
 
 ' Change Record Types
 Public Const CHANGE_RECORD_NPC_ As Byte = 35
+Public Const CHANGE_RECORD_ACHR As Byte = 50
 
 ' Created Data Types
 Public Const CREATED_DATA_SPELL As String = "SPEL"
