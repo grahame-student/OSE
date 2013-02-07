@@ -57,7 +57,7 @@ Private Type PlayerLocation
 End Type
 
 Private Type GlobalsStructure
-    iRef As Long
+    Iref As Long
     Value As Single
 End Type
 
@@ -156,7 +156,7 @@ Public Type Faction
 End Type
 
 Public Type Spell
-    iRef As Long
+    Iref As Long
     FormID As Long
     Name As String
 End Type
@@ -237,6 +237,155 @@ Private Type Player
     BaseModCount As Integer         ' Number of BaseMods
     BaseModList() As BaseMod        ' List of the BaseMods
     FullNameString As String        ' The FullName
+End Type
+
+Private Type PropertyScriptVariable
+    Index As Integer
+    Type As Integer
+    RefVariable As Long
+    LocalVariable As Double
+End Type
+
+Private Type PropertyScript
+    ScriptRef As Long               ' iRef
+    VariableCount As Integer
+    VariableList() As PropertyScriptVariable
+    Unknown As Byte
+End Type
+
+Private Type PropertyMarkerHeadingRef
+    Cell As Long
+    X As Single
+    Y As Single
+    Z As Single
+    Flags As Long
+End Type
+
+Private Type PropertyAllPack
+    Package As Long
+    Flags As Long
+    Package2 As Long
+    Unknown As Integer
+End Type
+
+Private Type PropertyUnknown1Data
+    Iref As Long
+    Unknown As Byte
+End Type
+
+Private Type PropertyUnknown1
+    BlockCount As Integer
+    BlockData() As PropertyUnknown1Data
+End Type
+
+Private Type PropertyUnknown2
+    BlockCount As Integer
+    Blocks() As Long                                ' iRefs
+End Type
+
+Private Type PropertyLock
+    LockLevel As Byte
+    Key As Long
+    Flag As Byte
+End Type
+
+Private Type PropertyTeleport
+    X As Single
+    Y As Single
+    Z As Single
+    RX As Single
+    RY As Single
+    RZ As Single
+    DestinationDoor As Long
+End Type
+
+Private Type PropertyUnknown5
+    Iref As Long
+    BlockCount As Integer
+    Block(60) As Byte
+End Type
+
+Private Type PropertyOblivionEntry
+    Door As Long
+    X As Single
+    Y As Single
+    Z As Single
+End Type
+
+Private Type PropertyMovementExtra
+    Unknown As Long
+    BlockCount As Single
+    Block() As Byte
+    Blank() As Byte
+End Type
+
+Private Type PropertyUnknown7
+    BlockCount As Integer
+    Block(9) As Byte
+End Type
+
+Private Type ConversationBlock
+    Number As Byte
+    Quest As Long                                   ' iRef
+    Dialog As Long                                  ' iRef
+    Info As Long                                    ' iRef
+End Type
+
+Private Type PropertyConversation
+    Topic As String
+    ConversationCount As Integer
+End Type
+
+Private Type PropertyChange
+    Flag As Byte                                    ' The property flag
+    WorldspaceiRef As Long                          ' Used for flag 0x11
+    MarkerHeadingRef As PropertyMarkerHeadingRef    ' Used for flag 0x12
+    AllPack As PropertyAllPack                      ' Used for flag 0x1E
+    Trespass(62) As Byte                            ' Used for flag 0x1F
+    Unknown1 As PropertyUnknown1                    ' Used for flag 0x21
+    UnknowniRef As Long                             ' Used for flag 0x22
+    Unknown2 As PropertyUnknown2                    ' Used for flag 0x23
+    Owner As Long                                   ' Used for flag 0x27
+    GlobalVariable As Long                          ' Used for flag 0x28
+    FactionRank As Long                             ' Used for flag 0x29
+    AffectedItemsNumber As Integer                  ' Used for flag 0x2A
+    ItemHealth As Single                            ' Used for flag 0x2B
+    Time As Single                                  ' Used for flag 0x2D
+    EnchantmentPoints As Single                     ' Used for flag 0x2E
+    Soul As Byte                                    ' Used for flag 0x2F
+    Lock As PropertyLock                            ' Used for flag 0x31
+    Teleport As PropertyTeleport                    ' Used for flag 0x32
+    MapMarkerFlag As Byte                           ' Used for flag 0x33
+    Unknown3(4) As Byte                             ' Used for flag 0x36
+    Scale As Single                                 ' Used for flag 0x37
+    Unknown4(11) As Byte                            ' Used for flag 0x39
+    Unknown5 As PropertyUnknown5                    ' Used for flag 0x3A
+    CrimeGold As Single                             ' Used for flag 0x3D
+    OblivionEntry As PropertyOblivionEntry          ' Used for flag 0x3E
+    Unknown6 As Single                              ' Used for flag 0x41
+    Poison As Long                                  ' Used for flag 0x48
+    Animation As String                             ' Used for flag 0x4A
+    MovementExtra As PropertyMovementExtra          ' Used for flag 0x4B
+    Unknown7 As PropertyUnknown7                    ' Used for flag 0x4E
+    Unknown8(3) As Byte                             ' Used for flag 0x4F
+    InvestmentGold As Long                          ' Used for flag 0x52
+    Unknown9 As Long                                ' Used for flag 0x53
+    ShortcutKey As Byte                             ' Used for flag 0x55
+    Conversation As PropertyConversation            ' Used for flag 0x59
+    Essential As Byte                               ' Used for flag 0x5A
+    Unknown10 As Single                             ' Used for flag 0x5C
+End Type
+
+Private Type InventoryChangeEntry
+    PropertiesNumber As Integer
+    Properties() As PropertyChange
+End Type
+
+Private Type InventoryEntry
+    Iref As Long
+    StackedItemsCount As Long
+    ChangedEntriesCount As Long
+    InventoryChangedEntries() As InventoryChangeEntry
 End Type
 
 Private Type PlayerChange

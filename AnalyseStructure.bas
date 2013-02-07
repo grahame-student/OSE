@@ -327,6 +327,8 @@ Public Sub ScanForPlayerChangeMarkers()
         SaveFileData.OSE.PlayerChange.Inventory = -1
     End If
 
+
+
 End Sub
 
 Private Function CreatedOrMoved() As Boolean
