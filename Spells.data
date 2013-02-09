@@ -1,5 +1,5 @@
 # OSE - Oblivion Save Editor
-# Copyright (C) 2012  Grahame White
+# Copyright (C) 2012, 2013 Grahame White
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -49,8 +49,14 @@
 696177,Absorb Skill: Sneak,None
 694187,Aegis,None
 694188,Alluring Gaze,None
+293596,Altmer: Fortify Magicka,None
+293591,Altmer: Resist Disease,None
+85330,Altmer: Weakness to Fire + Frost + Shock,None
 694258,Artic Blow,None
 4677,Arctic Touch,DLCSpellTomes.esp
+293582,Argonian: Resist Disease,None
+293583,Argonian: Resist Poison,None
+293590,Argonian: Water Breathing,None
 4580,Aundae's Aura,DLCSpellTomes.esp
 4590,Baltham's Insight,DLCSpellTomes.esp
 448124,Baronoff's Bloody Icicle,None
@@ -78,6 +84,8 @@
 4626,Blink,DLCSpellTomes.esp
 246744,Blizzard,None
 448128,Bloodhunt,None
+293609,Bosmer: Command Creature,None
+293608,Bosmer: Resist Disease,None
 694196,Bound Boots,None
 694197,Bound Bow,None
 694198,Bound Cuirass,None
@@ -90,6 +98,9 @@
 694205,Bound Sword,None
 694195,Bound War Axe,None
 129972,Bouyancy,None
+293584,Breton: Dragon Skin,None
+293585,Breton: Resist Magicka,None
+293586,Breton: Fortify Magicka,None
 694209,Burdening Touch,None
 313630,Burning Touch,None
 694218,Calming Touch,None
@@ -111,7 +122,6 @@
 246779,Cure Paralysis,None
 246780,Cure Poison,None
 694226,Curse of Weakness,None
-293588,Dark Elf Resistance,None
 809352,Dark Scales Ability,None
 694313,Daylight,None
 448129,Deathly Visage,None
@@ -142,6 +152,8 @@
 246759,Drain Skill: Illusion,None
 246758,Drain Skill: Marksman,None
 246766,Drain Skill: Restoration,None
+293588,Dunmer: Resist Fire,None
+293589,Dunmer: Summon Ancestor Guardian,None
 694272,Ease Burden,None
 694314,Electric Shell,None
 694267,Electric Touch,None
@@ -250,9 +262,13 @@
 694329,Immobilise,None
 694243,Immolating Blast,None
 4598,Immolating Touch,DLCSpellTomes.esp
+293598,Imperial: Absorb Fatigue,None
+293597,Imperial: Charm,None
 696370,Inspiration,None
 696371,Inspiring Touch,None
 4584,Karstaag's Breath,DLCSpellTomes.esp
+293599,Khajit: Demoralise,None
+293600,Khajit: Night-Eye,None
 4592,Kindling Touch,DLCSpellTomes.esp
 693096,Leech Health,None
 3305,Leech Vitality,DLCSpellTomes.esp
@@ -296,11 +312,16 @@
 696396,Mute,None
 4576,Night Form,DLCSpellTomes.esp
 448122,Night Mother's Caress,None
+293604,Nord: Frost Damage,None
+293603,Nord: Shield,None
+293602,Nord: Resist Frost,None
 694326,Open Average Lock,None
 694308,Open Easy Lock,None
 694327,Open Hard Lock,None
 694270,Open Very Easy Lock,None
 694212,Oppressing Grasp,None
+293587,Orc: Berserk,None
+293583,Orc: Resist Magic,None
 4575,Orum's Aquatic Escape,DLCSpellTomes.esp
 694215,Pacification,None
 694274,Pack Mule,None
@@ -312,6 +333,9 @@
 4582,Quarra's Aura,DLCSpellTomes.esp
 694298,Rage,None
 696426,Rebuke Undead,None
+293607,Redguard: Adrenaline Rush,None
+293606,Redguard: Resist Disease,None
+293605,Redguard: Resist Poison,None
 696420,Remote Manipulation,None
 696425,Repulse Undead,None
 7570,Resist Paralysis,DLCSpellTomes.esp
@@ -353,7 +377,6 @@
 694309,Starlight,None
 4642,Strangulation,DLCSpellTomes.esp
 694208,Spectral Form,None
-293589,Summon Ancestor Guardian,None
 696407,Summon Clannfear,None
 696408,Summon Daedroth,None
 696409,Summon Dremora,None

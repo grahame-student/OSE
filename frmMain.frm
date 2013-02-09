@@ -1871,13 +1871,17 @@ Private Sub UpdateDisplayPlayerFactions()
     
     Dim i As Integer
         
+    If SaveFileData.OSE.Player.FactionCount = 0 Then
+        Exit Sub
+    End If
+        
     If cboFactions.ListCount <> SaveFileData.OSE.Player.FactionCount Then
         For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
             cboFactions.AddItem SaveFileData.OSE.Player.FactionList(i).Name
         Next i
         cboFactions.ListIndex = 0
     End If
-    
+        
     If SaveFileData.OSE.Player.FactionList(cboFactions.ListIndex).Suspended Then
         cboFactionRank.ListIndex = cboFactionRank.ListCount - 1
         Exit Sub

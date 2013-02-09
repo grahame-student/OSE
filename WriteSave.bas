@@ -242,8 +242,8 @@ Private Sub WriteSaveGlobalsQuickKeyData()
         PutNextUByte SaveFileData.Globals.QuickKeyData(i).Flag
         Size = Size + 1
         If SaveFileData.Globals.QuickKeyData(i).Flag = 0 Then
-            PutNextUByte SaveFileData.Globals.QuickKeyData(i).Reference
-            Size = Size + 1
+'            PutNextUByte SaveFileData.Globals.QuickKeyData(i).Reference
+'            Size = Size + 1
         Else
             PutNext32BitULong SaveFileData.Globals.QuickKeyData(i).Reference
             Size = Size + 4

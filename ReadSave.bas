@@ -166,8 +166,10 @@ Private Sub ReadSaveGlobals()
 
     SaveFileData.Globals.PlayerCombatCount = GetNext32BitULong
     SaveFileData.Globals.CreatedNumber = GetNext32BitULong
-    ReDim SaveFileData.Globals.CreatedData(SaveFileData.Globals.CreatedNumber - 1)
-    ReadSaveGlobalsCreatedData
+    If SaveFileData.Globals.CreatedNumber > 0 Then
+        ReDim SaveFileData.Globals.CreatedData(SaveFileData.Globals.CreatedNumber - 1)
+        ReadSaveGlobalsCreatedData
+    End If
 
     SaveFileData.Globals.QuickKeySize = GetNext16BitUInteger
     ReadSaveGlobalsQuickKeyData
@@ -277,8 +279,8 @@ Private Sub ReadSaveGlobalsQuickKeyData()
         SaveFileData.Globals.QuickKeyData(i).Flag = GetNextUByte
         Size = Size + 1
         If SaveFileData.Globals.QuickKeyData(i).Flag = 0 Then
-            SaveFileData.Globals.QuickKeyData(i).Reference = GetNextUByte
-            Size = Size + 1
+'            SaveFileData.Globals.QuickKeyData(i).Reference = GetNextUByte
+'            Size = Size + 1
         Else
             SaveFileData.Globals.QuickKeyData(i).Reference = GetNext32BitULong
             Size = Size + 4

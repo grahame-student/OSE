@@ -125,14 +125,17 @@ Private Sub ProcessPlayerRecord(ByRef MainForm As Form)
     ScanForPlayerMarkers
     If SaveFileData.OSE.Player.Factions <> -1 Then
         FixFactionReferences
-        PopulateFactionListBox MainForm
         InitPlayerFactions
     End If
+    
+    PopulateFactionListBox MainForm
+    
     If SaveFileData.OSE.Player.Spells <> -1 Then
         FixSpellReferences
         PopulateSpellListBox MainForm
         InitPlayerSpells
     End If
+    
     If SaveFileData.OSE.Player.BaseModifiers <> -1 Then
         InitPlayerBaseMods
     End If
@@ -327,8 +330,6 @@ Public Sub ScanForPlayerChangeMarkers()
         SaveFileData.OSE.PlayerChange.Inventory = -1
     End If
 
-
-
 End Sub
 
 Private Function CreatedOrMoved() As Boolean
@@ -341,7 +342,7 @@ Private Function CreatedOrMoved() As Boolean
 
 End Function
 
-Private Function InventorySize()
+Private Function InventorySize() As Long
 
     ' TODO calculate the size of the inventory changes
 
