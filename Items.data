@@ -1,0 +1,80 @@
+# OSE - Oblivion Save Editor
+# Copyright (C) 2012, 2013 Grahame White
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#
+# Item FormID, Faction Name, PlugIn Required
+311050,Arrow: Blaze,None
+311051,Arrow: Blizzards,None
+35405,Arrow: Brilliance,None
+311035,Arrow: Burning,None
+841023,Arrow: Cleansing,None
+311042,Arrow: Cold,None
+253915,Arrow: Cowardice,None
+126931,Arrow: Daedric,None
+245607,Arrow: Discord,None
+311057,Arrow: Dispel,None
+311040,Arrow: Drain Magicka,None
+553639,Arrow: Dremora Barbed,None
+553638,Arrow: Dremora Broadhead,None
+553637,Arrow: Dremora Field,None
+142306,Arrow: Dwarven,None
+311049,Arrow: Dynamo,None
+126933,Arrow: Ebony,None
+141760,Arrow: Elven,None
+311056,Arrow: Embers,None
+142773,Arrow: Extrication,None
+253910,Arrow: Fatigue,None
+253912,Arrow: Fear,None
+311047,Arrow: Fire,None
+311044,Arrow: Flames,None
+35406,Arrow: Flare,None
+311045,Arrow: Freezing,None
+311033,Arrow: Frost,None
+311048,Arrow: Glacier,None
+142305,Arrow: Glass,None
+253911,Arrow: Harm,None
+85683,Arrow: Hatreds Soul,None
+1414774,Arrow: Hexing,None
+35404,Arrow: Illumination,None
+841026,Arrow: Immolation,None
+311053,Arrow: Inferno,None
+96297,Arrow: Iron,None
+311039,Arrow: Jinxing,None
+311037,Arrow: Jolts,None
+35407,Arrow: Light,None
+311052,Arrow: Lightning,None
+841028,Arrow: Magebane,None
+253913,Arrow: Misery,None
+841029,Arrow: North Winds,None
+311036,Arrow: Numbing,None
+253914,Arrow: Qualms,None
+206445,Arrow: Rose of Sithis,None
+841024,Arrow: Savage Frost,None
+311041,Arrow: Scorching,None
+311043,Arrow: Shocking,None
+253916,Arrow: Silence,None
+126932,Arrow: Silver,None
+311034,Arrow: Sparks,None
+141761,Arrow: Steel,None
+253917,Arrow: Stillness,None
+841027,Arrow: Storm Strike,None
+841025,Arrow: Stormcall,None
+311055,Arrow: Storms,None
+47833,Arrow: Sunlight,None
+834645,Arrow: Test AE,None
+311046,Arrow: Voltage,None
+311054,Arrow: Winter,None
+248684,Arrow: Withering,None

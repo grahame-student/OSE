@@ -1,5 +1,5 @@
 # OSE - Oblivion Save Editor
-# Copyright (C) 2012,2013 Grahame White
+# Copyright (C) 2012, 2013 Grahame White
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -149,7 +149,7 @@
 29832,Deepscorn Hollow Prisoner,DLCVileLair.esp,0,Prisoner
 697888,Derelict Mine Tribe,None,0,Member
 418297,Dislike Player,None,0,Member
-9520,DL9 Commander Special Faction,MRazor.plugin,0,Member
+9520,DL9 Commander Special Faction,DLCMehrunesRazor.esp,0,Member
 419131,Donton Faction,None,0,Member
 167481,Doomed House Guests,None,0,Member
 172155,Doran Family Faction,None,0,Member
@@ -157,7 +157,7 @@
 443499,Draconis Family Faction,None,0,Member
 623240,Drad Faction,None,0,Member
 41544,Dro'fahr Faction,None,0,Member
-5353,Drothmeri Army,MRazor.plugin,0,Member
+5353,Drothmeri Army,DLCMehrunesRazor.esp,0,Member
 90671,Dul gro-Shug Faction,0,Member
 16092,Dunbarrow Faction,DLCThievesDen.esp,0,Member
 16091,Dunbarrow Pirate Faction,DLCThievesDen.esp,0,Member
@@ -291,7 +291,7 @@
 335918,Methredhel's House,None,0,Member
 547158,Mogens Wind-Shifter Faction,None,0,Member
 114530,Molag Bal Faction,None,0,Member
-9519,Morag Tong,MRazor.plugin,0,Member
+9519,Morag Tong,DLCMehrunesRazor.esp,0,Member
 50524,Moth Caretakers,None,0,Member
 605383,Moth Priests,None,0,Priest
 256709,MQ06 Mythic Dawn Shrine Faction,None,0,Member
