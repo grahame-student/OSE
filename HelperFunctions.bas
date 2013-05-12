@@ -80,7 +80,7 @@ End Function
 Public Function GetModIndex(ByVal ModName As String) As LongType
 
     Dim i As Integer
-    Dim Index As ByteArray
+    Dim Index As FourByteArray
     
     For i = 0 To SaveFileData.PlugIns.NumberOfPlugins - 1
         If ModName = SaveFileData.PlugIns.PlugInNames(i) Then

@@ -288,7 +288,7 @@ Private Sub SetPlayerChangeRecordSpellList(ByRef tmpPlayerChangeRecord As Change
 
     Dim NewOffset As Integer
     Dim RecordNumber As Integer
-    Dim RawiRef As ByteArray
+    Dim RawiRef As FourByteArray
     Dim iRef As LongType
 
     NewOffset = Start

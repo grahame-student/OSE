@@ -17,27 +17,27 @@
 #
 # Item FormID, Description, PlugIn Required
 343415,Aegis: Reflection,None
-67076,Alchemy Tool: Alembic Novice,None
 451344,Alchemy Tool: Alembic Apprentice,None
 454236,Alchemy Tool: Alembic Expert,None
 454226,Alchemy Tool: Alembic Journeyman,None
 454244,Alchemy Tool: Alembic Master,None
-66941,Alchemy Tool: Calcinator Novice,None
+67076,Alchemy Tool: Alembic Novice,None
 451345,Alchemy Tool: Calcinator Apprentice,None
 454238,Alchemy Tool: Calcinator Expert,None
 454229,Alchemy Tool: Calcinator Journeyman,None
 454246,Alchemy Tool: Calcinator Master,None
-3151,Alchemy Tool: Retort Novice,None
-451347,Alchemy Tool: Retort Apprentice,None
-454242,Alchemy Tool: Retort Expert,None
-454233,Alchemy Tool: Retort Journeyman,None
-454250,Alchemy Tool: Retort Master,None
+66941,Alchemy Tool: Calcinator Novice,None
 451346,Alchemy Tool: Mortar & Pestle Apprentice,None
 454240,Alchemy Tool: Mortar & Pestle Expert,None
 454231,Alchemy Tool: Mortar & Pestle Journeyman,None
 454248,Alchemy Tool: Mortar & Pestle Master,None
 817512,Alchemy Tool: Mortar & Pestle Novice,None
 67043,Alchemy Tool: Mortar & Pestle Novice,None
+451347,Alchemy Tool: Retort Apprentice,None
+454242,Alchemy Tool: Retort Expert,None
+454233,Alchemy Tool: Retort Journeyman,None
+454250,Alchemy Tool: Retort Master,None
+3151,Alchemy Tool: Retort Novice,None
 623678,Amulet: Absorption,None
 623677,Amulet: Absorption Base,None
 623679,Amulet: Absorption Grand,None
@@ -148,6 +148,115 @@
 14996,Blouse: Red Velvet,None
 297356,Blue & Green Outfit: Resist Poison,None
 297350,Blue Suede Shoes: Sneak,None
+148469,Book: 2920 - Frostfall (v10),None
+148468,Book: 2920 - Hearth Fire (v9),None
+148807,Book: 2920 - Last Seed (v8),None
+148482,Book: 2920 - Mid Year (v6),None
+148452,Book: 2920 - Morning Star (v1),None
+148799,Book: 2920 - Rain's Hand (v4),None
+148813,Book: 2920 - Second Seed (v5),None
+148792,Book: 2920 - Sun's Dawn (v2),None
+148788,Book: 2920 - Sun's Height (v7),None
+148427,Book: A Dance in Fire (v1),None
+148458,Book: A Dance in Fire (v2),None
+148447,Book: A Dance in Fire (v3),None
+148428,Book: A Dance in Fire (v4),None
+148497,Book: A Dance in Fire (v5),None
+148789,Book: A Dance in Fire (v6),None
+148790,Book: A Dance in Fire (v7),None
+148431,Book: A Game at Dinner,None
+148473,Book: A Hypothetical Treachery,None
+473701,Book: Advances in Lock Picking,None
+148478,Book: Ahzirr Traajijazeri,None
+473697,Book: Battle of Sancre Tor,None
+473699,Book: Before the Ages of Man,None
+148449,Book: Beggar,None
+148811,Book: Biography of the Wolf Queen,None
+473695,Book: Calcinator Treatise,None
+148444,Book: Cherim's Heart of Anequina,None
+148483,Book: Chimarvamidium,None
+148436,Book: Daughter of the Niben,None
+148434,Book: De Rerum Dirennis,None
+148456,Book: Death Blow of Abernanit,None
+148784,Book: Father Of The Niben,None
+692572,Book: Fighters Guild History 1st Ed.,None
+148453,Book: Fire and Darkness,None
+148481,Book: Hallgerd's Tale,None
+473704,Book: Heavy Armor Repair,None
+148485,Book: History of the Fighters Guild,None
+148484,Book: How Orsinium Passed to Orcs,None
+148492,Book: Ice and Chitin,None
+148476,Book: Immortal Blood,None
+148488,Book: Incident in Necrom,None
+148464,Book: King,None
+148442,Book: Last Scabbard of Akrash,None
+148809,Book: Legend of Krately House,None
+473703,Book: Light Armor Repair,None
+473696,Book: Liminal Bridges,None
+148493,Book: Lord Jornibret's Last Dance,None
+473702,Book: Mace Etiquette,None
+148432,Book: Mannimarco King of Worms,None
+148480,Book: Master Zoaraym's Tale,None
+148430,Book: Mystery of Talara (v1),None
+148800,Book: Mystery of Talara (v2),None
+148475,Book: Mystery of Talara (v3),None
+148490,Book: Mystery of Talara (v4),None
+142084,Book: Mythic Dawn Commentaries 1,None
+142085,Book: Mythic Dawn Commentaries 2,None
+142086,Book: Mythic Dawn Commentaries 3,None
+142087,Book: Mythic Dawn Commentaries 4,None
+148463,Book: Night Falls on Sentinel,None
+148797,Book: Notes on Racial Phylogeny,None
+148489,Book: Palla (v1),None
+473700,Book: Proper Lock Design,None
+148810,Book: Purloined Shadows,None
+473705,Book: Reality & Other Falsehoods,None
+148472,Book: Response to Bero's Speech,None
+148495,Book: Rislav The Righteous,None
+148808,Book: Sacred Witness,None
+148438,Book: Sithis,None
+148454,Book: Song Of Hrormir,None
+148433,Book: Song of the Alchemists,None
+473707,Book: Souls Black and White,None
+148805,Book: Surfeit of Thieves,None
+148450,Book: The Argonian Account (v1),None
+148487,Book: The Argonian Account (v3),None
+148441,Book: The Armorer's Challenge,None
+148474,Book: The Art of War Magic,None
+148429,Book: The Black Arrow (v1),None
+148785,Book: The Black Arrow (v2),None
+148793,Book: The Black Arts On Trial,None
+148786,Book: The Buying Game,None
+148466,Book: The Doors of Oblivion,None
+148437,Book: The Dragon Break,None
+148798,Book: The Exodus,None
+148791,Book: The Firsthold Revolt,None
+148496,Book: The Gold Ribbon of Merit,None
+148471,Book: The Horrors of Castle Xyr,None
+148462,Book: The Importance of Where,None
+473698,Book: The Legendary Sancre Tor,None
+148801,Book: The Locked Room,None
+148440,Book: The Lunar Lorkhan,None
+148457,Book: The Mirror,None
+148446,Book: The Ransom of Zarek,None
+148491,Book: The Rear Guard,None
+148448,Book: The Red Kitchen Reader,None
+148494,Book: The Refugees,None
+148460,Book: The Warp in the West,None
+148470,Book: The Warrior's Charge,None
+148802,Book: The Wolf Queen (v1),None
+148477,Book: The Wolf Queen (v2),None
+148486,Book: The Wolf Queen (v3),None
+148787,Book: The Wolf Queen (v4),None
+148812,Book: The Wolf Queen (v5),None
+148806,Book: The Wolf Queen (v6),None
+148814,Book: The Wolf Queen (v7),None
+148426,Book: Thief,None
+148783,Book: Vernaccus and Bourlor,None
+148459,Book: Warrior,None
+473706,Book: Way of the Exposed Palm,None
+148796,Book: Withershins,None
+148451,Book: Words and Philosophy,None
 299942,Boots: Borosilicate,None
 116436,Boots: Chainmail,None
 222041,Boots: Daedric,None
@@ -194,7 +303,7 @@
 677764,Boots: the Forest Stalker,None
 300626,Boots: the Harbinger,None
 300647,Boots: the Jument,None
-293005,Boots: the Olympian*,None
+293005,Boots: the Olympian,None
 324600,Boots: the Savannah,None
 297395,Boots: the Shark,None
 299895,Boots: the Siltrunner,None
@@ -367,6 +476,7 @@
 299358,Cuirass: Weaponward,None
 21931,Cutlass: Sharpened,None
 240258,Cutlass: Steel,None
+33735,Daedric Lava Whiskey,DLCFrostcrag.ESP
 220786,Dagger: Daedric,None
 220624,Dagger: Dwarven,None
 220778,Dagger: Ebony,None
@@ -534,7 +644,7 @@
 300299,Gauntlets: Barkeep's,None
 300677,Gauntlets: Battlehunter,None
 299927,Gauntlets: Beveled,None
-293009,Gauntlets: Blinding Speed*,None
+293009,Gauntlets: Blinding Speed,None
 677754,Gauntlets: Broadhead,None
 180759,Gauntlets: Brutality,None
 300689,Gauntlets: Brutality,None
@@ -750,6 +860,69 @@
 300653,Helmet: Warmage's,None
 300638,Helmet: Witchhunter,None
 299344,Helmet: Wizard's,None
+726490,Home Upgrade: Arborwatch - Bedroom Area,None
+726488,Home Upgrade: Arborwatch - Dining Area,None
+726489,Home Upgrade: Arborwatch - Dining Upgrade,None
+726485,Home Upgrade: Arborwatch - Kitchen Area,None
+726493,Home Upgrade: Arborwatch - Lower Wall Hangings,None
+726494,Home Upgrade: Arborwatch - Middle Wall Hangings,None
+726491,Home Upgrade: Arborwatch - Servants Quarters,None
+726486,Home Upgrade: Arborwatch - Sitting Area,None
+726487,Home Upgrade: Arborwatch - Study Area,None
+726492,Home Upgrade: Arborwatch - Suite  Area,None
+726495,Home Upgrade: Arborwatch - Upper Wall Hangings,None
+593587,Home Upgrade: Bravil - Dining Area,None
+593586,Home Upgrade: Bravil - Kitchen Area,None
+593589,Home Upgrade: Bravil - Racks Assortment,None
+591401,Home Upgrade: Bravil - Reading Area,None
+593588,Home Upgrade: Bravil - Storage Area,None
+593590,Home Upgrade: Bravil - Wall Hangings,None
+726419,Home Upgrade: Bruma - Bedroom Area,None
+726413,Home Upgrade: Bruma - Dining Area,None
+726414,Home Upgrade: Bruma - Kitchen Area,None
+726420,Home Upgrade: Bruma - Lower Storage Area,None
+726421,Home Upgrade: Bruma - Lower Wall Hangings,None
+726418,Home Upgrade: Bruma - Study Area,None
+726416,Home Upgrade: Bruma - Upper Sitting Area,None
+726415,Home Upgrade: Bruma - Upper Storage Area,None
+726417,Home Upgrade: Bruma - Upper Wall Hangings,None
+726445,Home Upgrade: Cheydinhal - Bedroom Area,None
+726451,Home Upgrade: Cheydinhal - Dining Area,None
+726446,Home Upgrade: Cheydinhal - Dressing Area,None
+726449,Home Upgrade: Cheydinhal - Kitchen Area,None
+726553,Home Upgrade: Cheydinhal - Lower Wall Hangings,None
+726550,Home Upgrade: Cheydinhal - Sitting Area,None
+726448,Home Upgrade: Cheydinhal - Storage Area,None
+726452,Home Upgrade: Cheydinhal - Study Area,None
+726447,Home Upgrade: Cheydinhal - Upper Hall Area,None
+726454,Home Upgrade: Cheydinhal - Upper Wall Hangings,None
+726401,Home Upgrade: Leyawiin - Bedroom Area,None
+726399,Home Upgrade: Leyawiin - Dining Area,None
+726403,Home Upgrade: Leyawiin - Kitchen Area,None
+726400,Home Upgrade: Leyawiin - Reading Area,None
+726404,Home Upgrade: Leyawiin - Storage Area,None
+726402,Home Upgrade: Leyawiin - Study Area,None
+726405,Home Upgrade: Leyawiin - Wall Hangings,None
+726566,Home Upgrade: Rosethorn Hall - Balcony Area,None
+726567,Home Upgrade: Rosethorn Hall - Balcony Upgrade,None
+726568,Home Upgrade: Rosethorn Hall - Bedroom Area,None
+726564,Home Upgrade: Rosethorn Hall - Den Area,None
+726561,Home Upgrade: Rosethorn Hall - Dining Area,None
+726571,Home Upgrade: Rosethorn Hall - Display Case Upgrade,None
+726562,Home Upgrade: Rosethorn Hall - Kitchen Area,None
+726574,Home Upgrade: Rosethorn Hall - Lower Wall Hangings,None
+726573,Home Upgrade: Rosethorn Hall - Servants Quarters,None
+726563,Home Upgrade: Rosethorn Hall - Sitting Area,None
+726572,Home Upgrade: Rosethorn Hall - Storage Area,None
+726570,Home Upgrade: Rosethorn Hall - Study Area,None
+726565,Home Upgrade: Rosethorn Hall - Upper Hall Area,None
+726569,Home Upgrade: Rosethorn Hall - Upper Sitting Area,None
+726575,Home Upgrade: Rosethorn Hall - Upper Wall Hangings,None
+598050,Home Upgrade: Shack - Dining Area,None
+598060,Home Upgrade: Shack - Kitchen Area,None
+598062,Home Upgrade: Shack - Sitting Area,None
+598051,Home Upgrade: Shack - Storage Area,None
+598055,Home Upgrade: Shack - Wall Hangings,None
 462882,Hood: Aqua Silk,None
 413664,Hood: Arch-Mage's,None
 413667,Hood: Black,None
@@ -1949,6 +2122,7 @@
 623648,Ring: Nihilism,None
 623647,Ring: Nihilism Base,None
 623649,Ring: Nihilism Grand,None
+24118,Ring: Pentamagic Loop,DLCFrostcrag.ESP
 623686,Ring: Perfection,None
 600780,Ring: Restoration,None
 600779,Ring: Restoration Base,None
@@ -2181,151 +2355,151 @@
 591381,Shortsword: Rusty Iron,None
 152096,Shortsword: Silver,None
 141756,Shortsword: Steel,None
-270260,Sigil Stone: Absorb Agility / Fortify Agility (Ascendent),None
-270257,Sigil Stone: Absorb Agility / Fortify Agility (Descendent),None
-270259,Sigil Stone: Absorb Agility / Fortify Agility (Latent),None
-270258,Sigil Stone: Absorb Agility / Fortify Agility (Subjacent),None
-270261,Sigil Stone: Absorb Agility / Fortify Agility (Transcendent),None
-270266,Sigil Stone: Absorb Endurance / Resist Disease (Ascendent),None
-270263,Sigil Stone: Absorb Endurance / Resist Disease (Descendent),None
-270265,Sigil Stone: Absorb Endurance / Resist Disease (Latent),None
-270264,Sigil Stone: Absorb Endurance / Resist Disease (Subjacent),None
-270267,Sigil Stone: Absorb Endurance / Resist Disease (Transcendent),None
-270278,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Ascendent),None
-270275,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Descendent),None
-270277,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Latent),None
-270276,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Subjacent),None
-270279,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Transcendent),None
-270284,Sigil Stone: Absorb Health / Fortify Health (Ascendent),None
-270281,Sigil Stone: Absorb Health / Fortify Health (Descendent),None
-270283,Sigil Stone: Absorb Health / Fortify Health (Latent),None
-270282,Sigil Stone: Absorb Health / Fortify Health (Subjacent),None
-270285,Sigil Stone: Absorb Health / Fortify Health (Transcendent),None
-270254,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Ascendent),None
-270251,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Descendent),None
-270253,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Latent),None
-270252,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Subjacent),None
-270255,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Transcendent),None
-270290,Sigil Stone: Absorb Magicka / Fortify Magicka (Ascendent),None
-270287,Sigil Stone: Absorb Magicka / Fortify Magicka (Descendent),None
-270289,Sigil Stone: Absorb Magicka / Fortify Magicka (Latent),None
-270288,Sigil Stone: Absorb Magicka / Fortify Magicka (Subjacent),None
-270291,Sigil Stone: Absorb Magicka / Fortify Magicka (Transcendent),None
-270272,Sigil Stone: Absorb Speed / Fortify Speed (Ascendent),None
-270269,Sigil Stone: Absorb Speed / Fortify Speed (Descendent),None
-270271,Sigil Stone: Absorb Speed / Fortify Speed (Latent),None
-270270,Sigil Stone: Absorb Speed / Fortify Speed (Subjacent),None
-270273,Sigil Stone: Absorb Speed / Fortify Speed (Transcendent),None
-270246,Sigil Stone: Absorb Strength / Fortify Strength (Ascendent),None
-270245,Sigil Stone: Absorb Strength / Fortify Strength (Descendent),None
-270244,Sigil Stone: Absorb Strength / Fortify Strength (Latent),None
-270247,Sigil Stone: Absorb Strength / Fortify Strength (Subjacent),None
-270249,Sigil Stone: Absorb Strength / Fortify Strength (Transcendent),None
-270296,Sigil Stone: Burden / Feather (Ascendent),None
-270293,Sigil Stone: Burden / Feather (Descendent),None
-270295,Sigil Stone: Burden / Feather (Latent),None
-270294,Sigil Stone: Burden / Feather (Subjacent),None
-270297,Sigil Stone: Burden / Feather (Transcendent),None
-270332,Sigil Stone: Damage Fatigue / Fortify Fatigue (Ascendent),None
-270329,Sigil Stone: Damage Fatigue / Fortify Fatigue (Descendent),None
-270331,Sigil Stone: Damage Fatigue / Fortify Fatigue (Latent),None
-270330,Sigil Stone: Damage Fatigue / Fortify Fatigue (Subjacent),None
-270333,Sigil Stone: Damage Fatigue / Fortify Fatigue (Transcendent),None
-270338,Sigil Stone: Damage Health / Fortify Health (Ascendent),None
-270335,Sigil Stone: Damage Health / Fortify Health (Descendent),None
-270337,Sigil Stone: Damage Health / Fortify Health (Latent),None
-270336,Sigil Stone: Damage Health / Fortify Health (Subjacent),None
-270339,Sigil Stone: Damage Health / Fortify Health (Transcendent),None
-270344,Sigil Stone: Damage Magicka / Fortify Magicka (Ascendent),None
-270341,Sigil Stone: Damage Magicka / Fortify Magicka (Descendent),None
-270343,Sigil Stone: Damage Magicka / Fortify Magicka (Latent),None
-270342,Sigil Stone: Damage Magicka / Fortify Magicka (Subjacent),None
-270345,Sigil Stone: Damage Magicka / Fortify Magicka (Transcendent),None
-270350,Sigil Stone: Demoralize / Fortify Willpower (Ascendent),None
-270347,Sigil Stone: Demoralize / Fortify Willpower (Descendent),None
-270349,Sigil Stone: Demoralize / Fortify Willpower (Latent),None
-270348,Sigil Stone: Demoralize / Fortify Willpower (Subjacent),None
-270351,Sigil Stone: Demoralize / Fortify Willpower (Transcendent),None
-270356,Sigil Stone: Disintegrate Armor / Shield (Ascendent),None
-270353,Sigil Stone: Disintegrate Armor / Shield (Descendent),None
-270355,Sigil Stone: Disintegrate Armor / Shield (Latent),None
-270354,Sigil Stone: Disintegrate Armor / Shield (Subjacent),None
-270357,Sigil Stone: Disintegrate Armor / Shield (Transcendent),None
-270362,Sigil Stone: Disintegrate Weapon / Fortify Blade (Ascendent),None
-270359,Sigil Stone: Disintegrate Weapon / Fortify Blade (Descendent),None
-270361,Sigil Stone: Disintegrate Weapon / Fortify Blade (Latent),None
-270360,Sigil Stone: Disintegrate Weapon / Fortify Blade (Subjacent),None
-270363,Sigil Stone: Disintegrate Weapon / Fortify Blade (Transcendent),None
-270368,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Ascendent),None
-270365,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Descendent),None
-270367,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Latent),None
-270366,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Subjacent),None
-270369,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Transcendent),None
-270374,Sigil Stone: Dispel / Spell Absorption (Ascendent),None
-270371,Sigil Stone: Dispel / Spell Absorption (Descendent),None
-270373,Sigil Stone: Dispel / Spell Absorption (Latent),None
-270372,Sigil Stone: Dispel / Spell Absorption (Subjacent),None
-270375,Sigil Stone: Dispel / Spell Absorption (Transcendent),None
-270422,Sigil Stone: Fire Damage / Fire Shield (Ascendent),None
-270419,Sigil Stone: Fire Damage / Fire Shield (Descendent),None
-270421,Sigil Stone: Fire Damage / Fire Shield (Latent),None
-270420,Sigil Stone: Fire Damage / Fire Shield (Subjacent),None
-270423,Sigil Stone: Fire Damage / Fire Shield (Transcendent),None
-270446,Sigil Stone: Fire Damage / Light (Ascendent),None
-270443,Sigil Stone: Fire Damage / Light (Descendent),None
-270445,Sigil Stone: Fire Damage / Light (Latent),None
-270444,Sigil Stone: Fire Damage / Light (Subjacent),None
-270447,Sigil Stone: Fire Damage / Light (Transcendent),None
-270416,Sigil Stone: Fire Damage / Resist Fire (Ascendent),None
-270413,Sigil Stone: Fire Damage / Resist Fire (Descendent),None
-270415,Sigil Stone: Fire Damage / Resist Fire (Latent),None
-270414,Sigil Stone: Fire Damage / Resist Fire (Subjacent),None
-270417,Sigil Stone: Fire Damage / Resist Fire (Transcendent),None
-270434,Sigil Stone: Frost Damage / Frost Shield (Ascendent),None
-270431,Sigil Stone: Frost Damage / Frost Shield (Descendent),None
-270432,Sigil Stone: Frost Damage / Frost Shield (Latent),None
-270433,Sigil Stone: Frost Damage / Frost Shield (Subjacent),None
-270435,Sigil Stone: Frost Damage / Frost Shield (Transcendent),None
-270428,Sigil Stone: Frost Damage / Resist Frost (Ascendent),None
-270425,Sigil Stone: Frost Damage / Resist Frost (Descendent),None
-270427,Sigil Stone: Frost Damage / Resist Frost (Latent),None
-270426,Sigil Stone: Frost Damage / Resist Frost (Subjacent),None
-270429,Sigil Stone: Frost Damage / Resist Frost (Transcendent),None
-270440,Sigil Stone: Frost Damage / Water Walking (Ascendent),None
-270437,Sigil Stone: Frost Damage / Water Walking (Descendent),None
-270439,Sigil Stone: Frost Damage / Water Walking (Latent),None
-270438,Sigil Stone: Frost Damage / Water Walking (Subjacent),None
-270441,Sigil Stone: Frost Damage / Water Walking (Transcendent),None
-270470,Sigil Stone: Shock Damage / Night-Eye (Ascendent),None
-270467,Sigil Stone: Shock Damage / Night-Eye (Descendent),None
-270469,Sigil Stone: Shock Damage / Night-Eye (Latent),None
-270468,Sigil Stone: Shock Damage / Night-Eye (Subjacent),None
-270471,Sigil Stone: Shock Damage / Night-Eye (Transcendent),None
-270458,Sigil Stone: Shock Damage / Resist Shock (Ascendent),None
-270455,Sigil Stone: Shock Damage / Resist Shock (Descendent),None
-270457,Sigil Stone: Shock Damage / Resist Shock (Latent),None
-270456,Sigil Stone: Shock Damage / Resist Shock (Subjacent),None
-270459,Sigil Stone: Shock Damage / Resist Shock (Transcendent),None
-270464,Sigil Stone: Shock Damage / Shock Shield (Ascendent),None
-270461,Sigil Stone: Shock Damage / Shock Shield (Descendent),None
-270463,Sigil Stone: Shock Damage / Shock Shield (Latent),None
-270462,Sigil Stone: Shock Damage / Shock Shield (Subjacent),None
-270465,Sigil Stone: Shock Damage / Shock Shield (Transcendent),None
-270483,Sigil Stone: Silence / Chameleon (Ascendent),None
-270480,Sigil Stone: Silence / Chameleon (Descendent),None
-270482,Sigil Stone: Silence / Chameleon (Latent),None
-270481,Sigil Stone: Silence / Chameleon (Subjacent),None
-270484,Sigil Stone: Silence / Chameleon (Transcendent),None
-270477,Sigil Stone: Silence / Resist Magic (Ascendent),None
-270473,Sigil Stone: Silence / Resist Magic (Descendent),None
-270476,Sigil Stone: Silence / Resist Magic (Latent),None
-270475,Sigil Stone: Silence / Resist Magic (Subjacent),None
-270478,Sigil Stone: Silence / Resist Magic (Transcendent),None
-270489,Sigil Stone: Soul Trap / Resist Magic (Ascendent),None
-270486,Sigil Stone: Soul Trap / Resist Magic (Descendent),None
-270488,Sigil Stone: Soul Trap / Resist Magic (Latent),None
-270487,Sigil Stone: Soul Trap / Resist Magic (Subjacent),None
-270490,Sigil Stone: Soul Trap / Resist Magic (Transcendent),None
+270260,Sigil Stone: Absorb Agility / Fortify Agility  (Ascendent),None
+270257,Sigil Stone: Absorb Agility / Fortify Agility  (Descendent),None
+270259,Sigil Stone: Absorb Agility / Fortify Agility  (Latent),None
+270258,Sigil Stone: Absorb Agility / Fortify Agility  (Subjacent),None
+270261,Sigil Stone: Absorb Agility / Fortify Agility  (Transcendent),None
+270266,Sigil Stone: Absorb Endurance / Resist Disease  (Ascendent),None
+270263,Sigil Stone: Absorb Endurance / Resist Disease  (Descendent),None
+270265,Sigil Stone: Absorb Endurance / Resist Disease  (Latent),None
+270264,Sigil Stone: Absorb Endurance / Resist Disease  (Subjacent),None
+270267,Sigil Stone: Absorb Endurance / Resist Disease  (Transcendent),None
+270278,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Ascendent),None
+270275,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Descendent),None
+270277,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Latent),None
+270276,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Subjacent),None
+270279,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Transcendent),None
+270284,Sigil Stone: Absorb Health / Fortify Health  (Ascendent),None
+270281,Sigil Stone: Absorb Health / Fortify Health  (Descendent),None
+270283,Sigil Stone: Absorb Health / Fortify Health  (Latent),None
+270282,Sigil Stone: Absorb Health / Fortify Health  (Subjacent),None
+270285,Sigil Stone: Absorb Health / Fortify Health  (Transcendent),None
+270254,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Ascendent),None
+270251,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Descendent),None
+270253,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Latent),None
+270252,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Subjacent),None
+270255,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Transcendent),None
+270290,Sigil Stone: Absorb Magicka / Fortify Magicka  (Ascendent),None
+270287,Sigil Stone: Absorb Magicka / Fortify Magicka  (Descendent),None
+270289,Sigil Stone: Absorb Magicka / Fortify Magicka  (Latent),None
+270288,Sigil Stone: Absorb Magicka / Fortify Magicka  (Subjacent),None
+270291,Sigil Stone: Absorb Magicka / Fortify Magicka  (Transcendent),None
+270272,Sigil Stone: Absorb Speed / Fortify Speed  (Ascendent),None
+270269,Sigil Stone: Absorb Speed / Fortify Speed  (Descendent),None
+270271,Sigil Stone: Absorb Speed / Fortify Speed  (Latent),None
+270270,Sigil Stone: Absorb Speed / Fortify Speed  (Subjacent),None
+270273,Sigil Stone: Absorb Speed / Fortify Speed  (Transcendent),None
+270246,Sigil Stone: Absorb Strength / Fortify Strength  (Ascendent),None
+270245,Sigil Stone: Absorb Strength / Fortify Strength  (Descendent),None
+270244,Sigil Stone: Absorb Strength / Fortify Strength  (Latent),None
+270247,Sigil Stone: Absorb Strength / Fortify Strength  (Subjacent),None
+270249,Sigil Stone: Absorb Strength / Fortify Strength  (Transcendent),None
+270296,Sigil Stone: Burden / Feather  (Ascendent),None
+270293,Sigil Stone: Burden / Feather  (Descendent),None
+270295,Sigil Stone: Burden / Feather  (Latent),None
+270294,Sigil Stone: Burden / Feather  (Subjacent),None
+270297,Sigil Stone: Burden / Feather  (Transcendent),None
+270332,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Ascendent),None
+270329,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Descendent),None
+270331,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Latent),None
+270330,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Subjacent),None
+270333,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Transcendent),None
+270338,Sigil Stone: Damage Health / Fortify Health  (Ascendent),None
+270335,Sigil Stone: Damage Health / Fortify Health  (Descendent),None
+270337,Sigil Stone: Damage Health / Fortify Health  (Latent),None
+270336,Sigil Stone: Damage Health / Fortify Health  (Subjacent),None
+270339,Sigil Stone: Damage Health / Fortify Health  (Transcendent),None
+270344,Sigil Stone: Damage Magicka / Fortify Magicka  (Ascendent),None
+270341,Sigil Stone: Damage Magicka / Fortify Magicka  (Descendent),None
+270343,Sigil Stone: Damage Magicka / Fortify Magicka  (Latent),None
+270342,Sigil Stone: Damage Magicka / Fortify Magicka  (Subjacent),None
+270345,Sigil Stone: Damage Magicka / Fortify Magicka  (Transcendent),None
+270350,Sigil Stone: Demoralize / Fortify Willpower  (Ascendent),None
+270347,Sigil Stone: Demoralize / Fortify Willpower  (Descendent),None
+270349,Sigil Stone: Demoralize / Fortify Willpower  (Latent),None
+270348,Sigil Stone: Demoralize / Fortify Willpower  (Subjacent),None
+270351,Sigil Stone: Demoralize / Fortify Willpower  (Transcendent),None
+270356,Sigil Stone: Disintegrate Armor / Shield  (Ascendent),None
+270353,Sigil Stone: Disintegrate Armor / Shield  (Descendent),None
+270355,Sigil Stone: Disintegrate Armor / Shield  (Latent),None
+270354,Sigil Stone: Disintegrate Armor / Shield  (Subjacent),None
+270357,Sigil Stone: Disintegrate Armor / Shield  (Transcendent),None
+270362,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Ascendent),None
+270359,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Descendent),None
+270361,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Latent),None
+270360,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Subjacent),None
+270363,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Transcendent),None
+270368,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Ascendent),None
+270365,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Descendent),None
+270367,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Latent),None
+270366,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Subjacent),None
+270369,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Transcendent),None
+270374,Sigil Stone: Dispel / Spell Absorption  (Ascendent),None
+270371,Sigil Stone: Dispel / Spell Absorption  (Descendent),None
+270373,Sigil Stone: Dispel / Spell Absorption  (Latent),None
+270372,Sigil Stone: Dispel / Spell Absorption  (Subjacent),None
+270375,Sigil Stone: Dispel / Spell Absorption  (Transcendent),None
+270422,Sigil Stone: Fire Damage / Fire Shield  (Ascendent),None
+270419,Sigil Stone: Fire Damage / Fire Shield  (Descendent),None
+270421,Sigil Stone: Fire Damage / Fire Shield  (Latent),None
+270420,Sigil Stone: Fire Damage / Fire Shield  (Subjacent),None
+270423,Sigil Stone: Fire Damage / Fire Shield  (Transcendent),None
+270446,Sigil Stone: Fire Damage / Light  (Ascendent),None
+270443,Sigil Stone: Fire Damage / Light  (Descendent),None
+270445,Sigil Stone: Fire Damage / Light  (Latent),None
+270444,Sigil Stone: Fire Damage / Light  (Subjacent),None
+270447,Sigil Stone: Fire Damage / Light  (Transcendent),None
+270416,Sigil Stone: Fire Damage / Resist Fire  (Ascendent),None
+270413,Sigil Stone: Fire Damage / Resist Fire  (Descendent),None
+270415,Sigil Stone: Fire Damage / Resist Fire  (Latent),None
+270414,Sigil Stone: Fire Damage / Resist Fire  (Subjacent),None
+270417,Sigil Stone: Fire Damage / Resist Fire  (Transcendent),None
+270434,Sigil Stone: Frost Damage / Frost Shield  (Ascendent),None
+270431,Sigil Stone: Frost Damage / Frost Shield  (Descendent),None
+270432,Sigil Stone: Frost Damage / Frost Shield  (Latent),None
+270433,Sigil Stone: Frost Damage / Frost Shield  (Subjacent),None
+270435,Sigil Stone: Frost Damage / Frost Shield  (Transcendent),None
+270428,Sigil Stone: Frost Damage / Resist Frost  (Ascendent),None
+270425,Sigil Stone: Frost Damage / Resist Frost  (Descendent),None
+270427,Sigil Stone: Frost Damage / Resist Frost  (Latent),None
+270426,Sigil Stone: Frost Damage / Resist Frost  (Subjacent),None
+270429,Sigil Stone: Frost Damage / Resist Frost  (Transcendent),None
+270440,Sigil Stone: Frost Damage / Water Walking  (Ascendent),None
+270437,Sigil Stone: Frost Damage / Water Walking  (Descendent),None
+270439,Sigil Stone: Frost Damage / Water Walking  (Latent),None
+270438,Sigil Stone: Frost Damage / Water Walking  (Subjacent),None
+270441,Sigil Stone: Frost Damage / Water Walking  (Transcendent),None
+270470,Sigil Stone: Shock Damage / Night-Eye  (Ascendent),None
+270467,Sigil Stone: Shock Damage / Night-Eye  (Descendent),None
+270469,Sigil Stone: Shock Damage / Night-Eye  (Latent),None
+270468,Sigil Stone: Shock Damage / Night-Eye  (Subjacent),None
+270471,Sigil Stone: Shock Damage / Night-Eye  (Transcendent),None
+270458,Sigil Stone: Shock Damage / Resist Shock  (Ascendent),None
+270455,Sigil Stone: Shock Damage / Resist Shock  (Descendent),None
+270457,Sigil Stone: Shock Damage / Resist Shock  (Latent),None
+270456,Sigil Stone: Shock Damage / Resist Shock  (Subjacent),None
+270459,Sigil Stone: Shock Damage / Resist Shock  (Transcendent),None
+270464,Sigil Stone: Shock Damage / Shock Shield  (Ascendent),None
+270461,Sigil Stone: Shock Damage / Shock Shield  (Descendent),None
+270463,Sigil Stone: Shock Damage / Shock Shield  (Latent),None
+270462,Sigil Stone: Shock Damage / Shock Shield  (Subjacent),None
+270465,Sigil Stone: Shock Damage / Shock Shield  (Transcendent),None
+270483,Sigil Stone: Silence / Chameleon  (Ascendent),None
+270480,Sigil Stone: Silence / Chameleon  (Descendent),None
+270482,Sigil Stone: Silence / Chameleon  (Latent),None
+270481,Sigil Stone: Silence / Chameleon  (Subjacent),None
+270484,Sigil Stone: Silence / Chameleon  (Transcendent),None
+270477,Sigil Stone: Silence / Resist Magic  (Ascendent),None
+270473,Sigil Stone: Silence / Resist Magic  (Descendent),None
+270476,Sigil Stone: Silence / Resist Magic  (Latent),None
+270475,Sigil Stone: Silence / Resist Magic  (Subjacent),None
+270478,Sigil Stone: Silence / Resist Magic  (Transcendent),None
+270489,Sigil Stone: Soul Trap / Resist Magic  (Ascendent),None
+270486,Sigil Stone: Soul Trap / Resist Magic  (Descendent),None
+270488,Sigil Stone: Soul Trap / Resist Magic  (Latent),None
+270487,Sigil Stone: Soul Trap / Resist Magic  (Subjacent),None
+270490,Sigil Stone: Soul Trap / Resist Magic  (Transcendent),None
 270495,Sigil Stone: Turn Undead / Detect Life (Ascendent),None
 270492,Sigil Stone: Turn Undead / Detect Life (Descendent),None
 270494,Sigil Stone: Turn Undead / Detect Life (Latent),None
@@ -2381,4 +2555,11 @@
 152101,Warhammer: Silver,None
 141758,Warhammer: Steel,None
 401,Welkynd Stone,None
+42664,Wine: Argonian Bloodwine,DLCFightersStronghold.esp
+42661,Wine: Colovian Battlecry,DLCFightersStronghold.esp
+42658,Wine: Frostdew Blanc,DLCFightersStronghold.esp
+42667,Wine: Julianos Firebelly,DLCFightersStronghold.esp
+42665,Wine: Numbskin Mead,DLCFightersStronghold.esp
+42669,Wine: Sparkling Honeydew,DLCFightersStronghold.esp
+42671,Wine: Stumblefoot's Reserve,DLCFightersStronghold.esp
 779061,Wrist Irons,None

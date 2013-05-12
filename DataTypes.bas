@@ -43,12 +43,32 @@ Public Type ScreenShot
     Pixel() As Pixel
 End Type
 
+Public Type EightByteArray
+    Bytes(7) As Byte
+End Type
+
+Public Type DoubleType
+    Result As Double
+End Type
+
+Public Type FourByteArray
+    Bytes(3) As Byte
+End Type
+          
 Public Type LongType
     Result As Long
 End Type
-
-Public Type ByteArray
-    Bytes(3) As Byte
+          
+Public Type FloatType
+    Result As Single
+End Type
+          
+Public Type IntegerType
+    Result As Integer
+End Type
+          
+Public Type TwoByteArray
+    Bytes(1) As Byte
 End Type
           
 Public Type FactionEntry

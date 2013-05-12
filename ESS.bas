@@ -143,6 +143,20 @@ Private Type WorldSpaces
     WorldSpaces() As Long
 End Type
 
+Private Type PropertyScriptVariable
+    Index As Integer
+    Type As Integer
+    RefVariable As Long             ' Only if Type = 0xF000
+    LocalVariable As Double         ' Only if Type = 0x0000
+End Type
+
+Private Type PropertyScript
+    ScriptRef As Long               ' iRef
+    VariableCount As Integer
+    VariableList() As PropertyScriptVariable
+    Unknown As Byte
+End Type
+
 Private Type PropertyMarkerHeadingRef
     Cell As Long
     X As Single
@@ -229,9 +243,10 @@ End Type
 Private Type PropertyChange
     Flag As Byte                                    ' The property flag
     WorldspaceiRef As Long                          ' Used for flag 0x11
-    MarkerHeadingRef As PropertyMarkerHeadingRef    ' Used for flag 0x12
-    AllPack As PropertyAllPack                      ' Used for flag 0x1E
-    Trespass(62) As Byte                            ' Used for flag 0x1F
+    Script As PropertyScript                        ' Used for flag 0x12
+    MarkerHeadingRef As PropertyMarkerHeadingRef    ' Used for flag 0x1E
+    AllPack As PropertyAllPack                      ' Used for flag 0x1F
+    Trespass(62) As Byte                            ' Used for flag 0x20
     Unknown1 As PropertyUnknown1                    ' Used for flag 0x21
     UnknowniRef As Long                             ' Used for flag 0x22
     Unknown2 As PropertyUnknown2                    ' Used for flag 0x23
@@ -247,7 +262,7 @@ Private Type PropertyChange
     Teleport As PropertyTeleport                    ' Used for flag 0x32
     MapMarkerFlag As Byte                           ' Used for flag 0x33
     Unknown3(4) As Byte                             ' Used for flag 0x36
-    Scale As Single                                 ' Used for flag 0x37
+    ScaleValue As Single                            ' Used for flag 0x37
     Unknown4(11) As Byte                            ' Used for flag 0x39
     Unknown5 As PropertyUnknown5                    ' Used for flag 0x3A
     CrimeGold As Single                             ' Used for flag 0x3D
@@ -384,20 +399,6 @@ Private Type Player
     FullNameString As String        ' The FullName
     ItemCount As Integer            ' Number of items the player has
     ItemList() As Item              ' The list of the items the player has
-End Type
-
-Private Type PropertyScriptVariable
-    Index As Integer
-    Type As Integer
-    RefVariable As Long
-    LocalVariable As Double
-End Type
-
-Private Type PropertyScript
-    ScriptRef As Long               ' iRef
-    VariableCount As Integer
-    VariableList() As PropertyScriptVariable
-    Unknown As Byte
 End Type
 
 Private Type PlayerChange
