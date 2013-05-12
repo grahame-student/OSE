@@ -148,8 +148,10 @@ Private Sub ReadSaveGlobals()
     SaveFileData.Globals.ClassSize = GetNext16BitUInteger
     
     SaveFileData.Globals.NumberOfDeathCounts = GetNext32BitULong
-    ReDim SaveFileData.Globals.DeathCounts(SaveFileData.Globals.NumberOfDeathCounts - 1)
-    ReadSaveGlobalsDeathCounts
+    If SaveFileData.Globals.NumberOfDeathCounts > 0 Then
+        ReDim SaveFileData.Globals.DeathCounts(SaveFileData.Globals.NumberOfDeathCounts - 1)
+        ReadSaveGlobalsDeathCounts
+    End If
     SaveFileData.Globals.GameModeSeconds = GetNext32BitSingle
     
     SaveFileData.Globals.ProcessesSize = GetNext16BitUInteger
