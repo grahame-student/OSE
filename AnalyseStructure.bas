@@ -250,6 +250,12 @@ Private Sub ProcessPlayerChangeRecord(ByRef MainForm As Form)
 
     ScanForPlayerChangeMarkers
     
+    If SaveFileData.OSE.PlayerChange.Inventory <> -1 Then
+        FixItemReferences
+        PopulateItemListBox MainForm
+        InitPlayerItems
+    End If
+    
 End Sub
 
 Public Sub ScanForPlayerChangeMarkers()
@@ -325,10 +331,14 @@ Public Sub ScanForPlayerChangeMarkers()
         SaveFileData.OSE.PlayerChange.Inventory = Offset
         SaveFileData.OSE.PlayerChange.InventoryCount = ((SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset) + _
                                                          SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1) * BYTE_2))
+        ' TODO: Needs to account for default items as only changes are recorded!
+        SaveFileData.OSE.Player.ItemCount = SaveFileData.OSE.PlayerChange.InventoryCount
         Offset = Offset + InventorySize
     Else
         SaveFileData.OSE.PlayerChange.Inventory = -1
     End If
+
+'    DebugPlayerData
 
 End Sub
 
@@ -346,7 +356,10 @@ Private Function InventorySize() As Long
 
     ' TODO calculate the size of the inventory changes
 
+    ' Calculate the base inventory size
     InventorySize = SaveFileData.OSE.PlayerChange.InventoryCount * 12
+
+    ' Add the changes to the base
 
 End Function
 
@@ -374,6 +387,18 @@ Private Sub FixSpellReferences()
 
 End Sub
 
+Private Sub FixItemReferences()
+
+    Dim ItemNumber As Integer
+
+    For ItemNumber = 0 To UBound(ItemData())
+        If ItemData(ItemNumber).PlugIn <> "None" Then
+            ItemData(ItemNumber).FormID = (ItemData(ItemNumber).FormID Or GetModIndex(ItemData(ItemNumber).PlugIn).Result)
+        End If
+    Next ItemNumber
+
+End Sub
+
 Public Sub PopulateFactionListBox(ByRef MainForm As Form)
 
     Dim i As Integer
@@ -392,6 +417,17 @@ Public Sub PopulateSpellListBox(ByRef MainForm As Form)
     For i = 0 To UBound(SpellData())
         MainForm.lstAllSpells.AddItem SpellData(i).Name, i
         MainForm.lstAllSpells.ItemData(i) = SpellData(i).FormID
+    Next i
+
+End Sub
+
+Public Sub PopulateItemListBox(ByRef MainForm As Form)
+
+    Dim i As Integer
+
+    For i = 0 To UBound(ItemData())
+        MainForm.lstAllItems.AddItem ItemData(i).Name, i
+        MainForm.lstAllItems.ItemData(i) = ItemData(i).FormID
     Next i
 
 End Sub
@@ -511,6 +547,90 @@ Private Function GetCustomSpell(ByVal FormID As Long) As String
 
 End Function
 
+Private Sub InitPlayerItems()
+
+    Dim i As Long
+    Dim Offset As Long
+    Dim RawFourBytes As ByteArray
+    Dim FourBytes As LongType
+    
+    Offset = SaveFileData.OSE.PlayerChange.Inventory + 2
+    
+    ReDim SaveFileData.OSE.Player.ItemList(SaveFileData.OSE.PlayerChange.InventoryCount - 1)
+
+    For i = 0 To SaveFileData.OSE.PlayerChange.InventoryCount - 1
+        RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
+        RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
+        RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
+        RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
+        
+        LSet FourBytes = RawFourBytes
+                
+        SaveFileData.OSE.Player.ItemList(i).iRef = FourBytes.Result
+        SaveFileData.OSE.Player.ItemList(i).FormID = GetFormID(FourBytes.Result)
+        SaveFileData.OSE.Player.ItemList(i).Name = GetItem(SaveFileData.OSE.Player.ItemList(i).FormID)
+        Offset = Offset + 4
+        
+        RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
+        RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
+        RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
+        RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
+        
+        LSet FourBytes = RawFourBytes
+        
+        SaveFileData.OSE.Player.ItemList(i).StackedItemsCount = FourBytes.Result
+        Offset = Offset + 4
+    
+        RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
+        RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
+        RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
+        RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
+        
+        LSet FourBytes = RawFourBytes
+        SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount = FourBytes.Result
+        Offset = Offset + 4
+    
+        If SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount > 0 Then
+            ' Process changes
+            
+        End If
+    Next i
+
+End Sub
+
+Public Function GetItem(ByVal FormID As Long) As String
+
+    Dim i As Integer
+    
+    If FormID < 0 Then
+'        GetItem = GetCustomItem(FormID)
+        Exit Function
+    End If
+    
+    For i = 0 To UBound(ItemData())
+        If FormID = ItemData(i).FormID Then
+            GetItem = ItemData(i).Name
+            Exit Function
+        End If
+    Next i
+    
+    MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & _
+           "Please report this FormID to mrloquax@googlemail.com" & vbNewLine & _
+           "so that it can be added in future versions", vbOKOnly, "Unknown FormID"
+    
+End Function
+
+Private Function ItemRecordSize(Offset As Integer) As Integer
+
+    ' Do some clever stuff to determine the size of the record starting at Offset
+
+    Dim tmpSize As Integer
+    
+    tmpSize = 12    ' Base record size
+    
+
+End Function
+
 Private Sub InitPlayerBaseMods()
 
     ReDim SaveFileData.OSE.Player.BaseModList(SaveFileData.OSE.Player.BaseModCount - 1)
@@ -533,6 +653,22 @@ Private Sub ExtractCustomSpellData(ByVal CreatedItemRecordIndex As Long, ByVal C
                 Exit Do
         End Select
     Loop
+
+End Sub
+
+Private Sub DebugPlayerData()
+
+    Dim FF As Integer
+    Dim i As Integer
+
+    FF = FreeFile
+
+    Open App.Path & "\Debug\PlayerData.csv" For Output As #FF
+    For i = 0 To UBound(SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data)
+        If i Mod 16 = 0 Then Print #FF, ""
+        Print #FF, SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(i) & ",";
+    Next i
+    Close #FF
 
 End Sub
 

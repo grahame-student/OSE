@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form frmMain 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "OSE"
@@ -30,7 +30,7 @@ Begin VB.Form frmMain
       ScaleHeight     =   4545
       ScaleWidth      =   7545
       TabIndex        =   4
-      Top             =   480
+      Top             =   5280
       Visible         =   0   'False
       Width           =   7575
       Begin VB.PictureBox pnlAll 
@@ -200,6 +200,90 @@ Begin VB.Form frmMain
       Top             =   480
       Visible         =   0   'False
       Width           =   7575
+      Begin VB.PictureBox pnlItems 
+         Appearance      =   0  'Flat
+         ForeColor       =   &H80000008&
+         Height          =   4335
+         Left            =   1320
+         ScaleHeight     =   4305
+         ScaleWidth      =   6105
+         TabIndex        =   120
+         Top             =   120
+         Width           =   6135
+         Begin VB.TextBox txtItemQty 
+            Height          =   285
+            Left            =   1320
+            TabIndex        =   127
+            Text            =   "0"
+            Top             =   480
+            Width           =   4695
+         End
+         Begin VB.ComboBox cboPlayerItems 
+            Height          =   315
+            Left            =   1320
+            TabIndex        =   124
+            ToolTipText     =   "The factions the character is a member of"
+            Top             =   120
+            Width           =   4695
+         End
+         Begin VB.ListBox lstAllItems 
+            Height          =   2205
+            Left            =   1320
+            TabIndex        =   123
+            ToolTipText     =   "The list of all available factions"
+            Top             =   1440
+            Width           =   4695
+         End
+         Begin VB.CommandButton cmdRemoveItem 
+            Caption         =   "Remove"
+            Enabled         =   0   'False
+            Height          =   375
+            Left            =   4800
+            TabIndex        =   122
+            Top             =   840
+            Width           =   1215
+         End
+         Begin VB.CommandButton cmdAddItem 
+            Caption         =   "Add"
+            Enabled         =   0   'False
+            Height          =   375
+            Left            =   4800
+            TabIndex        =   121
+            Top             =   3840
+            Width           =   1215
+         End
+         Begin VB.Label lblItemQty 
+            Caption         =   "Quantity"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   128
+            Top             =   480
+            Width           =   1095
+         End
+         Begin VB.Label Label2 
+            Caption         =   "Items"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   126
+            Top             =   120
+            Width           =   1095
+         End
+         Begin VB.Line linDividor3 
+            BorderColor     =   &H00C0C0C0&
+            X1              =   120
+            X2              =   6000
+            Y1              =   1320
+            Y2              =   1320
+         End
+         Begin VB.Label lblAllItems 
+            Caption         =   "All Items"
+            Height          =   255
+            Left            =   120
+            TabIndex        =   125
+            Top             =   1440
+            Width           =   1095
+         End
+      End
       Begin VB.PictureBox pnlSpells 
          Appearance      =   0  'Flat
          ForeColor       =   &H80000008&
@@ -1117,7 +1201,7 @@ Begin VB.Form frmMain
          TabFixedWidth   =   1764
          _Version        =   393216
          BeginProperty Tabs {1EFB6598-857C-11D1-B16A-00C0F0283628} 
-            NumTabs         =   4
+            NumTabs         =   5
             BeginProperty Tab1 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
                Caption         =   "Attributes"
                ImageVarType    =   2
@@ -1132,6 +1216,10 @@ Begin VB.Form frmMain
             EndProperty
             BeginProperty Tab4 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
                Caption         =   "Spells"
+               ImageVarType    =   2
+            EndProperty
+            BeginProperty Tab5 {1EFB659A-857C-11D1-B16A-00C0F0283628} 
+               Caption         =   "Items"
                ImageVarType    =   2
             EndProperty
          EndProperty
@@ -1257,6 +1345,9 @@ Private Sub PositionPanels()
 
     pnlSkills.Top = TAB_SUB_CAT_TOP
     pnlSkills.Left = TAB_SUB_CAT_LEFT
+    
+    pnlItems.Top = TAB_SUB_CAT_TOP
+    pnlItems.Left = TAB_SUB_CAT_LEFT
 
 End Sub
 
@@ -1293,6 +1384,20 @@ Private Sub cboFactions_Click()
         cmdRemoveFaction.Enabled = True
     Else
         cmdRemoveFaction.Enabled = False
+    End If
+
+End Sub
+
+Private Sub cboPlayerItems_Click()
+
+    txtItemQty.Text = SaveFileData.OSE.Player.ItemList(cboPlayerItems.ListIndex).StackedItemsCount
+
+    UpdateDisplay
+
+    If cboPlayerItems.ListCount > 0 Then
+        cmdRemoveItem.Enabled = True
+    Else
+        cmdRemoveItem.Enabled = False
     End If
 
 End Sub
@@ -1563,6 +1668,42 @@ Private Sub ParseSpellData(ByVal DataLine As String)
 
 End Sub
 
+Private Sub LoadItemData()
+
+    Dim ItemFF As Integer
+    Dim NextLine As String
+        
+    ItemFF = FreeFile
+
+    Open App.Path & "\Items.data" For Input As #ItemFF
+    Do Until EOF(ItemFF)
+        Line Input #ItemFF, NextLine
+        If Mid$(NextLine, 1, 1) <> "#" Then
+            ParseItemData NextLine
+        End If
+    Loop
+    Close #ItemFF
+
+End Sub
+
+Private Sub ParseItemData(ByVal DataLine As String)
+
+    Static ItemCount As Long
+    Dim ItemVariables() As String
+    Dim i As Integer
+    
+    ReDim Preserve ItemData(ItemCount)
+
+    ItemVariables() = Split(DataLine, ",")
+
+    ItemData(ItemCount).FormID = Val(ItemVariables(0))
+    ItemData(ItemCount).Name = ItemVariables(1)
+    ItemData(ItemCount).PlugIn = ItemVariables(2)
+
+    ItemCount = ItemCount + 1
+
+End Sub
+
 Private Sub Form_Unload(Cancel As Integer)
 
     mnuQuit_Click
@@ -1610,6 +1751,9 @@ Private Sub mnuOpen_Click()
 
     lstAllSpells.Clear
     LoadSpellData
+
+    lstAllItems.Clear
+    LoadItemData
 
     ClearSaveFileData
     OpenSaveFile GetFilename
@@ -1795,6 +1939,8 @@ Private Sub UpdateDisplayPlayer()
             UpdateDisplayPlayerFactions
         Case TAB_SUB_CAT_PLAYER_SPELLS
             UpdateDisplayPlayerSpells
+        Case TAB_SUB_CAT_PLAYER_ITEMS
+            UpdateDisplayPlayerItems
     End Select
 
 End Sub
@@ -1904,6 +2050,19 @@ Private Sub UpdateDisplayPlayerSpells()
 
 End Sub
 
+Private Sub UpdateDisplayPlayerItems()
+
+    Dim i As Integer
+
+    If cboPlayerItems.ListCount <> SaveFileData.OSE.Player.ItemCount Then
+        For i = 0 To SaveFileData.OSE.Player.ItemCount - 1
+            cboPlayerItems.AddItem SaveFileData.OSE.Player.ItemList(i).Name
+        Next i
+        cboPlayerItems.ListIndex = 0
+    End If
+
+End Sub
+
 Private Sub mnuSave_Click()
 
     cmdSave_Click
@@ -1957,6 +2116,8 @@ Private Sub tabPlayerSubCategory_Click()
             pnlFactions.Visible = True
         Case TAB_SUB_CAT_PLAYER_SPELLS
             pnlSpells.Visible = True
+        Case TAB_SUB_CAT_PLAYER_ITEMS
+            pnlItems.Visible = True
     End Select
 
     UpdateDisplay
@@ -1972,6 +2133,7 @@ Private Sub HideAllPlayerSubPanels()
     pnlSkills.Visible = False
     pnlFactions.Visible = False
     pnlSpells.Visible = False
+    pnlItems.Visible = False
 
 End Sub
 
@@ -2008,6 +2170,14 @@ Private Sub txtBaseFatigue_Change()
 
     ' Input is valid, update the data structure
     ModifyPlayerBaseFatigue txtBaseFatigue.Text
+
+End Sub
+
+Private Sub txtItemQty_Change()
+
+    ValidateInput txtItemQty, INTEGER_MIN, INTEGER_MAX
+
+    ' TODO: Modify the change record
 
 End Sub
 

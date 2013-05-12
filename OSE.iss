@@ -13,6 +13,7 @@ OutputBaseFilename=Install OSE 0.1.7
 UsePreviousAppDir=true
 UninstallDisplayIcon={app}\OSE.exe
 UsePreviousGroup=false
+SetupIconFile=C:\Users\Grahame\Documents\VB6\OSE\oblivion 48x48.ico
 
 [Files]
 ; [Bootstrap Files]

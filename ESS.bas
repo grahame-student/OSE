@@ -57,7 +57,7 @@ Private Type PlayerLocation
 End Type
 
 Private Type GlobalsStructure
-    Iref As Long
+    iRef As Long
     Value As Single
 End Type
 
@@ -143,116 +143,6 @@ Private Type WorldSpaces
     WorldSpaces() As Long
 End Type
 
-
-' These blocks hold additional information to make it easier to navigate
-' various records. DO NOT WRITE THEM DIRECTLY TO THE NEW SAVE FILE
-Public Type Faction
-    FormID As Long
-    Level As Byte
-    Name As String
-    MaxRank As Integer
-    Ranks() As String
-    Suspended As Boolean
-End Type
-
-Public Type Spell
-    Iref As Long
-    FormID As Long
-    Name As String
-End Type
-
-Private Type BaseMod
-    Index As Byte
-    ModValue As Single
-End Type
-
-' SPIT
-Private Type BasicSpellData
-    Type As Long
-    Cost As Long
-    Level As Long
-    Flags As Long
-End Type
-
-' EFIT
-Private Type EffectData
-    EffectID As String
-    Magnitude As Long
-    Area As Long
-    Duration As Long
-    Type As Long
-    ActorValue As Long
-End Type
-
-' SCIT
-Private Type ScriptEffectData
-    FormID As Long
-    School As Long
-    VisualEffect As String
-    Flags As Long
-End Type
-
-Private Type RegularEffect
-    EffectID As String          ' EFID
-    EffectData As EffectData    ' EFIT
-End Type
-
-Private Type ScriptEffect
-    EffectID As String
-    EffectData As EffectData
-    ScriptEffectData As ScriptEffectData
-    Name As String
-End Type
-
-Private Type CreatedItem
-    NameLength As Integer
-    Name As String
-    BasicSpellData As BasicSpellData
-    RegularEffects() As RegularEffect
-    ScriptEffects() As ScriptEffect
-End Type
-
-Private Type CreatedItems
-    SpellRecords() As Long      ' The change records containing spells (-1 in element 0 for not present)
-    Spells() As CreatedItem
-End Type
-
-Private Type Player
-    PlayerRecord As Long        ' The change record containing the player data (-1 for not present)
-    FormFlags As Long           ' Offset of the start of the FormFlags within the data block (-1 for not present)
-    BaseAttributes As Long      ' Offset of the start of the BaseAttributes within the data block (-1 for not present)
-    BaseData As Long            ' Offset of the start of the BaseData within the data block (-1 for not present)
-    Factions As Long            ' Offset of the start of the Factions within the data block (-1 for not present)
-    Spells As Long              ' Offset of the start of the SpellList within the data block (-1 for not present)
-    AI As Long                  ' Offset of the start of the AI within the data block (-1 for not present)
-    BaseHealth As Long          ' Offset of the start of the BaseHealth within the data block (-1 for not present)
-    BaseModifiers As Long       ' Offset of the start of the BaseModifiers within the data block (-1 for not present)
-    FullName As Long            ' Offset of the start of the FullName within the data block (-1 for not present)
-    Skills As Long              ' Offset of the start of the Skills within the data block (-1 for not present)
-    CombatStyle As Long         ' Offset of the start of the CombatStyle within the data block (-1 for not present)
-    FactionCount As Integer     ' Number of factions the player is in
-    FactionList() As Faction    ' The list of factions the player is in
-    SpellCount As Integer           ' Number of spells the player has
-    SpellList() As Spell            ' The irefs of the spells
-    BaseModCount As Integer         ' Number of BaseMods
-    BaseModList() As BaseMod        ' List of the BaseMods
-    FullNameString As String        ' The FullName
-End Type
-
-Private Type PropertyScriptVariable
-    Index As Integer
-    Type As Integer
-    RefVariable As Long
-    LocalVariable As Double
-End Type
-
-Private Type PropertyScript
-    ScriptRef As Long               ' iRef
-    VariableCount As Integer
-    VariableList() As PropertyScriptVariable
-    Unknown As Byte
-End Type
-
 Private Type PropertyMarkerHeadingRef
     Cell As Long
     X As Single
@@ -269,7 +159,7 @@ Private Type PropertyAllPack
 End Type
 
 Private Type PropertyUnknown1Data
-    Iref As Long
+    iRef As Long
     Unknown As Byte
 End Type
 
@@ -300,7 +190,7 @@ Private Type PropertyTeleport
 End Type
 
 Private Type PropertyUnknown5
-    Iref As Long
+    iRef As Long
     BlockCount As Integer
     Block(60) As Byte
 End Type
@@ -368,7 +258,7 @@ Private Type PropertyChange
     MovementExtra As PropertyMovementExtra          ' Used for flag 0x4B
     Unknown7 As PropertyUnknown7                    ' Used for flag 0x4E
     Unknown8(3) As Byte                             ' Used for flag 0x4F
-    InvestmentGold As Long                          ' Used for flag 0x52
+    InvestmentGold As Long                          ' Used for flag 0x520
     Unknown9 As Long                                ' Used for flag 0x53
     ShortcutKey As Byte                             ' Used for flag 0x55
     Conversation As PropertyConversation            ' Used for flag 0x59
@@ -382,10 +272,132 @@ Private Type InventoryChangeEntry
 End Type
 
 Private Type InventoryEntry
-    Iref As Long
+    iRef As Long
     StackedItemsCount As Long
     ChangedEntriesCount As Long
     InventoryChangedEntries() As InventoryChangeEntry
+End Type
+
+
+' These blocks hold additional information to make it easier to navigate
+' various records. DO NOT WRITE THEM DIRECTLY TO THE NEW SAVE FILE
+Public Type Faction
+    FormID As Long
+    Level As Byte
+    Name As String
+    MaxRank As Integer
+    Ranks() As String
+    Suspended As Boolean
+End Type
+
+Public Type Spell
+    iRef As Long
+    FormID As Long
+    Name As String
+End Type
+
+Public Type Item
+    iRef As Long                                        ' the iRef of the item
+    FormID As Long                                      ' The item's FormID
+    Name As String                                      ' The item name
+    Size As Integer                                     ' Size of the item entry in bytes
+    StackedItemsCount As Long                           ' Number of items in the stack
+    ChangedEntriesCount As Long                         ' Number of change entries
+    InventoryChangedEntries() As InventoryChangeEntry   ' The actual change entries
+End Type
+
+Private Type BaseMod
+    Index As Byte
+    ModValue As Single
+End Type
+
+' SPIT
+Private Type BasicSpellData
+    Type As Long
+    Cost As Long
+    Level As Long
+    Flags As Long
+End Type
+
+' EFIT
+Private Type EffectData
+    EffectID As String
+    Magnitude As Long
+    Area As Long
+    Duration As Long
+    Type As Long
+    ActorValue As Long
+End Type
+
+' SCIT
+Private Type ScriptEffectData
+    FormID As Long
+    School As Long
+    VisualEffect As String
+    Flags As Long
+End Type
+
+Private Type RegularEffect
+    EffectID As String          ' EFID
+    EffectData As EffectData    ' EFIT
+End Type
+
+Private Type ScriptEffect
+    EffectID As String
+    EffectData As EffectData
+    ScriptEffectData As ScriptEffectData
+    Name As String
+End Type
+
+Private Type CreatedItem
+    NameLength As Integer
+    Name As String
+    BasicSpellData As BasicSpellData
+    RegularEffects() As RegularEffect
+    ScriptEffects() As ScriptEffect
+End Type
+
+Private Type CreatedItems
+    SpellRecords() As Long          ' The change records containing spells (-1 in element 0 for not present)
+    Spells() As CreatedItem
+End Type
+
+Private Type Player
+    PlayerRecord As Long            ' The change record containing the player data (-1 for not present)
+    FormFlags As Long               ' Offset of the start of the FormFlags within the data block (-1 for not present)
+    BaseAttributes As Long          ' Offset of the start of the BaseAttributes within the data block (-1 for not present)
+    BaseData As Long                ' Offset of the start of the BaseData within the data block (-1 for not present)
+    Factions As Long                ' Offset of the start of the Factions within the data block (-1 for not present)
+    Spells As Long                  ' Offset of the start of the SpellList within the data block (-1 for not present)
+    AI As Long                      ' Offset of the start of the AI within the data block (-1 for not present)
+    BaseHealth As Long              ' Offset of the start of the BaseHealth within the data block (-1 for not present)
+    BaseModifiers As Long           ' Offset of the start of the BaseModifiers within the data block (-1 for not present)
+    FullName As Long                ' Offset of the start of the FullName within the data block (-1 for not present)
+    Skills As Long                  ' Offset of the start of the Skills within the data block (-1 for not present)
+    CombatStyle As Long             ' Offset of the start of the CombatStyle within the data block (-1 for not present)
+    FactionCount As Integer         ' Number of factions the player is in
+    FactionList() As Faction        ' The list of factions the player is in
+    SpellCount As Integer           ' Number of spells the player has
+    SpellList() As Spell            ' The list of spells the player has
+    BaseModCount As Integer         ' Number of BaseMods
+    BaseModList() As BaseMod        ' List of the BaseMods
+    FullNameString As String        ' The FullName
+    ItemCount As Integer            ' Number of items the player has
+    ItemList() As Item              ' The list of the items the player has
+End Type
+
+Private Type PropertyScriptVariable
+    Index As Integer
+    Type As Integer
+    RefVariable As Long
+    LocalVariable As Double
+End Type
+
+Private Type PropertyScript
+    ScriptRef As Long               ' iRef
+    VariableCount As Integer
+    VariableList() As PropertyScriptVariable
+    Unknown As Byte
 End Type
 
 Private Type PlayerChange

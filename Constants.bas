@@ -24,7 +24,7 @@ Public Const PROGRAM_NAME As String = "OSE"
 
 Public Const VERSION_MAJOR As Integer = 0
 Public Const VERSION_MINOR As Integer = 1
-Public Const VERSION_REVISION As Integer = 7
+Public Const VERSION_REVISION As Integer = 8
 Public Const VERSION_EXTRA As String = ""
 
 Public Const PROGRAM_TITLE As String = PROGRAM_NAME & " - " & _
@@ -99,8 +99,8 @@ Public Const MAGICKA_MAX As Integer = 10000     ' Largest base health value (nee
 Public Const FATIGUE_MIN As Integer = 0         ' Smallest base health value
 Public Const FATIGUE_MAX As Integer = 10000     ' Largest base health value (needs testing)
 
-Public Const YEAR_MIN As Integer = 0            ' Smallest month value
-Public Const YEAR_MAX As Integer = 30827        ' Largest month value
+Public Const YEAR_MIN As Integer = 0            ' Smallest year value
+Public Const YEAR_MAX As Integer = 30827        ' Largest year value
 
 Public Const MONTH_MIN As Integer = 1           ' Smallest month value
 Public Const MONTH_MAX As Integer = 12          ' Largest month value
@@ -133,6 +133,7 @@ Public Const TAB_SUB_CAT_PLAYER_ATTRIBUTES As String = "Attributes"
 Public Const TAB_SUB_CAT_PLAYER_SKILLS As String = "Skills"
 Public Const TAB_SUB_CAT_PLAYER_FACTIONS As String = "Factions"
 Public Const TAB_SUB_CAT_PLAYER_SPELLS As String = "Spells"
+Public Const TAB_SUB_CAT_PLAYER_ITEMS As String = "Items"
 
 ' Panel Positions
 Public Const TAB_CAT_TOP As Integer = 480

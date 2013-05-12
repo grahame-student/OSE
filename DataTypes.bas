@@ -64,3 +64,9 @@ Public Type SpellEntry
     Name As String
     PlugIn As String
 End Type
+
+Public Type ItemEntry
+    FormID As Long
+    Name As String
+    PlugIn As String
+End Type

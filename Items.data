@@ -15,7 +15,55 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
-# Item FormID, Faction Name, PlugIn Required
+# Item FormID, Description, PlugIn Required
+343415,Aegis: Reflection,None
+67076,Alchemy Tool: Alembic Novice,None
+451344,Alchemy Tool: Alembic Apprentice,None
+454236,Alchemy Tool: Alembic Expert,None
+454226,Alchemy Tool: Alembic Journeyman,None
+454244,Alchemy Tool: Alembic Master,None
+66941,Alchemy Tool: Calcinator Novice,None
+451345,Alchemy Tool: Calcinator Apprentice,None
+454238,Alchemy Tool: Calcinator Expert,None
+454229,Alchemy Tool: Calcinator Journeyman,None
+454246,Alchemy Tool: Calcinator Master,None
+3151,Alchemy Tool: Retort Novice,None
+451347,Alchemy Tool: Retort Apprentice,None
+454242,Alchemy Tool: Retort Expert,None
+454233,Alchemy Tool: Retort Journeyman,None
+454250,Alchemy Tool: Retort Master,None
+451346,Alchemy Tool: Mortar & Pestle Apprentice,None
+454240,Alchemy Tool: Mortar & Pestle Expert,None
+454231,Alchemy Tool: Mortar & Pestle Journeyman,None
+454248,Alchemy Tool: Mortar & Pestle Master,None
+817512,Alchemy Tool: Mortar & Pestle Novice,None
+67043,Alchemy Tool: Mortar & Pestle Novice,None
+623678,Amulet: Absorption,None
+623677,Amulet: Absorption Base,None
+623679,Amulet: Absorption Grand,None
+623703,Amulet: Acrobat's,None
+603473,Amulet: Arnora's,None
+341895,Amulet: Arnora's True,None
+623699,Amulet: Axes,None
+229421,Amulet: Bronze,None
+229422,Amulet: Copper,None
+229425,Amulet: Gold,None
+600774,Amulet: Illusion,None
+600773,Amulet: Illusion Base,None
+600775,Amulet: Illusion Grand,None
+229423,Amulet: Jade,None
+1613054,Amulet: Jade,None
+229426,Amulet: Jeweled,None
+596693,Amulet: Luck,None
+596692,Amulet: Luck Base,None
+596694,Amulet: Luck Grand,None
+214984,Amulet: Manduin's,None
+232199,Amulet: Mundane,None
+623707,Amulet: Reflection,None
+604154,Amulet: Reflection Base,None
+623708,Amulet: Reflection Grand,None
+229424,Amulet: Silver,None
+141734,Apron: Blacksmith's,None
 311050,Arrow: Blaze,None
 311051,Arrow: Blizzards,None
 35405,Arrow: Brilliance,None
@@ -78,3 +126,2259 @@
 311046,Arrow: Voltage,None
 311054,Arrow: Winter,None
 248684,Arrow: Withering,None
+220791,Axe: Daedric Battle,None
+220788,Axe: Daedric War,None
+220621,Axe: Dwarven Battle,None
+220628,Axe: Dwarven War,None
+220783,Axe: Ebony Battle,None
+220780,Axe: Ebony War,None
+220775,Axe: Elven Battle,None
+220773,Axe: Elven War,None
+220768,Axe: Glass Battle,None
+220765,Axe: Glass War,None
+3455,Axe: Iron Battle,None
+3457,Axe: Iron War,None
+152098,Axe: Silver War,None
+141750,Axe: Steel Battle,None
+141757,Axe: Steel War,None
+299919,Barkshield: Sylvan,None
+239711,Battle: Fine Iron,None
+239702,Battle: Fine Steel,None
+152097,BattleAxe: Silver,None
+14996,Blouse: Red Velvet,None
+297356,Blue & Green Outfit: Resist Poison,None
+297350,Blue Suede Shoes: Sneak,None
+299942,Boots: Borosilicate,None
+116436,Boots: Chainmail,None
+222041,Boots: Daedric,None
+222023,Boots: Dwarven,None
+222035,Boots: Ebony,None
+141727,Boots: Elven,None
+299872,Boots: Fleetfoot,None
+299350,Boots: Footpad's,None
+149351,Boots: Fur,None
+222017,Boots: Glass,None
+293026,Boots: Grounded,None
+299386,Boots: Grounding,None
+299360,Boots: Insulation,None
+116431,Boots: Iron,None
+143771,Boots: Leather,None
+299370,Boots: Legerity,None
+300296,Boots: Lightfoot,None
+299929,Boots: Lightning Run,None
+324613,Boots: Lightning Strider,None
+300655,Boots: Miner's,None
+180476,Boots: Mithril,None
+222029,Boots: Orcish,None
+300687,Boots: Peak Climber's,None
+324594,Boots: Plain Striding,None
+299364,Boots: Riverwalking,None
+1415259,Boots: Rough Leather,None
+300297,Boots: Running,None
+299888,Boots: Shock Resistance,None
+299379,Boots: Silence,None
+299948,Boots: Silica,None
+677763,Boots: Smuggler's,None
+677765,Boots: Soft Walking,None
+141733,Boots: Steel,None
+300702,Boots: Storm Stomper,None
+300669,Boots: Stormhammer,None
+299916,Boots: Stormrider,None
+300679,Boots: Swamp,None
+299902,Boots: Sylvan Scout,None
+293010,Boots: the Atronach,None
+299922,Boots: the Calming Sea,None
+297374,Boots: the Cheetah,None
+299342,Boots: the Cutpurse,None
+297391,Boots: the Eel,None
+677764,Boots: the Forest Stalker,None
+300626,Boots: the Harbinger,None
+300647,Boots: the Jument,None
+293005,Boots: the Olympian*,None
+324600,Boots: the Savannah,None
+297395,Boots: the Shark,None
+299895,Boots: the Siltrunner,None
+180799,Boots: the Storm,None
+180766,Boots: the Taskmaster,None
+180757,Boots: the Thrall,None
+297382,Boots: the Tiger,None
+300317,Boots: the Unburdened,None
+299391,Boots: Waterwalking,None
+592045,Bow: Black,None
+220796,Bow: Daedric,None
+220622,Bow: Dwarven,None
+220795,Bow: Ebony,None
+141759,Bow: Elven,None
+239712,Bow: Fine Iron,None
+239703,Bow: Fine Steel,None
+220794,Bow: Glass,None
+152113,Bow: Iron,None
+293578,Bow: Rusty Iron,None
+152103,Bow: Silver,None
+141751,Bow: Steel,None
+141737,Bracer: Leather,None
+178443,Braies: Belted,None
+165255,Breeches,None
+413564,Britches: Short,None
+297353,Burgundy Linen Shirt: Resist Disease,None
+297354,Burgundy Linens: Resist Fire,None
+220792,Claymore: Daedric,None
+220623,Claymore: Dwarven,None
+220784,Claymore: Ebony,None
+220776,Claymore: Elven,None
+239713,Claymore: Fine Iron,None
+239704,Claymore: Fine Steel,None
+220769,Claymore: Glass,None
+116429,Claymore: Iron,None
+152102,Claymore: Silver,None
+141752,Claymore: Steel,None
+165262,Clogs,None
+1415209,Club,None
+242549,Club,None
+1151662,Clutter: Blood Potion,None
+302333,Clutter: Bouquet of Flowers,None
+102675,Clutter: Broom,None
+151807,Clutter: Broom,None
+113611,Clutter: Brush Jar,None
+116332,Clutter: Calipers,None
+145536,Clutter: Clavicle,None
+2170,Clutter: Cloth,None
+2189,Clutter: Cloth,None
+2207,Clutter: Cloth,None
+2264,Clutter: Cloth,None
+2278,Clutter: Cloth,None
+693075,Clutter: Crumpled Piece of Paper,None
+693077,Clutter: Crumpled Piece of Paper,None
+693079,Clutter: Crumpled Piece of Paper,None
+66700,Clutter: Crystal Ball,None
+116237,Clutter: Crystal Ball,None
+2266,Clutter: Folded Cloth,None
+2268,Clutter: Folded Cloth,None
+3393,Clutter: Folded Cloth,None
+3410,Clutter: Folded Cloth,None
+3446,Clutter: Folded Cloth,None
+151808,Clutter: Hand Scythe,None
+151809,Clutter: Hoe,None
+116326,Clutter: Hourglass,None
+146785,Clutter: Inkwell,None
+151810,Clutter: Oar,None
+113605,Clutter: Paint Brush,None
+113606,Clutter: Paint Brush,None
+113607,Clutter: Paint Brush,None
+113608,Clutter: Paint Brush,None
+113609,Clutter: Paint Brush,None
+113610,Clutter: Paint Brush,None
+113612,Clutter: Paint Palette,None
+145537,Clutter: Pelvis,None
+98528,Clutter: Pickaxe,None
+151811,Clutter: Pickaxe,None
+151827,Clutter: Pitchfork,None
+146787,Clutter: Quill,None
+151830,Clutter: Rake,None
+653562,Clutter: Recently Used Pickaxe,None
+145538,Clutter: Ribcage,None
+67059,Clutter: Scales,None
+151834,Clutter: Scythe,None
+151836,Clutter: Shears,None
+151976,Clutter: Shovel,None
+147310,Clutter: Skull,None
+153926,Clutter: Stone Brick,None
+153927,Clutter: Stone Brick,None
+153928,Clutter: Stone Brick,None
+153929,Clutter: Stone Brick,None
+153930,Clutter: Stone Brick,None
+122406,Clutter: Thick bone,None
+140200,Clutter: Thin bone,None
+116335,Clutter: Tongs,None
+151980,Clutter: Tongs,None
+116205,Clutter: Weight,None
+152069,Clutter: Yarn,None
+152070,Clutter: Yarn,None
+300639,Cuirass: Ambassador's,None
+299931,Cuirass: Annealed,None
+299904,Cuirass: Anu's Blessing,None
+300658,Cuirass: Battle,None
+299874,Cuirass: Battle Medic's,None
+299913,Cuirass: Bladefall,None
+677759,Cuirass: Blower's,None
+116435,Cuirass: Chainmail,None
+299365,Cuirass: Chameleon,None
+299941,Cuirass: Cleansing,None
+299359,Cuirass: Copperhead,None
+299923,Cuirass: Crystalline,None
+222043,Cuirass: Daedric,None
+222025,Cuirass: Dwarven,None
+175493,Cuirass: Ebony,None
+141724,Cuirass: Elven,None
+299348,Cuirass: Fence,None
+300684,Cuirass: Ferocious,None
+180760,Cuirass: Fortitude,None
+149350,Cuirass: Fur,None
+300629,Cuirass: General's,None
+222019,Cuirass: Glass,None
+299372,Cuirass: Health,None
+324603,Cuirass: Horselord's,None
+293024,Cuirass: Ice,None
+116433,Cuirass: Iron,None
+300290,Cuirass: Ironheart,None
+143770,Cuirass: Leather,None
+300652,Cuirass: Lifeblood,None
+299377,Cuirass: Merchant's,None
+180478,Cuirass: Mithril,None
+299915,Cuirass: Natural Assimilation,None
+222031,Cuirass: Orcish,None
+300699,Cuirass: Pain Resistance,None
+300701,Cuirass: Poison Blood,None
+299385,Cuirass: Protection,None
+299939,Cuirass: Quartz,None
+300320,Cuirass: Resilience,None
+300309,Cuirass: Resistance,None
+1415260,Cuirass: Rough Leather,None
+300310,Cuirass: Royal,None
+300289,Cuirass: Rugged,None
+418241,Cuirass: Rusty Iron,None
+324598,Cuirass: Salubrious,None
+300300,Cuirass: Skill,None
+324596,Cuirass: Stalwart,None
+141730,Cuirass: Steel,None
+300682,Cuirass: Tenacity,None
+299335,Cuirass: the Assassin,None
+297375,Cuirass: the Bear,None
+180771,Cuirass: the Blood Legion,None
+297367,Cuirass: the Cameleon [sic],None
+300668,Cuirass: the Cave Viper,None
+297390,Cuirass: the Cobra,None
+300640,Cuirass: the Diplomat,None
+297389,Cuirass: the Elephant,None
+677758,Cuirass: the Farlands Trader,None
+297380,Cuirass: the Fox,None
+300321,Cuirass: the Herald,None
+300690,Cuirass: the Juggernaut,None
+180795,Cuirass: the Pit Viper,None
+299896,Cuirass: the Ranger,None
+299865,Cuirass: the Spy,None
+299343,Cuirass: the Thiefcatcher,None
+180763,Cuirass: the Undefeated,None
+299886,Cuirass: Unyielding,None
+222037,Cuirass: Viperbane,None
+300650,Cuirass: Vitality,None
+677757,Cuirass: Vvardenfell Trader's,None
+300667,Cuirass: Weaponbane,None
+299358,Cuirass: Weaponward,None
+21931,Cutlass: Sharpened,None
+240258,Cutlass: Steel,None
+220786,Dagger: Daedric,None
+220624,Dagger: Dwarven,None
+220778,Dagger: Ebony,None
+220771,Dagger: Elven,None
+239714,Dagger: Fine Iron,None
+239705,Dagger: Fine Steel,None
+220763,Dagger: Glass,None
+102769,Dagger: Iron,None
+591382,Dagger: Rusty Iron,None
+152100,Dagger: Silver,None
+141753,Dagger: Steel,None
+645829,Dai-Katana: Akaviri,None
+150929,Dish: Basket,None
+150930,Dish: Basket,None
+127449,Dish: Bowl,None
+127450,Dish: Bowl,None
+127451,Dish: Bowl,None
+67029,Dish: Bowl,None
+67031,Dish: Bowl,None
+67033,Dish: Bowl,None
+151674,Dish: Ceramic Bowl,None
+151675,Dish: Ceramic Cup,None
+151676,Dish: Ceramic Goblet,None
+151677,Dish: Ceramic Pitcher,None
+151678,Dish: Ceramic Pitcher,None
+151679,Dish: Ceramic Plate,None
+160335,Dish: Ceramic Tankard,None
+151680,Dish: Ceramic Urn,None
+151681,Dish: Ceramic Vase,None
+139925,Dish: Clay Bowl,None
+139928,Dish: Clay Bowl,None
+139929,Dish: Clay Bowl,None
+140600,Dish: Clay Cup,None
+140601,Dish: Clay Cup,None
+140604,Dish: Clay Goblet,None
+140611,Dish: Clay Pitcher,None
+140612,Dish: Clay Pitcher,None
+140613,Dish: Clay Pitcher,None
+140620,Dish: Clay Plate,None
+140621,Dish: Clay Plate,None
+140633,Dish: Clay Tankard,None
+140627,Dish: Clay Urn,None
+140631,Dish: Clay Vase,None
+67039,Dish: Covered Pot,None
+67040,Dish: Covered Pot,None
+102678,Dish: Fork,None
+102679,Dish: Knife,None
+67035,Dish: Ladle,None
+840704,Dish: Metal Bowl,None
+840705,Dish: Metal Goblet,None
+840706,Dish: Metal Plate,None
+840707,Dish: Metal Tankard,None
+840708,Dish: Metal Tankard,None
+840709,Dish: Metal Tankard,None
+840710,Dish: Metal Tankard,None
+840711,Dish: Metal Tankard,None
+840923,Dish: Metal Urn,None
+840924,Dish: Metal Urn,None
+840936,Dish: Metal Urn,None
+840937,Dish: Metal Urn,None
+116260,Dish: Pewter Bowl,None
+116261,Dish: Pewter Bowl,None
+66752,Dish: Pewter Cup,None
+66753,Dish: Pewter Cup,None
+116246,Dish: Pewter Cup,None
+116249,Dish: Pewter Cup,None
+116258,Dish: Pewter Fork,None
+116256,Dish: Pewter Knife,None
+64915,Dish: Pewter Mug,None
+64932,Dish: Pewter Mug,None
+64940,Dish: Pewter Mug,None
+116255,Dish: Pewter Pitcher,None
+116262,Dish: Pewter Plate,None
+116263,Dish: Pewter Plate,None
+116250,Dish: Pewter Pot,None
+116251,Dish: Pewter Pot,None
+115996,Dish: Pewter Pot,None
+116259,Dish: Pewter Spoon,None
+89012,Dish: Planter,None
+89013,Dish: Planter,None
+89014,Dish: Planter,None
+89008,Dish: Planter,None
+89011,Dish: Planter,None
+89015,Dish: Planter,None
+89016,Dish: Planter,None
+89018,Dish: Planter,None
+89019,Dish: Planter,None
+102680,Dish: Plate,None
+538318,Dish: Red Bowl,None
+3080,Dish: Silver Bowl,None
+67047,Dish: Silver Bowl,None
+102663,Dish: Silver Carafe,None
+102986,Dish: Silver Fork,None
+121852,Dish: Silver Glass,None
+122060,Dish: Silver Goblet,None
+122063,Dish: Silver Goblet,None
+146451,Dish: Silver Knife,None
+146453,Dish: Silver Pitcher,None
+146455,Dish: Silver Pitcher,None
+146457,Dish: Silver Plate,None
+146459,Dish: Silver Spoon,None
+146461,Dish: Silver Tankard,None
+146463,Dish: Silver Urn,None
+146465,Dish: Silver Urn,None
+146467,Dish: Silver Vase,None
+102681,Dish: Spoon,None
+66759,Dish: Stone Cup,None
+66761,Dish: Stone Cup,None
+102677,Dish: Stone Cup,None
+66763,Dish: Stone Mug,None
+67037,Dish: Stone Pitcher,None
+140597,Dish: Tan Bowl,None
+140598,Dish: Tan Bowl,None
+140599,Dish: Tan Bowl,None
+538319,Dish: Tan Bowl,None
+127452,Dish: Tan Cup,None
+127453,Dish: Tan Cup,None
+127454,Dish: Tan Cup,None
+140602,Dish: Tan Cup,None
+140603,Dish: Tan Cup,None
+140610,Dish: Tan Goblet,None
+127455,Dish: Tan Jug,None
+127456,Dish: Tan Jug,None
+127457,Dish: Tan Jug,None
+127458,Dish: Tan Jug,None
+127459,Dish: Tan Jug,None
+127460,Dish: Tan Jug,None
+127461,Dish: Tan Mug,None
+127462,Dish: Tan Pitcher,None
+140614,Dish: Tan Pitcher,None
+140615,Dish: Tan Pitcher,None
+140616,Dish: Tan Pitcher,None
+127463,Dish: Tan Plate,None
+140622,Dish: Tan Plate,None
+140623,Dish: Tan Plate,None
+140628,Dish: Tan Urn,None
+140629,Dish: Tan Urn,None
+140630,Dish: Tan Urn,None
+140632,Dish: Tan Vase,None
+140625,Dish: Urn,None
+140626,Dish: Urn,None
+141744,Doublet: Green Brocade,None
+297347,Doublet: Marksman Quilted,None
+116785,Doublet: Quilted,None
+725504,Drink: Ale,None
+725506,Drink: Beer,None
+229247,Drink: Cheap Wine,None
+210281,Drink: Cyrodilic Brandy,None
+35895,Drink: Daedric Lava Whiskey,DLCFrostcrag.ESP
+725505,Drink: Mead,None
+759786,Drink: Rosethorn Mead,None
+1596877,Drink: Shadowbanish Wine,None
+319657,Drink: Skooma,None
+229252,Drink: Surilie Brothers Vintage 399,None
+229250,Drink: Surilie Brothers Vintage 415,None
+229248,Drink: Surilie Brothers Wine,None
+229246,Drink: Tamika Vintage 399,None
+229251,Drink: Tamika Vintage 415,None
+229249,Drink: Tamika's West Weald Wine,None
+300315,Eyes: Akatosh,None
+141745,Garment: Green Silk,None
+14995,Garment: Red Velvet,None
+299376,Gauntlets: Archer's,None
+324599,Gauntlets: Armor Crafter's,None
+300299,Gauntlets: Barkeep's,None
+300677,Gauntlets: Battlehunter,None
+299927,Gauntlets: Beveled,None
+293009,Gauntlets: Blinding Speed*,None
+677754,Gauntlets: Broadhead,None
+180759,Gauntlets: Brutality,None
+300689,Gauntlets: Brutality,None
+300660,Gauntlets: Cavern Guide,None
+116438,Gauntlets: Chainmail,None
+677756,Gauntlets: Clear Sight,None
+222040,Gauntlets: Daedric,None
+297369,Gauntlets: Deer Skin,None
+222022,Gauntlets: Dwarven,None
+222034,Gauntlets: Ebony,None
+141726,Gauntlets: Elven,None
+324595,Gauntlets: Force,None
+300323,Gauntlets: Forgemaster's,None
+149349,Gauntlets: Fur,None
+222016,Gauntlets: Glass,None
+677755,Gauntlets: Huntsman,None
+299349,Gauntlets: Infiltration,None
+299378,Gauntlets: Infiltrator's,None
+180756,Gauntlets: Inquisitor's,None
+116434,Gauntlets: Iron,None
+143769,Gauntlets: Leather,None
+299367,Gauntlets: Life Detection,None
+299868,Gauntlets: Life Seeing,None
+299900,Gauntlets: Life Sight,None
+324602,Gauntlets: Lion's Paw,None
+677760,Gauntlets: Lockbreaking,None
+677762,Gauntlets: Magnifying,None
+300654,Gauntlets: Master Forge,None
+300649,Gauntlets: Might,None
+180480,Gauntlets: Mithril,None
+324606,Gauntlets: Moonlight,None
+180772,Gauntlets: Moonshadow,None
+300666,Gauntlets: Mountaineer's,None
+299383,Gauntlets: Nord,None
+180787,Gauntlets: Nordslayer,None
+222028,Gauntlets: Orcish,None
+677761,Gauntlets: Passing,None
+300319,Gauntlets: Potence,None
+180769,Gauntlets: Punishment,None
+300295,Gauntlets: Revelation,None
+1415261,Gauntlets: Rough Leather,None
+418242,Gauntlets: Rusty Iron,None
+300681,Gauntlets: Savage,None
+300307,Gauntlets: Skyrim,None
+299347,Gauntlets: Sniper,None
+300692,Gauntlets: Snowblind,None
+116440,Gauntlets: Steel,None
+300301,Gauntlets: Sunburst,None
+300698,Gauntlets: Survival,None
+293012,Gauntlets: the Battlemage,None
+299884,Gauntlets: the Equinox,None
+300324,Gauntlets: the Forge,None
+300657,Gauntlets: the Fray,None
+300628,Gauntlets: the Gladiator,None
+297387,Gauntlets: the Horker,None
+324592,Gauntlets: the Hunter,None
+300637,Gauntlets: the North,None
+293019,Gauntlets: the Pugilist,None
+297381,Gauntlets: the Rat,None
+299338,Gauntlets: the Scout,None
+300645,Gauntlets: the Sentinel,None
+299356,Gauntlets: the Tundra,None
+293004,Gauntlets: the Weaponmaster,None
+297379,Gauntlets: the Woodsman,None
+300316,Gauntlets: Thiefhunter's,None
+300288,Gauntlets: Vigor,None
+180765,Gauntlets: Warforger's,None
+300686,Gauntlets: Warmaster,None
+324610,Gauntlets: Winter,None
+232359,Gem: Diamond,None
+232356,Gem: Emerald,None
+232360,Gem: Flawed Diamond,None
+232358,Gem: Flawed Emerald,None
+232345,Gem: Flawed Pearl,None
+232351,Gem: Flawed Ruby,None
+232354,Gem: Flawed Sapphire,None
+232348,Gem: Flawed Topaz,None
+232361,Gem: Flawless Diamond,None
+232357,Gem: Flawless Emerald,None
+232346,Gem: Flawless Pearl,None
+232352,Gem: Flawless Ruby,None
+232355,Gem: Flawless Sapphire,None
+232349,Gem: Flawless Topaz,None
+301064,Gem: Gold Nugget,None
+232344,Gem: Pearl,None
+232350,Gem: Ruby,None
+232353,Gem: Sapphire,None
+301065,Gem: Silver Nugget,None
+232347,Gem: Topaz,None
+293011,Gloves: the Caster,None
+15,Gold,None
+297359,Gold Trimmed Shoes: Waterwalking,None
+324609,Greaves: Bonfire,None
+299876,Greaves: Canyon Striding,None
+116437,Greaves: Chainmail,None
+299930,Greaves: Crystal,None
+222042,Greaves: Daedric,None
+180762,Greaves: Deathmarch,None
+222024,Greaves: Dwarven,None
+222036,Greaves: Ebony,None
+141725,Greaves: Elven,None
+300306,Greaves: Fire,None
+299883,Greaves: Fire Resistance,None
+300697,Greaves: Fire Ritual,None
+299382,Greaves: Firewalker,None
+180777,Greaves: Flamewalker,None
+299932,Greaves: Flowing,None
+299940,Greaves: Fluid Motion,None
+299887,Greaves: Free Movement,None
+324612,Greaves: Freedom,None
+149348,Greaves: Fur,None
+222018,Greaves: Glass,None
+299901,Greaves: Grace,None
+116432,Greaves: Iron,None
+143768,Greaves: Leather,None
+299369,Greaves: Legerity,None
+300675,Greaves: Mage Fighter's,None
+180807,Greaves: Magebane,None
+300708,Greaves: Magekiller,None
+299371,Greaves: Marathon,None
+180482,Greaves: Mithril,None
+299914,Greaves: Movement,None
+299871,Greaves: Nimble,None
+222030,Greaves: Orcish,None
+299928,Greaves: Poise,None
+299877,Greaves: Proficiency,None
+299906,Greaves: Protection,None
+299947,Greaves: Purity,None
+299341,Greaves: Quickness,None
+293027,Greaves: Resilient Flesh,None
+418243,Greaves: Rusty Iron,None
+299911,Greaves: Shaded Rest,None
+299346,Greaves: Skill,None
+180793,Greaves: Slavemaster's,None
+299390,Greaves: Spell Absorption,None
+299894,Greaves: Spell Consumption,None
+175568,Greaves: Spellbinder,None
+299921,Greaves: Spelltaker's,None
+141731,Greaves: Steel,None
+299933,Greaves: Tempered,None
+299374,Greaves: the Acrobat,None
+297373,Greaves: the Cat,None
+300665,Greaves: the Deep Dweller,None
+299903,Greaves: the Everlasting,None
+300636,Greaves: the Flame,None
+299375,Greaves: the Footsoldier,None
+299937,Greaves: the Kiln,None
+300651,Greaves: the Laborer,None
+297377,Greaves: the Monkey,None
+297378,Greaves: the Rhino,None
+293025,Greaves: the Sun,None
+299905,Greaves: the Tree Runner,None
+299345,Greaves: the Tumbler,None
+300700,Greaves: the Unstoppable,None
+300683,Greaves: the Warmonger,None
+299873,Greaves: Tireless,None
+324597,Greaves: Tireless,None
+293007,Greaves: Well-Being,None
+297351,Green Brocade Doublet: Speechcraft,None
+300631,Hand: Akatosh,None
+300294,Helmet: Arkay,None
+300678,Helmet: Battlehunter,None
+300314,Helmet: Black Marsh,None
+299912,Helmet: Canopy,None
+300676,Helmet: Cave Diver's,None
+300662,Helmet: Cave Scout,None
+116439,Helmet: Chainmail,None
+222039,Helmet: Daedric,None
+300694,Helmet: Darksplitter,None
+297371,Helmet: Deer Skin,None
+222021,Helmet: Dwarven,None
+222033,Helmet: Ebony,None
+141729,Helmet: Elven,None
+300308,Helmet: Enchanterbane,None
+299875,Helmet: Enlightenment,None
+299926,Helmet: Exposition,None
+149352,Helmet: Fur,None
+222015,Helmet: Glass,None
+300291,Helmet: High Rock,None
+180754,Helmet: Inquisitor's,None
+116430,Helmet: Iron,None
+143772,Helmet: Leather,None
+299368,Helmet: Life Detection,None
+299869,Helmet: Life Seeing,None
+299899,Helmet: Life Sight,None
+299384,Helmet: Magehunter's,None
+299373,Helmet: Mage's,None
+180789,Helmet: Mageslayer's,None
+299885,Helmet: Magicka Resistance,None
+180484,Helmet: Mithril,None
+299381,Helmet: Night Eye,None
+299880,Helmet: Nighteye,None
+222027,Helmet: Orcish,None
+300322,Helmet: Power,None
+299938,Helmet: Reflecting,None
+1415263,Helmet: Rough Leather,None
+418244,Helmet: Rusty Iron,None
+175569,Helmet: Seastrider's,None
+300685,Helmet: Shaman,None
+324611,Helmet: Spell Resistence,None
+141732,Helmet: Steel,None
+299357,Helmet: the Apprentice,None
+300644,Helmet: the Deep,None
+300709,Helmet: the Drowned,None
+180814,Helmet: the Flood,None
+324593,Helmet: the Hunter,None
+297388,Helmet: the Lemur,None
+293022,Helmet: the Mage,None
+293008,Helmet: the Mind,None
+297376,Helmet: the Owl,None
+299339,Helmet: the Scout,None
+300646,Helmet: the Sentinel,None
+300653,Helmet: Warmage's,None
+300638,Helmet: Witchhunter,None
+299344,Helmet: Wizard's,None
+462882,Hood: Aqua Silk,None
+413664,Hood: Arch-Mage's,None
+413667,Hood: Black,None
+462876,Hood: Green Robe,None
+1236255,Hood: Grey Robe,None
+1607116,Hood: King of Worms',None
+413665,Hood: Mage's,None
+579413,Hood: Mythic Dawn,None
+1607115,Hood: Necromancer's,None
+436269,Hood: of the Apprentice,None
+462880,Hood: Red Silk,None
+462874,Hood: Tan Robe,None
+462878,Hood: Tattered Robe,None
+210524,Ingredient: Alkanet Flower,None
+686372,Ingredient: Aloe Vera Leaves,None
+459936,Ingredient: Ambrosia,None
+210525,Ingredient: Apple,None
+210526,Ingredient: Arrowroot,None
+620509,Ingredient: Ashes of Hindaril,None
+6898,Ingredient: Beating Heart,DLCMehrunesRazor.esp
+210527,Ingredient: Beef,None
+686387,Ingredient: Bergamot Seeds,None
+210531,Ingredient: Blackberry,None
+210532,Ingredient: Bloodgrass,None
+210533,Ingredient: Boar Meat,None
+541804,Ingredient: Bog Beacon Asco Cap,None
+125951,Ingredient: Bonemeal,None
+296756,Ingredient: Bonemeal,None
+146825,Ingredient: Bread Loaf,None
+402718,Ingredient: Cairn Bolete Cap,None
+210534,Ingredient: Carrot,None
+536034,Ingredient: Carrot of Seeing,None
+210536,Ingredient: Cheese Wedge,None
+210537,Ingredient: Cheese Wheel,None
+39934,Ingredient: Chokeberry,DLCVileLair.esp
+545436,Ingredient: Cinnabar Polypore Red Cap,None
+545435,Ingredient: Cinnabar Polypore Yellow Cap,None
+210538,Ingredient: Clannfear Claws,None
+541810,Ingredient: Clouded Funnel Cap,None
+686373,Ingredient: Columbine Root Pulp,None
+210539,Ingredient: Corn,None
+210540,Ingredient: Crab Meat,None
+126095,Ingredient: Daedra Heart,None
+210544,Ingredient: Daedra Silk,None
+210545,Ingredient: Daedra Venin,None
+210546,Ingredient: Daedroth Teeth,None
+151609,Ingredient: Dragon's Tongue,None
+210547,Ingredient: Dreugh Wax,None
+545437,Ingredient: Dryad Saddle Polypore Cap,None
+125950,Ingredient: Ectoplasm,None
+545438,Ingredient: Elf Cup Cap,None
+545439,Ingredient: Emetic Russula Cap,None
+686374,Ingredient: Fennel Seeds,None
+210549,Ingredient: Fire Salts,None
+686375,Ingredient: Flax Seeds,None
+210548,Ingredient: Flour,None
+541809,Ingredient: Fly Amanita Cap,None
+210567,Ingredient: Foxglove Nectar,None
+142939,Ingredient: Frost Salts,None
+210551,Ingredient: Garlic,None
+210552,Ingredient: Ginkgo Leaf,None
+210553,Ingredient: Ginseng,None
+125928,Ingredient: Glow Dust,None
+210555,Ingredient: Grapes,None
+541802,Ingredient: Green Stain Cup Cap,None
+545434,Ingredient: Green Stain Shelf Cap,None
+210556,Ingredient: Ham,None
+210557,Ingredient: Harrada,None
+466742,Ingredient: Human Heart,None
+840988,Ingredient: Human Heart,None
+466741,Ingredient: Human Skin,None
+346558,Ingredient: Imp Fluid,None
+192114,Ingredient: Imp Gall,None
+210558,Ingredient: Ironwood Nut,None
+1538602,Ingredient: Jumbo Potato,None
+686376,Ingredient: Lady's Mantle Leaves,None
+686377,Ingredient: Lady's Smock Leaves,None
+686378,Ingredient: Lavender Sprig,None
+210560,Ingredient: Leek,None
+210561,Ingredient: Lettuce,None
+459934,Ingredient: Lichor,None
+210563,Ingredient: Mandrake Root,None
+686380,Ingredient: Milk Thistle Seeds,None
+210280,Ingredient: Minotaur Horn,None
+686382,Ingredient: Monkshood Root Pulp,None
+686383,Ingredient: Morning Glory Root Pulp,None
+210565,Ingredient: Mort Flesh,None
+686384,Ingredient: Motherwort Sprig,None
+686385,Ingredient: Mugwort Seeds,None
+210566,Ingredient: Mutton,None
+210568,Ingredient: Nightshade,None
+321856,Ingredient: Nirnroot,None
+210569,Ingredient: Ogre's Teeth,None
+210570,Ingredient: Onion,None
+481422,Ingredient: Orange,None
+598174,Ingredient: Painted Troll Fat,None
+210571,Ingredient: Pear,None
+686386,Ingredient: Peony Seeds,None
+834885,Ingredient: Pinarus' Prize Minotaur Horn,None
+596208,Ingredient: Poisoned Apple,None
+210572,Ingredient: Potato,None
+686388,Ingredient: Primrose Leaves,None
+210573,Ingredient: Pumpkin,None
+4978,Ingredient: Purgeblood Salts,DLCVileLair.esp
+210574,Ingredient: Radish,None
+210575,Ingredient: Rat Meat,None
+158472,Ingredient: Rat Poison,None
+151610,Ingredient: Redwort Flower,None
+143130,Ingredient: Refined Frost Salts,None
+210576,Ingredient: Rice,None
+210577,Ingredient: Root Pulp,None
+1597410,Ingredient: Rumare Slaughterfish Scales,None
+686390,Ingredient: Sacred Lotus Seeds,None
+210578,Ingredient: Scales,None
+210579,Ingredient: Scamp Skin,None
+759785,Ingredient: Shepherd's Pie,None
+1538601,Ingredient: S'jirra's Famous Potato Bread,None
+210582,Ingredient: Somnalius Frond,None
+210583,Ingredient: Spiddal Stick,None
+686393,Ingredient: St. Jahn's Wort Nectar,None
+541803,Ingredient: Steel-Blue Entoloma Cap,None
+541805,Ingredient: Stinkhorn Cap,None
+210585,Ingredient: Strawberry,None
+541808,Ingredient: Summer Bolete Cap,None
+210586,Ingredient: Sweetcake,None
+210587,Ingredient: Sweetroll,None
+716910,Ingredient: Taproot,None
+686379,Ingredient: Tiger Lily Nectar,None
+541807,Ingredient: Tinder Polypore Cap,None
+210589,Ingredient: Tobacco,None
+210590,Ingredient: Tomato,None
+158556,Ingredient: Troll Fat,None
+126043,Ingredient: Unicorn Horn,None
+37250,Ingredient: Vampire Dust,None
+296748,Ingredient: Vampire Dust,None
+139931,Ingredient: Venison,None
+686395,Ingredient: Viper's Bugloss Leaves,None
+210591,Ingredient: Void Salts,None
+686396,Ingredient: Water Hyacinth Nectar,None
+210592,Ingredient: Watermelon,None
+210593,Ingredient: Wheat Grain,None
+210594,Ingredient: White Seed Pod,None
+402719,Ingredient: Wisp Stalk Caps,None
+686398,Ingredient: Wormwood Leaves,None
+300305,Justice: Retributive,None
+150986,Katana: Akaviri,None
+948453,Katana: Ancient Akaviri,None
+622815,Katana: Ruined Akaviri,None
+151529,Key: A Rusty,None
+41078,Key: A Warlock's Luck,None
+13555,Key: Abandoned House,None
+96122,Key: Adrian Decanius' House,None
+425428,Key: Aelwin's,None
+142262,Key: Agarmir's House,None
+168327,Key: Agnete's,None
+233193,Key: Agronak's Mysterious,None
+219529,Key: Ahdarji 's House,None
+115068,Key: Akaviri Fort,None
+168474,Key: Alberic Litte's,None
+13539,Key: Aldos Othran's,None
+119644,Key: Algot's House,None
+121481,Key: Allectus',None
+219522,Key: Alval Uvani's,None
+645830,Key: Ancestor Moth,None
+623367,Key: Ancestor Moth Temple,None
+41088,Key: Andragil's,None
+142258,Key: Angelie's House,None
+431065,Key: Antoinetta Marie's,None
+41569,Key: Anvil Chapel,None
+41572,Key: Anvil Dungeon,None
+598357,Key: Arcane University Enchanter's,None
+41079,Key: Archer's Paradox,None
+21143,Key: Arch-Mage's,None
+142303,Key: Aredil's House,None
+591686,Key: Aren's Strange,None
+623368,Key: Aren's Tower,None
+596698,Key: Arkay Chapel Undercroft,None
+220753,Key: Arnora's,None
+603477,Key: Arnora's Chest,None
+148150,Key: Arriana Valga's,None
+808321,Key: Arriana Valga's Quarters,None
+41578,Key: Arvena Thelas',None
+623181,Key: Arvin Dalvilu's,None
+142275,Key: Astinia Atius',None
+142265,Key: Athram House,None
+681328,Key: Ayleid Cask,None
+220744,Key: Baenlin's,None
+49396,Key: Baeralorn's,None
+37562,Key: Bandit,None
+142260,Key: Bantien's,None
+332737,Key: Barash House,None
+220752,Key: Basement,None
+124674,Key: Baurus',None
+385410,Key: Beldaburo,None
+14999,Key: Benirus Manor,None
+168325,Key: Bernadette Peneles',None
+119295,Key: Bit and Bridle,None
+547168,Key: Black Brugo's,None
+218885,Key: Blackwood Co. Basement,None
+623185,Key: Bleak Mine,None
+13543,Key: Borba's Goods,None
+230820,Key: Bradon's,None
+41576,Key: Bradus',None
+13550,Key: Bralin's,None
+804787,Key: Branwen and Saliith's,None
+41075,Key: Bravil Castle,None
+41080,Key: Bravil Chapel,None
+41235,Key: Bravil Dungeon,None
+220749,Key: Brolus',None
+220758,Key: Brotch Calus',None
+221763,Key: Bruma Chapel,None
+221793,Key: Bruma Dungeon,None
+43354,Key: Caminalda's,None
+168324,Key: Canne's,None
+473312,Key: Captain Patneim's,None
+299863,Key: Captain's,None
+41082,Key: Carandial's,None
+168476,Key: Casta Scribonia's,None
+41570,Key: Castle Anvil,None
+41571,Key: Castle Anvil Interior,None
+41076,Key: Castle Bravil Interior,None
+220740,Key: Castle Bruma,None
+220741,Key: Castle Bruma Interior,None
+219517,Key: Castle Leyawiin,None
+219518,Key: Castle Leyawiin Interior,None
+50565,Key: Catacombs,None
+148149,Key: Chanel's,None
+572008,Key: Charcoal Cave,None
+13542,Key: Cheydinhal Bridge Inn,None
+13547,Key: Cheydinhal Castle,None
+13548,Key: Cheydinhal Castle Interior,None
+13546,Key: Cheydinhal Chapel,None
+21975,Key: Cheydinhal Dungeon,None
+148146,Key: Chorrol Castle Private AreaRI,None
+168468,Key: Chorrol Chapel Undercroft,None
+168317,Key: Chorrol Dungeon,None
+175402,Key: Chorrol Jail,None
+219528,Key: Cingor's,None
+41085,Key: City-Swimmer's,None
+142302,Key: Claudius Arcadia's House,None
+219532,Key: Coast Guard Station,None
+603269,Key: Commander's Chest,None
+293258,Key: Commerce Office,None
+120242,Key: Curtis' House,None
+96284,Key: Cyronin Sintav's House,None
+211216,Key: Dagon Shrine,None
+341235,Key: Damian Magius',None
+219520,Key: Dar Jee's,None
+341236,Key: Dareloth's,None
+376480,Key: Dark Fissure Cell,None
+4992,Key: Deepscorn Cell,DLCVileLair.esp
+18093,Key: Deepscorn Hollow,DLCVileLair.esp
+219523,Key: Derics',None
+302369,Key: Display Case,None
+580959,Key: Display Case,None
+119301,Key: Divine Elegance,None
+142278,Key: Dorian's House,None
+96211,Key: Dovyn Aren's,None
+184116,Key: Dro'shanji's,None
+5372,Key: Drothan's,DLCMehrunesRazor.esp
+96121,Key: Dul gro-Shug's,None
+413820,Key: Dust Eater Cell,None
+142271,Key: Dynari Amnis',None
+91279,Key: Echo Cave,None
+141938,Key: Edgar's Discount Spells,None
+167646,Key: Escape Route,None
+168466,Key: Estelle Renoit's,None
+168475,Key: Eugal Belette's,None
+190879,Key: Falcar's,None
+52188,Key: Faregyl Inn,None
+96282,Key: Fathis Ules',None
+141937,Key: Feed Bag,None
+139934,Key: Fighters Guild,None
+119127,Key: Fighting Chance,None
+119125,Key: First Edition,None
+1626430,Key: First Hunter's Run,None
+168315,Key: Flanau Hlaalu's,None
+48232,Key: Fo'c's'le,None
+477839,Key: Forgotten,None
+249133,Key: Fort Blueblood,None
+4031,Key: Fort Bulwark,Knights.esp
+130798,Key: Fort Grief Door,None
+130800,Key: Fort Grief Real,None
+322796,Key: Fort Ontus,None
+643798,Key: Fort Redman,None
+206437,Key: Fort Sutch Gate,None
+168472,Key: Francois Motierre's,None
+3408,Key: Frostcrag Spire,DLCFrostcrag.ESP
+373887,Key: Fyre Light Cave,None
+212081,Key: Gallenus Rosentia's,None
+13554,Key: Ganredhel's,None
+246465,Key: Garrus Darelliun's,None
+125825,Key: Geem Jasaiin's,None
+230818,Key: Gelebourne's,None
+13538,Key: Gharz House,None
+119646,Key: Gilen Norvalo's,None
+121928,Key: Glarthir's,None
+537019,Key: Glarthir's Secret,None
+410114,Key: Gogan's House,None
+444023,Key: Gogron gro-Bolmog's,None
+119645,Key: Graman's House,None
+121489,Key: Grey Throat's House,None
+1628223,Key: Guildmaster's,None
+451306,Key: Guildmaster's,None
+219533,Key: Gundalas',None
+168326,Key: Gunder's,None
+551277,Key: Gweden Basement,None
+166779,Key: Hackdirt,None
+121492,Key: Hagaer's House,None
+544899,Key: Hame Dungeon,None
+220739,Key: Hammer and Axe,None
+1613071,Key: Harm's Folly,None
+119643,Key: Hastrel Ottus' House,None
+220756,Key: Helvius Cecia's,None
+142256,Key: Helvo Atius',None
+184115,Key: Henantier's,None
+96242,Key: Herminia Cinna's House,None
+809378,Key: Hidden Wealth,None
+175878,Key: High Fane,None
+220743,Key: Honmund's,None
+374281,Key: Horn Cave Cellar,None
+375850,Key: Horn Cave Storage,None
+623251,Key: Hrol Ulfgar's,None
+96238,Key: Ida Vlinorman's House,None
+86783,Key: Imbel Family Crypt,None
+645911,Key: Imbel House,None
+592236,Key: Imperial City Lighthouse,None
+325146,Key: Imperial City Sewers,None
+1138181,Key: Imperial Palace,None
+601482,Key: Imperial Prison,None
+610498,Key: Imperial Prison,None
+160887,Key: Imperial Sewer,None
+341237,Key: Imperial Trading Company,None
+89775,Key: Imperial Watch,None
+551271,Key: Imperial Watch Office,None
+96117,Key: Iniel Sintav's House,None
+41575,Key: Inventius',None
+96124,Key: Irene Metric's House,None
+1415206,Key: Iron,None
+292836,Key: Jair's,None
+142280,Key: Jakben Imbel's House,None
+96281,Key: Jastia Sintav's House,None
+219521,Key: J'bari's,None
+131199,Key: Jearl's,None
+677456,Key: Jeetum Ze's Room,None
+411157,Key: Jenseric's Cabin,None
+121608,Key: Jenseric's House,None
+119297,Key: Jensine's Merchandise,None
+41581,Key: Jesan Sextius',None
+43479,Key: Jewelry Box,None
+220757,Key: J'Ghasta's,None
+168473,Key: Jirolin Doran's,None
+142304,Key: J'mhad's House,None
+53025,Key: Kalthar's,None
+96279,Key: Kastus Sintav's House,None
+257629,Key: Key,None
+450350,Key: Key,None
+142190,Key: King and Queen Tavern,None
+204081,Key: Kvatch Guard House,None
+292835,Key: Kvinchal's,None
+168336,Key: Lazare Milvan's,None
+41567,Key: Lelles' Quality Mercandise,None
+432918,Key: Leyawiin Chapel,None
+219519,Key: Leyawiin City Watch,None
+221068,Key: Leyawiin Dungeon,None
+598358,Key: Leyawiin Secret Room,None
+58169,Key: Lich,DLCFightersStronghold.esp
+41566,Key: Lighthouse,None
+344113,Key: Lighthouse Cellar,None
+677372,Key: Lindai's Royal Tomb,None
+220747,Key: Lirrians',None
+13540,Key: Llevana Nedaren's,None
+41089,Key: Loche's House,None
+96307,Key: Lorkmir's House,None
+96118,Key: Lorkmir's House,None
+628943,Key: Lost Boy's,None
+41087,Key: Luciana Galena's,None
+121487,Key: Luronk's House,None
+220745,Key: Lyra Rosentia's,None
+13544,Key: Mach-Na's,None
+139932,Key: Mages Guild,None
+13537,Key: Magul House,None
+623256,Key: Malyani Dalvilu's,None
+121494,Key: Marana Rian's House,None
+219525,Key: Margarte's,None
+96239,Key: Marinus Catiotus' House,None
+142267,Key: Matthias' House,None
+49962,Key: Medrike's,None
+335919,Key: Methredhel's House,None
+10589,Key: Mine,None
+41573,Key: Mirabelle Monet's,None
+809142,Key: Miscarcand,None
+168480,Key: Modryn Oreyn's,None
+333937,Key: Moranda Gate,None
+458151,Key: Mraaj-Dar's,None
+168478,Key: Murgakh gro-Ushag's,None
+322944,Key: My Bravil House,None
+322952,Key: My Bruma House,None
+322951,Key: My Cheydinhal House,None
+322954,Key: My Chorrol House,None
+340382,Key: My Imperial City House,None
+322950,Key: My Leyawiin House,None
+322953,Key: My Skingrad House,None
+119294,Key: Mystic Emporium,None
+344051,Key: NE Watch Tower,None
+375058,Key: Necromancer's Moss Rock,None
+545499,Key: Neville's Chest,None
+41577,Key: Newheim's,None
+13541,Key: Newlands Lodge,None
+335757,Key: Ninedava Gate,None
+623262,Key: Nivan Dalvilu's,None
+220735,Key: Nord Winds,None
+220734,Key: Novaroma,None
+344052,Key: NW Watch Tower,None
+41574,Key: Oaken-Hull's,None
+821725,Key: Odiil Farm,None
+13553,Key: Ohtimbar's,None
+477838,Key: Old,None
+220750,Key: Ongar's,None
+142266,Key: Ontus Vanin's,None
+506592,Key: Ormil's Cabin,None
+49662,Key: Ormil's Cabin,None
+49961,Key: Orthe's,None
+13551,Key: Orum House,None
+96240,Key: Othrelos' House,None
+219530,Key: Otumeel's,None
+120243,Key: Pennus Mallius' House,None
+219531,Key: Plotius',None
+376164,Key: Pot Hole Cell,None
+4033,Key: Priory of the Nine,Knights.esp
+147453,Key: Prison Cell,None
+41579,Key: Quill-Weave's,None
+219527,Key: Ra'Jahirr's,None
+96243,Key: Ra'jhan's House,None
+142273,Key: Ra'jiradh's House,None
+41086,Key: Ranaline's,None
+168467,Key: Rasheda's,None
+230819,Key: Raynil's,None
+230473,Key: Raynil's Room,None
+623267,Key: Redas Dalvilu's,None
+459336,Key: Redwater Slough,None
+220755,Key: Regner's,None
+168328,Key: Reman Broder's,None
+168477,Key: Reynald Jemane's,None
+168470,Key: Rimalus Bruiant's,None
+119122,Key: Rindir's Staffs,None
+211217,Key: Ritual,None
+13552,Key: Riverview,None
+677455,Key: Ri'Zakar's Room,None
+96278,Key: Roderic Pierrane's,None
+158933,Key: Roebeck Bridge Room,None
+121490,Key: Ruslan's House,None
+477837,Key: Rusty,None
+113708,Key: Rythe's Studio Key,None
+168329,Key: Salmo's,None
+121483,Key: Salomon Geonette's House,None
+41535,Key: Sancre Tor,None
+45656,Key: Sanctuary Well,None
+623271,Key: Satha Dalvilu's,None
+354477,Key: Scinia Crypt,None
+473311,Key: Sea Tub Clarabella,None
+1626431,Key: Second Hunter's Run,None
+538830,Key: Secret Cell,None
+168465,Key: Seed-Neeus',None
+121486,Key: Seridur's House,None
+41582,Key: Serpent's Wake,None
+505662,Key: Serpent's Wake Captain's,None
+142255,Key: Severius Atius',None
+161013,Key: Sewer Gate,None
+168330,Key: Shameer's,None
+1620494,Key: Shardrock,None
+126024,Key: Shiny Ogre Cage,None
+127308,Key: Shrine of Dagon,None
+610380,Key: Sigil,None
+639525,Key: Sigil,None
+605941,Key: Sigil Keep,None
+428805,Key: Sinderion's,None
+4032,Key: Sir Amiel's,Knights.esp
+181345,Key: Skingrad Castle,None
+181344,Key: Skingrad Castle Silver,None
+432919,Key: Skingrad Chapel,None
+221069,Key: Skingrad Dungeon,None
+175532,Key: Skingrad Guardhouse,None
+41084,Key: S'krivva's,None
+119296,Key: Slash 'N Smash,None
+21085,Key: Sleeping Mare,None
+222908,Key: Small,None
+540597,Key: Smoke Tomb Inner,None
+540596,Key: Smoke Tomb Outer,None
+693308,Key: Smuggler's,None
+181879,Key: Soris Arenim's,None
+344050,Key: South Watch Tower,None
+155781,Key: Southern Books,None
+142277,Key: S'rathad's House,None
+119641,Key: Stantus Varrid's House,None
+119126,Key: Stonewall Shields,None
+49660,Key: Storage Room,None
+151705,Key: Storeroom,None
+538577,Key: Summitmist Manor,None
+612493,Key: Sunken Sewers,None
+168331,Key: Surilie's House,None
+121496,Key: Surius Afranius' House,None
+623933,Key: Talasma's,None
+168332,Key: Tamika's,None
+126017,Key: Tarnished Ogre Cage,None
+151655,Key: Teekeeus',None
+431066,Key: Teinaava's,None
+458152,Key: Telaendril's,None
+96241,Key: Tertius Favonius' House,None
+2077,Key: TestKey,None
+142272,Key: Thamriel's House,None
+119300,Key: The Best Defense,None
+423899,Key: The Bloodwork's Sewer,None
+119124,Key: The Copious Coinpurse,None
+41077,Key: The Fair Deal,None
+85347,Key: The First Key of Dark Hate,None
+119298,Key: The Gilded Carafe,None
+119123,Key: The Main Ingredient,None
+13545,Key: The March Rider,None
+85348,Key: The Second Key of Dark Hate,None
+119302,Key: Three Brothers Trade Goods,None
+619752,Key: Toadstool Grog,None
+49661,Key: Top Deck,None
+168333,Key: Toutius Sextius',None
+827948,Key: Trentius Mausoleum,None
+119642,Key: Trenus Duronius' House,None
+219516,Key: Tun-Zeeus',None
+258842,Key: Ulrich Leland's,None
+623274,Key: Ulrika Ulfgar's,None
+177237,Key: Umbacano Manor,None
+177238,Key: Umbacano's,None
+168334,Key: Undena Orethi's,None
+319825,Key: Underpall Gate,None
+41083,Key: Ungolim's,None
+829151,Key: Urasek Lockup,None
+142276,Key: Usheeja's House,None
+168335,Key: Uuras',None
+344094,Key: Vahtacen Ruins,None
+610496,Key: Valen Dreth's Cell,None
+431064,Key: Valtieri's,None
+168479,Key: Valus Odiil's,None
+41568,Key: Varel Morvayn's,None
+41081,Key: Varon Vamori's,None
+168471,Key: Vilena Donton's,None
+443171,Key: Vilverin Chamber,None
+816845,Key: Vilverin Sepulcher,None
+220587,Key: Warden Kastav's,None
+119299,Key: Warehouse,None
+157750,Key: Wariel's,None
+155785,Key: Waterfront Sewers,None
+219526,Key: Weebam-Na's,None
+34003,Key: Well,None
+439190,Key: Wellspring Cave,None
+621037,Key: West Weald Inn,None
+592065,Key: White Stallion Lodge,None
+52204,Key: Whitmond Farm,None
+13549,Key: Willow Bank,None
+125822,Key: Wumeek's,None
+66684,Linens: Burgundy,None
+116780,Linens: Coarse,None
+165681,Linens: Green Felt,None
+141742,Linens: Light Brown,None
+116784,Linens: Tan,None
+10,Lockpick,None
+220790,Longsword: Daedric,None
+220625,Longsword: Dwarven,None
+220782,Longsword: Ebony,None
+141747,Longsword: Elven,None
+239715,Longsword: Fine Iron,None
+239706,Longsword: Fine Steel,None
+220767,Longsword: Glass,None
+3084,Longsword: Iron,None
+152095,Longsword: Silver,None
+141754,Longsword: Steel,None
+220789,Mace: Daedric,None
+220626,Mace: Dwarven,None
+220781,Mace: Ebony,None
+220774,Mace: Elven,None
+239716,Mace: Fine Iron,None
+239707,Mace: Fine Steel,None
+220766,Mace: Glass,None
+3458,Mace: Iron,None
+591380,Mace: Rusty Iron,None
+152099,Mace: Silver,None
+141755,Mace: Steel,None
+116779,Moccasin: Huntsman,None
+834899,Necklace: Astia's,None
+229415,Necklace: Bronze,None
+229416,Necklace: Copper,None
+229419,Necklace: Gold,None
+229417,Necklace: Jade,None
+229420,Necklace: Jeweled,None
+600750,Necklace: Mercantile,None
+600749,Necklace: Mercantile Base,None
+600751,Necklace: Mercantile Grand,None
+596690,Necklace: Personality,None
+596689,Necklace: Personality Base,None
+596691,Necklace: Personality Grand,None
+623684,Necklace: Seawalking,None
+623683,Necklace: Seawalking Base,None
+623685,Necklace: Seawalking Grand,None
+229418,Necklace: Silver,None
+600759,Necklace: Speechcraft,None
+600758,Necklace: Speechcraft Base,None
+600760,Necklace: Speechcraft Grand,None
+623698,Necklace: Swords,None
+623682,Necklace: the Sea,None
+623680,Necklace: the Sea Base,None
+623681,Necklace: the Sea Grand,None
+804275,Note: A Poorly Scrawled Note,None
+115042,Note: Akaviri Diary Translation,None
+418304,Note: Alval Uvani's Schedule,None
+808665,Note: Andre's Letter,None
+477834,Note: Crumpled Note,None
+580682,Note: Crumpled Piece of Paper,None
+580684,Note: Crumpled Piece of Paper,None
+696446,Note: Crumpled Piece of Paper,None
+696447,Note: Crumpled Piece of Paper,None
+696448,Note: Crumpled Piece of Paper,None
+696449,Note: Crumpled Piece of Paper,None
+696450,Note: Crumpled Piece of Paper,None
+696451,Note: Crumpled Piece of Paper,None
+195390,Note: Dead Drop Orders 1,None
+203562,Note: Dead Drop Orders 2,None
+195387,Note: Dead Drop Orders 3,None
+196934,Note: Dead Drop Orders 4,None
+197012,Note: Dead Drop Orders 5,None
+197013,Note: Dead Drop Orders 6,None
+197037,Note: Dead Drop Orders 7,None
+14699,Note: Dead Drop Orders 8,None
+41404,Note: Deed to Benirus Manor,None
+442284,Note: Dirty Scroll,None
+41556,Note: Divining the Elder Scolls,None
+11691,Note: Draconis Gift List,None
+161710,Note: Earana's Notes,None
+49705,Note: Forged List of Candidates,None
+41558,Note: Fragment: Song of Hrormir,None
+222899,Note: Grantham Blakeley's Map,None
+464759,Note: Handbill,None
+464760,Note: Handbill,None
+464761,Note: Handbill,None
+464762,Note: Handbill,None
+464763,Note: Handbill,None
+464764,Note: Handbill,None
+464765,Note: Handbill,None
+464766,Note: Handbill,None
+464767,Note: Handbill,None
+464768,Note: Handbill,None
+464769,Note: Handbill,None
+464770,Note: Handbill,None
+464771,Note: Handbill,None
+464772,Note: Handbill,None
+464773,Note: Handbill,None
+464774,Note: Handbill,None
+464775,Note: Handbill,None
+464776,Note: Handbill,None
+464777,Note: Handbill,None
+464778,Note: Handbill,None
+464779,Note: Handbill,None
+212460,Note: Hastily Scrawled Note,None
+83776,Note: Instructions: the Gray Cowl,None
+177240,Note: Invitation from Umbacano,None
+49190,Note: Jearl's Orders,None
+49226,Note: List of Candidates,None
+748554,Note: Long Forgotten Note,None
+123012,Note: Love Letter from Relfina,None
+87847,Note: Lynch's Instructions,None
+218592,Note: Mysterious Note,None
+606341,Note: Mysterious Scroll,None
+321886,Note: Nirnroot Missive,None
+473304,Note: Note from First Mate Filch,None
+41393,Note: Note from Gray Fox,None
+41531,Note: Note from Raminus Polus,None
+142211,Note: Note to Gwinas,None
+610530,Note: Notes: Captain Montrose,None
+220675,Note: Orders From Lucien Lachance,None
+421225,Note: Pale Pass Map,None
+142772,Note: Plan for the Big Heist,None
+249963,Note: Ramblings of Audens Avidius,None
+15003,Note: Scrap from Lorgren's Diary,None
+49706,Note: Sealed Forged Candidate List,None
+449469,Note: Shopping List,None
+449470,Note: Shopping List,None
+1395926,Note: Shopping List,None
+1395927,Note: Shopping List,None
+1395928,Note: Shopping List,None
+1395929,Note: Shopping List,None
+1395930,Note: Shopping List,None
+1395931,Note: Shopping List,None
+1395932,Note: Shopping List,None
+1395933,Note: Shopping List,None
+175872,Note: Sketch of the High Fane,None
+1621027,Note: Slythe's Journal - page 1,None
+1626715,Note: Slythe's Journal - page 2,None
+1626717,Note: Slythe's Journal - page 3,None
+1538265,Note: Suicide Note,None
+246654,Note: Suspicious Letter,None
+1531746,Note: Telaendril's Ocheeva Note,None
+623345,Note: Transfer Orders,None
+805417,Note: Transfer Orders,None
+431058,Note: Vicente's Note to Ocheeva,None
+623343,Note: Wanted Poster,None
+215157,Note: Waterfront Tax Records,None
+805418,Note: Waterfront Tax Records,None
+402649,Note: Weathered Journal,None
+181504,Note: Worn Faded Note,None
+116871,Outfit: Black & Burgundy,None
+116868,Outfit: Blue & Green,None
+143773,Outfit: Blue Velvet,None
+297348,Outfit: Mercantile Black,None
+674190,Outfit: Red Velvet,None
+217786,Outfit: Russet Felt,None
+830113,Overalls: Child,None
+21,Pants,None
+297345,Pants: Acrobatics,None
+413563,Pants: Black Wide,None
+141735,Pants: Blacksmith's,None
+834871,Pants: Ernest's Fancy,None
+297362,Pants: Fortify Fatigue,None
+21805,Pants: Fortify Magicka,None
+834877,Pants: Heinrich's,None
+2135,Pants: Huntsman Leather,None
+141739,Pants: Laced Leather,None
+33870,Pants: Resist Cold,None
+413562,Pants: Rugged,None
+160536,Pants: Sack Cloth,None
+256683,Pants: Tattered,None
+141539,Pelt: Bear,None
+141540,Pelt: Lion,None
+141538,Pelt: Wolf,None
+580700,Poison: Affliction,None
+580701,Poison: Affliction Strong,None
+580699,Poison: Affliction Weak,None
+37507,Poison: Apathy,None
+623722,Poison: Apathy Strong,None
+623721,Poison: Apathy Weak,None
+623781,Poison: Burde,None
+37389,Poison: Burde Strong,None
+37388,Poison: Burde Weak,None
+37505,Poison: Catastrophe,None
+623716,Poison: Catastrophe Strong,None
+623715,Poison: Catastrophe Weak,None
+580696,Poison: Clumsiness,None
+580698,Poison: Clumsiness Strong,None
+580697,Poison: Clumsiness Weak,None
+580702,Poison: Confusion,None
+580704,Poison: Confusion Strong,None
+580703,Poison: Confusion Weak,None
+355924,Poison: Cowardice,None
+355926,Poison: Cowardice Strong,None
+355929,Poison: Cowardice Weak,None
+37501,Poison: Debilitation,None
+623788,Poison: Debilitation Strong,None
+623787,Poison: Debilitation Weak,None
+580720,Poison: Fatigue,None
+580722,Poison: Fatigue Strong,None
+580721,Poison: Fatigue Weak,None
+37504,Poison: Feeblemind,None
+623714,Poison: Feeblemind Strong,None
+623713,Poison: Feeblemind Weak,None
+37509,Poison: Frailty,None
+623724,Poison: Frailty Strong,None
+623723,Poison: Frailty Weak,None
+580717,Poison: Fright,None
+580719,Poison: Fright Strong,None
+580718,Poison: Fright Weak,None
+37500,Poison: Fumbling,None
+623786,Poison: Fumbling Strong,None
+623785,Poison: Fumbling Weak,None
+580723,Poison: Illness,None
+580725,Poison: Illness Strong,None
+580724,Poison: Illness Weak,None
+580705,Poison: Misfortune,None
+580707,Poison: Misfortune Strong,None
+580706,Poison: Misfortune Weak,None
+210214,Poison: Nab,None
+37634,Poison: Paralysis,None
+623748,Poison: Paralysis Strong,None
+623747,Poison: Paralysis Weak,None
+37506,Poison: Repulsion,None
+623720,Poison: Repulsion Strong,None
+623719,Poison: Repulsion Weak,None
+37508,Poison: Separation,None
+623718,Poison: Separation Strong,None
+623717,Poison: Separation Weak,None
+580726,Poison: Severing,None
+580728,Poison: Severing Strong,None
+580727,Poison: Severing Weak,None
+37503,Poison: Sickness,None
+623712,Poison: Sickness Strong,None
+623791,Poison: Sickness Weak,None
+37664,Poison: Silence,None
+623774,Poison: Silence Strong,None
+623773,Poison: Silence Weak,None
+580711,Poison: Slowing,None
+580713,Poison: Slowing Strong,None
+580712,Poison: Slowing Weak,None
+2220,Poison: Test,None
+580708,Poison: the Fool,None
+580710,Poison: the Fool Strong,None
+580709,Poison: the Fool Weak,None
+1621338,Poison: Turpentine I,None
+840411,Poison: Turpentine II,None
+840412,Poison: Turpentine III,None
+840413,Poison: Turpentine IV,None
+840414,Poison: Turpentine V,None
+840415,Poison: Turpentine VI,None
+580714,Poison: Weakness,None
+580716,Poison: Weakness Strong,None
+580715,Poison: Weakness Weak,None
+37502,Poison: Weariness,None
+623790,Poison: Weariness Strong,None
+623789,Poison: Weariness Weak,None
+37665,Potion: Absorption,None
+623776,Potion: Absorption Strong,None
+623775,Potion: Absorption Weak,None
+623729,Potion: Agility,None
+37609,Potion: Agility Strong,None
+37608,Potion: Agility Weak,None
+623771,Potion: Alacrity,None
+37657,Potion: Alacrity Strong,None
+37656,Potion: Alacrity Weak,None
+1607794,Potion: Alteration,None
+37640,Potion: Antivenom,None
+623760,Potion: Antivenom Strong,None
+623759,Potion: Antivenom Weak,None
+559900,Potion: Chameleon,None
+559902,Potion: Chameleon Strong,None
+559901,Potion: Chameleon Weak,None
+623770,Potion: Charisma,None
+37655,Potion: Charisma Strong,None
+37654,Potion: Charisma Weak,None
+1607797,Potion: Conjuration,None
+37390,Potion: Cure Disease,None
+620516,Potion: Cure for Vampirism,None
+37422,Potion: Cure Paralysis,None
+37391,Potion: Cure Poison,None
+355925,Potion: Dedication,None
+355928,Potion: Dedication Strong,None
+355922,Potion: Dedication Weak,None
+1607800,Potion: Destruction,None
+623782,Potion: Detect Life,None
+37424,Potion: Detect Life Strong,None
+37423,Potion: Detect Life Weak,None
+37639,Potion: Disbelief,None
+623758,Potion: Disbelief Strong,None
+623757,Potion: Disbelief Weak,None
+37499,Potion: Dispel,None
+623784,Potion: Dispel Strong,None
+623783,Potion: Dispel Weak,None
+623730,Potion: Endurance,None
+37611,Potion: Endurance Strong,None
+37610,Potion: Endurance Weak,None
+321850,Potion: Exploration Grand,None
+321848,Potion: Exploration Moderate,None
+321849,Potion: Exploration Strong,None
+321847,Potion: Exploration Weak,None
+623731,Potion: Fatigue,None
+37613,Potion: Fatigue Strong,None
+37612,Potion: Fatigue Weak,None
+37606,Potion: Feather,None
+623726,Potion: Feather Strong,None
+623725,Potion: Feather Weak,None
+37607,Potion: Fire Shield,None
+623728,Potion: Fire Shield Strong,None
+623727,Potion: Fire Shield Weak,None
+623764,Potion: Fortitude,None
+37645,Potion: Fortitude Strong,None
+37644,Potion: Fortitude Weak,None
+623768,Potion: Fortune,None
+37653,Potion: Fortune Strong,None
+37652,Potion: Fortune Weak,None
+37630,Potion: Frost Shield,None
+623740,Potion: Frost Shield Strong,None
+623739,Potion: Frost Shield Weak,None
+623763,Potion: Grace,None
+37643,Potion: Grace Strong,None
+37642,Potion: Grace Weak,None
+37641,Potion: Grounding,None
+623762,Potion: Grounding Strong,None
+623761,Potion: Grounding Weak,None
+623766,Potion: Healing,None
+37649,Potion: Healing Strong,None
+37648,Potion: Healing Weak,None
+623732,Potion: Health,None
+37615,Potion: Health Strong,None
+37614,Potion: Health Weak,None
+210282,Potion: Hist Sap,None
+623369,Potion: Human Blood,None
+1607802,Potion: Illusion,None
+623767,Potion: Insight,None
+37651,Potion: Insight Strong,None
+37650,Potion: Insight Weak,None
+37637,Potion: Insulation,None
+623753,Potion: Insulation Strong,None
+623754,Potion: Insulation Weak,None
+623733,Potion: Intelligence,None
+37617,Potion: Intelligence Strong,None
+37616,Potion: Intelligence Weak,None
+37631,Potion: Invisibility,None
+623742,Potion: Invisibility Strong,None
+623741,Potion: Invisibility Weak,None
+37632,Potion: Light,None
+623744,Potion: Light Strong,None
+623743,Potion: Light Weak,None
+623734,Potion: Luck,None
+37619,Potion: Luck Strong,None
+37618,Potion: Luck Weak,None
+623735,Potion: Magicka,None
+37625,Potion: Magicka Strong,None
+37624,Potion: Magicka Weak,None
+6342,Potion: Meepage,None
+623772,Potion: Might,None
+37661,Potion: Might Strong,None
+37660,Potion: Might Weak,None
+1607804,Potion: Mysticism,None
+725569,Potion: Newheim's Special Brew,None
+37633,Potion: Nighteye,None
+623746,Potion: Nighteye Strong,None
+623745,Potion: Nighteye Weak,None
+623736,Potion: Personality,None
+37621,Potion: Personality Strong,None
+37620,Potion: Personality Weak,None
+507081,Potion: Philter of Frostward,None
+37635,Potion: Reflection,None
+623750,Potion: Reflection Strong,None
+623749,Potion: Reflection Weak,None
+37636,Potion: Resistance,None
+623752,Potion: Resistance Strong,None
+623751,Potion: Resistance Weak,None
+623765,Potion: Respite,None
+37647,Potion: Respite Strong,None
+37646,Potion: Respite Weak,None
+1607806,Potion: Restoration,None
+623780,Potion: Seastride,None
+37671,Potion: Seastride Strong,None
+37670,Potion: Seastride Weak,None
+39651,Potion: Shock Shield,None
+39652,Potion: Shock Shield Strong,None
+39648,Potion: Shock Shield Weak,None
+190236,Potion: Sleeping,None
+623769,Potion: Sorcery,None
+37659,Potion: Sorcery Strong,None
+37658,Potion: Sorcery Weak,None
+623737,Potion: Speed,None
+37623,Potion: Speed Strong,None
+37622,Potion: Speed Weak,None
+623738,Potion: Strength,None
+37627,Potion: Strength Strong,None
+37626,Potion: Strength Weak,None
+623045,Potion: Summon Dremora Lord,None
+623779,Potion: the Sea,None
+37669,Potion: the Sea Strong,None
+37668,Potion: the Sea Weak,None
+37638,Potion: Warmth,None
+623756,Potion: Warmth Strong,None
+623755,Potion: Warmth Weak,None
+355923,Potion: Willpower,None
+355927,Potion: Willpower Strong,None
+355921,Potion: Willpower Weak,None
+196402,Quest: A Bloody Journal,None
+118959,Quest: Agarmir's Shovel,None
+242140,Quest: Agronak's Raiment,None
+220821,Quest: Ahdarji's Ring,None
+115059,Quest: Akaviri Orders,None
+493024,Quest: Akaviri Orders,None
+218605,Quest: Amantius Allectus' Diary,None
+151712,Quest: Amulet of Kings,None
+86202,Quest: Ancient Elven Helm,None
+196917,Quest: Ancotar's Ring of Protection,None
+218511,Quest: Argonian Heart,None
+130767,Quest: Armor of Tiber Septim,None
+779732,Quest: Ayleid Crown of Lindai,None
+779737,Quest: Ayleid Crown of Nenalata,None
+210235,Quest: Ayleid Reference Text,None
+174920,Quest: Ayleid Statue,None
+541892,Quest: Ayleid Statue,None
+247811,Quest: Bands of the Chosen,None
+596229,Quest: Blade of Woe,None
+507459,Quest: Bloodworm Helm,None
+867109,Quest: Blue Cheese,None
+98526,Quest: Bone,None
+84180,Quest: Boots of Springheel Jak,None
+173431,Quest: Brenus Astis' Journal,None
+451297,Quest: Broken Shield,None
+186155,Quest: Broken Sword,None
+113462,Quest: Brush of Truepaint,None
+175875,Quest: Carved Panel,None
+867119,Quest: Cheddar Cheese,None
+32412,Quest: Colossal Black Soul Gem,None
+782669,Quest: Crumpled Piece of Paper,None
+221062,Quest: Crystal Ball,None
+653565,Quest: Dirty Shoes,None
+115058,Quest: Draconian Madstone,None
+471117,Quest: Draconian Madstone,None
+183750,Quest: Dreamworld Amulet,None
+561160,Quest: Dreamworld Amulet,None
+142768,Quest: Elder Scroll,None
+181999,Quest: Element of Courage,None
+181998,Quest: Element of Patience,None
+182000,Quest: Element of Perception,None
+181997,Quest: Element of Resolve,None
+563566,Quest: Empty Hist Bottle,None
+261070,Quest: Enchanted Dagger,None
+158409,Quest: Eye of Nocturnal,None
+32413,Quest: Filled Colossal Black Soul Gem,None
+1538267,Quest: Finger of Adamus Phillida,None
+20749,Quest: Fingers of the Mountain,None
+154419,Quest: Garridan's Tear,None
+507464,Quest: Garridan's Tear,None
+230471,Quest: Gelebourne's Journal,None
+173579,Quest: Glass of Time,None
+230478,Quest: Great Sigil Stone,None
+214447,Quest: Great Welkynd Stone,None
+1621093,Quest: Handwritten Note,None
+570910,Quest: Hermaeus Mora's Soul Gem,None
+166816,Quest: Honorblade of Chorrol,None
+11743,Quest: Hrormir's Icestaff,None
+291698,Quest: Hrormir's Icestaff,None
+49708,Quest: Imperial Legion Seal,None
+232239,Quest: Journal of the Lord Lovidicus,None
+84012,Quest: Key-Shaped Arrowhead,None
+142949,Quest: Knightfall,None
+1610113,Quest: Kylius Lonavo's Ring,None
+164470,Quest: Languorwine Antidote,None
+164471,Quest: Languorwine Blade,None
+1594231,Quest: Lithnilian's Research Notes,None
+32818,Quest: Llathasa's Bust,None
+125025,Quest: Llathasa's Bust,None
+222897,Quest: Log of the Emma May,None
+563075,Quest: Loose Pipe,None
+49036,Quest: Lost Histories of Tamriel,None
+805419,Quest: Lost Histories of Tamriel,None
+118854,Quest: Macabre Manifest,None
+181928,Quest: Mages Staff,None
+1151663,Quest: Magicka Potion,None
+148843,Quest: Manual of Spellcraft,None
+449953,Quest: Manual of Spellcraft,None
+398272,Quest: Marana Rian's Coin,None
+867114,Quest: Marble Cheese,None
+436901,Quest: Mother's Head,None
+570890,Quest: Mysterium Xarxes,None
+21913,Quest: Mysterium Xarxes,None
+142086,Quest: Mystic Dawn Commentaries 3,None
+142087,Quest: Mystic Dawn Commentaries 4,None
+507435,Quest: Necromancer's Amulet,None
+11729,Quest: Necromancer's Moon,None
+11920,Quest: Newheim's Heirloom,None
+834881,Quest: Oaken-Hall Heirloom,None
+141553,Quest: Oghma Infinium,None
+574058,Quest: Olroy Cheese,None
+125976,Quest: Orb of Vaermina,None
+196635,Quest: Reverse Invisibility,None
+216674,Quest: Reward Painting,None
+439896,Quest: Ring of the Vipereye,None
+85702,Quest: Rockshatter,None
+53023,Quest: Rockshatter,None
+200663,Quest: Roderick's Medicine,None
+200662,Quest: Roderick's Poison,None
+115019,Quest: Rohssan's Cutlass,None
+216658,Quest: Rolled Up Portrait,None
+596218,Quest: Rufio's Skull,None
+195391,Quest: Sands of Resolve,None
+83718,Quest: Savilla's Stone,None
+805420,Quest: Savilla's Stone,None
+15001,Quest: Skeletal Hand,None
+325520,Quest: Staff of the Everscamp,None
+158501,Quest: Statuette of a Dog,None
+505776,Quest: Statuette of a Dog,None
+1616889,Quest: Steel Bow,None
+1616887,Quest: Steel Longsword,None
+1616888,Quest: Steel Warhammer,None
+14665,Quest: Stone of St. Alessia,None
+808416,Quest: Svenja's Remains,None
+808417,Quest: Svenja's Remains,None
+808418,Quest: Svenja's Remains,None
+808419,Quest: Svenja's Remains,None
+126180,Quest: Ulfgar Family Ring,None
+158498,Quest: Umbra,None
+218534,Quest: Unfinished Staff,None
+622893,Quest: Vampirism Cure Potion,None
+612920,Quest: Varulae's Crystal Ball,None
+834883,Quest: Wedding Gift,None
+1617471,Quest: West Weald Bear Fang,None
+297355,Quilted Doublet: Resist Normal Weapons,None
+12,Repair Hammer,None
+597053,Ring: Acrobatics,None
+597052,Ring: Acrobatics Base,None
+597054,Ring: Acrobatics Grand,None
+623672,Ring: Aegis,None
+623671,Ring: Aegis Base,None
+623673,Ring: Aegis Grand,None
+596681,Ring: Agility,None
+596680,Ring: Agility Base,None
+596682,Ring: Agility Grand,None
+600762,Ring: Alchemy,None
+600761,Ring: Alchemy Base,None
+600763,Ring: Alchemy Grand,None
+600765,Ring: Alteration,None
+600764,Ring: Alteration Base,None
+600766,Ring: Alteration Grand,None
+597035,Ring: Athletics,None
+597034,Ring: Athletics Base,None
+597036,Ring: Athletics Grand,None
+181811,Ring: Blackheart's,None
+597038,Ring: Blades,None
+597037,Ring: Blades Base,None
+597039,Ring: Blades Grand,None
+597041,Ring: Block,None
+597040,Ring: Block Base,None
+597042,Ring: Block Grand,None
+597044,Ring: Blunt Force,None
+597043,Ring: Blunt Force Base,None
+597045,Ring: Blunt Force Grand,None
+229393,Ring: Brass,None
+229399,Ring: Brass Pearl,None
+229400,Ring: Brass Topaz,None
+597047,Ring: Brawling,None
+597046,Ring: Brawling Base,None
+597048,Ring: Brawling Grand,None
+189868,Ring: Burden,None
+208288,Ring: Colovian Signet,None
+600768,Ring: Conjuration,None
+600767,Ring: Conjuration Base,None
+600769,Ring: Conjuration Grand,None
+229394,Ring: Copper,None
+229401,Ring: Copper Pearl,None
+229403,Ring: Copper Ruby,None
+229402,Ring: Copper Topaz,None
+600771,Ring: Destruction,None
+646867,Ring: Destruction Base,None
+600772,Ring: Destruction Grand,None
+596663,Ring: Detect Life,None
+596662,Ring: Detect Life Base,None
+596664,Ring: Detect Life Grand,None
+229398,Ring: Ebony,None
+229414,Ring: Ebony Diamond,None
+229413,Ring: Ebony Emerald,None
+623696,Ring: Elemental,None
+596687,Ring: Endurance,None
+596686,Ring: Endurance Base,None
+596688,Ring: Endurance Grand,None
+596666,Ring: Feather,None
+596665,Ring: Feather Base,None
+596667,Ring: Feather Grand,None
+596668,Ring: Fire Shield,None
+596669,Ring: Fire Shield Base,None
+596670,Ring: Fire Shield Grand,None
+623642,Ring: Firewalking,None
+623641,Ring: Firewalking Base,None
+623643,Ring: Firewalking Grand,None
+623692,Ring: Flame,None
+623639,Ring: Fortitude,None
+623709,Ring: Fortitude Base,None
+623640,Ring: Fortitude Grand,None
+623654,Ring: Freedom,None
+623653,Ring: Freedom Base,None
+623655,Ring: Freedom Grand,None
+623693,Ring: Frost,None
+604144,Ring: Frost Shield,None
+604143,Ring: Frost Shield Base,None
+604145,Ring: Frost Shield Grand,None
+229397,Ring: Gold,None
+229412,Ring: Gold Diamond,None
+229411,Ring: Gold Emerald,None
+229410,Ring: Gold Sapphire,None
+597026,Ring: Health,None
+597025,Ring: Health Base,None
+597027,Ring: Health Grand,None
+597050,Ring: Heavy Armor,None
+597049,Ring: Heavy Armor Base,None
+597051,Ring: Heavy Armor Grand,None
+210344,Ring: Indarys Signet,None
+596675,Ring: Intelligence,None
+596674,Ring: Intelligence Base,None
+596676,Ring: Intelligence Grand,None
+229395,Ring: Jade,None
+229405,Ring: Jade Ruby,None
+229406,Ring: Jade Sapphire,None
+229404,Ring: Jade Topaz,None
+604147,Ring: Light,None
+597056,Ring: Light Armor,None
+597055,Ring: Light Armor Base,None
+597057,Ring: Light Armor Grand,None
+604146,Ring: Light Base,None
+604148,Ring: Light Grand,None
+597029,Ring: Magicka,None
+597028,Ring: Magicka Base,None
+597030,Ring: Magicka Grand,None
+623691,Ring: Mundane,None
+600777,Ring: Mysticism,None
+600776,Ring: Mysticism Base,None
+600778,Ring: Mysticism Grand,None
+604150,Ring: Nighteye,None
+604149,Ring: Nighteye Base,None
+604151,Ring: Nighteye Grand,None
+623648,Ring: Nihilism,None
+623647,Ring: Nihilism Base,None
+623649,Ring: Nihilism Grand,None
+623686,Ring: Perfection,None
+600780,Ring: Restoration,None
+600779,Ring: Restoration Base,None
+600781,Ring: Restoration Grand,None
+604152,Ring: Retribution,None
+596655,Ring: Retribution Base,None
+604153,Ring: Retribution Grand,None
+600753,Ring: Security,None
+600752,Ring: Security Base,None
+600754,Ring: Security Grand,None
+596657,Ring: Shadows,None
+596654,Ring: Shadows Base,None
+596658,Ring: Shadows Grand,None
+192116,Ring: Shield,None
+505765,Ring: Shield,None
+505766,Ring: Shield,None
+623675,Ring: Shock Shield,None
+623674,Ring: Shock Shield Base,None
+623676,Ring: Shock Shield Grand,None
+229407,Ring: Silver,None
+229409,Ring: Silver Emerald,None
+229396,Ring: Silver Ruby,None
+229408,Ring: Silver Sapphire,None
+623702,Ring: Skimming,None
+600756,Ring: Sneak,None
+600755,Ring: Sneak Base,None
+600757,Ring: Sneak Grand,None
+623700,Ring: Sorcerer's,None
+596684,Ring: Speed,None
+596683,Ring: Speed Base,None
+596685,Ring: Speed Grand,None
+623687,Ring: Stamina,None
+623651,Ring: Steelskin,None
+623650,Ring: Steelskin Base,None
+623652,Ring: Steelskin Grand,None
+623694,Ring: Storm,None
+623660,Ring: Storms,None
+623659,Ring: Storms Base,None
+623661,Ring: Storms Grand,None
+596672,Ring: Strength,None
+596671,Ring: Strength Base,None
+596673,Ring: Strength Grand,None
+600747,Ring: the Archer,None
+600746,Ring: the Archer Base,None
+600748,Ring: the Archer Grand,None
+597032,Ring: the Armorer,None
+597031,Ring: the Armorer Base,None
+597033,Ring: the Armorer Grand,None
+623704,Ring: the Iron Fist,None
+623645,Ring: the North,None
+623644,Ring: the North Base,None
+623646,Ring: the North Grand,None
+623657,Ring: the Viper,None
+623656,Ring: the Viper Base,None
+623658,Ring: the Viper Grand,None
+623701,Ring: Thieves,None
+623689,Ring: Treachery,None
+596696,Ring: Vigor,None
+596695,Ring: Vigor Base,None
+596697,Ring: Vigor Grand,None
+623695,Ring: Vitality,None
+623688,Ring: War,None
+142957,Ring: Wedding,None
+596678,Ring: Willpower,None
+596677,Ring: Willpower Base,None
+596679,Ring: Willpower Grand,None
+623690,Ring: Wizardry,None
+21804,Robe: Aegis,None
+413663,Robe: Arch-Mage's,None
+413666,Robe: Black,None
+33869,Robe: Chameleon,None
+21801,Robe: Defense,None
+21785,Robe: Deflection,None
+146739,Robe: Emperor's,None
+293029,Robe: Glib Tongues,None
+462875,Robe: Green,None
+1236254,Robe: Grey,None
+297360,Robe: Lesser Chameleon,None
+413567,Robe: Mage's,None
+124927,Robe: Monk,None
+151010,Robe: Mythic Dawn,None
+21799,Robe: Protection,None
+462873,Robe: Tan,None
+462877,Robe: Tattered,None
+21788,Robe: Warding,None
+462919,Robe: White Monk,None
+462881,Robes: Aqua Silk,None
+1607114,Robes: King of Worms',None
+1607113,Robes: Necromancer's,None
+462879,Robes: Red Silk,None
+674191,Robes: White Mage's,None
+33868,Russet Felt Shirt: Blade Turning,None
+297349,Russet Felt Shirt: Security,None
+178445,Sandals: Braided Leather,None
+160538,Sandals: Sack Cloth,None
+180776,Shield: Animus,None
+300680,Shield: Burning,None
+324601,Shield: Clannfear Hide,None
+299340,Shield: Cured,None
+222044,Shield: Daedric,None
+300648,Shield: Deepdweller's,None
+300656,Shield: Defender's,None
+222026,Shield: Dwarven,None
+180768,Shield: Dwarvenskin,None
+297386,Shield: Eagle Feather,None
+222038,Shield: Ebony,None
+300302,Shield: Elsweyr,None
+141728,Shield: Elven,None
+300318,Shield: Extinguishing,None
+300627,Shield: Fortress,None
+299351,Shield: Frost,None
+300630,Shield: Frost,None
+300691,Shield: Frozen,None
+151638,Shield: Fur,None
+299881,Shield: General's,None
+222020,Shield: Glass,None
+343417,Shield: Grounding,None
+300298,Shield: Hammerfell,None
+299945,Shield: Hardened,None
+299946,Shield: Insulated,None
+217793,Shield: Iron,None
+300673,Shield: Iron Mountain,None
+343414,Shield: Justice,None
+151640,Shield: Leather,None
+208201,Shield: Light Iron,None
+300707,Shield: Lightning,None
+175567,Shield: Lightning Strider,None
+300664,Shield: Mercury,None
+293023,Shield: Mirror,None
+299936,Shield: Mirrors,None
+217791,Shield: Mithril,None
+180804,Shield: Monolithic,None
+324605,Shield: Moonlight,None
+180774,Shield: Moonshadow,None
+300659,Shield: Mountaineer's,None
+297394,Shield: Mudcrab,None
+299909,Shield: Nature's Vengence,None
+175566,Shield: Ogre Skin,None
+222032,Shield: Orcish,None
+299363,Shield: Outrider,None
+324608,Shield: Reflection,None
+300663,Shield: Retribution,None
+324607,Shield: Retributive Strike,None
+299882,Shield: Returning,None
+293576,Shield: Rough Leather,None
+418245,Shield: Rusty Iron,None
+297372,Shield: Salamander Scale,None
+299935,Shield: Shattering,None
+300287,Shield: Smelter,None
+300693,Shield: Snowblind,None
+299892,Shield: Solid,None
+299355,Shield: Spellblocker,None
+300695,Shield: Spiked,None
+145699,Shield: Steel,None
+300674,Shield: Stormhammer,None
+180805,Shield: Stormlord's,None
+299920,Shield: Stormrider,None
+299893,Shield: Storms,None
+299878,Shield: Summer,None
+300634,Shield: the Divine,None
+293021,Shield: the Elements,None
+300304,Shield: the Empire,None
+343412,Shield: the Flame,None
+343413,Shield: the North,None
+300661,Shield: the Pathfinder,None
+299870,Shield: the Red Mountain,None
+300632,Shield: the Sun,None
+300313,Shield: the Tower,None
+343416,Shield: the Turtle,None
+300706,Shield: the Unbroken,None
+300643,Shield: the Undefeated,None
+300688,Shield: the Unrelenting,None
+300696,Shield: the Untamed,None
+299910,Shield: Threefold,None
+297385,Shield: Tiger Fang,None
+180775,Shield: Vengence,None
+299354,Shield: Vindication,None
+299907,Shield: Winter Solstice,None
+324604,Shield: Winterbane,None
+300635,Shield: Witchfinder's,None
+23,Shirt,None
+413566,Shirt: Beggar's,None
+50590,Shirt: Blue Collar,None
+413669,Shirt: Blue Silk,None
+141741,Shirt: Brown,None
+2950,Shirt: Burgundy Linen,None
+116782,Shirt: Coarse Linen,None
+165682,Shirt: Collared,None
+413565,Shirt: Dark,None
+141738,Shirt: Dark Green,None
+413558,Shirt: Ernest's Best,None
+413561,Shirt: Forester's,None
+191664,Shirt: Green Wool,None
+834879,Shirt: Heinrich's,None
+413670,Shirt: Highwayman's,None
+834897,Shirt: Pinarus',None
+413560,Shirt: Plaid,None
+160537,Shirt: Sack Cloth,None
+834867,Shirt: Shop Keep's,None
+180470,Shirt: Stitched Green,None
+256684,Shirt: Tattered,None
+165259,Shirt: with Suspenders,None
+413559,Shirt: with Suspenders,None
+22,Shoes,None
+143774,Shoes: Blue Suede,None
+165683,Shoes: Buckled,None
+116867,Shoes: Doeskin,None
+146771,Shoes: Emperor's,None
+834873,Shoes: Ernest's,None
+297361,Shoes: Feather,None
+116872,Shoes: Gold Trimmed,None
+141746,Shoes: Green Velvet,None
+834887,Shoes: Heinrich's,None
+116783,Shoes: Oiled Linen,None
+141743,Shoes: Pigskin,None
+116870,Shoes: Quilted,None
+141736,Shoes: Rough Leather,None
+217787,Shoes: Russet Felt,None
+141740,Shoes: Stitched Leather,None
+3050,Shoes: Thick Cowhide,None
+674192,Shoes: White Mage's,None
+220787,Shortsword: Daedric,None
+220627,Shortsword: Dwarven,None
+220779,Shortsword: Ebony,None
+220772,Shortsword: Elven,None
+239717,Shortsword: Fine Iron,None
+239708,Shortsword: Fine Steel,None
+220764,Shortsword: Glass,None
+3085,Shortsword: Iron,None
+591381,Shortsword: Rusty Iron,None
+152096,Shortsword: Silver,None
+141756,Shortsword: Steel,None
+270260,Sigil Stone: Absorb Agility / Fortify Agility (Ascendent),None
+270257,Sigil Stone: Absorb Agility / Fortify Agility (Descendent),None
+270259,Sigil Stone: Absorb Agility / Fortify Agility (Latent),None
+270258,Sigil Stone: Absorb Agility / Fortify Agility (Subjacent),None
+270261,Sigil Stone: Absorb Agility / Fortify Agility (Transcendent),None
+270266,Sigil Stone: Absorb Endurance / Resist Disease (Ascendent),None
+270263,Sigil Stone: Absorb Endurance / Resist Disease (Descendent),None
+270265,Sigil Stone: Absorb Endurance / Resist Disease (Latent),None
+270264,Sigil Stone: Absorb Endurance / Resist Disease (Subjacent),None
+270267,Sigil Stone: Absorb Endurance / Resist Disease (Transcendent),None
+270278,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Ascendent),None
+270275,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Descendent),None
+270277,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Latent),None
+270276,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Subjacent),None
+270279,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Transcendent),None
+270284,Sigil Stone: Absorb Health / Fortify Health (Ascendent),None
+270281,Sigil Stone: Absorb Health / Fortify Health (Descendent),None
+270283,Sigil Stone: Absorb Health / Fortify Health (Latent),None
+270282,Sigil Stone: Absorb Health / Fortify Health (Subjacent),None
+270285,Sigil Stone: Absorb Health / Fortify Health (Transcendent),None
+270254,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Ascendent),None
+270251,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Descendent),None
+270253,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Latent),None
+270252,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Subjacent),None
+270255,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Transcendent),None
+270290,Sigil Stone: Absorb Magicka / Fortify Magicka (Ascendent),None
+270287,Sigil Stone: Absorb Magicka / Fortify Magicka (Descendent),None
+270289,Sigil Stone: Absorb Magicka / Fortify Magicka (Latent),None
+270288,Sigil Stone: Absorb Magicka / Fortify Magicka (Subjacent),None
+270291,Sigil Stone: Absorb Magicka / Fortify Magicka (Transcendent),None
+270272,Sigil Stone: Absorb Speed / Fortify Speed (Ascendent),None
+270269,Sigil Stone: Absorb Speed / Fortify Speed (Descendent),None
+270271,Sigil Stone: Absorb Speed / Fortify Speed (Latent),None
+270270,Sigil Stone: Absorb Speed / Fortify Speed (Subjacent),None
+270273,Sigil Stone: Absorb Speed / Fortify Speed (Transcendent),None
+270246,Sigil Stone: Absorb Strength / Fortify Strength (Ascendent),None
+270245,Sigil Stone: Absorb Strength / Fortify Strength (Descendent),None
+270244,Sigil Stone: Absorb Strength / Fortify Strength (Latent),None
+270247,Sigil Stone: Absorb Strength / Fortify Strength (Subjacent),None
+270249,Sigil Stone: Absorb Strength / Fortify Strength (Transcendent),None
+270296,Sigil Stone: Burden / Feather (Ascendent),None
+270293,Sigil Stone: Burden / Feather (Descendent),None
+270295,Sigil Stone: Burden / Feather (Latent),None
+270294,Sigil Stone: Burden / Feather (Subjacent),None
+270297,Sigil Stone: Burden / Feather (Transcendent),None
+270332,Sigil Stone: Damage Fatigue / Fortify Fatigue (Ascendent),None
+270329,Sigil Stone: Damage Fatigue / Fortify Fatigue (Descendent),None
+270331,Sigil Stone: Damage Fatigue / Fortify Fatigue (Latent),None
+270330,Sigil Stone: Damage Fatigue / Fortify Fatigue (Subjacent),None
+270333,Sigil Stone: Damage Fatigue / Fortify Fatigue (Transcendent),None
+270338,Sigil Stone: Damage Health / Fortify Health (Ascendent),None
+270335,Sigil Stone: Damage Health / Fortify Health (Descendent),None
+270337,Sigil Stone: Damage Health / Fortify Health (Latent),None
+270336,Sigil Stone: Damage Health / Fortify Health (Subjacent),None
+270339,Sigil Stone: Damage Health / Fortify Health (Transcendent),None
+270344,Sigil Stone: Damage Magicka / Fortify Magicka (Ascendent),None
+270341,Sigil Stone: Damage Magicka / Fortify Magicka (Descendent),None
+270343,Sigil Stone: Damage Magicka / Fortify Magicka (Latent),None
+270342,Sigil Stone: Damage Magicka / Fortify Magicka (Subjacent),None
+270345,Sigil Stone: Damage Magicka / Fortify Magicka (Transcendent),None
+270350,Sigil Stone: Demoralize / Fortify Willpower (Ascendent),None
+270347,Sigil Stone: Demoralize / Fortify Willpower (Descendent),None
+270349,Sigil Stone: Demoralize / Fortify Willpower (Latent),None
+270348,Sigil Stone: Demoralize / Fortify Willpower (Subjacent),None
+270351,Sigil Stone: Demoralize / Fortify Willpower (Transcendent),None
+270356,Sigil Stone: Disintegrate Armor / Shield (Ascendent),None
+270353,Sigil Stone: Disintegrate Armor / Shield (Descendent),None
+270355,Sigil Stone: Disintegrate Armor / Shield (Latent),None
+270354,Sigil Stone: Disintegrate Armor / Shield (Subjacent),None
+270357,Sigil Stone: Disintegrate Armor / Shield (Transcendent),None
+270362,Sigil Stone: Disintegrate Weapon / Fortify Blade (Ascendent),None
+270359,Sigil Stone: Disintegrate Weapon / Fortify Blade (Descendent),None
+270361,Sigil Stone: Disintegrate Weapon / Fortify Blade (Latent),None
+270360,Sigil Stone: Disintegrate Weapon / Fortify Blade (Subjacent),None
+270363,Sigil Stone: Disintegrate Weapon / Fortify Blade (Transcendent),None
+270368,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Ascendent),None
+270365,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Descendent),None
+270367,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Latent),None
+270366,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Subjacent),None
+270369,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Transcendent),None
+270374,Sigil Stone: Dispel / Spell Absorption (Ascendent),None
+270371,Sigil Stone: Dispel / Spell Absorption (Descendent),None
+270373,Sigil Stone: Dispel / Spell Absorption (Latent),None
+270372,Sigil Stone: Dispel / Spell Absorption (Subjacent),None
+270375,Sigil Stone: Dispel / Spell Absorption (Transcendent),None
+270422,Sigil Stone: Fire Damage / Fire Shield (Ascendent),None
+270419,Sigil Stone: Fire Damage / Fire Shield (Descendent),None
+270421,Sigil Stone: Fire Damage / Fire Shield (Latent),None
+270420,Sigil Stone: Fire Damage / Fire Shield (Subjacent),None
+270423,Sigil Stone: Fire Damage / Fire Shield (Transcendent),None
+270446,Sigil Stone: Fire Damage / Light (Ascendent),None
+270443,Sigil Stone: Fire Damage / Light (Descendent),None
+270445,Sigil Stone: Fire Damage / Light (Latent),None
+270444,Sigil Stone: Fire Damage / Light (Subjacent),None
+270447,Sigil Stone: Fire Damage / Light (Transcendent),None
+270416,Sigil Stone: Fire Damage / Resist Fire (Ascendent),None
+270413,Sigil Stone: Fire Damage / Resist Fire (Descendent),None
+270415,Sigil Stone: Fire Damage / Resist Fire (Latent),None
+270414,Sigil Stone: Fire Damage / Resist Fire (Subjacent),None
+270417,Sigil Stone: Fire Damage / Resist Fire (Transcendent),None
+270434,Sigil Stone: Frost Damage / Frost Shield (Ascendent),None
+270431,Sigil Stone: Frost Damage / Frost Shield (Descendent),None
+270432,Sigil Stone: Frost Damage / Frost Shield (Latent),None
+270433,Sigil Stone: Frost Damage / Frost Shield (Subjacent),None
+270435,Sigil Stone: Frost Damage / Frost Shield (Transcendent),None
+270428,Sigil Stone: Frost Damage / Resist Frost (Ascendent),None
+270425,Sigil Stone: Frost Damage / Resist Frost (Descendent),None
+270427,Sigil Stone: Frost Damage / Resist Frost (Latent),None
+270426,Sigil Stone: Frost Damage / Resist Frost (Subjacent),None
+270429,Sigil Stone: Frost Damage / Resist Frost (Transcendent),None
+270440,Sigil Stone: Frost Damage / Water Walking (Ascendent),None
+270437,Sigil Stone: Frost Damage / Water Walking (Descendent),None
+270439,Sigil Stone: Frost Damage / Water Walking (Latent),None
+270438,Sigil Stone: Frost Damage / Water Walking (Subjacent),None
+270441,Sigil Stone: Frost Damage / Water Walking (Transcendent),None
+270470,Sigil Stone: Shock Damage / Night-Eye (Ascendent),None
+270467,Sigil Stone: Shock Damage / Night-Eye (Descendent),None
+270469,Sigil Stone: Shock Damage / Night-Eye (Latent),None
+270468,Sigil Stone: Shock Damage / Night-Eye (Subjacent),None
+270471,Sigil Stone: Shock Damage / Night-Eye (Transcendent),None
+270458,Sigil Stone: Shock Damage / Resist Shock (Ascendent),None
+270455,Sigil Stone: Shock Damage / Resist Shock (Descendent),None
+270457,Sigil Stone: Shock Damage / Resist Shock (Latent),None
+270456,Sigil Stone: Shock Damage / Resist Shock (Subjacent),None
+270459,Sigil Stone: Shock Damage / Resist Shock (Transcendent),None
+270464,Sigil Stone: Shock Damage / Shock Shield (Ascendent),None
+270461,Sigil Stone: Shock Damage / Shock Shield (Descendent),None
+270463,Sigil Stone: Shock Damage / Shock Shield (Latent),None
+270462,Sigil Stone: Shock Damage / Shock Shield (Subjacent),None
+270465,Sigil Stone: Shock Damage / Shock Shield (Transcendent),None
+270483,Sigil Stone: Silence / Chameleon (Ascendent),None
+270480,Sigil Stone: Silence / Chameleon (Descendent),None
+270482,Sigil Stone: Silence / Chameleon (Latent),None
+270481,Sigil Stone: Silence / Chameleon (Subjacent),None
+270484,Sigil Stone: Silence / Chameleon (Transcendent),None
+270477,Sigil Stone: Silence / Resist Magic (Ascendent),None
+270473,Sigil Stone: Silence / Resist Magic (Descendent),None
+270476,Sigil Stone: Silence / Resist Magic (Latent),None
+270475,Sigil Stone: Silence / Resist Magic (Subjacent),None
+270478,Sigil Stone: Silence / Resist Magic (Transcendent),None
+270489,Sigil Stone: Soul Trap / Resist Magic (Ascendent),None
+270486,Sigil Stone: Soul Trap / Resist Magic (Descendent),None
+270488,Sigil Stone: Soul Trap / Resist Magic (Latent),None
+270487,Sigil Stone: Soul Trap / Resist Magic (Subjacent),None
+270490,Sigil Stone: Soul Trap / Resist Magic (Transcendent),None
+270495,Sigil Stone: Turn Undead / Detect Life (Ascendent),None
+270492,Sigil Stone: Turn Undead / Detect Life (Descendent),None
+270494,Sigil Stone: Turn Undead / Detect Life (Latent),None
+270493,Sigil Stone: Turn Undead / Detect Life (Subjacent),None
+270491,Sigil Stone: Turn Undead / Detect Life (Transcendent),None
+413668,Silks: Blue,None
+247804,Soul Gem: Black (empty (quest)),None
+125972,Soul Gem: Black (empty (test)),None
+402,Soul Gem: Black (empty),None
+230112,Soul Gem: Black (grand),None
+230102,Soul Gem: Common (common),None
+88971,Soul Gem: Common (empty),None
+230101,Soul Gem: Common (lesser),None
+230100,Soul Gem: Common (petty),None
+230109,Soul Gem: Grand (common),None
+88974,Soul Gem: Grand (empty),None
+230111,Soul Gem: Grand (grand),None
+230110,Soul Gem: Grand (greater),None
+230108,Soul Gem: Grand (lesser),None
+230107,Soul Gem: Grand (petty),None
+230105,Soul Gem: Greater (common),None
+88972,Soul Gem: Greater (empty),None
+230106,Soul Gem: Greater (greater),None
+230104,Soul Gem: Greater (lesser),None
+230103,Soul Gem: Greater (petty),None
+146793,Soul Gem: Lesser (empty),None
+230099,Soul Gem: Lesser (lesser),None
+230098,Soul Gem: Lesser (petty),None
+146791,Soul Gem: Petty (empty),None
+230097,Soul Gem: Petty (petty),None
+184223,Torch,None
+180474,Tunic: Flax,None
+404,Varla Stone,None
+178444,Vest: Belted,None
+180472,Vest: Burlap,None
+2179,Vest: Huntsman,None
+297346,Vest: Light Armor,None
+180468,Vest: Olive,None
+191661,Vest: Patched,None
+21808,Vest: Warding,None
+191660,Waders: Fishing,None
+239718,War: Fine Iron,None
+239709,War: Fine Steel,None
+591379,War: Rusty Iron,None
+220793,Warhammer: Daedric,None
+220629,Warhammer: Dwarven,None
+220785,Warhammer: Ebony,None
+220777,Warhammer: Elven,None
+239719,Warhammer: Fine Iron,None
+239710,Warhammer: Fine Steel,None
+220770,Warhammer: Glass,None
+102770,Warhammer: Iron,None
+152101,Warhammer: Silver,None
+141758,Warhammer: Steel,None
+401,Welkynd Stone,None
+779061,Wrist Irons,None
