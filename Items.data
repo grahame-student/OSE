@@ -17,6 +17,8 @@
 #
 # Item FormID, Description, PlugIn Required
 343415,Aegis: Reflection,None
+1604547,Akaviri Katana: Northwind,None
+231349,Akaviri Warhammer: Burden,None
 451344,Alchemy Tool: Alembic Apprentice,None
 454236,Alchemy Tool: Alembic Expert,None
 454226,Alchemy Tool: Alembic Journeyman,None
@@ -47,6 +49,7 @@
 623699,Amulet: Axes,None
 229421,Amulet: Bronze,None
 229422,Amulet: Copper,None
+215011,Amulet: Cruelty's Heart,None
 229425,Amulet: Gold,None
 600774,Amulet: Illusion,None
 600773,Amulet: Illusion Base,None
@@ -54,16 +57,22 @@
 229423,Amulet: Jade,None
 1613054,Amulet: Jade,None
 229426,Amulet: Jeweled,None
+439927,Amulet: Knights of the Thorn Medallion,None
 596693,Amulet: Luck,None
 596692,Amulet: Luck Base,None
 596694,Amulet: Luck Grand,None
 214984,Amulet: Manduin's,None
 232199,Amulet: Mundane,None
+787671,Amulet: of Interrogation,None
+1604542,Amulet: of the Ansei,None
+439372,Amulet: Phylactery of Litheness,None
 623707,Amulet: Reflection,None
 604154,Amulet: Reflection Base,None
 623708,Amulet: Reflection Grand,None
 229424,Amulet: Silver,None
+612976,Amulet: Spelldrinker,None
 141734,Apron: Blacksmith's,None
+809807,Apron: of Adroitness,None
 311050,Arrow: Blaze,None
 311051,Arrow: Blizzards,None
 35405,Arrow: Brilliance,None
@@ -142,9 +151,50 @@
 141750,Axe: Steel Battle,None
 141757,Axe: Steel War,None
 299919,Barkshield: Sylvan,None
+255070,Battle Axe: Naked,None
+230431,Battle Axe: of Absorption,None
+218012,Battle Axe: of Beguilement,None
+143499,Battle Axe: of Blizzards,None
+139432,Battle Axe: of Cold,None
+218050,Battle Axe: of Damnation,None
+242695,Battle Axe: of Decay,None
+218010,Battle Axe: of Deception,None
+231342,Battle Axe: of Depletion,None
+251859,Battle Axe: of Diminishing,None
+251851,Battle Axe: of Dispel,None
+242698,Battle Axe: of Dissolution,None
+252647,Battle Axe: of Embers,None
+249097,Battle Axe: of Enfeeblement,None
+242690,Battle Axe: of Feeding,None
+252684,Battle Axe: of Fire,None
+252675,Battle Axe: of Flames,None
+140761,Battle Axe: of Freezing,None
+252815,Battle Axe: of Frost,None
+249087,Battle Axe: of Hazards,None
+240495,Battle Axe: of Jinxing,None
+180856,Battle Axe: of Lightning,None
+242700,Battle Axe: of Putrification,None
+242702,Battle Axe: of Rending,None
+251874,Battle Axe: of Sapping,None
+252666,Battle Axe: of Scorching,None
+178390,Battle Axe: of Shocking,None
+242687,Battle Axe: of Siphoning,None
+218058,Battle Axe: of Soul Snares,None
+218007,Battle Axe: of Soul Traps,None
+220199,Battle Axe: of Souls,None
+177505,Battle Axe: of Sparks,None
+180870,Battle Axe: of Storms,None
+252693,Battle Axe: of the Blaze,None
+180218,Battle Axe: of the Dynamo,None
+141112,Battle Axe: of the Glacier,None
+252702,Battle Axe: of the Inferno,None
+242691,Battle Axe: of Transmogrify,None
+179677,Battle Axe: of Voltage,None
+240451,Battle Axe: of Weakness,None
+143577,Battle Axe: of Winter,None
+152097,Battle Axe: Silver,None
 239711,Battle: Fine Iron,None
 239702,Battle: Fine Steel,None
-152097,BattleAxe: Silver,None
 14996,Blouse: Red Velvet,None
 297356,Blue & Green Outfit: Resist Poison,None
 297350,Blue Suede Shoes: Sneak,None
@@ -260,6 +310,12 @@
 299942,Boots: Borosilicate,None
 116436,Boots: Chainmail,None
 222041,Boots: Daedric,None
+256442,Boots: Dremora Caitiff,None
+256441,Boots: Dremora Churl,None
+256435,Boots: Dremora Kynmarcher,None
+256431,Boots: Dremora Kynreeve,None
+256443,Boots: Dremora Kynval,None
+256438,Boots: Dremora Markynaz,None
 222023,Boots: Dwarven,None
 222035,Boots: Ebony,None
 141727,Boots: Elven,None
@@ -278,6 +334,7 @@
 324613,Boots: Lightning Strider,None
 300655,Boots: Miner's,None
 180476,Boots: Mithril,None
+215212,Boots: of Bloody Bounding,None
 222029,Boots: Orcish,None
 300687,Boots: Peak Climber's,None
 324594,Boots: Plain Striding,None
@@ -314,24 +371,62 @@
 300317,Boots: the Unburdened,None
 299391,Boots: Waterwalking,None
 592045,Bow: Black,None
+249094,Bow: Blizzard,None
 220796,Bow: Daedric,None
+249092,Bow: Dragon's,None
+553642,Bow: Dremora Bow,None
+553643,Bow: Dremora Heavy Bow,None
+553641,Bow: Dremora Light Bow,None
 220622,Bow: Dwarven,None
 220795,Bow: Ebony,None
 141759,Bow: Elven,None
 239712,Bow: Fine Iron,None
 239703,Bow: Fine Steel,None
 220794,Bow: Glass,None
+85354,Bow: Hatreds Soul,None
 152113,Bow: Iron,None
+143501,Bow: of Blizzards,None
+252658,Bow: of Burning,None
+139510,Bow: of Cold,None
+240519,Bow: of Curses,None
+240776,Bow: of Despair,None
+252649,Bow: of Embers,None
+252685,Bow: of Fire,None
+252676,Bow: of Flames,None
+140762,Bow: of Freezing,None
+252817,Bow: of Frost,None
+240777,Bow: of Gloom,None
+240492,Bow: of Harm,None
+177541,Bow: of Jolts,None
+180858,Bow: of Lightning,None
+252795,Bow: of Numbing,None
+177496,Bow: of Quietus,None
+252667,Bow: of Scorching,None
+178391,Bow: of Shocking,None
+177497,Bow: of Silence,None
+177506,Bow: of Sparks,None
+180871,Bow: of Storms,None
+252694,Bow: of the Blaze,None
+180219,Bow: of the Dynamo,None
+141396,Bow: of the Glacier,None
+252703,Bow: of the Inferno,None
+179890,Bow: of Voltage,None
+240491,Bow: of Weariness,None
+143581,Bow: of Winter,None
 293578,Bow: Rusty Iron,None
+215197,Bow: Shadowhunt,None
 152103,Bow: Silver,None
 141751,Bow: Steel,None
+249096,Bow: Storm,None
 141737,Bracer: Leather,None
 178443,Braies: Belted,None
 165255,Breeches,None
 413564,Britches: Short,None
 297353,Burgundy Linen Shirt: Resist Disease,None
 297354,Burgundy Linens: Resist Fire,None
+249093,Claymore: Boreal,None
 220792,Claymore: Daedric,None
+256452,Claymore: Dremora,None
 220623,Claymore: Dwarven,None
 220784,Claymore: Ebony,None
 220776,Claymore: Elven,None
@@ -339,8 +434,53 @@
 239704,Claymore: Fine Steel,None
 220769,Claymore: Glass,None
 116429,Claymore: Iron,None
+84450,Claymore: Oblivion's Embrace,None
+143509,Claymore: of Blizzards,None
+251835,Claymore: of Brittleness,None
+252659,Claymore: of Burning,None
+139853,Claymore: of Cold,None
+240501,Claymore: of Depletion,None
+251880,Claymore: of Depletion,None
+251847,Claymore: of Disintegration,None
+251852,Claymore: of Dispel,None
+252650,Claymore: of Embers,None
+252686,Claymore: of Fire,None
+252677,Claymore: of Flames,None
+251839,Claymore: of Fracturing,None
+251832,Claymore: of Fragments,None
+140790,Claymore: of Freezing,None
+252787,Claymore: of Frost,None
+240500,Claymore: of Jinxing,None
+177542,Claymore: of Jolts,None
+180859,Claymore: of Lightning,None
+252796,Claymore: of Numbing,None
+251870,Claymore: of Pain,None
+251875,Claymore: of Sapping,None
+252668,Claymore: of Scorching,None
+251843,Claymore: of Shattering,None
+178392,Claymore: of Shocking,None
+177507,Claymore: of Sparks,None
+180873,Claymore: of Storms,None
+252695,Claymore: of the Blaze,None
+180220,Claymore: of the Dynamo,None
+141867,Claymore: of the Glacier,None
+252704,Claymore: of the Inferno,None
+180211,Claymore: of Voltage,None
+251866,Claymore: of Weariness,None
+143582,Claymore: of Winter,None
+84453,Claymore: Quintessence of Remorse,None
+84461,Claymore: Retaliation of Blood,None
+84463,Claymore: Retaliation of Spirit,None
+84455,Claymore: Retribution of Aggression,None
+84454,Claymore: Retribution of Cowardness,None
+84457,Claymore: Retribution of Hubris,None
+84458,Claymore: Retribution of Hypocrisy,None
+84456,Claymore: Retribution of Rapacity,None
+84460,Claymore: Retribution of Treachery,None
+48806,Claymore: Rugdumph's Sword,None
 152102,Claymore: Silver,None
 141752,Claymore: Steel,None
+249086,Claymore: Tempest,None
 165262,Clogs,None
 1415209,Club,None
 242549,Club,None
@@ -416,6 +556,12 @@
 299359,Cuirass: Copperhead,None
 299923,Cuirass: Crystalline,None
 222043,Cuirass: Daedric,None
+256446,Cuirass: Dremora Caitiff,None
+256445,Cuirass: Dremora Churl,None
+256436,Cuirass: Dremora Kynmarcher,None
+256432,Cuirass: Dremora Kynreeve,None
+256449,Cuirass: Dremora Kynval,None
+256439,Cuirass: Dremora Markynaz,None
 222025,Cuirass: Dwarven,None
 175493,Cuirass: Ebony,None
 141724,Cuirass: Elven,None
@@ -430,6 +576,7 @@
 293024,Cuirass: Ice,None
 116433,Cuirass: Iron,None
 300290,Cuirass: Ironheart,None
+805316,Cuirass: Kvatch (Enchanted),None
 143770,Cuirass: Leather,None
 300652,Cuirass: Lifeblood,None
 299377,Cuirass: Merchant's,None
@@ -447,6 +594,7 @@
 300289,Cuirass: Rugged,None
 418241,Cuirass: Rusty Iron,None
 324598,Cuirass: Salubrious,None
+160007,Cuirass: Saviour's Hide,None
 300300,Cuirass: Skill,None
 324596,Cuirass: Stalwart,None
 141730,Cuirass: Steel,None
@@ -474,6 +622,7 @@
 677757,Cuirass: Vvardenfell Trader's,None
 300667,Cuirass: Weaponbane,None
 299358,Cuirass: Weaponward,None
+612927,Cutlass: Redwave,None
 21931,Cutlass: Sharpened,None
 240258,Cutlass: Steel,None
 33735,Daedric Lava Whiskey,DLCFrostcrag.ESP
@@ -485,10 +634,53 @@
 239705,Dagger: Fine Steel,None
 220763,Dagger: Glass,None
 102769,Dagger: Iron,None
+230426,Dagger: of Absorption,None
+143512,Dagger: of Blizzards,None
+251836,Dagger: of Brittleness,None
+252660,Dagger: of Burning,None
+140671,Dagger: of Cold,None
+231338,Dagger: of Depletion,None
+251881,Dagger: of Depletion,None
+251860,Dagger: of Diminishing,None
+251848,Dagger: of Disintegration,None
+251853,Dagger: of Dispel,None
+252651,Dagger: of Embers,None
+231910,Dagger: of Enfeeblement,None
+252687,Dagger: of Fire,None
+252678,Dagger: of Flames,None
+251840,Dagger: of Fracturing,None
+251831,Dagger: of Fragments,None
+140796,Dagger: of Freezing,None
+252788,Dagger: of Frost,None
+240494,Dagger: of Jinxing,None
+177544,Dagger: of Jolts,None
+180861,Dagger: of Lightning,None
+252797,Dagger: of Numbing,None
+245601,Dagger: of Pacification,None
+251871,Dagger: of Pain,None
+177504,Dagger: of Paralysis,None
+251876,Dagger: of Sapping,None
+252669,Dagger: of Scorching,None
+251844,Dagger: of Shattering,None
+178393,Dagger: of Shocking,None
+177508,Dagger: of Sparks,None
+180877,Dagger: of Storms,None
+252696,Dagger: of the Blaze,None
+180221,Dagger: of the Dynamo,None
+141868,Dagger: of the Glacier,None
+252705,Dagger: of the Inferno,None
+180212,Dagger: of Voltage,None
+240447,Dagger: of Weakness,None
+251867,Dagger: of Weariness,None
+143583,Dagger: of Winter,None
 591382,Dagger: Rusty Iron,None
 152100,Dagger: Silver,None
 141753,Dagger: Steel,None
+215025,Dagger: Sufferthorn,None
+255068,Dagger: Thieves',None
+438724,Dagger: Witsplinter,None
 645829,Dai-Katana: Akaviri,None
+1604544,Dai-Katana: Mishaxhi's Cleaver,None
 150929,Dish: Basket,None
 150930,Dish: Basket,None
 127449,Dish: Bowl,None
@@ -636,6 +828,7 @@
 229246,Drink: Tamika Vintage 399,None
 229251,Drink: Tamika Vintage 415,None
 229249,Drink: Tamika's West Weald Wine,None
+442334,Escutcheon: of Chorrol,None
 300315,Eyes: Akatosh,None
 141745,Garment: Green Silk,None
 14995,Garment: Red Velvet,None
@@ -714,6 +907,7 @@
 180765,Gauntlets: Warforger's,None
 300686,Gauntlets: Warmaster,None
 324610,Gauntlets: Winter,None
+403,Gem: Azura's Star,None
 232359,Gem: Diamond,None
 232356,Gem: Emerald,None
 232360,Gem: Flawed Diamond,None
@@ -734,6 +928,7 @@
 232353,Gem: Sapphire,None
 301065,Gem: Silver Nugget,None
 232347,Gem: Topaz,None
+816656,Glass Mace: Burz's,None
 293011,Gloves: the Caster,None
 15,Gold,None
 297359,Gold Trimmed Shoes: Waterwalking,None
@@ -743,6 +938,12 @@
 299930,Greaves: Crystal,None
 222042,Greaves: Daedric,None
 180762,Greaves: Deathmarch,None
+256447,Greaves: Dremora Caitiff,None
+256444,Greaves: Dremora Churl,None
+256437,Greaves: Dremora Kynmarcher,None
+256433,Greaves: Dremora Kynreeve,None
+256430,Greaves: Dremora Kynval,None
+256440,Greaves: Dremora Markynaz,None
 222024,Greaves: Dwarven,None
 222036,Greaves: Ebony,None
 141725,Greaves: Elven,None
@@ -815,6 +1016,11 @@
 222039,Helmet: Daedric,None
 300694,Helmet: Darksplitter,None
 297371,Helmet: Deer Skin,None
+571522,Helmet: Dremora Caitiff,None
+571532,Helmet: Dremora Kynmarcher,None
+571533,Helmet: Dremora Kynmarcher,None
+571530,Helmet: Dremora Kynreeve,None
+571528,Helmet: Dremora Kynval,None
 222021,Helmet: Dwarven,None
 222033,Helmet: Ebony,None
 141729,Helmet: Elven,None
@@ -823,6 +1029,7 @@
 299926,Helmet: Exposition,None
 149352,Helmet: Fur,None
 222015,Helmet: Glass,None
+677465,Helmet: Helm of Oreyn Bearclaw,None
 300291,Helmet: High Rock,None
 180754,Helmet: Inquisitor's,None
 116430,Helmet: Iron,None
@@ -834,6 +1041,7 @@
 299373,Helmet: Mage's,None
 180789,Helmet: Mageslayer's,None
 299885,Helmet: Magicka Resistance,None
+141550,Helmet: Masque of Clavicus Vile,None
 180484,Helmet: Mithril,None
 299381,Helmet: Night Eye,None
 299880,Helmet: Nighteye,None
@@ -869,7 +1077,7 @@
 726491,Home Upgrade: Arborwatch - Servants Quarters,None
 726486,Home Upgrade: Arborwatch - Sitting Area,None
 726487,Home Upgrade: Arborwatch - Study Area,None
-726492,Home Upgrade: Arborwatch - Suite  Area,None
+726492,Home Upgrade: Arborwatch - Suite Area,None
 726495,Home Upgrade: Arborwatch - Upper Wall Hangings,None
 593587,Home Upgrade: Bravil - Dining Area,None
 593586,Home Upgrade: Bravil - Kitchen Area,None
@@ -926,6 +1134,7 @@
 462882,Hood: Aqua Silk,None
 413664,Hood: Arch-Mage's,None
 413667,Hood: Black,None
+142977,Hood: Gray Cowl of Nocturnal,None
 462876,Hood: Green Robe,None
 1236255,Hood: Grey Robe,None
 1607116,Hood: King of Worms',None
@@ -1070,6 +1279,8 @@
 300305,Justice: Retributive,None
 150986,Katana: Akaviri,None
 948453,Katana: Ancient Akaviri,None
+160009,Katana: Ebony Blade,None
+160005,Katana: Goldbrand,None
 622815,Katana: Ruined Akaviri,None
 151529,Key: A Rusty,None
 41078,Key: A Warlock's Luck,None
@@ -1487,27 +1698,147 @@
 141742,Linens: Light Brown,None
 116784,Linens: Tan,None
 10,Lockpick,None
+11,Lockpick: Skeleton Key,None
+439963,Longsword: Blackwater Blade,None
+245600,Longsword: Blade of Fiery Light,None
 220790,Longsword: Daedric,None
+256451,Longsword: Dremora,None
 220625,Longsword: Dwarven,None
 220782,Longsword: Ebony,None
 141747,Longsword: Elven,None
+84323,Longsword: Essence of Regret,None
 239715,Longsword: Fine Iron,None
 239706,Longsword: Fine Steel,None
 220767,Longsword: Glass,None
+84320,Longsword: Heat of Sinfulness,None
 3084,Longsword: Iron,None
+84322,Longsword: Oblivion's Caress,None
+230429,Longsword: of Absorption,None
+143526,Longsword: of Blizzards,None
+251837,Longsword: of Brittleness,None
+252661,Longsword: of Burning,None
+140672,Longsword: of Cold,None
+251882,Longsword: of Depletion,None
+231340,Longsword: of Depletion,None
+251861,Longsword: of Diminishing,None
+251849,Longsword: of Disintegration,None
+251854,Longsword: of Dispel,None
+252652,Longsword: of Embers,None
+231912,Longsword: of Enfeeblement,None
+252688,Longsword: of Fire,None
+252679,Longsword: of Flames,None
+251841,Longsword: of Fracturing,None
+251833,Longsword: of Fragments,None
+140861,Longsword: of Freezing,None
+252789,Longsword: of Frost,None
+240496,Longsword: of Jinxing,None
+177545,Longsword: of Jolts,None
+180862,Longsword: of Lightning,None
+252798,Longsword: of Numbing,None
+251872,Longsword: of Pain,None
+251877,Longsword: of Sapping,None
+252670,Longsword: of Scorching,None
+251845,Longsword: of Shattering,None
+178397,Longsword: of Shocking,None
+177509,Longsword: of Sparks,None
+180879,Longsword: of Storms,None
+245603,Longsword: of Submission,None
+252697,Longsword: of the Blaze,None
+180236,Longsword: of the Dynamo,None
+141870,Longsword: of the Glacier,None
+252706,Longsword: of the Inferno,None
+180213,Longsword: of Voltage,None
+240449,Longsword: of Weakness,None
+251868,Longsword: of Weariness,None
+143584,Longsword: of Winter,None
+84326,Longsword: Penance of Animosity,None
+84330,Longsword: Penance of Deception,None
+84331,Longsword: Penance of Faithlessness,None
+84327,Longsword: Penance of Hatred,None
+84328,Longsword: Penance of Larceny,None
+84329,Longsword: Penance of Pride,None
+84321,Longsword: Purging Flame,None
 152095,Longsword: Silver,None
 141754,Longsword: Steel,None
+439909,Longsword: Thornblade,None
+84307,Mace: Burden of Agnosticism,None
+84303,Mace: Burden of Anger,None
+84304,Mace: Burden of Arrogance,None
+84306,Mace: Burden of Flesh,None
+84305,Mace: Burden of Secrecy,None
+84308,Mace: Burden of Sin,None
 220789,Mace: Daedric,None
+256450,Mace: Dremora,None
 220626,Mace: Dwarven,None
 220781,Mace: Ebony,None
 220774,Mace: Elven,None
 239716,Mace: Fine Iron,None
 239707,Mace: Fine Steel,None
+84300,Mace: Gift of Flame,None
 220766,Mace: Glass,None
+85104,Mace: Hatreds Heart,None
 3458,Mace: Iron,None
+255069,Mace: Mage's,None
+84285,Mace: Nearness of Evil,None
+219623,Mace: of Abeyance,None
+230428,Mace: of Absorption,None
+218065,Mace: of Aversion,None
+143531,Mace: of Blizzards,None
+231350,Mace: of Burden,None
+252662,Mace: of Burning,None
+140684,Mace: of Cold,None
+231358,Mace: of Deadweight,None
+241415,Mace: of Decay,None
+231341,Mace: of Depletion,None
+251862,Mace: of Diminishing,None
+251855,Mace: of Dispel,None
+241416,Mace: of Dissolution,None
+252653,Mace: of Embers,None
+231354,Mace: of Encumbrance,None
+231913,Mace: of Enfeeblement,None
+231356,Mace: of Excess,None
+231336,Mace: of Feeding,None
+252689,Mace: of Fire,None
+252680,Mace: of Flames,None
+241418,Mace: of Fracturing,None
+140866,Mace: of Freezing,None
+252790,Mace: of Frost,None
+219748,Mace: of Holy Light,None
+240499,Mace: of Jinxing,None
+177546,Mace: of Jolts,None
+245605,Mace: of Legion,None
+180864,Mace: of Lightning,None
+160023,Mace: of Molag Bal,None
+252799,Mace: of Numbing,None
+231351,Mace: of Overload,None
+241421,Mace: of Putrification,None
+241422,Mace: of Rending,None
+218060,Mace: of Repelling,None
+251878,Mace: of Sapping,None
+252671,Mace: of Scorching,None
+178858,Mace: of Shocking,None
+231335,Mace: of Siphoning,None
+177510,Mace: of Sparks,None
+180880,Mace: of Storms,None
+231348,Mace: of Strain,None
+252698,Mace: of the Blaze,None
+180237,Mace: of the Dynamo,None
+141871,Mace: of the Glacier,None
+252707,Mace: of the Inferno,None
+219827,Mace: of the Undead,None
+242692,Mace: of Transmogrify,None
+218068,Mace: of Turning,None
+180214,Mace: of Voltage,None
+218064,Mace: of Warding,None
+240448,Mace: of Weakness,None
+231345,Mace: of Weight,None
+143585,Mace: of Winter,None
+84302,Mace: Revealer of Iniquity,None
 591380,Mace: Rusty Iron,None
 152099,Mace: Silver,None
 141755,Mace: Steel,None
+245602,Mace: Voltag,None
+84301,Mace: Weight of Guilt,None
 116779,Moccasin: Huntsman,None
 834899,Necklace: Astia's,None
 229415,Necklace: Bronze,None
@@ -1635,6 +1966,7 @@
 297348,Outfit: Mercantile Black,None
 674190,Outfit: Red Velvet,None
 217786,Outfit: Russet Felt,None
+215205,Outfit: The Deceiver's Finery,None
 830113,Overalls: Child,None
 21,Pants,None
 297345,Pants: Acrobatics,None
@@ -1883,6 +2215,10 @@
 355923,Potion: Willpower,None
 355927,Potion: Willpower Strong,None
 355921,Potion: Willpower Weak,None
+252657,Quality Battle Axe: Ember,None
+252794,Quality Battle Axe: Shiver,None
+217989,Quality Battle Axe: Soul Trap,None
+177523,Quality Battle Axe: Spark,None
 196402,Quest: A Bloody Journal,None
 118959,Quest: Agarmir's Shovel,None
 242140,Quest: Agronak's Raiment,None
@@ -1966,8 +2302,6 @@
 436901,Quest: Mother's Head,None
 570890,Quest: Mysterium Xarxes,None
 21913,Quest: Mysterium Xarxes,None
-142086,Quest: Mystic Dawn Commentaries 3,None
-142087,Quest: Mystic Dawn Commentaries 4,None
 507435,Quest: Necromancer's Amulet,None
 11729,Quest: Necromancer's Moon,None
 11920,Quest: Newheim's Heirloom,None
@@ -2027,6 +2361,7 @@
 597035,Ring: Athletics,None
 597034,Ring: Athletics Base,None
 597036,Ring: Athletics Grand,None
+196404,Ring: Black Band,None
 181811,Ring: Blackheart's,None
 597038,Ring: Blades,None
 597037,Ring: Blades Base,None
@@ -2061,6 +2396,7 @@
 229398,Ring: Ebony,None
 229414,Ring: Ebony Diamond,None
 229413,Ring: Ebony Emerald,None
+441711,Ring: Eidolon's Edge,None
 623696,Ring: Elemental,None
 596687,Ring: Endurance,None
 596686,Ring: Endurance Base,None
@@ -2103,6 +2439,7 @@
 229405,Ring: Jade Ruby,None
 229406,Ring: Jade Sapphire,None
 229404,Ring: Jade Topaz,None
+821707,Ring: Jewel of the Rumare,None
 604147,Ring: Light,None
 597056,Ring: Light Armor,None
 597055,Ring: Light Armor Base,None
@@ -2112,6 +2449,7 @@
 597029,Ring: Magicka,None
 597028,Ring: Magicka Base,None
 597030,Ring: Magicka Grand,None
+222913,Ring: Mind and Body,None
 623691,Ring: Mundane,None
 600777,Ring: Mysticism,None
 600776,Ring: Mysticism Base,None
@@ -2122,6 +2460,9 @@
 623648,Ring: Nihilism,None
 623647,Ring: Nihilism Base,None
 623649,Ring: Nihilism Grand,None
+160016,Ring: of Khajiiti,None
+114954,Ring: of Namira,None
+439949,Ring: of Sunfire,None
 24118,Ring: Pentamagic Loop,DLCFrostcrag.ESP
 623686,Ring: Perfection,None
 600780,Ring: Restoration,None
@@ -2185,6 +2526,7 @@
 596697,Ring: Vigor Grand,None
 623695,Ring: Vitality,None
 623688,Ring: War,None
+441717,Ring: Weatherward Circlet,None
 142957,Ring: Wedding,None
 596678,Ring: Willpower,None
 596677,Ring: Willpower Base,None
@@ -2196,14 +2538,24 @@
 33869,Robe: Chameleon,None
 21801,Robe: Defense,None
 21785,Robe: Deflection,None
+420404,Robe: Dremora Caitiff,None
+420403,Robe: Dremora Churl,None
+420408,Robe: Dremora Kynmarcher,None
+420406,Robe: Dremora Kynreeve,None
+420405,Robe: Dremora Kynval,None
+420409,Robe: Dremora Markynaz,None
+420410,Robe: Dremora Valkynaz,None
 146739,Robe: Emperor's,None
 293029,Robe: Glib Tongues,None
 462875,Robe: Green,None
 1236254,Robe: Grey,None
 297360,Robe: Lesser Chameleon,None
 413567,Robe: Mage's,None
+779039,Robe: Mankar Camoran's,None
 124927,Robe: Monk,None
 151010,Robe: Mythic Dawn,None
+820534,Robe: of the Apprentice,None
+477355,Robe: of the Conjurer,None
 21799,Robe: Protection,None
 462873,Robe: Tan,None
 462877,Robe: Tattered,None
@@ -2225,6 +2577,8 @@
 222044,Shield: Daedric,None
 300648,Shield: Deepdweller's,None
 300656,Shield: Defender's,None
+256448,Shield: Dremora Caitiff,None
+256434,Shield: Dremora Kynreeve,None
 222026,Shield: Dwarven,None
 180768,Shield: Dwarvenskin,None
 297386,Shield: Eagle Feather,None
@@ -2274,6 +2628,7 @@
 300287,Shield: Smelter,None
 300693,Shield: Snowblind,None
 299892,Shield: Solid,None
+563138,Shield: Spell Breaker,None
 299355,Shield: Spellblocker,None
 300695,Shield: Spiked,None
 145699,Shield: Steel,None
@@ -2298,6 +2653,7 @@
 300696,Shield: the Untamed,None
 299910,Shield: Threefold,None
 297385,Shield: Tiger Fang,None
+1604539,Shield: Valdemar's,None
 180775,Shield: Vengence,None
 299354,Shield: Vindication,None
 299907,Shield: Winter Solstice,None
@@ -2344,7 +2700,9 @@
 141740,Shoes: Stitched Leather,None
 3050,Shoes: Thick Cowhide,None
 674192,Shoes: White Mage's,None
+429057,Shortsword: Chillrend,None
 220787,Shortsword: Daedric,None
+441733,Shortsword: Debaser,None
 220627,Shortsword: Dwarven,None
 220779,Shortsword: Ebony,None
 220772,Shortsword: Elven,None
@@ -2352,154 +2710,194 @@
 239708,Shortsword: Fine Steel,None
 220764,Shortsword: Glass,None
 3085,Shortsword: Iron,None
+230430,Shortsword: of Absorption,None
+143532,Shortsword: of Blizzards,None
+251838,Shortsword: of Brittleness,None
+252663,Shortsword: of Burning,None
+140700,Shortsword: of Cold,None
+231339,Shortsword: of Depletion,None
+251883,Shortsword: of Depletion,None
+251863,Shortsword: of Diminishing,None
+251850,Shortsword: of Disintegration,None
+251856,Shortsword: of Dispel,None
+252654,Shortsword: of Embers,None
+231911,Shortsword: of Enfeeblement,None
+252690,Shortsword: of Fire,None
+252681,Shortsword: of Flames,None
+251842,Shortsword: of Fracturing,None
+251834,Shortsword: of Fragments,None
+140867,Shortsword: of Freezing,None
+252791,Shortsword: of Frost,None
+240497,Shortsword: of Jinxing,None
+186158,Shortsword: of Jolts,None
+180865,Shortsword: of Lightning,None
+252800,Shortsword: of Numbing,None
+251873,Shortsword: of Pain,None
+177503,Shortsword: of Paralysis,None
+251879,Shortsword: of Sapping,None
+252672,Shortsword: of Scorching,None
+251846,Shortsword: of Shattering,None
+178967,Shortsword: of Shocking,None
+177511,Shortsword: of Sparks,None
+180882,Shortsword: of Storms,None
+252699,Shortsword: of the Blaze,None
+180238,Shortsword: of the Dynamo,None
+248682,Shortsword: of the Fang,None
+143037,Shortsword: of the Glacier,None
+252708,Shortsword: of the Inferno,None
+180215,Shortsword: of Voltage,None
+240450,Shortsword: of Weakness,None
+251869,Shortsword: of Weariness,None
+143586,Shortsword: of Winter,None
+249090,Shortsword: of Wounding,None
 591381,Shortsword: Rusty Iron,None
 152096,Shortsword: Silver,None
 141756,Shortsword: Steel,None
-270260,Sigil Stone: Absorb Agility / Fortify Agility  (Ascendent),None
-270257,Sigil Stone: Absorb Agility / Fortify Agility  (Descendent),None
-270259,Sigil Stone: Absorb Agility / Fortify Agility  (Latent),None
-270258,Sigil Stone: Absorb Agility / Fortify Agility  (Subjacent),None
-270261,Sigil Stone: Absorb Agility / Fortify Agility  (Transcendent),None
-270266,Sigil Stone: Absorb Endurance / Resist Disease  (Ascendent),None
-270263,Sigil Stone: Absorb Endurance / Resist Disease  (Descendent),None
-270265,Sigil Stone: Absorb Endurance / Resist Disease  (Latent),None
-270264,Sigil Stone: Absorb Endurance / Resist Disease  (Subjacent),None
-270267,Sigil Stone: Absorb Endurance / Resist Disease  (Transcendent),None
-270278,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Ascendent),None
-270275,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Descendent),None
-270277,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Latent),None
-270276,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Subjacent),None
-270279,Sigil Stone: Absorb Fatigue / Fortify Fatigue  (Transcendent),None
-270284,Sigil Stone: Absorb Health / Fortify Health  (Ascendent),None
-270281,Sigil Stone: Absorb Health / Fortify Health  (Descendent),None
-270283,Sigil Stone: Absorb Health / Fortify Health  (Latent),None
-270282,Sigil Stone: Absorb Health / Fortify Health  (Subjacent),None
-270285,Sigil Stone: Absorb Health / Fortify Health  (Transcendent),None
-270254,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Ascendent),None
-270251,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Descendent),None
-270253,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Latent),None
-270252,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Subjacent),None
-270255,Sigil Stone: Absorb Intelligence / Fortify Intelligence  (Transcendent),None
-270290,Sigil Stone: Absorb Magicka / Fortify Magicka  (Ascendent),None
-270287,Sigil Stone: Absorb Magicka / Fortify Magicka  (Descendent),None
-270289,Sigil Stone: Absorb Magicka / Fortify Magicka  (Latent),None
-270288,Sigil Stone: Absorb Magicka / Fortify Magicka  (Subjacent),None
-270291,Sigil Stone: Absorb Magicka / Fortify Magicka  (Transcendent),None
-270272,Sigil Stone: Absorb Speed / Fortify Speed  (Ascendent),None
-270269,Sigil Stone: Absorb Speed / Fortify Speed  (Descendent),None
-270271,Sigil Stone: Absorb Speed / Fortify Speed  (Latent),None
-270270,Sigil Stone: Absorb Speed / Fortify Speed  (Subjacent),None
-270273,Sigil Stone: Absorb Speed / Fortify Speed  (Transcendent),None
-270246,Sigil Stone: Absorb Strength / Fortify Strength  (Ascendent),None
-270245,Sigil Stone: Absorb Strength / Fortify Strength  (Descendent),None
-270244,Sigil Stone: Absorb Strength / Fortify Strength  (Latent),None
-270247,Sigil Stone: Absorb Strength / Fortify Strength  (Subjacent),None
-270249,Sigil Stone: Absorb Strength / Fortify Strength  (Transcendent),None
-270296,Sigil Stone: Burden / Feather  (Ascendent),None
-270293,Sigil Stone: Burden / Feather  (Descendent),None
-270295,Sigil Stone: Burden / Feather  (Latent),None
-270294,Sigil Stone: Burden / Feather  (Subjacent),None
-270297,Sigil Stone: Burden / Feather  (Transcendent),None
-270332,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Ascendent),None
-270329,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Descendent),None
-270331,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Latent),None
-270330,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Subjacent),None
-270333,Sigil Stone: Damage Fatigue / Fortify Fatigue  (Transcendent),None
-270338,Sigil Stone: Damage Health / Fortify Health  (Ascendent),None
-270335,Sigil Stone: Damage Health / Fortify Health  (Descendent),None
-270337,Sigil Stone: Damage Health / Fortify Health  (Latent),None
-270336,Sigil Stone: Damage Health / Fortify Health  (Subjacent),None
-270339,Sigil Stone: Damage Health / Fortify Health  (Transcendent),None
-270344,Sigil Stone: Damage Magicka / Fortify Magicka  (Ascendent),None
-270341,Sigil Stone: Damage Magicka / Fortify Magicka  (Descendent),None
-270343,Sigil Stone: Damage Magicka / Fortify Magicka  (Latent),None
-270342,Sigil Stone: Damage Magicka / Fortify Magicka  (Subjacent),None
-270345,Sigil Stone: Damage Magicka / Fortify Magicka  (Transcendent),None
-270350,Sigil Stone: Demoralize / Fortify Willpower  (Ascendent),None
-270347,Sigil Stone: Demoralize / Fortify Willpower  (Descendent),None
-270349,Sigil Stone: Demoralize / Fortify Willpower  (Latent),None
-270348,Sigil Stone: Demoralize / Fortify Willpower  (Subjacent),None
-270351,Sigil Stone: Demoralize / Fortify Willpower  (Transcendent),None
-270356,Sigil Stone: Disintegrate Armor / Shield  (Ascendent),None
-270353,Sigil Stone: Disintegrate Armor / Shield  (Descendent),None
-270355,Sigil Stone: Disintegrate Armor / Shield  (Latent),None
-270354,Sigil Stone: Disintegrate Armor / Shield  (Subjacent),None
-270357,Sigil Stone: Disintegrate Armor / Shield  (Transcendent),None
-270362,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Ascendent),None
-270359,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Descendent),None
-270361,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Latent),None
-270360,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Subjacent),None
-270363,Sigil Stone: Disintegrate Weapon / Fortify Blade  (Transcendent),None
-270368,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Ascendent),None
-270365,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Descendent),None
-270367,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Latent),None
-270366,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Subjacent),None
-270369,Sigil Stone: Disintegrate Weapon / Fortify Blunt  (Transcendent),None
-270374,Sigil Stone: Dispel / Spell Absorption  (Ascendent),None
-270371,Sigil Stone: Dispel / Spell Absorption  (Descendent),None
-270373,Sigil Stone: Dispel / Spell Absorption  (Latent),None
-270372,Sigil Stone: Dispel / Spell Absorption  (Subjacent),None
-270375,Sigil Stone: Dispel / Spell Absorption  (Transcendent),None
-270422,Sigil Stone: Fire Damage / Fire Shield  (Ascendent),None
-270419,Sigil Stone: Fire Damage / Fire Shield  (Descendent),None
-270421,Sigil Stone: Fire Damage / Fire Shield  (Latent),None
-270420,Sigil Stone: Fire Damage / Fire Shield  (Subjacent),None
-270423,Sigil Stone: Fire Damage / Fire Shield  (Transcendent),None
-270446,Sigil Stone: Fire Damage / Light  (Ascendent),None
-270443,Sigil Stone: Fire Damage / Light  (Descendent),None
-270445,Sigil Stone: Fire Damage / Light  (Latent),None
-270444,Sigil Stone: Fire Damage / Light  (Subjacent),None
-270447,Sigil Stone: Fire Damage / Light  (Transcendent),None
-270416,Sigil Stone: Fire Damage / Resist Fire  (Ascendent),None
-270413,Sigil Stone: Fire Damage / Resist Fire  (Descendent),None
-270415,Sigil Stone: Fire Damage / Resist Fire  (Latent),None
-270414,Sigil Stone: Fire Damage / Resist Fire  (Subjacent),None
-270417,Sigil Stone: Fire Damage / Resist Fire  (Transcendent),None
-270434,Sigil Stone: Frost Damage / Frost Shield  (Ascendent),None
-270431,Sigil Stone: Frost Damage / Frost Shield  (Descendent),None
-270432,Sigil Stone: Frost Damage / Frost Shield  (Latent),None
-270433,Sigil Stone: Frost Damage / Frost Shield  (Subjacent),None
-270435,Sigil Stone: Frost Damage / Frost Shield  (Transcendent),None
-270428,Sigil Stone: Frost Damage / Resist Frost  (Ascendent),None
-270425,Sigil Stone: Frost Damage / Resist Frost  (Descendent),None
-270427,Sigil Stone: Frost Damage / Resist Frost  (Latent),None
-270426,Sigil Stone: Frost Damage / Resist Frost  (Subjacent),None
-270429,Sigil Stone: Frost Damage / Resist Frost  (Transcendent),None
-270440,Sigil Stone: Frost Damage / Water Walking  (Ascendent),None
-270437,Sigil Stone: Frost Damage / Water Walking  (Descendent),None
-270439,Sigil Stone: Frost Damage / Water Walking  (Latent),None
-270438,Sigil Stone: Frost Damage / Water Walking  (Subjacent),None
-270441,Sigil Stone: Frost Damage / Water Walking  (Transcendent),None
-270470,Sigil Stone: Shock Damage / Night-Eye  (Ascendent),None
-270467,Sigil Stone: Shock Damage / Night-Eye  (Descendent),None
-270469,Sigil Stone: Shock Damage / Night-Eye  (Latent),None
-270468,Sigil Stone: Shock Damage / Night-Eye  (Subjacent),None
-270471,Sigil Stone: Shock Damage / Night-Eye  (Transcendent),None
-270458,Sigil Stone: Shock Damage / Resist Shock  (Ascendent),None
-270455,Sigil Stone: Shock Damage / Resist Shock  (Descendent),None
-270457,Sigil Stone: Shock Damage / Resist Shock  (Latent),None
-270456,Sigil Stone: Shock Damage / Resist Shock  (Subjacent),None
-270459,Sigil Stone: Shock Damage / Resist Shock  (Transcendent),None
-270464,Sigil Stone: Shock Damage / Shock Shield  (Ascendent),None
-270461,Sigil Stone: Shock Damage / Shock Shield  (Descendent),None
-270463,Sigil Stone: Shock Damage / Shock Shield  (Latent),None
-270462,Sigil Stone: Shock Damage / Shock Shield  (Subjacent),None
-270465,Sigil Stone: Shock Damage / Shock Shield  (Transcendent),None
-270483,Sigil Stone: Silence / Chameleon  (Ascendent),None
-270480,Sigil Stone: Silence / Chameleon  (Descendent),None
-270482,Sigil Stone: Silence / Chameleon  (Latent),None
-270481,Sigil Stone: Silence / Chameleon  (Subjacent),None
-270484,Sigil Stone: Silence / Chameleon  (Transcendent),None
-270477,Sigil Stone: Silence / Resist Magic  (Ascendent),None
-270473,Sigil Stone: Silence / Resist Magic  (Descendent),None
-270476,Sigil Stone: Silence / Resist Magic  (Latent),None
-270475,Sigil Stone: Silence / Resist Magic  (Subjacent),None
-270478,Sigil Stone: Silence / Resist Magic  (Transcendent),None
-270489,Sigil Stone: Soul Trap / Resist Magic  (Ascendent),None
-270486,Sigil Stone: Soul Trap / Resist Magic  (Descendent),None
-270488,Sigil Stone: Soul Trap / Resist Magic  (Latent),None
-270487,Sigil Stone: Soul Trap / Resist Magic  (Subjacent),None
-270490,Sigil Stone: Soul Trap / Resist Magic  (Transcendent),None
+270260,Sigil Stone: Absorb Agility / Fortify Agility (Ascendent),None
+270257,Sigil Stone: Absorb Agility / Fortify Agility (Descendent),None
+270259,Sigil Stone: Absorb Agility / Fortify Agility (Latent),None
+270258,Sigil Stone: Absorb Agility / Fortify Agility (Subjacent),None
+270261,Sigil Stone: Absorb Agility / Fortify Agility (Transcendent),None
+270266,Sigil Stone: Absorb Endurance / Resist Disease (Ascendent),None
+270263,Sigil Stone: Absorb Endurance / Resist Disease (Descendent),None
+270265,Sigil Stone: Absorb Endurance / Resist Disease (Latent),None
+270264,Sigil Stone: Absorb Endurance / Resist Disease (Subjacent),None
+270267,Sigil Stone: Absorb Endurance / Resist Disease (Transcendent),None
+270278,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Ascendent),None
+270275,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Descendent),None
+270277,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Latent),None
+270276,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Subjacent),None
+270279,Sigil Stone: Absorb Fatigue / Fortify Fatigue (Transcendent),None
+270284,Sigil Stone: Absorb Health / Fortify Health (Ascendent),None
+270281,Sigil Stone: Absorb Health / Fortify Health (Descendent),None
+270283,Sigil Stone: Absorb Health / Fortify Health (Latent),None
+270282,Sigil Stone: Absorb Health / Fortify Health (Subjacent),None
+270285,Sigil Stone: Absorb Health / Fortify Health (Transcendent),None
+270254,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Ascendent),None
+270251,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Descendent),None
+270253,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Latent),None
+270252,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Subjacent),None
+270255,Sigil Stone: Absorb Intelligence / Fortify Intelligence (Transcendent),None
+270290,Sigil Stone: Absorb Magicka / Fortify Magicka (Ascendent),None
+270287,Sigil Stone: Absorb Magicka / Fortify Magicka (Descendent),None
+270289,Sigil Stone: Absorb Magicka / Fortify Magicka (Latent),None
+270288,Sigil Stone: Absorb Magicka / Fortify Magicka (Subjacent),None
+270291,Sigil Stone: Absorb Magicka / Fortify Magicka (Transcendent),None
+270272,Sigil Stone: Absorb Speed / Fortify Speed (Ascendent),None
+270269,Sigil Stone: Absorb Speed / Fortify Speed (Descendent),None
+270271,Sigil Stone: Absorb Speed / Fortify Speed (Latent),None
+270270,Sigil Stone: Absorb Speed / Fortify Speed (Subjacent),None
+270273,Sigil Stone: Absorb Speed / Fortify Speed (Transcendent),None
+270246,Sigil Stone: Absorb Strength / Fortify Strength (Ascendent),None
+270245,Sigil Stone: Absorb Strength / Fortify Strength (Descendent),None
+270244,Sigil Stone: Absorb Strength / Fortify Strength (Latent),None
+270247,Sigil Stone: Absorb Strength / Fortify Strength (Subjacent),None
+270249,Sigil Stone: Absorb Strength / Fortify Strength (Transcendent),None
+270296,Sigil Stone: Burden / Feather (Ascendent),None
+270293,Sigil Stone: Burden / Feather (Descendent),None
+270295,Sigil Stone: Burden / Feather (Latent),None
+270294,Sigil Stone: Burden / Feather (Subjacent),None
+270297,Sigil Stone: Burden / Feather (Transcendent),None
+270332,Sigil Stone: Damage Fatigue / Fortify Fatigue (Ascendent),None
+270329,Sigil Stone: Damage Fatigue / Fortify Fatigue (Descendent),None
+270331,Sigil Stone: Damage Fatigue / Fortify Fatigue (Latent),None
+270330,Sigil Stone: Damage Fatigue / Fortify Fatigue (Subjacent),None
+270333,Sigil Stone: Damage Fatigue / Fortify Fatigue (Transcendent),None
+270338,Sigil Stone: Damage Health / Fortify Health (Ascendent),None
+270335,Sigil Stone: Damage Health / Fortify Health (Descendent),None
+270337,Sigil Stone: Damage Health / Fortify Health (Latent),None
+270336,Sigil Stone: Damage Health / Fortify Health (Subjacent),None
+270339,Sigil Stone: Damage Health / Fortify Health (Transcendent),None
+270344,Sigil Stone: Damage Magicka / Fortify Magicka (Ascendent),None
+270341,Sigil Stone: Damage Magicka / Fortify Magicka (Descendent),None
+270343,Sigil Stone: Damage Magicka / Fortify Magicka (Latent),None
+270342,Sigil Stone: Damage Magicka / Fortify Magicka (Subjacent),None
+270345,Sigil Stone: Damage Magicka / Fortify Magicka (Transcendent),None
+270350,Sigil Stone: Demoralize / Fortify Willpower (Ascendent),None
+270347,Sigil Stone: Demoralize / Fortify Willpower (Descendent),None
+270349,Sigil Stone: Demoralize / Fortify Willpower (Latent),None
+270348,Sigil Stone: Demoralize / Fortify Willpower (Subjacent),None
+270351,Sigil Stone: Demoralize / Fortify Willpower (Transcendent),None
+270356,Sigil Stone: Disintegrate Armor / Shield (Ascendent),None
+270353,Sigil Stone: Disintegrate Armor / Shield (Descendent),None
+270355,Sigil Stone: Disintegrate Armor / Shield (Latent),None
+270354,Sigil Stone: Disintegrate Armor / Shield (Subjacent),None
+270357,Sigil Stone: Disintegrate Armor / Shield (Transcendent),None
+270362,Sigil Stone: Disintegrate Weapon / Fortify Blade (Ascendent),None
+270359,Sigil Stone: Disintegrate Weapon / Fortify Blade (Descendent),None
+270361,Sigil Stone: Disintegrate Weapon / Fortify Blade (Latent),None
+270360,Sigil Stone: Disintegrate Weapon / Fortify Blade (Subjacent),None
+270363,Sigil Stone: Disintegrate Weapon / Fortify Blade (Transcendent),None
+270368,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Ascendent),None
+270365,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Descendent),None
+270367,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Latent),None
+270366,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Subjacent),None
+270369,Sigil Stone: Disintegrate Weapon / Fortify Blunt (Transcendent),None
+270374,Sigil Stone: Dispel / Spell Absorption (Ascendent),None
+270371,Sigil Stone: Dispel / Spell Absorption (Descendent),None
+270373,Sigil Stone: Dispel / Spell Absorption (Latent),None
+270372,Sigil Stone: Dispel / Spell Absorption (Subjacent),None
+270375,Sigil Stone: Dispel / Spell Absorption (Transcendent),None
+270422,Sigil Stone: Fire Damage / Fire Shield (Ascendent),None
+270419,Sigil Stone: Fire Damage / Fire Shield (Descendent),None
+270421,Sigil Stone: Fire Damage / Fire Shield (Latent),None
+270420,Sigil Stone: Fire Damage / Fire Shield (Subjacent),None
+270423,Sigil Stone: Fire Damage / Fire Shield (Transcendent),None
+270446,Sigil Stone: Fire Damage / Light (Ascendent),None
+270443,Sigil Stone: Fire Damage / Light (Descendent),None
+270445,Sigil Stone: Fire Damage / Light (Latent),None
+270444,Sigil Stone: Fire Damage / Light (Subjacent),None
+270447,Sigil Stone: Fire Damage / Light (Transcendent),None
+270416,Sigil Stone: Fire Damage / Resist Fire (Ascendent),None
+270413,Sigil Stone: Fire Damage / Resist Fire (Descendent),None
+270415,Sigil Stone: Fire Damage / Resist Fire (Latent),None
+270414,Sigil Stone: Fire Damage / Resist Fire (Subjacent),None
+270417,Sigil Stone: Fire Damage / Resist Fire (Transcendent),None
+270434,Sigil Stone: Frost Damage / Frost Shield (Ascendent),None
+270431,Sigil Stone: Frost Damage / Frost Shield (Descendent),None
+270432,Sigil Stone: Frost Damage / Frost Shield (Latent),None
+270433,Sigil Stone: Frost Damage / Frost Shield (Subjacent),None
+270435,Sigil Stone: Frost Damage / Frost Shield (Transcendent),None
+270428,Sigil Stone: Frost Damage / Resist Frost (Ascendent),None
+270425,Sigil Stone: Frost Damage / Resist Frost (Descendent),None
+270427,Sigil Stone: Frost Damage / Resist Frost (Latent),None
+270426,Sigil Stone: Frost Damage / Resist Frost (Subjacent),None
+270429,Sigil Stone: Frost Damage / Resist Frost (Transcendent),None
+270440,Sigil Stone: Frost Damage / Water Walking (Ascendent),None
+270437,Sigil Stone: Frost Damage / Water Walking (Descendent),None
+270439,Sigil Stone: Frost Damage / Water Walking (Latent),None
+270438,Sigil Stone: Frost Damage / Water Walking (Subjacent),None
+270441,Sigil Stone: Frost Damage / Water Walking (Transcendent),None
+270470,Sigil Stone: Shock Damage / Night-Eye (Ascendent),None
+270467,Sigil Stone: Shock Damage / Night-Eye (Descendent),None
+270469,Sigil Stone: Shock Damage / Night-Eye (Latent),None
+270468,Sigil Stone: Shock Damage / Night-Eye (Subjacent),None
+270471,Sigil Stone: Shock Damage / Night-Eye (Transcendent),None
+270458,Sigil Stone: Shock Damage / Resist Shock (Ascendent),None
+270455,Sigil Stone: Shock Damage / Resist Shock (Descendent),None
+270457,Sigil Stone: Shock Damage / Resist Shock (Latent),None
+270456,Sigil Stone: Shock Damage / Resist Shock (Subjacent),None
+270459,Sigil Stone: Shock Damage / Resist Shock (Transcendent),None
+270464,Sigil Stone: Shock Damage / Shock Shield (Ascendent),None
+270461,Sigil Stone: Shock Damage / Shock Shield (Descendent),None
+270463,Sigil Stone: Shock Damage / Shock Shield (Latent),None
+270462,Sigil Stone: Shock Damage / Shock Shield (Subjacent),None
+270465,Sigil Stone: Shock Damage / Shock Shield (Transcendent),None
+270483,Sigil Stone: Silence / Chameleon (Ascendent),None
+270480,Sigil Stone: Silence / Chameleon (Descendent),None
+270482,Sigil Stone: Silence / Chameleon (Latent),None
+270481,Sigil Stone: Silence / Chameleon (Subjacent),None
+270484,Sigil Stone: Silence / Chameleon (Transcendent),None
+270477,Sigil Stone: Silence / Resist Magic (Ascendent),None
+270473,Sigil Stone: Silence / Resist Magic (Descendent),None
+270476,Sigil Stone: Silence / Resist Magic (Latent),None
+270475,Sigil Stone: Silence / Resist Magic (Subjacent),None
+270478,Sigil Stone: Silence / Resist Magic (Transcendent),None
+270489,Sigil Stone: Soul Trap / Resist Magic (Ascendent),None
+270486,Sigil Stone: Soul Trap / Resist Magic (Descendent),None
+270488,Sigil Stone: Soul Trap / Resist Magic (Latent),None
+270487,Sigil Stone: Soul Trap / Resist Magic (Subjacent),None
+270490,Sigil Stone: Soul Trap / Resist Magic (Transcendent),None
 270495,Sigil Stone: Turn Undead / Detect Life (Ascendent),None
 270492,Sigil Stone: Turn Undead / Detect Life (Descendent),None
 270494,Sigil Stone: Turn Undead / Detect Life (Latent),None
@@ -2530,6 +2928,13 @@
 230098,Soul Gem: Lesser (petty),None
 146791,Soul Gem: Petty (empty),None
 230097,Soul Gem: Petty (petty),None
+779042,Staff: Mankar Camoran's,None
+439921,Staff: of Indarys,None
+779740,Staff: of Nenalata,None
+303694,Staff: of Worms,None
+141551,Staff: Sanguine Rose,None
+160022,Staff: Skull of Corruption,None
+141552,Staff: Wabbajack,None
 184223,Torch,None
 180474,Tunic: Flax,None
 404,Varla Stone,None
@@ -2541,9 +2946,55 @@
 191661,Vest: Patched,None
 21808,Vest: Warding,None
 191660,Waders: Fishing,None
-239718,War: Fine Iron,None
-239709,War: Fine Steel,None
-591379,War: Rusty Iron,None
+248683,War Axe: Defiler,None
+239718,War Axe: Fine Iron,None
+239709,War Axe: Fine Steel,None
+230432,War Axe: of Absorption,None
+323638,War Axe: of Beguilement,None
+143533,War Axe: of Blizzards,None
+252664,War Axe: of Burning,None
+140724,War Axe: of Cold,None
+218053,War Axe: of Damnation,None
+242696,War Axe: of Decay,None
+218011,War Axe: of Deception,None
+231343,War Axe: of Depletion,None
+251864,War Axe: of Diminishing,None
+251857,War Axe: of Dispel,None
+242697,War Axe: of Dissolution,None
+252655,War Axe: of Embers,None
+231915,War Axe: of Enfeeblement,None
+242689,War Axe: of Feeding,None
+252691,War Axe: of Fire,None
+252682,War Axe: of Flames,None
+242699,War Axe: of Fracturing,None
+140871,War Axe: of Freezing,None
+252792,War Axe: of Frost,None
+245604,War Axe: of Icy Darkness,None
+240498,War Axe: of Jinxing,None
+177547,War Axe: of Jolts,None
+180867,War Axe: of Lightning,None
+252801,War Axe: of Numbing,None
+242701,War Axe: of Putrification,None
+242703,War Axe: of Rending,None
+323640,War Axe: of Sapping,None
+252673,War Axe: of Scorching,None
+218006,War Axe: of Seduction,None
+179471,War Axe: of Shocking,None
+242688,War Axe: of Siphoning,None
+218059,War Axe: of Soul Snares,None
+218008,War Axe: of Soul Traps,None
+217978,War Axe: of Souls,None
+177521,War Axe: of Sparks,None
+180886,War Axe: of Storms,None
+252700,War Axe: of the Blaze,None
+180256,War Axe: of the Dynamo,None
+143363,War Axe: of the Glacier,None
+252709,War Axe: of the Inferno,None
+242693,War Axe: of Transmogrify,None
+180216,War Axe: of Voltage,None
+240452,War Axe: of Weakness,None
+143587,War Axe: of Winter,None
+591379,War Axe: Rusty Iron,None
 220793,Warhammer: Daedric,None
 220629,Warhammer: Dwarven,None
 220785,Warhammer: Ebony,None
@@ -2552,8 +3003,60 @@
 239710,Warhammer: Fine Steel,None
 220770,Warhammer: Glass,None
 102770,Warhammer: Iron,None
+219684,Warhammer: of Abeyance,None
+230427,Warhammer: of Absorption,None
+218066,Warhammer: of Aversion,None
+143571,Warhammer: of Blizzards,None
+252665,Warhammer: of Burning,None
+140760,Warhammer: of Cold,None
+231357,Warhammer: of Deadweight,None
+241414,Warhammer: of Decay,None
+231344,Warhammer: of Depletion,None
+251865,Warhammer: of Diminishing,None
+251858,Warhammer: of Dispel,None
+241417,Warhammer: of Dissolution,None
+252656,Warhammer: of Embers,None
+231353,Warhammer: of Encumbrance,None
+231914,Warhammer: of Enfeeblement,None
+231355,Warhammer: of Excess,None
+231337,Warhammer: of Feeding,None
+252692,Warhammer: of Fire,None
+252683,Warhammer: of Flames,None
+241419,Warhammer: of Fracturing,None
+140880,Warhammer: of Freezing,None
+252793,Warhammer: of Frost,None
+219822,Warhammer: of Holy Light,None
+240493,Warhammer: of Jinxing,None
+177548,Warhammer: of Jolts,None
+180868,Warhammer: of Lightning,None
+252802,Warhammer: of Numbing,None
+231352,Warhammer: of Overload,None
+241420,Warhammer: of Putrification,None
+241423,Warhammer: of Rending,None
+323642,Warhammer: of Sapping,None
+252674,Warhammer: of Scorching,None
+179563,Warhammer: of Shocking,None
+231334,Warhammer: of Siphoning,None
+177522,Warhammer: of Sparks,None
+180888,Warhammer: of Storms,None
+231347,Warhammer: of Strain,None
+252701,Warhammer: of the Blaze,None
+180261,Warhammer: of the Dynamo,None
+143495,Warhammer: of the Glacier,None
+218062,Warhammer: of the Grave,None
+252710,Warhammer: of the Inferno,None
+219830,Warhammer: of the Undead,None
+242694,Warhammer: of Transmogrify,None
+218692,Warhammer: of Turning,None
+180217,Warhammer: of Voltage,None
+218063,Warhammer: of Warding,None
+240446,Warhammer: of Weakness,None
+231346,Warhammer: of Weight,None
+143588,Warhammer: of Winter,None
+245606,Warhammer: Pounder,None
 152101,Warhammer: Silver,None
 141758,Warhammer: Steel,None
+645967,Warhammer: Volendrung,None
 401,Welkynd Stone,None
 42664,Wine: Argonian Bloodwine,DLCFightersStronghold.esp
 42661,Wine: Colovian Battlecry,DLCFightersStronghold.esp

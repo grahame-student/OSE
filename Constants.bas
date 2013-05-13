@@ -162,11 +162,13 @@ Public Const SUB_RECORD_FULL_NAME As String = "FULL"        ' Name
 Public Const SUB_RECORD_SPELL_DATA As String = "SPIT"       ' Basic Spell Data
 
 ' Property Flags
-Public Const PROPERTY_FLAG_WORLD_SPACE  As Byte = &H11&
-Public Const PROPERTY_FLAG_SCRIPT       As Byte = &H12&
-Public Const PROPERTY_FLAG_EQUIPPED_1   As Byte = &H1B&
-Public Const PROPERTY_FLAG_EQUIPPED_2   As Byte = &H1C&
-Public Const PROPERTY_FLAG_SCALE        As Byte = &H37&
+Public Const PROPERTY_FLAG_WORLD_SPACE                  As Byte = &H11&
+Public Const PROPERTY_FLAG_SCRIPT                       As Byte = &H12&
+Public Const PROPERTY_FLAG_EQUIPPED_1                   As Byte = &H1B&
+Public Const PROPERTY_FLAG_EQUIPPED_2                   As Byte = &H1C&
+Public Const PROPERTY_FLAG_ITEM_HEALTH                  As Byte = &H2B&
+Public Const PROPERTY_FLAG_CURRENT_ENCHANTMENT_POINTS   As Byte = &H2E&
+Public Const PROPERTY_FLAG_SCALE                        As Byte = &H37&
 
 ' Property Variable Types
 Public Const SCRIPT_VARIABLE_TYPE_IREF As Integer = &HF000

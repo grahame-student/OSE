@@ -646,11 +646,15 @@ Private Sub AddProperty(ItemNumber As Long, ChangeSetEntry As Integer, PropertyN
     Offset = Offset + 1
 
     Select Case SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetEntry).Properties(PropertyNumber).Flag
-        Case PROPERTY_FLAG_SCRIPT ' d18 h12
+        Case PROPERTY_FLAG_SCRIPT                       ' d18 h12
             ReadScript ItemNumber, ChangeSetEntry, PropertyNumber, Offset
-        Case PROPERTY_FLAG_EQUIPPED_1
-        Case PROPERTY_FLAG_EQUIPPED_2
-        Case PROPERTY_FLAG_SCALE ' d55 h37
+        Case PROPERTY_FLAG_EQUIPPED_1                   ' d27 h1B
+        Case PROPERTY_FLAG_EQUIPPED_2                   ' d28 h1C
+        Case PROPERTY_FLAG_ITEM_HEALTH                  ' d43 h2B
+            ReadItemHealth ItemNumber, ChangeSetEntry, PropertyNumber, Offset
+        Case PROPERTY_FLAG_CURRENT_ENCHANTMENT_POINTS   ' d46 h2E
+            ReadCurEP ItemNumber, ChangeSetEntry, PropertyNumber, Offset
+        Case PROPERTY_FLAG_SCALE                        ' d55 h37
             ReadScale ItemNumber, ChangeSetEntry, PropertyNumber, Offset
         Case Else
             Debug.Print "Property Flag: " & SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetEntry).Properties(PropertyNumber).Flag
@@ -730,6 +734,38 @@ Private Sub ReadScript(ItemNumber As Long, ChangeSetNumber As Integer, PropertyN
     SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.Unknown = _
     SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
     Offset = Offset + 1
+
+End Sub
+
+Private Sub ReadItemHealth(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As Long)
+
+    Dim RawFourBytes As FourByteArray
+    Dim FourBytes As FloatType
+
+    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
+    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
+    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
+    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
+    LSet FourBytes = RawFourBytes
+    Offset = Offset + 4
+
+    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ItemHealth = FourBytes.Result
+
+End Sub
+
+Private Sub ReadCurEP(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As Long)
+
+    Dim RawFourBytes As FourByteArray
+    Dim FourBytes As FloatType
+
+    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
+    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
+    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
+    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
+    LSet FourBytes = RawFourBytes
+    Offset = Offset + 4
+
+    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).EnchantmentPoints = FourBytes.Result
 
 End Sub
 
