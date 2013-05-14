@@ -144,17 +144,17 @@ Private Type WorldSpaces
 End Type
 
 Private Type PropertyScriptVariable
-    Index As Integer
-    Type As Integer
-    RefVariable As Long             ' Only if Type = 0xF000
-    LocalVariable As Double         ' Only if Type = 0x0000
+    Index           As New SuperInt
+    Type            As New SuperInt
+    RefVariable     As New SuperLong                ' Only if Type = 0xF000
+    LocalVariable   As New SuperDouble              ' Only if Type = 0x0000
 End Type
 
 Private Type PropertyScript
-    ScriptRef As Long               ' iRef
-    VariableCount As Integer
-    VariableList() As PropertyScriptVariable
-    Unknown As Byte
+    ScriptRef       As New SuperLong                ' iRef
+    VariableCount   As New SuperInt
+    VariableList()  As PropertyScriptVariable
+    Unknown         As Byte
 End Type
 
 Private Type PropertyMarkerHeadingRef
@@ -254,15 +254,15 @@ Private Type PropertyChange
     GlobalVariable As Long                          ' Used for flag 0x28
     FactionRank As Long                             ' Used for flag 0x29
     AffectedItemsNumber As Integer                  ' Used for flag 0x2A
-    ItemHealth As Single                            ' Used for flag 0x2B
+    ItemHealth          As New SuperSingle          ' Used for flag 0x2B
     Time As Single                                  ' Used for flag 0x2D
-    EnchantmentPoints As Single                     ' Used for flag 0x2E
+    EnchantmentPoints   As New SuperSingle          ' Used for flag 0x2E
     Soul As Byte                                    ' Used for flag 0x2F
     Lock As PropertyLock                            ' Used for flag 0x31
     Teleport As PropertyTeleport                    ' Used for flag 0x32
     MapMarkerFlag As Byte                           ' Used for flag 0x33
     Unknown3(4) As Byte                             ' Used for flag 0x36
-    ScaleValue As Single                            ' Used for flag 0x37
+    ScaleValue          As New SuperSingle          ' Used for flag 0x37
     Unknown4(11) As Byte                            ' Used for flag 0x39
     Unknown5 As PropertyUnknown5                    ' Used for flag 0x3A
     CrimeGold As Single                             ' Used for flag 0x3D
@@ -282,7 +282,7 @@ Private Type PropertyChange
 End Type
 
 Private Type InventoryChangeEntry
-    PropertiesNumber As Integer
+    PropertiesNumber As New SuperInt
     Properties() As PropertyChange
 End Type
 
@@ -297,27 +297,28 @@ End Type
 ' These blocks hold additional information to make it easier to navigate
 ' various records. DO NOT WRITE THEM DIRECTLY TO THE NEW SAVE FILE
 Public Type Faction
-    FormID As Long
-    Level As Byte
-    Name As String
-    MaxRank As Integer
-    Ranks() As String
-    Suspended As Boolean
+    iRef        As New SuperLong
+    FormID      As Long
+    Level       As Byte
+    Name        As String
+    MaxRank     As Integer
+    Ranks()     As String
+    Suspended   As Boolean
 End Type
 
 Public Type Spell
-    iRef As Long
-    FormID As Long
-    Name As String
+    iRef        As New SuperLong
+    FormID      As Long
+    Name        As String
 End Type
 
 Public Type Item
-    iRef As Long                                        ' the iRef of the item
+    iRef As New SuperLong                               ' the iRef of the item
     FormID As Long                                      ' The item's FormID
     Name As String                                      ' The item name
     Size As Integer                                     ' Size of the item entry in bytes
-    StackedItemsCount As Long                           ' Number of items in the stack
-    ChangedEntriesCount As Long                         ' Number of change entries
+    StackedItemsCount As New SuperLong                  ' Number of items in the stack
+    ChangedEntriesCount As New SuperLong                ' Number of change entries
     InventoryChangedEntries() As InventoryChangeEntry   ' The actual change entries
 End Type
 

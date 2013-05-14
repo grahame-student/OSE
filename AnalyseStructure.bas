@@ -434,30 +434,28 @@ End Sub
 
 Private Sub InitPlayerFactions()
 
+    Dim Offset As New SuperLong
     Dim i As Long
-    Dim Offset As Long
-    Dim RawiRef As FourByteArray
-    Dim iRef As LongType
-    Dim Level As Byte
+    Dim ByteNumber As Integer
 
     Offset = SaveFileData.OSE.Player.Factions + 2
 
     ReDim SaveFileData.OSE.Player.FactionList(SaveFileData.OSE.Player.FactionCount - 1)
 
     For i = 0 To SaveFileData.OSE.Player.FactionCount - 1
-        RawiRef.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
-        RawiRef.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1)
-        RawiRef.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 2)
-        RawiRef.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 3)
+        For ByteNumber = 0 To 3
+            SaveFileData.OSE.Player.FactionList(i).iRef.ByteValue(ByteNumber) = _
+            SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + ByteNumber)
+        Next ByteNumber
+        Offset.Add 4
+                
+        SaveFileData.OSE.Player.FactionList(i).FormID = GetFormID(SaveFileData.OSE.Player.FactionList(i).iRef)
         
-        LSet iRef = RawiRef
-        
-        Level = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 4)
-        SaveFileData.OSE.Player.FactionList(i).FormID = GetFormID(iRef.Result)
-        SaveFileData.OSE.Player.FactionList(i).Level = Level
+        SaveFileData.OSE.Player.FactionList(i).Level = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
+        Offset.Add
         
         GetFaction SaveFileData.OSE.Player.FactionList(i).FormID, i
-        Offset = Offset + 5
     Next i
 
 End Sub
@@ -478,35 +476,31 @@ Public Sub GetFaction(ByVal FormID As Long, ByVal IndexNumber As Integer)
         End If
     Next i
     
-    MsgBox "FormID not recognised (" & FormID & ")", vbOKOnly, "Unknown FormID"
+    MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & _
+           "Please report this FormID to mrloquax@googlemail.com" & vbNewLine & _
+           "so that it can be added in future versions", vbOKOnly, "Unknown Faction FormID"
     
 End Sub
 
 Private Sub InitPlayerSpells()
 
     Dim i As Long
-    Dim Offset As Long
-    Dim RawiRef As FourByteArray
-    Dim iRef As LongType
+    Dim Offset As New SuperLong
+    Dim ByteNumber As Integer
     
     Offset = SaveFileData.OSE.Player.Spells + 2
     
     ReDim SaveFileData.OSE.Player.SpellList(SaveFileData.OSE.Player.SpellCount - 1)
 
     For i = 0 To SaveFileData.OSE.Player.SpellCount - 1
-        RawiRef.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset)
-        RawiRef.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 1)
-        RawiRef.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 2)
-        RawiRef.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + 3)
-        
-        LSet iRef = RawiRef
+        For ByteNumber = 0 To 3
+            SaveFileData.OSE.Player.SpellList(i).iRef.ByteValue(ByteNumber) = _
+            SaveFileData.ChangeRecords(SaveFileData.OSE.Player.PlayerRecord).Data(Offset + ByteNumber)
+        Next ByteNumber
+        Offset.Add 4
                 
-        ' Add extra code to handle custom spells here
-        SaveFileData.OSE.Player.SpellList(i).iRef = iRef.Result
-        SaveFileData.OSE.Player.SpellList(i).FormID = GetFormID(iRef.Result)
+        SaveFileData.OSE.Player.SpellList(i).FormID = GetFormID(SaveFileData.OSE.Player.SpellList(i).iRef)
         SaveFileData.OSE.Player.SpellList(i).Name = GetSpell(SaveFileData.OSE.Player.SpellList(i).FormID)
-            
-        Offset = Offset + 4
     Next i
 
 End Sub
@@ -529,7 +523,7 @@ Public Function GetSpell(ByVal FormID As Long) As String
     
     MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & _
            "Please report this FormID to mrloquax@googlemail.com" & vbNewLine & _
-           "so that it can be added in future versions", vbOKOnly, "Unknown FormID"
+           "so that it can be added in future versions", vbOKOnly, "Unknown Spell FormID"
     
 End Function
 
@@ -552,58 +546,44 @@ Private Sub InitPlayerItems()
     Dim i As Long
     Dim j As Integer
     Dim k As Integer
-    Dim Offset As Long
-    Dim RawFourBytes As FourByteArray
-    Dim FourBytes As LongType
-    Dim RawTwoBytes As TwoByteArray
-    Dim TwoBytes As IntegerType
+    Dim Offset As New SuperLong
+    Dim ByteNumber As Integer
     
     Offset = SaveFileData.OSE.PlayerChange.Inventory + 2
     
     ReDim SaveFileData.OSE.Player.ItemList(SaveFileData.OSE.PlayerChange.InventoryCount - 1)
 
     For i = 0 To SaveFileData.OSE.PlayerChange.InventoryCount - 1
-        RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-        RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-        RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-        RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-        
-        LSet FourBytes = RawFourBytes
-                
-        SaveFileData.OSE.Player.ItemList(i).iRef = FourBytes.Result
-        SaveFileData.OSE.Player.ItemList(i).FormID = GetFormID(FourBytes.Result)
+        For ByteNumber = 0 To 3
+            SaveFileData.OSE.Player.ItemList(i).iRef.ByteValue(ByteNumber) = _
+            SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+        Next ByteNumber
+                        
+        SaveFileData.OSE.Player.ItemList(i).FormID = GetFormID(SaveFileData.OSE.Player.ItemList(i).iRef)
         SaveFileData.OSE.Player.ItemList(i).Name = GetItem(SaveFileData.OSE.Player.ItemList(i).FormID)
-        Offset = Offset + 4
+        Offset.Add 4
         
-        RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-        RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-        RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-        RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-        
-        LSet FourBytes = RawFourBytes
-        
-        SaveFileData.OSE.Player.ItemList(i).StackedItemsCount = FourBytes.Result
-        Offset = Offset + 4
+        For ByteNumber = 0 To 3
+            SaveFileData.OSE.Player.ItemList(i).StackedItemsCount.ByteValue(ByteNumber) = _
+            SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+        Next ByteNumber
+        Offset.Add 4
     
-        RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-        RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-        RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-        RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-        
-        LSet FourBytes = RawFourBytes
-        SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount = FourBytes.Result
-        Offset = Offset + 4
+        For ByteNumber = 0 To 3
+            SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount.ByteValue(ByteNumber) = _
+            SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+        Next ByteNumber
+        Offset.Add 4
     
         If SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount > 0 Then
             ReDim Preserve SaveFileData.OSE.Player.ItemList(i).InventoryChangedEntries(SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount - 1)
             For j = 0 To SaveFileData.OSE.Player.ItemList(i).ChangedEntriesCount - 1
                 ' Read in the number of properties in the change entry
-                RawTwoBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-                RawTwoBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-                
-                LSet TwoBytes = RawTwoBytes
-                SaveFileData.OSE.Player.ItemList(i).InventoryChangedEntries(j).PropertiesNumber = TwoBytes.Result
-                Offset = Offset + 2
+                For ByteNumber = 0 To 1
+                    SaveFileData.OSE.Player.ItemList(i).InventoryChangedEntries(j).PropertiesNumber.ByteValue(ByteNumber) = _
+                    SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+                Next ByteNumber
+                Offset.Add 2
                 
                 If SaveFileData.OSE.Player.ItemList(i).InventoryChangedEntries(j).PropertiesNumber > 0 Then
                     ReDim Preserve SaveFileData.OSE.Player.ItemList(i).InventoryChangedEntries(j).Properties(SaveFileData.OSE.Player.ItemList(i).InventoryChangedEntries(j).PropertiesNumber - 1)
@@ -614,6 +594,8 @@ Private Sub InitPlayerItems()
             Next j
         End If
     Next i
+
+    Set Offset = Nothing
 
 End Sub
 
@@ -635,15 +617,15 @@ Public Function GetItem(ByVal FormID As Long) As String
     
     MsgBox "FormID not recognised (" & FormID & ")" & vbNewLine & _
            "Please report this FormID to mrloquax@googlemail.com" & vbNewLine & _
-           "so that it can be added in future versions", vbOKOnly, "Unknown FormID"
+           "so that it can be added in future versions", vbOKOnly, "Unknown Item FormID"
     
 End Function
 
-Private Sub AddProperty(ItemNumber As Long, ChangeSetEntry As Integer, PropertyNumber As Integer, Offset As Long)
+Private Sub AddProperty(ItemNumber As Long, ChangeSetEntry As Integer, PropertyNumber As Integer, Offset As SuperLong)
     
     SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetEntry).Properties(PropertyNumber).Flag = _
     SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    Offset = Offset + 1
+    Offset.Add 1
 
     Select Case SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetEntry).Properties(PropertyNumber).Flag
         Case PROPERTY_FLAG_SCRIPT                       ' d18 h12
@@ -663,125 +645,94 @@ Private Sub AddProperty(ItemNumber As Long, ChangeSetEntry As Integer, PropertyN
 
 End Sub
 
-Private Sub ReadScript(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As Long)
+Private Sub ReadScript(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
 
-    Dim RawFourBytes As FourByteArray
-    Dim FourBytes As LongType
-    Dim RawTwoBytes As TwoByteArray
-    Dim TwoBytes As IntegerType
-    Dim RawEightBytes As EightByteArray
-    Dim EightBytes As DoubleType
+    Dim ByteNumber As Integer
     Dim i As Integer
     
-    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-    LSet FourBytes = RawFourBytes
-    
-    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.ScriptRef = FourBytes.Result
-    Offset = Offset + 4
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.ScriptRef.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
 
-    RawTwoBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    RawTwoBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-    LSet TwoBytes = RawTwoBytes
-
-    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableCount = TwoBytes.Result
-    Offset = Offset + 2
+    For ByteNumber = 0 To 1
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableCount.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 2
 
     If SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableCount > 0 Then
         ReDim Preserve SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableCount - 1)
         For i = 0 To SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableCount - 1
-            RawTwoBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-            RawTwoBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-            LSet TwoBytes = RawTwoBytes
-            Offset = Offset + 2
-            
-            SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).Index = TwoBytes.Result
-            
-            RawTwoBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-            RawTwoBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-            LSet TwoBytes = RawTwoBytes
-            Offset = Offset + 2
-            
-            SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).Type = TwoBytes.Result
-            
+            For ByteNumber = 0 To 1
+                SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).Index.ByteValue(ByteNumber) = _
+                SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+            Next ByteNumber
+            Offset.Add 2
+                        
+            For ByteNumber = 0 To 1
+                SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).Type.ByteValue(ByteNumber) = _
+                SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+            Next ByteNumber
+            Offset.Add 2
+                                    
             Select Case SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).Type
                 Case SCRIPT_VARIABLE_TYPE_IREF
-                    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-                    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-                    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-                    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-                    LSet FourBytes = RawFourBytes
-                    Offset = Offset + 4
-                    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).RefVariable = FourBytes.Result
+                    For ByteNumber = 0 To 3
+                        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).RefVariable.ByteValue(ByteNumber) = _
+                        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+                    Next ByteNumber
+                    Offset.Add 4
                 Case SCRIPT_VARIABLE_TYPE_LOCAL
-                    RawEightBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-                    RawEightBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-                    RawEightBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-                    RawEightBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-                    RawEightBytes.Bytes(4) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 4)
-                    RawEightBytes.Bytes(5) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 5)
-                    RawEightBytes.Bytes(6) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 6)
-                    RawEightBytes.Bytes(7) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 7)
-                    LSet EightBytes = RawEightBytes
-                    Offset = Offset + 8
-                    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).LocalVariable = EightBytes.Result
+                    For ByteNumber = 0 To 7
+                        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.VariableList(i).LocalVariable.ByteValue(ByteNumber) = _
+                        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+                    Next ByteNumber
+                    Offset.Add 8
             End Select
         Next i
     End If
 
     SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Script.Unknown = _
     SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    Offset = Offset + 1
+    Offset.Add
 
 End Sub
 
-Private Sub ReadItemHealth(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As Long)
+Private Sub ReadItemHealth(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
 
-    Dim RawFourBytes As FourByteArray
-    Dim FourBytes As FloatType
+    Dim ByteNumber As Integer
 
-    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-    LSet FourBytes = RawFourBytes
-    Offset = Offset + 4
-
-    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ItemHealth = FourBytes.Result
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ItemHealth.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
 
 End Sub
 
-Private Sub ReadCurEP(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As Long)
+Private Sub ReadCurEP(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
 
-    Dim RawFourBytes As FourByteArray
-    Dim FourBytes As FloatType
+    Dim ByteNumber As Integer
 
-    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-    LSet FourBytes = RawFourBytes
-    Offset = Offset + 4
-
-    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).EnchantmentPoints = FourBytes.Result
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).EnchantmentPoints.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
 
 End Sub
 
-Private Sub ReadScale(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As Long)
+Private Sub ReadScale(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
 
-    Dim RawFourBytes As FourByteArray
-    Dim FourBytes As FloatType
+    Dim ByteNumber As Integer
 
-    RawFourBytes.Bytes(0) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
-    RawFourBytes.Bytes(1) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 1)
-    RawFourBytes.Bytes(2) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 2)
-    RawFourBytes.Bytes(3) = SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + 3)
-    LSet FourBytes = RawFourBytes
-    Offset = Offset + 4
-
-    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ScaleValue = FourBytes.Result
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ScaleValue.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
 
 End Sub
 
