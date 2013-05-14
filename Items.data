@@ -2570,6 +2570,312 @@
 297349,Russet Felt Shirt: Security,None
 178445,Sandals: Braided Leather,None
 160538,Sandals: Sack Cloth,None
+543223,Scroll: Absorb Agility None
+543186,Scroll: Absorb Endurance None
+543192,Scroll: Absorb Fatigue None
+543193,Scroll: Absorb Health None
+543187,Scroll: Absorb Intelligence None
+543188,Scroll: Absorb Luck None
+43342,Scroll: Absorb Magicka None
+43343,Scroll: Absorb Major Magicka None
+43344,Scroll: Absorb Maximal Magicka None
+543197,Scroll: Absorb Minimal Magicka None
+43341,Scroll: Absorb Minor Magicka None
+543198,Scroll: Absorb Skill: Acrobatics None
+543199,Scroll: Absorb Skill: Alchemy None
+543200,Scroll: Absorb Skill: Alteration None
+543201,Scroll: Absorb Skill: Armorer None
+543202,Scroll: Absorb Skill: Athletics None
+543203,Scroll: Absorb Skill: Blade None
+543204,Scroll: Absorb Skill: Block None
+543205,Scroll: Absorb Skill: Blunt None
+543206,Scroll: Absorb Skill: Conjuration None
+543207,Scroll: Absorb Skill: Destruction None
+543208,Scroll: Absorb Skill: Hand to Hand None
+543209,Scroll: Absorb Skill: Heavy Armor None
+543210,Scroll: Absorb Skill: Illusion None
+543213,Scroll: Absorb Skill: Light Armor None
+543212,Scroll: Absorb Skill: Marksman None
+543211,Scroll: Absorb Skill: Mercantile None
+543214,Scroll: Absorb Skill: Mysticism None
+543215,Scroll: Absorb Skill: Restoration None
+543216,Scroll: Absorb Skill: Security None
+543217,Scroll: Absorb Skill: Sneak None
+543218,Scroll: Absorb Skill: Speechcraft None
+543189,Scroll: Absorb Speed None
+543190,Scroll: Absorb Strength None
+543191,Scroll: Absorb Willpower None
+563487,Scroll: Aegis None
+543471,Scroll: Alluring Gaze None
+827679,Scroll: Annal of the Fire Nexus None
+568744,Scroll: Aquatic Adaptation None
+568746,Scroll: Aquatic Evolution None
+568747,Scroll: Aquatic Transcendence None
+559342,Scroll: Arctic Blow None
+559289,Scroll: Beast of Burden None
+86201,Scroll: Beguile None
+543473,Scroll: Beguiling Touch None
+559296,Scroll: Blazing Spear None
+559333,Scroll: Blizzard None
+543219,Scroll: Bound Axe None
+543220,Scroll: Bound Boots None
+543221,Scroll: Bound Bow None
+543222,Scroll: Bound Cuirass None
+543224,Scroll: Bound Dagger None
+543225,Scroll: Bound Gauntlets None
+543226,Scroll: Bound Greaves None
+543227,Scroll: Bound Helmet None
+543228,Scroll: Bound Mace None
+543229,Scroll: Bound Shield None
+543230,Scroll: Bound Sword None
+543458,Scroll: Burdening Touch None
+559299,Scroll: Burning Touch None
+543466,Scroll: Calming Touch None
+563438,Scroll: Candlelight None
+543467,Scroll: Chameleon None
+827677,Scroll: Chronicle of Sacrifice None
+543469,Scroll: Cloak None
+559339,Scroll: Cold Touch None
+543475,Scroll: Command Creature None
+543477,Scroll: Command Humanoid None
+543479,Scroll: Commanding Touch None
+543195,Scroll: Consume Health None
+816742,Scroll: Convalescence None
+559249,Scroll: Corrode Armor None
+559251,Scroll: Corrode Weapon None
+553619,Scroll: Cure Disease None
+553620,Scroll: Cure Paralysis None
+553621,Scroll: Cure Poison None
+553622,Scroll: Damage Agility None
+553629,Scroll: Damage Fatigue None
+553624,Scroll: Damage Intelligence None
+553625,Scroll: Damage Luck None
+553626,Scroll: Damage Speed None
+553627,Scroll: Damage Strength None
+553628,Scroll: Damage Willpower None
+563440,Scroll: Daylight None
+563451,Scroll: Debilitate None
+563484,Scroll: Defend None
+543196,Scroll: Devour Health None
+559268,Scroll: Dire Enervation None
+559237,Scroll: Dire Sever Magicka None
+559271,Scroll: Dire Wound None
+559250,Scroll: Disintegrate Armor None
+559252,Scroll: Disintegrate Weapon None
+568742,Scroll: Dismiss Undead None
+559253,Scroll: Dispel None
+559257,Scroll: Dispel Other None
+827678,Scroll: Document of Purile Banter None
+543476,Scroll: Dominate Creature None
+543478,Scroll: Dominate Humanoid None
+543480,Scroll: Dominating Touch None
+559277,Scroll: Drain Skill: Alteration None
+559278,Scroll: Drain Skill: Blade None
+580738,Scroll: Drain Skill: Block None
+580737,Scroll: Drain Skill: Blunt None
+559279,Scroll: Drain Skill: Conjuration None
+559280,Scroll: Drain Skill: Destruction None
+559281,Scroll: Drain Skill: Hand to Hand None
+559282,Scroll: Drain Skill: Heavy Armor None
+580739,Scroll: Drain Skill: Heavy Armor None
+559283,Scroll: Drain Skill: Illusion None
+559284,Scroll: Drain Skill: Marksman None
+580740,Scroll: Drain Skill: Mysticism None
+559285,Scroll: Drain Skill: Restoration None
+580741,Scroll: Drain Skill: Sneak None
+559286,Scroll: Ease Burden None
+563500,Scroll: Electric Shell None
+563501,Scroll: Electric Shield None
+563497,Scroll: Electric Touch None
+563495,Scroll: Electrocution None
+34932,Scroll: Elevate Magicka None
+543460,Scroll: Encumbering Touch None
+543470,Scroll: Enthralling Presence None
+553630,Scroll: Entropic Bolt None
+559233,Scroll: Entropic Touch None
+563445,Scroll: Eyes of Eventide None
+563446,Scroll: Eyes of Midnight None
+559240,Scroll: Fearful Gaze None
+559290,Scroll: Fire Ball None
+559305,Scroll: Fire Shield None
+559291,Scroll: Fire Storm None
+559304,Scroll: Flame Shield None
+559292,Scroll: Flame Tempest None
+559300,Scroll: Flame Touch None
+559294,Scroll: Flare None
+559295,Scroll: Flash Bolt None
+559323,Scroll: Fortify Health None
+559325,Scroll: Fortify Magicka None
+559327,Scroll: Frenzy None
+559336,Scroll: Frost Bolt None
+559343,Scroll: Frost Shell None
+559340,Scroll: Frost Touch None
+563434,Scroll: Ghost Walk None
+568745,Scroll: Gills None
+559345,Scroll: Glacial Wall None
+559243,Scroll: Grasp of Terror None
+816743,Scroll: Greater Convalescence None
+559247,Scroll: Greater Detect Life None
+559254,Scroll: Greater Dispel None
+559258,Scroll: Greater Dispel Other None
+559322,Scroll: Greater Fortify Fatigue None
+559324,Scroll: Greater Fortify Health None
+559326,Scroll: Greater Fortify Magicka None
+563462,Scroll: Greater Restore Agility None
+563464,Scroll: Greater Restore Endurance None
+563466,Scroll: Greater Restore Intelligence None
+563468,Scroll: Greater Restore Luck None
+563470,Scroll: Greater Restore Personality None
+563472,Scroll: Greater Restore Speed None
+563474,Scroll: Greater Restore Strength None
+563476,Scroll: Greater Restore Willpower None
+568724,Scroll: Greater Soul Trap None
+563458,Scroll: Greater Spell Reflection None
+563485,Scroll: Guard None
+559331,Scroll: Hail Storm None
+559335,Scroll: Hailstone None
+559297,Scroll: Heat Burst None
+559303,Scroll: Heat Shell None
+563457,Scroll: Heroic Touch None
+563455,Scroll: Heroism None
+543459,Scroll: Hindering Touch None
+568719,Scroll: Hush None
+559338,Scroll: Ice Blast None
+559337,Scroll: Ice Bolt None
+559344,Scroll: Ice Shield None
+559332,Scroll: Ice Storm None
+563452,Scroll: Immobilize None
+559298,Scroll: Immolating Blast None
+563454,Scroll: Inspiration None
+563456,Scroll: Inspiring Touch None
+568749,Scroll: Lake Stride None
+543194,Scroll: Leech Health None
+559248,Scroll: Legendary Detect Life None
+559256,Scroll: Legendary Dispel None
+559276,Scroll: Legendary Magicka Drain None
+568726,Scroll: Legendary Soul Trap None
+568729,Scroll: Legendary Spell Absorption None
+563460,Scroll: Legendary Spell Reflection None
+559287,Scroll: Lighten Load None
+563489,Scroll: Lightning Ball None
+563494,Scroll: Lightning Blast None
+563493,Scroll: Lightning Bolt None
+563498,Scroll: Lightning Grasp None
+563490,Scroll: Lightning Storm None
+563499,Scroll: Lightning Surge None
+563502,Scroll: Lightning Wall None
+559245,Scroll: Major Detect Life None
+559267,Scroll: Major Enervation None
+725503,Scroll: Major Heal Other None
+559274,Scroll: Major Magicka Drain None
+559236,Scroll: Major Sever Magicka None
+568723,Scroll: Major Soul Trap None
+559270,Scroll: Major Wound None
+568750,Scroll: March of the Sea None
+543474,Scroll: Mesmerizing Grasp None
+559244,Scroll: Minor Detect Life None
+559266,Scroll: Minor Enervation None
+725502,Scroll: Minor Heal Other None
+559273,Scroll: Minor Magicka Drain None
+568722,Scroll: Minor Soul Trap None
+559269,Scroll: Minor Wound None
+563437,Scroll: Moonlight None
+568738,Scroll: Movement Mastery None
+568720,Scroll: Mute None
+568751,Scroll: Oceanic Journey None
+563449,Scroll: Open Average Lock None
+563448,Scroll: Open Easy Lock None
+563450,Scroll: Open Hard Lock None
+563447,Scroll: Open Very Easy Lock None
+835451,Scroll: Open Very Hard Lock None
+543461,Scroll: Oppressing Grasp None
+543464,Scroll: Pacification None
+559288,Scroll: Pack Mule None
+563453,Scroll: Paralyze None
+563483,Scroll: Protect None
+568736,Scroll: Psychic Motion None
+559328,Scroll: Rage None
+568741,Scroll: Rebuke Undead None
+568735,Scroll: Remote Manipulation None
+568740,Scroll: Repulse Undead None
+563461,Scroll: Restore Agility None
+563463,Scroll: Restore Endurance None
+563465,Scroll: Restore Intelligence None
+563467,Scroll: Restore Luck None
+563469,Scroll: Restore Personality None
+563471,Scroll: Restore Speed None
+563473,Scroll: Restore Strength None
+563475,Scroll: Restore Willpower None
+196635,Scroll: Reverse Invisibility None
+568748,Scroll: River Walk None
+559302,Scroll: Scorching Blow None
+559301,Scroll: Searing Grasp None
+543481,Scroll: Seductive Charm None
+543463,Scroll: Serenity None
+559235,Scroll: Sever Magicka None
+543468,Scroll: Shadow None
+563433,Scroll: Shadow Shape None
+563486,Scroll: Shield None
+563492,Scroll: Shock None
+563488,Scroll: Shocking Burst None
+563496,Scroll: Shocking Touch None
+568721,Scroll: Silence None
+559334,Scroll: Snowball None
+543465,Scroll: Soothing Touch None
+563491,Scroll: Spark None
+563435,Scroll: Spectral Form None
+568727,Scroll: Spell Absorption None
+563436,Scroll: Starlight None
+827680,Scroll: Stormrider Scroll None
+88793,Scroll: Summon Clannfear None
+88794,Scroll: Summon Daedroth None
+88792,Scroll: Summon Dremora None
+88791,Scroll: Summon Flame Atronach None
+88796,Scroll: Summon Frost Atronach None
+88784,Scroll: Summon Ghost None
+568734,Scroll: Summon Headless Zombie None
+88787,Scroll: Summon Lich None
+596239,Scroll: Summon Rufio's Ghost None
+88789,Scroll: Summon Scamp None
+88783,Scroll: Summon Skeleton None
+568730,Scroll: Summon Skeleton Archer None
+568731,Scroll: Summon Skeleton Champ None
+568732,Scroll: Summon Skeleton Hero None
+88790,Scroll: Summon Spider Daedra None
+88797,Scroll: Summon Storm Atronach None
+88786,Scroll: Summon Wraith None
+568733,Scroll: Summon Wraith Gloom None
+88788,Scroll: Summon Xivilai None
+88785,Scroll: Summon Zombie None
+88795,Scroll: Summoning Dremora Lord None
+816744,Scroll: Superior Convalescence None
+559246,Scroll: Superior Detect Life None
+559275,Scroll: Superior Magicka Drain None
+559255,Scroll: Superior Self None
+568725,Scroll: Superior Soul Trap None
+568728,Scroll: Superior Spell Absorption None
+563459,Scroll: Superior Spell Reflection None
+559272,Scroll: Superior Wound None
+568737,Scroll: Telekinesis None
+559241,Scroll: Terrifying Presence None
+563439,Scroll: Torchlight None
+559242,Scroll: Touch of Fear None
+559329,Scroll: Touch of Frenzy None
+559330,Scroll: Touch of Rage None
+568739,Scroll: Turn Undead None
+559239,Scroll: Voice of Dread None
+543472,Scroll: Voice of Rapture None
+568743,Scroll: Water Breathing None
+568752,Scroll: Weakness to Disease None
+568753,Scroll: Weakness to Fire None
+568754,Scroll: Weakness to Frost None
+568755,Scroll: Weakness to Magicka None
+568757,Scroll: Weakness to Poison None
+568758,Scroll: Weakness to Shock None
+568756,Scroll: Weakness to Weapons None
+559341,Scroll: Winter's Grasp None
+553631,Scroll: Withering Bolt None
+559234,Scroll: Withering Touch None
 180776,Shield: Animus,None
 300680,Shield: Burning,None
 324601,Shield: Clannfear Hide,None
