@@ -42,7 +42,7 @@ Source: Items.data; DestDir: {app}
 Name: {group}\OSE; Filename: {app}\OSE.exe; WorkingDir: {app}; IconFilename: {app}\OSE.exe; IconIndex: 0
 
 [Dirs]
-Name: {app}\Screenshots\
+Name: {app}\Screenshot\
 
 [Code]
 /////////////////////////////////////////////////////////////////////

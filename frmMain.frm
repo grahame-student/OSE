@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
 Begin VB.Form frmMain 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "OSE"
@@ -1772,7 +1772,7 @@ Private Function GetFilename() As String
 
     On Error GoTo CancelError
     
-    CommonDialog.Filter = "Oblivion save file (*.dat)|*.dat"
+    CommonDialog.Filter = "Oblivion save file (*.dat;*.ess)|*.dat;*.ess"
         
     CommonDialog.InitDir = HomePath
     CommonDialog.ShowOpen
@@ -1819,6 +1819,7 @@ End Sub
 
 Private Sub picScreenShot_Click()
 
+    ' TODO: Use common dialog to select where to save the file
     SavePicture picScreenShot.Image, App.Path & "\ScreenShot\screenshot.bmp"
 
 End Sub
