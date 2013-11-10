@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form frmMain 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "OSE"
@@ -30,7 +30,7 @@ Begin VB.Form frmMain
       ScaleHeight     =   4545
       ScaleWidth      =   7545
       TabIndex        =   4
-      Top             =   5280
+      Top             =   480
       Visible         =   0   'False
       Width           =   7575
       Begin VB.PictureBox pnlAll 
@@ -230,7 +230,7 @@ Begin VB.Form frmMain
             Height          =   2205
             Left            =   1320
             TabIndex        =   123
-            ToolTipText     =   "The list of all available factions"
+            ToolTipText     =   "The list of all available items"
             Top             =   1440
             Width           =   4695
          End

@@ -631,13 +631,25 @@ Private Sub AddProperty(ItemNumber As Long, ChangeSetEntry As Integer, PropertyN
         Case PROPERTY_FLAG_SCRIPT                       ' d18 h12
             ReadScript ItemNumber, ChangeSetEntry, PropertyNumber, Offset
         Case PROPERTY_FLAG_EQUIPPED_1                   ' d27 h1B
+            ' Property is pure a flag and has no other data
         Case PROPERTY_FLAG_EQUIPPED_2                   ' d28 h1C
+            ' Property is pure a flag and has no other data
+        Case PROPERTY_FLAG_H22                          ' d34 h22
+            ReadFlagH22 ItemNumber, ChangeSetEntry, PropertyNumber, Offset
+        Case PROPERTY_FLAG_OWNER                        ' d39 h27
+            ReadOwner ItemNumber, ChangeSetEntry, PropertyNumber, Offset
+        Case PROPERTY_FLAG_AFFECTED_ITEMS_NUMBER        ' d42 h2A
+            ReadAffectedItemsNumber ItemNumber, ChangeSetEntry, PropertyNumber, Offset
         Case PROPERTY_FLAG_ITEM_HEALTH                  ' d43 h2B
             ReadItemHealth ItemNumber, ChangeSetEntry, PropertyNumber, Offset
+        Case PROPERTY_FLAG_TIME                         ' d45 h2D
+            ReadTime ItemNumber, ChangeSetEntry, PropertyNumber, Offset
         Case PROPERTY_FLAG_CURRENT_ENCHANTMENT_POINTS   ' d46 h2E
             ReadCurEP ItemNumber, ChangeSetEntry, PropertyNumber, Offset
         Case PROPERTY_FLAG_SCALE                        ' d55 h37
             ReadScale ItemNumber, ChangeSetEntry, PropertyNumber, Offset
+        Case PROPERTY_FLAG_SHORTCUT_KEY                 ' d85 h55
+            ReadShortCutKey ItemNumber, ChangeSetEntry, PropertyNumber, Offset
         Case Else
             Debug.Print "Property Flag: " & SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetEntry).Properties(PropertyNumber).Flag
             End
@@ -700,12 +712,60 @@ Private Sub ReadScript(ItemNumber As Long, ChangeSetNumber As Integer, PropertyN
 
 End Sub
 
+Private Sub ReadFlagH22(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
+
+    Dim ByteNumber As Integer
+
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).UnknowniRef.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
+
+End Sub
+
+Private Sub ReadOwner(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
+
+    Dim ByteNumber As Integer
+
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Owner.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
+
+End Sub
+
+Private Sub ReadAffectedItemsNumber(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
+    
+    Dim ByteNumber As Integer
+
+    For ByteNumber = 0 To 1
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).AffectedItemsNumber.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 2
+
+End Sub
+
 Private Sub ReadItemHealth(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
 
     Dim ByteNumber As Integer
 
     For ByteNumber = 0 To 3
         SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ItemHealth.ByteValue(ByteNumber) = _
+        SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
+    Next ByteNumber
+    Offset.Add 4
+
+End Sub
+
+Private Sub ReadTime(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
+
+    Dim ByteNumber As Integer
+
+    For ByteNumber = 0 To 3
+        SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).Time.ByteValue(ByteNumber) = _
         SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
     Next ByteNumber
     Offset.Add 4
@@ -733,6 +793,14 @@ Private Sub ReadScale(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNu
         SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset + ByteNumber)
     Next ByteNumber
     Offset.Add 4
+
+End Sub
+
+Private Sub ReadShortCutKey(ItemNumber As Long, ChangeSetNumber As Integer, PropertyNumber As Integer, Offset As SuperLong)
+
+    SaveFileData.OSE.Player.ItemList(ItemNumber).InventoryChangedEntries(ChangeSetNumber).Properties(PropertyNumber).ShortcutKey = _
+    SaveFileData.ChangeRecords(SaveFileData.OSE.PlayerChange.PlayerChangeRecord).Data(Offset)
+    Offset.Add 1
 
 End Sub
 

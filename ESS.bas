@@ -243,19 +243,19 @@ End Type
 Private Type PropertyChange
     Flag As Byte                                    ' The property flag
     WorldspaceiRef As Long                          ' Used for flag 0x11
-    Script As PropertyScript                        ' Used for flag 0x12
+    Script              As PropertyScript           ' Used for flag 0x12
     MarkerHeadingRef As PropertyMarkerHeadingRef    ' Used for flag 0x1E
     AllPack As PropertyAllPack                      ' Used for flag 0x1F
     Trespass(62) As Byte                            ' Used for flag 0x20
     Unknown1 As PropertyUnknown1                    ' Used for flag 0x21
-    UnknowniRef As Long                             ' Used for flag 0x22
+    UnknowniRef         As New SuperLong            ' Used for flag 0x22
     Unknown2 As PropertyUnknown2                    ' Used for flag 0x23
-    Owner As Long                                   ' Used for flag 0x27
+    Owner               As New SuperLong            ' Used for flag 0x27
     GlobalVariable As Long                          ' Used for flag 0x28
     FactionRank As Long                             ' Used for flag 0x29
-    AffectedItemsNumber As Integer                  ' Used for flag 0x2A
+    AffectedItemsNumber As New SuperInt             ' Used for flag 0x2A
     ItemHealth          As New SuperSingle          ' Used for flag 0x2B
-    Time As Single                                  ' Used for flag 0x2D
+    Time                As New SuperSingle          ' Used for flag 0x2D
     EnchantmentPoints   As New SuperSingle          ' Used for flag 0x2E
     Soul As Byte                                    ' Used for flag 0x2F
     Lock As PropertyLock                            ' Used for flag 0x31

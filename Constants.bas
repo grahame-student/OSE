@@ -24,7 +24,7 @@ Public Const PROGRAM_NAME As String = "OSE"
 
 Public Const VERSION_MAJOR As Integer = 0
 Public Const VERSION_MINOR As Integer = 1
-Public Const VERSION_REVISION As Integer = 8
+Public Const VERSION_REVISION As Integer = 9
 Public Const VERSION_EXTRA As String = ""
 
 Public Const PROGRAM_TITLE As String = PROGRAM_NAME & " - " & _
@@ -166,9 +166,14 @@ Public Const PROPERTY_FLAG_WORLD_SPACE                  As Byte = &H11&
 Public Const PROPERTY_FLAG_SCRIPT                       As Byte = &H12&
 Public Const PROPERTY_FLAG_EQUIPPED_1                   As Byte = &H1B&
 Public Const PROPERTY_FLAG_EQUIPPED_2                   As Byte = &H1C&
+Public Const PROPERTY_FLAG_H22                          As Byte = &H22&
+Public Const PROPERTY_FLAG_OWNER                        As Byte = &H27&
+Public Const PROPERTY_FLAG_AFFECTED_ITEMS_NUMBER        As Byte = &H2A&
 Public Const PROPERTY_FLAG_ITEM_HEALTH                  As Byte = &H2B&
+Public Const PROPERTY_FLAG_TIME                         As Byte = &H2D&
 Public Const PROPERTY_FLAG_CURRENT_ENCHANTMENT_POINTS   As Byte = &H2E&
 Public Const PROPERTY_FLAG_SCALE                        As Byte = &H37&
+Public Const PROPERTY_FLAG_SHORTCUT_KEY                 As Byte = &H55&
 
 ' Property Variable Types
 Public Const SCRIPT_VARIABLE_TYPE_IREF As Integer = &HF000

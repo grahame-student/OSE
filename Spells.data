@@ -6,13 +6,13 @@
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
 #
-# This program is distributed in the hope that it will be useful,
+# This program is distributed in the hope that it will be useful
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License along
-# with this program; if not, write to the Free Software Foundation, Inc.,
+# with this program; if not, write to the Free Software Foundation, Inc.
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 #Spell FormID,Spell Name,PlugIn
@@ -29,6 +29,7 @@
 827596,Absorb Fatigue (50pts for 45 secs on Touch),None
 693095,Absorb Health,None
 693100,Absorb Magicka,None
+246675,Absorb Magicka ,None
 694158,Absorb Skill: Acrobatics,None
 694160,Absorb Skill: Alteration,None
 694162,Absorb Skill: Athletics,None
@@ -47,22 +48,52 @@
 694175,Absorb Skill: Restoration,None
 694176,Absorb Skill: Security,None
 696177,Absorb Skill: Sneak,None
+694177,Absorb Skill: Sneak ,None
 694187,Aegis,None
 694188,Alluring Gaze,None
 293596,Altmer: Fortify Magicka,None
 293591,Altmer: Resist Disease,None
 85330,Altmer: Weakness to Fire + Frost + Shock,None
-694258,Artic Blow,None
+779712,Anchorite Spell ,None
+1594380,Ancotar's Reverse Invisibility ,None
+20793,Arctic Blow ,None
 4677,Arctic Touch,DLCSpellTomes.esp
+598658,ArenaBasinRenewel ,None
 293582,Argonian: Resist Disease,None
 293583,Argonian: Resist Poison,None
 293590,Argonian: Water Breathing,None
+694258,Artic Blow,None
+559971,Ascended Immortality ,None
+246141,Atronach Fireball ,None
+507488,Atronach Frostbolt ,None
+40698,Atronach Frostbolt ,None
+246139,Atronach Frostbolt ,None
+40699,Atronach Frostbolt ,None
+507489,Atronach Frostbolt ,None
+246147,Atronach Lightning ,None
 4580,Aundae's Aura,DLCSpellTomes.esp
+694317,Average Lock ,None
+436440,Ayleid Well ,None
 4590,Baltham's Insight,DLCSpellTomes.esp
 448124,Baronoff's Bloody Icicle,None
 694275,Beast of Burden,None
+141933,Beggar's Nose ,None
 694190,Beguiling Touch,None
 4578,Berne's Aura,DLCSpellTomes.esp
+436463,Birthsign Stone: Arcane Well,None
+436468,Birthsign Stone: Cheater's Nip,None
+436472,Birthsign Stone: Cobra's Dance,None
+436470,Birthsign Stone: Hellride,None
+436466,Birthsign Stone: Lady's Warding,None
+436469,Birthsign Stone: Lover's Bower,None
+436461,Birthsign Stone: Magicka Manifold,None
+436460,Birthsign Stone: Mara's Mercy,None
+436459,Birthsign Stone: Mara's Milk,None
+36435,Birthsign Stone: The Master's Hand,None
+436462,Birthsign Stone: Void Seed,None
+436464,Birthsign Stone: War Cry,None
+436471,Birthsign Stone: Warden Key,None
+436467,Birthsign Stone: Ysmir's Scales,None
 141886,Birthsign: Apprentice,None
 141885,Birthsign: Atronach,None
 141888,Birthsign: Lady - Lady's Blessing,None
@@ -81,6 +112,17 @@
 141934,Birthsign: Warrior,None
 448125,Black Winter,None
 694241,Blazing Spear,None
+141883,Blessed Touch ,None
+412832,Blessing of Dibella ,None
+412830,Blessings of Akatosh ,None
+412831,Blessings of Arkay ,None
+412833,Blessings of Julianos ,None
+412834,Blessings of Kynareth ,None
+412835,Blessings of Mara ,None
+412836,Blessings of Stendarr ,None
+412837,Blessings of Talos ,None
+412829,Blessings of the Nine ,None
+412838,Blessings of Zenithar ,None
 4626,Blink,DLCSpellTomes.esp
 246744,Blizzard,None
 448128,Bloodhunt,None
@@ -90,6 +132,7 @@
 694197,Bound Bow,None
 694198,Bound Cuirass,None
 694199,Bound Dagger,None
+288368,Bound Dagger ,None
 694200,Bound Gauntlets,None
 694201,Bound Greaves,None
 694202,Bound Helmet,None
@@ -98,15 +141,24 @@
 694205,Bound Sword,None
 694195,Bound War Axe,None
 129972,Bouyancy,None
+1536516,Breath of Arkay ,None
+1594381,Breath of the Underking ,None
+1594377,Breath of the Underking ,None
+1594379,Breath of the Underking ,None
+1594375,Breath of the Underking ,None
+1594378,Breath of the Underking ,None
+1594376,Breath of the Underking ,None
 293584,Breton: Dragon Skin,None
-293585,Breton: Resist Magicka,None
 293586,Breton: Fortify Magicka,None
+293585,Breton: Resist Magicka,None
 694209,Burdening Touch,None
 313630,Burning Touch,None
 694218,Calming Touch,None
 694311,Candlelight,None
 115885,Captivate,None
 694219,Chameleon,None
+538112,Chameleon ,None
+384192,Chameleon ,None
 4671,Chilling Touch,DLCSpellTomes.esp
 4644,Choking Grasp,DLCSpellTomes.esp
 694221,Cloak,None
@@ -116,12 +168,29 @@
 694224,Commonding Touch,None
 693097,Consume Health,None
 448431,Convalescence,None
+384198,Corrode Armor ,None
 694179,Corrode Armour,None
 694181,Corrode Weapon,None
+384182,Corrode Weapon ,None
+543510,Counterspell ,None
 246778,Cure Disease,None
 246779,Cure Paralysis,None
 246780,Cure Poison,None
 694226,Curse of Weakness,None
+246143,Daedroth Shield ,None
+1465144,Dagon Area Attack 1 ,None
+1532306,Dagon Area Attack 2 ,None
+1532307,Dagon Area Attack 3 ,None
+1532304,Dagon Area Attack 4 ,None
+1532305,Dagon Area Attack 5 ,None
+246781,Damage Attribute: Agility ,None
+246782,Damage Attribute: Endurance ,None
+246783,Damage Attribute: Intelligence ,None
+246784,Damage Attribute: Luck ,None
+835183,Damage Attribute: Luck ,None
+246785,Damage Attribute: Speed ,None
+246786,Damage Attribute: Strength ,None
+246787,Damage Attribute: Willpower ,None
 809352,Dark Scales Ability,None
 694313,Daylight,None
 448129,Deathly Visage,None
@@ -134,15 +203,24 @@
 4632,Defensive Boost,DLCSpellTomes.esp
 448127,Detect Pulse,None
 693098,Devour Health,None
+1536517,Dibella's Kiss ,None
 246769,Dire Enervation,None
 313620,Dire Wound,None
 7561,Disease Resistance,DLCSpellTomes.esp
+694180,Disintegrate Armor ,None
 694182,Disintegrate Weapon,None
 696427,Dismiss Undead,None
+604155,Dispel ,None
 246773,Dispel Other,None
 694223,Dominate Creature,None
 246777,Dominate Humanoid,None
 694225,Dominating Touch,None
+246751,Drain Attribute: Agility ,None
+246752,Drain Attribute: Endurance ,None
+246756,Drain Attribute: Intelligence ,None
+246753,Drain Attribute: Luck ,None
+246754,Drain Attribute: Speed ,None
+246755,Drain Attribute: Willpower ,None
 246761,Drain Skill: Alteration,None
 246764,Drain Skill: Blade,None
 246765,Drain Skill: Conjuration,None
@@ -150,11 +228,13 @@
 246762,Drain Skill: Hand to Hand,None
 246763,Drain Skill: Heavy Armour,None
 246759,Drain Skill: Illusion,None
+543508,Drain Skill: Light Armor ,None
 246758,Drain Skill: Marksman,None
 246766,Drain Skill: Restoration,None
 293588,Dunmer: Resist Fire,None
 293589,Dunmer: Summon Ancestor Guardian,None
 694272,Ease Burden,None
+694277,Easy Lock ,None
 694314,Electric Shell,None
 694267,Electric Touch,None
 4601,Electrifying Blast,DLCSpellTomes.esp
@@ -168,9 +248,11 @@
 4636,Elemental Bolt,DLCSpellTomes.esp
 4638,Elemental Burst,DLCSpellTomes.esp
 4634,Elemental Flare,DLCSpellTomes.esp
+245467,Embrace of Shadows ,None
 694211,Encumbering Touch,None
 83744,Enemies Explode,None
 4618,Enhanced Visibility,DLCSpellTomes.esp
+459912,Enthrall ,None
 694271,Enthralling Presence,None
 694193,Entropic Bolt,None
 694227,Entropic Touch,None
@@ -182,8 +264,17 @@
 507443,Essence Drain VI,None
 694319,Eyes of Eventide,None
 694320,Eyes of Midnight,None
+177407,Faded Wraith's Curse ,None
+52411,Favor of Akatosh ,None
 694230,Fearful Gaze,None
 4653,Fenrik's Welcome,DLCSpellTomes.esp
+118362,Fiery Breath ,None
+246140,Fiery Touch ,None
+813444,Finger of the Mountain ,None
+813446,Finger of the Mountain ,None
+813443,Finger of the Mountain ,None
+813442,Finger of the Mountain ,None
+813445,Finger of the Mountain ,None
 805026,Finger of the Mountain I,None
 805027,Finger of the Mountain II,None
 805028,Finger of the Mountain III,None
@@ -191,8 +282,17 @@
 805030,Finger of the Mountain V,None
 805031,Finger of the Mountain VI,None
 694247,Fire Ball,None
+414170,Fire Column Damage ,None
+428464,Fire Damage from Bon Fires ,None
+428068,Fire Damage from Bon Fires ,None
+85821,Fire Damage from Bon Fires ,None
+428466,Fire Damage from Bon Fires ,None
 694280,Fire Shield,None
+384197,Fire Shield ,None
+431215,Fire Shield ,None
 694248,Fire Storm,None
+219578,Fireball ,None
+1536519,Fist of Talos ,None
 694279,Flame Shield,None
 694249,Flame Tempest,None
 694244,Flame Touch,None
@@ -202,10 +302,12 @@
 694289,Fortify Agility,None
 694290,Fortify Endurance,None
 246789,Fortify Fatigue,None
+546112,Fortify Fatigue ,None
 694304,Fortify Health,None
 694291,Fortify Intelligence,None
 694292,Fortify Luck,None
 246791,Fortify Magicka,None
+546111,Fortify Magicka ,None
 694293,Fortify Personality,None
 694294,Fortify Speed,None
 694295,Fortify Strength,None
@@ -213,17 +315,31 @@
 4611,Freezing Blast,DLCSpellTomes.esp
 4605,Freezing Bolt,DLCSpellTomes.esp
 4606,Freezing Burst,DLCSpellTomes.esp
+34937,Freezing Heal ,None
 4613,Freezing Shard,DLCSpellTomes.esp
 4673,Freezing Touch,DLCSpellTomes.esp
+40701,Freezing Touch ,None
+507490,Freezing Touch ,None
+246142,Freezing Touch ,None
+40700,Freezing Touch ,None
+507491,Freezing Touch ,None
 694297,Frenzy,None
-4675,Frostbite,DLCSpellTomes.esp
 694252,Frost Bolt,None
+3866,Frost Bolt ,None
+699017,Frost Damage for Frost Fire Glade ,None
 694301,Frost Shell,None
+384196,Frost Shield ,None
 694256,Frost Touch,None
+4675,Frostbite,DLCSpellTomes.esp
+381627,Ghostly Touch ,None
+177491,Ghostly Touch ,None
 694207,Ghostwalk,None
 694303,Glacial Wall,None
+246673,Gloom Wraith's Curse ,None
 694232,Grasp of Terror,None
+1595699,Gray Cowl Invisibility ,None
 835353,Gray Prince's Training Ability,None
+816679,Greater Bound Armor ,None
 816737,Greater Convalescence,None
 694322,Greater Dispel,None
 694325,Greater Dispel Other,None
@@ -240,41 +356,80 @@
 694288,Greater Fortify Willpower,None
 694234,Greater Life Detection,None
 246772,Greater Magicka Drain,None
+246770,Greater Magicka Drain  ,None
+696400,Greater Soul Trap ,None
 694185,Guard,None
-694251,Hailstone,None
+85764,Guard Heal 1 ,None
+85766,Guard Heal 2 ,None
+85767,Guard Heal 3 ,None
+85768,Guard Heal 4 ,None
+85769,Guard Shield 1 ,None
+85770,Guard Shield 2 ,None
+85771,Guard Shield 3 ,None
+85772,Guard Shield 4 ,None
 246742,Hail Storm,None
+694251,Hailstone,None
 4646,Hangman's Noose,DLCSpellTomes.esp
+258694,Head Butt ,None
+258693,Head Butt ,None
 696378,Heal Greater Wounds,None
 538388,Heal Legendary Wounds,None
 694306,Heal Major Wounds,None
 310,Heal Minor Wounds,None
+160834,Heal Minor Wounds ,None
 696379,Heal Superior Wounds,None
+1536515,Heart of Stendarr ,None
 694242,Heat Blast,None
 694278,Heat Shell,None
+439971,Heaven Stone: Dragon Dream,None
+439965,Heaven Stone: Gates of Aetherius,None
+439967,Heaven Stone: Jode's Blood,None
+439966,Heaven Stone: Jone's Shadow,None
+439985,Heaven Stone: Nirn's Breath,None
+439970,Heaven Stone: Shield of Shezarr,None
+439968,Heaven Stone: Sithian Web,None
+439969,Heaven Stone: Skein of Magnus,None
+436465,Hellride ,None
 696373,Heroic Touch,None
 696372,Heroism,None
 694210,Hindering Touch,None
+245466,Hunter's Sight ,None
 160833,Hush,None
+384180,Hush ,None
 694254,Ice Blast,None
+20792,Ice Bolt ,None
+694253,Ice Bolt ,None
 694302,Ice Shield,None
 246743,Ice Storm,None
+83554,Icy Blast ,None
+36431,Icy Touch ,None
 668061,Illuminate,None
 694329,Immobilise,None
+459907,Immobilization ,None
+382209,Immolated ,None
 694243,Immolating Blast,None
 4598,Immolating Touch,DLCSpellTomes.esp
+609342,Immolation ,None
 293598,Imperial: Absorb Fatigue,None
 293597,Imperial: Charm,None
 696370,Inspiration,None
 696371,Inspiring Touch,None
+827597,Invisibility ,None
+543509,Invisibility ,None
+1536518,Jaws of Akatosh ,None
+9013,Jeanne Frasoric Practice Spell1 ,None
+9015,Jeanne Frasoric Practice Spell2 ,None
 4584,Karstaag's Breath,DLCSpellTomes.esp
+1617233,Kayleen's Grace ,None
 293599,Khajit: Demoralise,None
 293600,Khajit: Night-Eye,None
 4592,Kindling Touch,DLCSpellTomes.esp
+840914,Kvatch Fireball ,None
+1536521,Kynareth's Way ,None
 693096,Leech Health,None
 3305,Leech Vitality,DLCSpellTomes.esp
 694324,Legendary Dispel,None
 694238,Legendary Life Detection,None
-246772,Legendary Magicka Drain,None
 696402,Legendary Soul Trap,None
 696406,Legendary Spell Absorption,None
 696403,Legendary Spell Reflection,None
@@ -284,13 +439,18 @@
 694264,Lightning Bolt,None
 694268,Lightning Grasp,None
 694315,Lightning Shield,None
+384195,Lightning Shield ,None
 246747,Lightning Storm,None
 694262,Lightning Surge,None
+413486,Lightning Surge ,None
 4667,Lightning Touch,DLCSpellTomes.esp
 694316,Lightning Wall,None
+248262,Llevana's Paralyze ,None
 4652,Llivam's Reversal,DLCSpellTomes.esp
 313615,Magicka Drain,None
+384184,Magicka Drain ,None
 4792,Magicka Vortex,DLCSpellTomes.esp
+816678,Major Bound Armor ,None
 694321,Major Dispel,None
 246768,Major Enervation,None
 694235,Major Life Detection,None
@@ -299,47 +459,79 @@
 4588,Mara's Grace,DLCSpellTomes.esp
 10305,Mara's Wrath,DLCSpellTomes.esp
 3306,Mark of Fire,DLCSpellTomes.esp
+311,Master Marksman Paralysis ,None
+49490,Maximum Area Fireball ,None
 694191,Mesmerising Grasp,None
+177400,Mind Numb ,None
+742061,Mine Fire Effect ,None
+21942,Mine Fire Effect 1 ,None
+21943,Mine Fire Effect 2 ,None
+21944,Mine Fire Effect 3 ,None
+21945,Mine Fire Effect 4 ,None
+21946,Mine Fire Effect 5 ,None
+21947,Mine Fire Effect 6 ,None
+816677,Minor Bound Armor ,None
 578025,Minor Dispel,None
 246767,Minor Enervation,None
+454452,Minor Frost Shield ,None
+384193,Minor Invisibility ,None
 118509,Minor Latch Crack,None
 694236,Minor Life Detection,None
 578026,Minor Magic Resistance,None
 160835,Minor Respite,None
 313618,Minor Wound,None
 694310,Moonlight,None
+114958,Mora's Soul Trap ,None
 696423,Movement Mastery,None
+251377,MQ13 Bruma Cheer ,None
 696396,Mute,None
+142135,Mythic Dawn Bound Armor and Mace ,None
+621599,Mythic Dawn Bound Armor and Sword ,None
+118436,Namira's Shroud ,None
 4576,Night Form,DLCSpellTomes.esp
+834835,Nigth Mother's Blessing,None
 448122,Night Mother's Caress,None
+49491,No Area Fireball ,None
 293604,Nord: Frost Damage,None
-293603,Nord: Shield,None
 293602,Nord: Resist Frost,None
+293603,Nord: Shield,None
+441617,Old Lady's Luck ,None
 694326,Open Average Lock,None
 694308,Open Easy Lock,None
 694327,Open Hard Lock,None
+559970,Open Portal ,None
 694270,Open Very Easy Lock,None
 694212,Oppressing Grasp,None
 293587,Orc: Berserk,None
-293583,Orc: Resist Magic,None
 4575,Orum's Aquatic Escape,DLCSpellTomes.esp
 694215,Pacification,None
 694274,Pack Mule,None
+41181,Pants On Fire ,None
 694330,Paralyze,None
+1609796,Paralyze ,None
+248164,Paralyze ,None
+85283,Pilgrim's Grace ,None
+246145,Poison spit ,None
+3800,Poison spit ,None
 4586,Pride of Hirstaang,DLCSpellTomes.esp
 694183,Protect,None
 462992,Protect Other,None
 696421,Psychic Motion,None
+249110,Punishment ,None
 4582,Quarra's Aura,DLCSpellTomes.esp
 694298,Rage,None
+305547,Reanimate ,None
 696426,Rebuke Undead,None
 293607,Redguard: Adrenaline Rush,None
 293606,Redguard: Resist Disease,None
 293605,Redguard: Resist Poison,None
+210671,Reflection of Nab ,None
+245468,Reign of Terror ,None
 696420,Remote Manipulation,None
 696425,Repulse Undead,None
 7570,Resist Paralysis,DLCSpellTomes.esp
 7572,Resist Poison,DLCSpellTomes.esp
+385365,Respite ,None
 696380,Restore Agility,None
 696383,Restore Endurance,None
 696386,Restore Intelligence,None
@@ -348,8 +540,20 @@
 696393,Restore Speed,None
 696391,Restore Strength,None
 696394,Restore Willpower,None
+622890,Revitalize ,None
+152407,Ritual of Deactivation ,None
+421078,Rune Blade and Bracer ,None
+436442,Rune Bow and Helm ,None
+436443,Rune Cuirass and Axe ,None
+436441,Rune Cuirass and Sword ,None
+436444,Rune Mace and Bracer ,None
+506558,Sanguine Test ,None
+1536522,Scales of Julianos ,None
+38154,Scamp Fireball ,None
+38155,Scamp Reflection ,None
 694246,Scorching Blow,None
 4661,Scorching Touch,DLCSpellTomes.esp
+41111,Script Effect ,None
 696433,Sea Stride,None
 4657,Searing Blast,DLCSpellTomes.esp
 4655,Searing Bolt,DLCSpellTomes.esp
@@ -359,24 +563,40 @@
 694189,Seductive Charm,None
 694214,Serenity,None
 246748,Sever Magicka,None
+543505,Shadow ,None
 694206,Shadow Shape,None
 694186,Shield,None
 4630,Shieldwall,DLCSpellTomes.esp
 694260,Shock,None
+693051,Shock Bolt ,None
 246745,Shocking Burst,None
 694266,Shocking Touch,None
+32389,Shocking Touch ,None
+246148,Shocking Touch ,None
 448120,Shroudwalk,None
+454119,Siege Blast ,None
 696397,Silence,None
+543511,Silence ,None
+20760,Silence of the Grave ,None
+20768,Silence of the Grave ,None
 694250,Snowball,None
+840697,Snowball ,None
 694217,Soothing Touch,None
 4628,Soul Grasp,DLCSpellTomes.esp
 696399,Soul Trap,None
 694259,Spark,None
 4663,Spark Touch,DLCSpellTomes.esp
+694208,Spectral Form,None
+436878,SpidalSlowandPoison ,None
+581013,SpiderParalyzer ,None
+177401,Spriggan's Curse ,None
+35617,Spriggan's Heal ,None
+35616,Spriggan's Heal ,None
+35618,Spriggan's Heal ,None
 114988,Stark Reality,None
 694309,Starlight,None
 4642,Strangulation,DLCSpellTomes.esp
-694208,Spectral Form,None
+1538529,Summon Bear ,None
 696407,Summon Clannfear,None
 696408,Summon Daedroth,None
 696409,Summon Dremora,None
@@ -389,14 +609,20 @@
 246804,Summon Headless Zombie,None
 696413,Summon Lich,None
 696414,Summon Scamp,None
+85752,Summon Scamp ,None
 696415,Summon Skeleton,None
+3752,Summon Skeleton ,None
 246807,Summon Skeleton Champion,None
 246805,Summon Skeleton Guardian,None
 246806,Summon Skeleton Hero,None
 246808,Summon Spider Daedra,None
+3813,Summon Spiderling ,None
 696416,Summon Storm Atronach,None
 696417,Summon Xivilai,None
 696419,Summon Zombie,None
+90256,Sun Damage Self ,None
+411167,Super detect life ,None
+816680,Superior Bound Armor ,None
 816738,Superior Convalescence,None
 694323,Superior Dispel,None
 694237,Superior Life Detection,None
@@ -407,27 +633,70 @@
 313621,Superior Wound,None
 696422,Telekinesis,None
 694233,Terrifying Presence,None
+213184,Test: Absorb Attribute ,None
+213185,Test: Absorb Fatigue ,None
+213186,Test: Absorb Health ,None
+210675,Test: Absorb Magicka ,None
+213187,Test: Absorb Magicka ,None
+213188,Test: Absorb Skill ,None
+213189,Test: Bound Axe ,None
+213190,Test: Bound Boots ,None
+213191,Test: Bound Bow ,None
+343460,Test: Dispel ,None
+129122,Test: Dispel ,None
+119016,Test: Drain Health ,None
+112943,Test: Fire Damage Touch ,None
+826277,Test: Fortify Magicka Spell ,None
+130304,Test: Frost Bolt ,None
+343459,Test: Invisibility ,None
+239663,Test: Rest Target ,None
+239662,Test: Rest Touch,None
+112944,Test: Self Restore ,None
+748587,Test: Shock,None
+622891,Test: Spell ,None
+21714,Test: Spell ,None
+212245,Test: Stat Mod ,None
+213183,Test: Telekinesis ,None
 448126,The Unwelcome Guest,None
 4786,Thunderclap,DLCSpellTomes.esp
+2072,Todd's Tester Spell ,None
 694220,Torchlight,None
+694312,Torchlight ,None
 4648,Touch of Death,DLCSpellTomes.esp
 694231,Touch of Fear,None
 694299,Touch of Frenzy,None
 694300,Touch of Rage,None
+6354,Trappable Spell ,None
 696424,Turn Undead,None
+6355,Untrappable Spell ,None
+671225,Vampire Reward Spell ,None
+245465,Vampire's Seduction ,None
+622745,Venemous Vapors ,None
+622767,Venemous Vapors ,None
 694229,Voice of Dread,None
 694192,Voice of Rapture,None
 448123,Void Gazer,None
+159114,Wabbajack Spell ,None
 696428,Water Breathing,None
 126847,Weak Fireball,None
+384185,Weakness to Disease ,None
 246797,Weakness to Fire,None
+384186,Weakness to Fire ,None
 246798,Weakness to Frost,None
+384187,Weakness to Frost ,None
 246799,Weakness to Magicka,None
+384188,Weakness to Magicka ,None
+384189,Weakness to Normal Weapons ,None
 246801,Weakness to Poison,None
+384190,Weakness to Poison ,None
 246802,Weakness to Shock,None
+384191,Weakness to Shock ,None
 462986,Weight of the World,None
+229564,Welkynd Stone Spell ,None
 448121,Will of Sithis,None
 694257,Winter's Grasp,None
+20779,Winter's Grasp ,None
+1536514,Wisdom of Mara ,None
 694194,Withering Bolt,None
 694228,Withering Touch,None
 804888,Wizard's Fury I,None
@@ -437,3 +706,7 @@
 804892,Wizard's Fury V,None
 804893,Wizard's Fury VI,None
 804894,Wizard's Fury VII,None
+821674,Wrack ,None
+382111,Wraith's Curse ,None
+1536520,Zenithar's Ear ,None
+623903,Zombie Paralysis ,None
