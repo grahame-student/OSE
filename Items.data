@@ -8,7 +8,7 @@
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License along
@@ -16,7 +16,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #
 # Item FormID, Description, PlugIn Required
-833267,: Calliben's Grim Retort,None
+827671,Aegis: of the Apocalypse,None
 343415,Aegis: Reflection,None
 170346,Aegis: The Gray,None
 827732,Akavari Katana: Akavari Sunderblade,None
@@ -73,8 +73,11 @@
 596694,Amulet: Luck Grand,None
 214984,Amulet: Manduin's,None
 232199,Amulet: Mundane,None
+787670,Amulet: of Interrogation,None
 787671,Amulet: of Interrogation,None
+787669,Amulet: of Interrogation (Lesser),None
 1604542,Amulet: of the Ansei,None
+1604543,Amulet: of the Ansei,None
 439372,Amulet: Phylactery of Litheness,None
 623707,Amulet: Reflection,None
 604154,Amulet: Reflection Base,None
@@ -82,10 +85,11 @@
 229424,Amulet: Silver,None
 612976,Amulet: Spelldrinker,None
 612977,Amulet: Spelldrinker,None
-787670,Amulet:of Interrogation,None
 141734,Apron: Blacksmith's,None
+609995,Apron: of Adroitness,None
 809807,Apron: of Adroitness,None
-609995,Apron:of Adroitness,None
+827682,Apron: of the Master Artisan,None
+210213,Armor: Bound Mythic Dawn,None
 215031,Armor: Shrouded,None
 827666,Armour: Monkeypants,None
 311050,Arrow: Blaze,None
@@ -167,6 +171,9 @@
 152098,Axe: Silver War,None
 141750,Axe: Steel Battle,None
 141757,Axe: Steel War,None
+779738,Ayleid Crown: of Lindai,None
+779736,Ayleid Crown: of Nenalata,None
+804785,Bands: of Kwang Lao,None
 299919,Barkshield: Sylvan,None
 255070,Battle Axe: Naked,None
 230431,Battle Axe: of Absorption,None
@@ -212,12 +219,14 @@
 152097,Battle Axe: Silver,None
 239711,Battle: Fine Iron,None
 239702,Battle: Fine Steel,None
-827730,Battleaxe:of Hatred,None
-827664,Birthright:of Astalon,None
+827730,Battleaxe: of Hatred,None
+827664,Birthright: of Astalon,None
 49665,Blade: Blackwater,None
 14996,Blouse: Red Velvet,None
 297356,Blue & Green Outfit: Resist Poison,None
 297350,Blue Suede Shoes: Sneak,None
+148443,Book: 2920 - Evening Star (v12),None
+148439,Book: 2920 - First Seed (v3),None
 148469,Book: 2920 - Frostfall (v10),None
 148468,Book: 2920 - Hearth Fire (v9),None
 148807,Book: 2920 - Last Seed (v8),None
@@ -226,6 +235,7 @@
 148799,Book: 2920 - Rain's Hand (v4),None
 148813,Book: 2920 - Second Seed (v5),None
 148792,Book: 2920 - Sun's Dawn (v2),None
+148435,Book: 2920 - Sun's Dusk (v11),None
 148788,Book: 2920 - Sun's Height (v7),None
 148854,Book: A Children's Anuad,None
 148427,Book: A Dance in Fire (v1),None
@@ -237,31 +247,51 @@
 148790,Book: A Dance in Fire (v7),None
 148431,Book: A Game at Dinner,None
 148473,Book: A Hypothetical Treachery,None
+148841,Book: A Less Rude Song,None
+696445,Book: A Life of Uriel Septim VII,None
 473701,Book: Advances in Lock Picking,None
 148803,Book: Aevar Stone-Singer,None
 808415,Book: Agnar's Journal,None
 148478,Book: Ahzirr Traajijazeri,None
 1595700,Book: Ancotar's Journal,None
 148868,Book: Arcana Restored,None
+148795,Book: Azura and the Box,None
 473697,Book: Battle of Sancre Tor,None
 473699,Book: Before the Ages of Man,None
 148449,Book: Beggar,None
 129875,Book: Beggar Prince,None
+817971,Book: Bible of the Deep Ones,None
+148816,Book: Biography of Barenziah (v1),None
+148817,Book: Biography of Barenziah (v2),None
+148818,Book: Biography of Barenziah (v3),None
+148819,Book: Biography of Barenziah (v3),None
 148811,Book: Biography of the Wolf Queen,None
+148820,Book: Brief History of the Empire (v1),None
+148821,Book: Brief History of the Empire (v2),None
+148822,Book: Brief History of the Empire (v3),None
+148823,Book: Brief History of the Empire (v4),None
 473695,Book: Calcinator Treatise,None
 148444,Book: Cherim's Heart of Anequina,None
+148871,Book: Children of the Sky,None
 148483,Book: Chimarvamidium,None
+182493,Book: Cleansing of the Fane,None
 148836,Book: Darkest Darkness,None
 164009,Book: Dar-Ma's Diary,None
 148436,Book: Daughter of the Niben,None
 148434,Book: De Rerum Dirennis,None
 148456,Book: Death Blow of Abernanit,None
+86780,Book: Diary of Springheel Jak,None
+142103,Book: Dwemer History and Culture,None
+148804,Book: Fall of the Snow Prince,None
 148784,Book: Father Of The Niben,None
 148455,Book: Feyfolken I,None
 148461,Book: Feyfolken II,None
 148465,Book: Feyfolken III,None
 692572,Book: Fighters Guild History 1st Ed.,None
+4353,Book: Fingers of the Mountain,None
 148453,Book: Fire and Darkness,None
+148872,Book: Five Songs of King Wulfharth,None
+148885,Book: Followers of the Gray Fox,None
 148873,Book: Fragment: On Artaeum,None
 148838,"Book: Frontier, Conquest ",None
 148839,Book: Fundaments of Alchemy,None
@@ -275,15 +305,20 @@
 148829,Book: Guide to Chorrol,None
 148832,Book: Guide to Leyawiin,None
 148828,Book: Guide to Skingrad,None
+148834,Book: Guide to the Imperial City,None
 148481,Book: Hallgerd's Tale,None
 148874,Book: Hanging Gardens,None
 473704,Book: Heavy Armor Repair,None
+129874,Book: Hiding with the Shadow,None
+129873,Book: History of Lock Picking,None
 148485,Book: History of the Fighters Guild,None
+726453,Book: House Lower Wall Hangings,None
 148484,Book: How Orsinium Passed to Orcs,None
 148492,Book: Ice and Chitin,None
 86781,Book: Imbel Genealogy,None
 148476,Book: Immortal Blood,None
 148488,Book: Incident in Necrom,None
+467606,Book: Journal of Claudius Arcadia,None
 148464,Book: King,None
 148442,Book: Last Scabbard of Akrash,None
 148809,Book: Legend of Krately House,None
@@ -292,6 +327,7 @@
 148493,Book: Lord Jornibret's Last Dance,None
 473702,Book: Mace Etiquette,None
 159115,Book: Mages Guild Charter,None
+492899,Book: Magic from the Sky,None
 148432,Book: Mannimarco King of Worms,None
 696968,Book: Manual of Armor,None
 148842,Book: Manual of Arms,None
@@ -305,24 +341,29 @@
 148800,Book: Mystery of Talara (v2),None
 148475,Book: Mystery of Talara (v3),None
 148490,Book: Mystery of Talara (v4),None
+148864,Book: Mystery of Talara (v5),None
 148875,Book: Mysticism,None
 127251,Book: Myth or Menace?,None
 142084,Book: Mythic Dawn Commentaries 1,None
 142085,Book: Mythic Dawn Commentaries 2,None
 142086,Book: Mythic Dawn Commentaries 3,None
 142087,Book: Mythic Dawn Commentaries 4,None
+148876,Book: Nerevar Moon and Star,None
 148463,Book: Night Falls on Sentinel,None
 148797,Book: Notes on Racial Phylogeny,None
 148845,Book: On Morrowind,None
 148862,Book: On Oblivion,None
+148879,Book: Origin of the Mages Guild,None
 448244,Book: Palace Break-In?,None
 148489,Book: Palla (v1),None
 148445,Book: Palla (v2),None
+623344,Book: Pension of the Ancestor Moth,None
 473700,Book: Proper Lock Design,None
 148863,Book: Provinces of Tamriel,None
 148810,Book: Purloined Shadows,None
 473705,Book: Reality & Other Falsehoods,None
 782799,Book: Remanada,None
+148824,Book: Report: Disaster at Ionith,None
 148472,Book: Response to Bero's Speech,None
 148495,Book: Rislav The Righteous,None
 148853,Book: Ruins of Kemel-Ze,None
@@ -331,14 +372,21 @@
 148454,Book: Song Of Hrormir,None
 148433,Book: Song of the Alchemists,None
 473707,Book: Souls Black and White,None
+148866,Book: Spirit of the Daedra,None
 148805,Book: Surfeit of Thieves,None
+148855,Book: Ten Commands: Nine Divines,None
+148856,Book: The Amulet of Kings,None
 148450,Book: The Argonian Account (v1),None
+148825,Book: The Argonian Account (v2),None
 148487,Book: The Argonian Account (v3),None
+148826,Book: The Argonian Account (v4),None
 148441,Book: The Armorer's Challenge,None
 148474,Book: The Art of War Magic,None
 148429,Book: The Black Arrow (v1),None
 148785,Book: The Black Arrow (v2),None
 148793,Book: The Black Arts On Trial,None
+148835,Book: The Book of Daedra,None
+148870,Book: The Brothers of Darkness,None
 148786,Book: The Buying Game,None
 148466,Book: The Doors of Oblivion,None
 148437,Book: The Dragon Break,None
@@ -350,21 +398,34 @@
 148496,Book: The Gold Ribbon of Merit,None
 148471,Book: The Horrors of Castle Xyr,None
 148462,Book: The Importance of Where,None
+364270,Book: The Last King of the Ayleids,None
 473698,Book: The Legendary Sancre Tor,None
 148867,Book: The Legendary Scourge,None
 148801,Book: The Locked Room,None
 148440,Book: The Lunar Lorkhan,None
+492898,Book: The Lusty Argonian Maid,None
+148861,Book: The Madness of Pelagius,None
 148457,Book: The Mirror,None
 148878,Book: The Old Ways,None
+222334,Book: The Path of Transcendence,None
 148880,Book: The Pig Children,None
+148869,Book: The Posting of the Hunt,None
 148446,Book: The Ransom of Zarek,None
+148848,Book: The Real Barenziah (v1),None
+148849,Book: The Real Barenziah (v2),None
+148850,Book: The Real Barenziah (v3),None
+148851,Book: The Real Barenziah (v4),None
+148852,Book: The Real Barenziah (v5),None
 148491,Book: The Rear Guard,None
+148881,Book: The Red Book of Riddles,None
 148448,Book: The Red Kitchen Reader,None
 148494,Book: The Refugees,None
 148479,Book: The Seed,None
 148467,Book: The Third Door,None
+148882,Book: The TRUE Nature of Orcs,None
 148460,Book: The Warp in the West,None
 148470,Book: The Warrior's Charge,None
+148883,Book: The Waters of Oblivion,None
 148884,Book: The Wild Elves,None
 148802,Book: The Wolf Queen (v1),None
 148477,Book: The Wolf Queen (v2),None
@@ -373,10 +434,12 @@
 148812,Book: The Wolf Queen (v5),None
 148806,Book: The Wolf Queen (v6),None
 148814,Book: The Wolf Queen (v7),None
+148865,Book: The Wolf Queen (v8),None
 148426,Book: Thief,None
 127250,Book: Thief of Virtue,None
 15011,Book: Tome of Unlife,None
 14696,Book: Traitor's Diary,None
+148857,Book: Trials of St. Alessia,None
 148860,Book: Varieties of Daedra,None
 148783,Book: Vernaccus and Bourlor,None
 148459,Book: Warrior,None
@@ -407,7 +470,8 @@
 222017,Boots: Glass,None
 293026,Boots: Grounded,None
 299386,Boots: Grounding,None
-712099,Boots: Imperial Dragon,None
+712014,Boots: Imperial Dragon (heavy),None
+712099,Boots: Imperial Dragon (light),None
 1617483,Boots: Imperial Watch,None
 299360,Boots: Insulation,None
 116431,Boots: Iron,None
@@ -421,6 +485,7 @@
 180476,Boots: Mithril,None
 827691,Boots: Nistor's,None
 215212,Boots: of Bloody Bounding,None
+827665,Boots: of the Swift Merchant,None
 222029,Boots: Orcish,None
 300687,Boots: Peak Climber's,None
 35448,Boots: Pit,None
@@ -471,6 +536,7 @@
 220622,Bow: Dwarven,None
 220795,Bow: Ebony,None
 141759,Bow: Elven,None
+827734,Bow: of Infliction,None
 239712,Bow: Fine Iron,None
 239703,Bow: Fine Steel,None
 808420,Bow: Frostwyrm,None
@@ -490,6 +556,7 @@
 252817,Bow: of Frost,None
 240777,Bow: of Gloom,None
 240492,Bow: of Harm,None
+536036,Bow: of Infernal Frost,None
 177541,Bow: of Jolts,None
 180858,Bow: of Lightning,None
 252795,Bow: of Numbing,None
@@ -517,7 +584,6 @@
 152103,Bow: Silver,None
 141751,Bow: Steel,None
 249096,Bow: Storm,None
-827734,Bow:of Infliction,None
 141737,Bracer: Leather,None
 178443,Braies: Belted,None
 165255,Breeches,None
@@ -525,7 +591,7 @@
 413564,Britches: Short,None
 297353,Burgundy Linen Shirt: Resist Disease,None
 297354,Burgundy Linens: Resist Fire,None
-561133,Circlet:of Omnipotence,None
+561133,Circlet: of Omnipotence,None
 249093,Claymore: Boreal,None
 220792,Claymore: Daedric,None
 256452,Claymore: Dremora,None
@@ -649,6 +715,7 @@
 116205,Clutter: Weight,None
 152069,Clutter: Yarn,None
 152070,Clutter: Yarn,None
+827681,Cowl: of the Druid,None
 300639,Cuirass: Ambassador's,None
 299931,Cuirass: Annealed,None
 299904,Cuirass: Anu's Blessing,None
@@ -693,8 +760,8 @@
 299372,Cuirass: Health,None
 324603,Cuirass: Horselord's,None
 293024,Cuirass: Ice,None
-712016,Cuirass: Imperial Dragon,None
-712106,Cuirass: Imperial Dragon,None
+712016,Cuirass: Imperial Dragon (heavy),None
+712106,Cuirass: Imperial Dragon (light),None
 413557,Cuirass: Imperial Palace,None
 1617484,Cuirass: Imperial Watch,None
 116433,Cuirass: Iron,None
@@ -763,6 +830,7 @@
 220624,Dagger: Dwarven,None
 220778,Dagger: Ebony,None
 220771,Dagger: Elven,None
+821535,Dagger: of Discipline,None
 239714,Dagger: Fine Iron,None
 239705,Dagger: Fine Steel,None
 220763,Dagger: Glass,None
@@ -819,7 +887,6 @@
 215025,Dagger: Sufferthorn VII,None
 255068,Dagger: Thieves',None
 438724,Dagger: Witsplinter,None
-821535,Dagger:of Discipline,None
 645829,Dai-Katana: Akaviri,None
 1604544,Dai-Katana: Mishaxhi's Cleaver,None
 150929,Dish: Basket,None
@@ -976,7 +1043,7 @@
 441852,Escutcheon: of Chorrol (IV),None
 441853,Escutcheon: of Chorrol (V),None
 441854,Escutcheon: of Chorrol (VI),None
-536032,Eye:of Sithis,None
+536032,Eye: of Sithis,None
 300315,Eyes: Akatosh,None
 141745,Garment: Green Silk,None
 14995,Garment: Red Velvet,None
@@ -1005,6 +1072,7 @@
 141726,Gauntlets: Elven,None
 85776,Gauntlets: Elven,None
 130768,Gauntlets: Emperor's,None
+827676,Gauntlets: of Gluttony,None
 324595,Gauntlets: Force,None
 300323,Gauntlets: Forgemaster's,None
 149349,Gauntlets: Fur,None
@@ -1012,7 +1080,8 @@
 808461,Gauntlets: Glass Ceremonial,None
 536031,Gauntlets: Hands of Midnight,None
 677755,Gauntlets: Huntsman,None
-712230,Gauntlets: Imperial Dragon,None
+712017,Gauntlets: Imperial Dragon (heavy),None
+712230,Gauntlets: Imperial Dragon (light),None
 1617485,Gauntlets: Imperial Watch,None
 299349,Gauntlets: Infiltration,None
 299378,Gauntlets: Infiltrator's,None
@@ -1034,6 +1103,8 @@
 300666,Gauntlets: Mountaineer's,None
 299383,Gauntlets: Nord,None
 180787,Gauntlets: Nordslayer,None
+827672,Gauntlets: of the Atronach,None
+827674,Gauntlets: of the Drunkard,None
 222028,Gauntlets: Orcish,None
 677761,Gauntlets: Passing,None
 35449,Gauntlets: Pit,None
@@ -1071,7 +1142,6 @@
 180765,Gauntlets: Warforger's,None
 300686,Gauntlets: Warmaster,None
 324610,Gauntlets: Winter,None
-827676,Gauntlets:of Gluttony,None
 403,Gem: Azura's Star,None
 232359,Gem: Diamond,None
 232356,Gem: Emerald,None
@@ -1129,7 +1199,8 @@
 149348,Greaves: Fur,None
 222018,Greaves: Glass,None
 299901,Greaves: Grace,None
-712231,Greaves: Imperial Dragon,None
+712018,Greaves: Imperial Dragon (heavy),None
+712231,Greaves: Imperial Dragon (light),None
 1617486,Greaves: Imperial Watch,None
 116432,Greaves: Iron,None
 143768,Greaves: Leather,None
@@ -1181,7 +1252,9 @@
 293007,Greaves: Well-Being,None
 297351,Green Brocade Doublet: Speechcraft,None
 300631,Hand: Akatosh,None
-827675,Helm:of Ferocity,None
+218618,Heavy Raiment: of Valor,None
+827675,Helm: of Ferocity,None
+827673,Helm: of the Deep Delver,None
 820544,Helmet: Ancient Blades,None
 300294,Helmet: Arkay,None
 300678,Helmet: Battlehunter,None
@@ -1222,7 +1295,8 @@
 161404,Helmet: Guard,None
 677465,Helmet: Helm of Oreyn Bearclaw,None
 300291,Helmet: High Rock,None
-712234,Helmet: Imperial Dragon,None
+712234,Helmet: Imperial Dragon (light),None
+712098,Helmet: Imperial Dragon (heavy),None
 606570,Helmet: Imperial Horseman,None
 1617487,Helmet: Imperial Watch,None
 180754,Helmet: Inquisitor's,None
@@ -1298,7 +1372,6 @@
 726451,Home Upgrade: Cheydinhal - Dining Area,None
 726446,Home Upgrade: Cheydinhal - Dressing Area,None
 726449,Home Upgrade: Cheydinhal - Kitchen Area,None
-726553,Home Upgrade: Cheydinhal - Lower Wall Hangings,None
 726450,Home Upgrade: Cheydinhal - Sitting Area,None
 726448,Home Upgrade: Cheydinhal - Storage Area,None
 726452,Home Upgrade: Cheydinhal - Study Area,None
@@ -1479,6 +1552,7 @@
 210594,Ingredient: White Seed Pod,None
 402719,Ingredient: Wisp Stalk Caps,None
 686398,Ingredient: Wormwood Leaves,None
+546543,Jewel: of the Rumare,None
 827663,Juggernaut: Dondoran's,None
 300305,Justice: Retributive,None
 150986,Katana: Akaviri,None
@@ -1897,6 +1971,7 @@
 52204,Key: Whitmond Farm,None
 13549,Key: Willow Bank,None
 125822,Key: Wumeek's,None
+218686,Light Raiment: of Valor,None
 66684,Linens: Burgundy,None
 116780,Linens: Coarse,None
 165681,Linens: Green Felt,None
@@ -1916,6 +1991,7 @@
 141747,Longsword: Elven,None
 620493,Longsword: Elven,None
 84323,Longsword: Essence of Regret,None
+722693,Longsword: of Frost,None
 239715,Longsword: Fine Iron,None
 239706,Longsword: Fine Steel,None
 220767,Longsword: Glass,None
@@ -1979,7 +2055,6 @@
 439908,Longsword: Thornblade V,None
 439909,Longsword: Thornblade VI,None
 160008,Longsword: Volendrung,None
-722693,Longsword:of Frost,None
 85781,Mace: Ayleid,None
 156276,Mace: Bound,None
 84307,Mace: Burden of Agnosticism,None
@@ -1988,6 +2063,7 @@
 84306,Mace: Burden of Flesh,None
 84305,Mace: Burden of Secrecy,None
 84308,Mace: Burden of Sin,None
+833267,Mace: Calliben's Grim Retort,None
 159640,Mace: Cursed,None
 220789,Mace: Daedric,None
 256450,Mace: Dremora,None
@@ -2061,6 +2137,8 @@
 141755,Mace: Steel,None
 245602,Mace: Voltag,None
 84301,Mace: Weight of Guilt,None
+827689,Mantle: of the Woodsman,None
+210345,Medallion: Knights of the Thorn,None
 116779,Moccasin: Huntsman,None
 834899,Necklace: Astia's,None
 229415,Necklace: Bronze,None
@@ -2085,15 +2163,23 @@
 623682,Necklace: the Sea,None
 623680,Necklace: the Sea Base,None
 623681,Necklace: the Sea Grand,None
+624258,Newspaper: A New Guild for Fighters?,None
 448237,Newspaper: Adamus Phillida Slain!,None
 421077,Newspaper: Anvil Tarts Thwarted!,None
 421075,Newspaper: Cheydinhal Heir Saved!,None
 448239,Newspaper: Gray Fox Unmasked!,None
+448238,"Newspaper: Gray Fox, Man or Myth? ",None
 421076,Newspaper: Greatest Painter Safe!,None
 441671,Newspaper: New 'Doomstones' Series!,None
+448242,Newspaper: New Watch Captain Named!,None
 148877,Newspaper: N'Gasta! Kvata! Kvakis!,None
 507552,Newspaper: Night Mother Rituals!,None
 421074,Newspaper: Pale Pass Discovery!,None
+448240,Newspaper: Poor Burdened by Taxes!,None
+624265,Newspaper: Pranks Spoils Society Gathering!,None
+624259,Newspaper: Rain of Burning Dogs!,None
+471735,Newspaper: Tragic Accident! Baenlin Dead!,None
+448243,Newspaper: Vampire Nest in the City!,None
 448241,Newspaper: Waterfront Raid Fails!,None
 804275,Note: A Poorly Scrawled Note,None
 115042,Note: Akaviri Diary Translation,None
@@ -2109,6 +2195,8 @@
 696449,Note: Crumpled Piece of Paper,None
 696450,Note: Crumpled Piece of Paper,None
 696451,Note: Crumpled Piece of Paper,None
+402641,Note: Crumpled Piece of Paper,None
+402642,Note: Crumpled Piece of Paper,None
 195390,Note: Dead Drop Orders 1,None
 203562,Note: Dead Drop Orders 2,None
 195387,Note: Dead Drop Orders 3,None
@@ -2211,6 +2299,9 @@
 439751,Note: Letter,None
 693864,Note: Letter from Branwen,None
 696452,Note: Letter to Mother,None
+402644,Note: Letter to the Guild of Mages,None
+402651,Note: Letter to the Guild of Mages,None
+402652,Note: Letter to the Guild of Mages,None
 49226,Note: List of Candidates,None
 167288,Note: List of Death,None
 167289,Note: List of Death,None
@@ -2308,7 +2399,7 @@
 141539,Pelt: Bear,None
 141540,Pelt: Lion,None
 141538,Pelt: Wolf,None
-230816,Phylactery:of Litheness,None
+230816,Phylactery: of Litheness,None
 580700,Poison: Affliction,None
 580701,Poison: Affliction Strong,None
 580699,Poison: Affliction Weak,None
@@ -2561,7 +2652,14 @@
 174920,Quest: Ayleid Statue,None
 541892,Quest: Ayleid Statue,None
 247811,Quest: Bands of the Chosen,None
-596229,Quest: Blade of Woe,None
+142248,Quest: Blade of Woe (unenchanted),None
+596223,Quest: Blade of Woe I,None
+596224,Quest: Blade of Woe II,None
+596225,Quest: Blade of Woe III,None
+596226,Quest: Blade of Woe IV,None
+596227,Quest: Blade of Woe V,None
+596228,Quest: Blade of Woe VI,None
+596229,Quest: Blade of Woe VII,None
 507459,Quest: Bloodworm Helm,None
 867109,Quest: Blue Cheese,None
 98526,Quest: Bone,None
@@ -2670,11 +2768,14 @@
 12,Repair Hammer,None
 817529,Replica: Dwarven Bow,None
 808454,Replica: Dwarven Claymore,None
+808450,Replica: Dwarven War Axe,None
 808470,Replica: Ebony Dagger,None
 808479,Replica: Ebony Mace,None
 817546,Replica: Ebony Shortsword,None
 808452,Replica: Ebony Warhammer,None
+808447,Replica: Elven Long Sword,None
 817541,Replica: Elven Shortsword,None
+808456,Replica: Glass Battle Axe,None
 817523,Replica: Glass Dagger,None
 808449,Replica: Glass Longsword,None
 817545,Replica: Glass Shortsword,None
@@ -2736,6 +2837,9 @@
 596687,Ring: Endurance,None
 596686,Ring: Endurance Base,None
 596688,Ring: Endurance Grand,None
+123130,Ring: of Sunfire,None
+827686,Ring: of Transmutation,None
+827688,Ring: of Wortcraft,None
 596666,Ring: Feather,None
 596665,Ring: Feather Base,None
 596667,Ring: Feather Grand,None
@@ -2795,9 +2899,13 @@
 623648,Ring: Nihilism,None
 623647,Ring: Nihilism Base,None
 623649,Ring: Nihilism Grand,None
+326117,Ring: of Eidolon's Edge,None
 160016,Ring: of Khajiiti,None
 114954,Ring: of Namira,None
+622965,Ring: of Silence (Blackwood),None
 439949,Ring: of Sunfire,None
+52424,Ring: of the Gray,None
+115930,Ring: of the Vipereye,None
 24118,Ring: Pentamagic Loop,DLCFrostcrag.ESP
 623686,Ring: Perfection,None
 600780,Ring: Restoration,None
@@ -2868,9 +2976,6 @@
 596677,Ring: Willpower Base,None
 596679,Ring: Willpower Grand,None
 623690,Ring: Wizardry,None
-123130,Ring:of Sunfire,None
-827686,Ring:of Transmutation,None
-827688,Ring:of Wortcraft,None
 21804,Robe: Aegis,None
 413663,Robe: Arch-Mage's,None
 413666,Robe: Black,None
@@ -2888,6 +2993,7 @@
 146739,Robe: Emperor's,None
 50389,Robe: Emperor's,None
 48173,Robe: Emperor's,None
+827687,Robe: of Creativity,None
 293029,Robe: Glib Tongues,None
 462875,Robe: Green,None
 1236254,Robe: Grey,None
@@ -2903,7 +3009,6 @@
 462877,Robe: Tattered,None
 21788,Robe: Warding,None
 462919,Robe: White Monk,None
-827687,Robe:of Creativity,None
 462881,Robes: Aqua Silk,None
 1607114,Robes: King of Worms',None
 1607113,Robes: Necromancer's,None
@@ -2914,6 +3019,7 @@
 827736,Saber: Captain Kordan's,None
 178445,Sandals: Braided Leather,None
 160538,Sandals: Sack Cloth,None
+596221,Scales: of Pitiless Justice,None
 543223,Scroll: Absorb Agility None,None
 543186,Scroll: Absorb Endurance None,None
 543192,Scroll: Absorb Fatigue None,None
@@ -3270,6 +3376,7 @@
 472045,Shield: Iron,None
 300673,Shield: Iron Mountain,None
 343414,Shield: Justice,None
+1236253,Shield: Knights of the Thorn,None
 217805,Shield: Kvatch,None
 151640,Shield: Leather,None
 217811,Shield: Legion,None
@@ -3330,6 +3437,7 @@
 300696,Shield: the Untamed,None
 299910,Shield: Threefold,None
 297385,Shield: Tiger Fang,None
+827670,Shield: Tower of the Nine,None
 41746,Shield: Umbra's Ebony,None
 1604539,Shield: Valdemar's,None
 1604540,Shield: Valdemar's,None
@@ -3589,6 +3697,8 @@
 270493,Sigil Stone: Turn Undead / Detect Life (Subjacent),None
 270491,Sigil Stone: Turn Undead / Detect Life (Transcendent),None
 413668,Silks: Blue,None
+813448,Soul Gem: Black (colossal),None
+86536,Soul Gem: Black (colossal),None
 247804,Soul Gem: Black (empty (quest)),None
 125972,Soul Gem: Black (empty (test)),None
 402,Soul Gem: Black (empty),None
@@ -3614,74 +3724,180 @@
 146791,Soul Gem: Petty (empty),None
 230097,Soul Gem: Petty (petty),None
 827731,Staff: Apotheosis,None
+594721,Staff: of Anarchy,None
+594667,Staff: of Apathy,None
+595154,Staff: of Banishment,None
+594643,Staff: of Blundering,None
+594622,Staff: of Burden,None
+594625,Staff: of Calm,None
+594658,Staff: of Catastrophe,None
+594631,Staff: of Charm,None
+595141,Staff: of Conflagration,None
+594673,Staff: of Confusion,None
+594683,Staff: of Corrosion,None
+594677,Staff: of Demoralize,None
+595140,Staff: of Diminishing,None
+595149,Staff: of Discord,None
+594686,Staff: of Dispel,None
+594640,Staff: of Domination,None
+594649,Staff: of Fatigue,None
+594655,Staff: of Feeblemind,None
+594725,Staff: of Fire,None
+594728,Staff: of Fireball,None
+118476,Staff: of Flame,None
+594718,Staff: of Fragility,None
+594670,Staff: of Frailty,None
+594731,Staff: of Frost,None
+595142,Staff: of Hoarfrost,None
+439917,Staff: of Indarys,None
+595148,Staff: of Legion,None
+594715,Staff: of Lethargy,None
+594737,Staff: of Light,None
+595125,Staff: of Lightning,None
+364268,Staff: of Nenalata,None
+594739,Staff: of Open,None
+595145,Staff: of Pacification,None
+594689,Staff: of Ruin,None
+594661,Staff: of Severing,None
+594652,Staff: of Sickness,None
+595131,Staff: of Silence,None
+595128,Staff: of Storms,None
+595147,Staff: of Submission,None
+594709,Staff: of Sundering,None
+594637,Staff: of Taming,None
+595134,Staff: of Telekinesis,None
+595143,Staff: of Thunderbolts,None
+595151,Staff: of Vulnerability,None
+594646,Staff: of Weakness,None
+595139,Staff: of Withering,None
 420933,Staff: Goblin Shaman,None
 696351,Staff: Goblin Totem,None
 779042,Staff: Mankar Camoran's,None
+594722,Staff: of Anarchy (greater),None
+594723,Staff: of Anarchy (lesser),None
+594668,Staff: of Apathy (greater),None
+594669,Staff: of Apathy (lesser),None
+594644,Staff: of Blundering (greater),None
+594642,Staff: of Blundering (lesser),None
+594623,Staff: of Burden (greater),None
+594648,Staff: of Burden (lesser),None
+594626,Staff: of Calm (greater),None
+594624,Staff: of Calm (lesser),None
+594659,Staff: of Catastrophe (greater),None
+594660,Staff: of Catastrophe (lesser),None
+594632,Staff: of Charm (greater),None
+594630,Staff: of Charm (lesser),None
+130577,Staff: of Charm (mage's),None
+594674,Staff: of Confusion (greater),None
+594675,Staff: of Confusion (lesser),None
+594684,Staff: of Corrosion (greater),None
+594682,Staff: of Corrosion (lesser),None
+594678,Staff: of Demoralize (greater),None
+594676,Staff: of Demoralize (lesser),None
+594687,Staff: of Dispel (greater),None
+594685,Staff: of Dispel (lesser),None
+130582,Staff: of Dispel (mage's),None
+594641,Staff: of Domination (greater),None
+594639,Staff: of Domination (lesser),None
+594650,Staff: of Fatigue (greater),None
+594651,Staff: of Fatigue (lesser),None
+594647,Staff: of Feeblemind (greater),None
+594656,Staff: of Feeblemind (lesser),None
+594726,Staff: of Fire (greater),None
+594724,Staff: of Fire (lesser),None
+955464,Staff: of Fire (mage's),None
+594729,Staff: of Fireball (greater),None
+594727,Staff: of Fireball (lesser),None
+594719,Staff: of Fragility (greater),None
+594720,Staff: of Fragility (lesser),None
+594671,Staff: of Frailty (greater),None
+594672,Staff: of Frailty (lesser),None
+594732,Staff: of Frost (greater),None
+594730,Staff: of Frost (lesser),None
+955468,Staff: of Frost (mage's),None
+594734,Staff: of Ice Storm,None
+594735,Staff: of Ice Storm (greater),None
+594733,Staff: of Ice Storm (lesser),None
 439921,Staff: of Indarys,None
+594716,Staff: of Lethargy (greater),None
+594717,Staff: of Lethargy (lesser),None
+594738,Staff: of Light (greater),None
+594736,Staff: of Light (lesser),None
+595126,Staff: of Lightning (greater),None
+595146,Staff: of Lightning (lesser),None
 779740,Staff: of Nenalata,None
+594741,Staff: of Open (greater),None
+594740,Staff: of Open (lesser),None
+130578,Staff: of Paralysis (mage's),None
+594743,Staff: of Paralyzing Burst,None
+594690,Staff: of Ruin (greater),None
+594688,Staff: of Ruin (lesser),None
+594662,Staff: of Severing (greater),None
+594663,Staff: of Severing (lesser),None
+130576,Staff: of Shock (mage's),None
+594653,Staff: of Sickness (greater),None
+594654,Staff: of Sickness (lesser),None
+595132,Staff: of Silence (greater),None
+595130,Staff: of Silence (lesser),None
+130579,Staff: of Silence (mage's),None
+130580,Staff: of Soul Trap (mage's),None
+594744,Staff: of Stopping (greater),None
+594742,Staff: of Stopping (lesser),None
+595129,Staff: of Storms (greater),None
+595127,Staff: of Storms (lesser),None
+594710,Staff: of Sundering (greater),None
+594711,Staff: of Sundering (lesser),None
+594638,Staff: of Taming (greater),None
+594636,Staff: of Taming (lesser),None
+595135,Staff: of Telekinesis (greater),None
+595133,Staff: of Telekinesis (lesser),None
+130581,Staff: of Telekinesis (mage's),None
+299965,Staff: of the Battlemage,None
+594703,Staff: of the Dazed,None
+594704,Staff: of the Dazed (greater),None
+594705,Staff: of the Dazed (lesser),None
+594706,Staff: of the Doomed,None
+594707,Staff: of the Doomed (greater),None
+594708,Staff: of the Doomed (lesser),None
+595137,Staff: of the Grave,None
+595138,Staff: of the Grave (greater),None
+595136,Staff: of the Grave (lesser),None
+595153,Staff: of the Healer,None
+595152,Staff: of the Mundane,None
+594692,Staff: of the Oaf,None
+594693,Staff: of the Oaf (greater),None
+594691,Staff: of the Oaf (lesser),None
+594664,Staff: of the Pariah,None
+594665,Staff: of the Pariah (greater),None
+594666,Staff: of the Pariah (lesser),None
+594695,Staff: of the Plague,None
+594696,Staff: of the Plague (greater),None
+594694,Staff: of the Plague (lesser),None
+594699,Staff: of the Weary,None
+594698,Staff: of the Weary (greater),None
+594697,Staff: of the Weary (lesser),None
+355920,Staff: of Unholy Terror,None
+594657,Staff: of Weakness (greater),None
+594645,Staff: of Weakness (lesser),None
 303694,Staff: of Worms,None
 129820,Staff: Ruma's,None
 141551,Staff: Sanguine Rose,None
 160022,Staff: Skull of Corruption,None
 141552,Staff: Wabbajack,None
-594721,Staff:of Anarchy,None
-594667,Staff:of Apathy,None
-595154,Staff:of Banishment,None
-594643,Staff:of Blundering,None
-594622,Staff:of Burden,None
-594625,Staff:of Calm,None
-594658,Staff:of Catastrophe,None
-594631,Staff:of Charm,None
-595141,Staff:of Conflagration,None
-594673,Staff:of Confusion,None
-594683,Staff:of Corrosion,None
-594677,Staff:of Demoralize,None
-595140,Staff:of Diminishing,None
-595149,Staff:of Discord,None
-594686,Staff:of Dispel,None
-594640,Staff:of Domination,None
-594649,Staff:of Fatigue,None
-594655,Staff:of Feeblemind,None
-594725,Staff:of Fire,None
-594728,Staff:of Fireball,None
-118476,Staff:of Flame,None
-594718,Staff:of Fragility,None
-594670,Staff:of Frailty,None
-594731,Staff:of Frost,None
-595142,Staff:of Hoarfrost,None
-439917,Staff:of Indarys,None
-595148,Staff:of Legion,None
-594715,Staff:of Lethargy,None
-594737,Staff:of Light,None
-595125,Staff:of Lightning,None
-364268,Staff:of Nenalata,None
-594739,Staff:of Open,None
-595145,Staff:of Pacification,None
-594689,Staff:of Ruin,None
-594661,Staff:of Severing,None
-594652,Staff:of Sickness,None
-595131,Staff:of Silence,None
-595128,Staff:of Storms,None
-595147,Staff:of Submission,None
-594709,Staff:of Sundering,None
-594637,Staff:of Taming,None
-595134,Staff:of Telekinesis,None
-595143,Staff:of Thunderbolts,None
-595151,Staff:of Vulnerability,None
-594646,Staff:of Weakness,None
-595139,Staff:of Withering,None
 85780,Sword: Ayleid Long,None
 156275,Sword: Bound,None
 37371,Sword: Brusef Amelion's,None
 255067,Sword: Gladiator's,None
 184223,Torch,None
-827735,Truncheon:of Submission,None
+827735,Truncheon: of Submission,None
 180474,Tunic: Flax,None
 404,Varla Stone,None
+827684,Veil: of the Seer,None
 178444,Vest: Belted,None
 180472,Vest: Burlap,None
 2179,Vest: Huntsman,None
 297346,Vest: Light Armor,None
+827683,Vest: of the Bard,None
 180468,Vest: Olive,None
 191661,Vest: Patched,None
 21808,Vest: Warding,None
